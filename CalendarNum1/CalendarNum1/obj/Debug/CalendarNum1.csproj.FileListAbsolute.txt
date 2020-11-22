@@ -8,3 +8,65 @@ D:\Study\LTTQ\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateRe
 D:\Study\LTTQ\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
 D:\Study\LTTQ\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
 D:\Study\LTTQ\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe.config
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csprojAssemblyReference.cache
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Calendar.resources
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Properties.Resources.resources
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateResource.cache
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\tam-master\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe.config
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csprojAssemblyReference.cache
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Calendar.resources
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Properties.Resources.resources
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateResource.cache
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe.config
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csprojAssemblyReference.cache
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Calendar.resources
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Properties.Resources.resources
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateResource.cache
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\Project\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe.config
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.pdb
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csprojAssemblyReference.cache
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Calendar.resources
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Properties.Resources.resources
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateResource.cache
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
+D:\Study\LTTQ\Calendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe.config
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.pdb
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csprojAssemblyReference.cache
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Calendar.resources
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Properties.Resources.resources
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateResource.cache
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
+D:\B Pro Coder\ProjectCalendar\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe.config
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.exe
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\bin\Debug\CalendarNum1.pdb
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csprojAssemblyReference.cache
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Calendar.resources
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.Properties.Resources.resources
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.GenerateResource.cache
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.csproj.CoreCompileInputs.cache
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.exe
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.pdb
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.LichDuong.resources
+D:\Study\LTTQ\Calendar2\CalendarNum1\CalendarNum1\obj\Debug\CalendarNum1.DailyPlan.resources

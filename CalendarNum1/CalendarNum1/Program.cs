@@ -16,7 +16,8 @@ namespace CalendarNum1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Calendar());
+            Application.Run(new LichDuong());
+            //Application.Run(new Calendar());
         }
     }
 }

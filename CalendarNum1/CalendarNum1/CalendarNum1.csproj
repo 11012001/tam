@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adayjob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adayjob.Designer.cs">
+      <DependentUpon>Adayjob.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calendar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,10 +59,32 @@
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
     <Compile Include="Cons.cs" />
+    <Compile Include="DailyPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyPlan.Designer.cs">
+      <DependentUpon>DailyPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichDuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichDuong.Designer.cs">
+      <DependentUpon>LichDuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LunnarCalendar.cs" />
+    <Compile Include="PlanData.cs" />
+    <Compile Include="PlanItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolarEvent.cs" />
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyPlan.resx">
+      <DependentUpon>DailyPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichDuong.resx">
+      <DependentUpon>LichDuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
