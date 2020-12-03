@@ -15,7 +15,7 @@ namespace CalendarNum1
     public partial class Calendar : Form
     {
         private string filePath = "data.xml";
-        private List<List<Button>> Matrix;
+        private List<List<CustomBtn>> Matrix;
         private List<List<Color>> MatrixColor;
         private List<Button> ListBT;
         private PlanData job;
@@ -51,32 +51,31 @@ namespace CalendarNum1
         }
         void CreateMatrix()
         {
-            Matrix = new List<List<Button>>();
+            Matrix = new List<List<CustomBtn>>();
             MatrixColor = new List<List<Color>>();
-            Button OldBtn = new Button() { Width = 0, Height = 0, Location = new Point(-Cons.Margin, 0) };
+            CustomBtn OldBtn = new CustomBtn() { Width = 0, Height = 0, Location = new Point(-Cons.Margin, 0) };
             for (int i = 0; i < Cons.DayOfColumn; i++)
             {
-                Matrix.Add(new List<Button>());
+                Matrix.Add(new List<CustomBtn>());
                 MatrixColor.Add(new List<Color>());
                 for (int j = 0; j < Cons.DayOfWeek; j++)
                 {
-                    Button btn = new Button()
-                    { 
+                    CustomBtn btn = new CustomBtn()
+                    {
                         Width = Cons.dateButtonWidth,
                         Height = Cons.dateButtonHeight,
-                        Font = new Font("Arial", 10, FontStyle.Bold),
-                        TabStop = false,
-                        FlatStyle = FlatStyle.Flat
+                        Font = new Font("Arial", 30, FontStyle.Bold),
+                        ButtonStyle = XanderUI.XUIButton.Style.MacOS,
                         
                     };
-                    btn.FlatAppearance.BorderSize = 1;
                     btn.Location = new Point(OldBtn.Location.X + OldBtn.Width + Cons.Margin, OldBtn.Location.Y);
                     MatrixPanel.Controls.Add(btn);
                     MatrixColor[i].Add(btn.BackColor);
                     Matrix[i].Add(btn);
                     OldBtn = btn;
                 }
-                OldBtn = new Button() { Width = 0, Height = 0, Location = new Point(-Cons.Margin, OldBtn.Location.Y + OldBtn.Height + Cons.Margin) };
+                OldBtn = new CustomBtn() { Width = 0, Height = 0, Location = new Point(-Cons.Margin, OldBtn.Location.Y + OldBtn.Height + Cons.Margin) };
+
             }
             setDefaultDate();
         }
@@ -103,12 +102,14 @@ namespace CalendarNum1
                 {
                     column = DateOfWeek.IndexOf(useDate.DayOfWeek.ToString());
                     int[] nums = lunnarCalendar.ConvertSolarDateToLunarDate(useDate.Day, useDate.Month, useDate.Year, 7);
-                    Button btn = Matrix[line][column];
-                    btn.BackColor = Color.PaleTurquoise;
-                    btn.ForeColor = Color.DarkGray;
-                    btn.TextAlign = ContentAlignment.MiddleLeft;
+                    CustomBtn btn = Matrix[line][column];
+                    btn.TextColor = Color.DarkGray;
+                    btn.Horizontal_Alignment = StringAlignment.Near;
+                    btn.ButtonText = useDate.Day.ToString();
+                    btn.SLunnarDay = nums[0];
+                    btn.SLunnarMonth = nums[1];
+                    btn.LunnarDayColor = Color.DarkGray;
                     btn.Click += new EventHandler(PreviousBttn_Click);
-                    btn.Text = String.Format("{0} \n {1}{2}", useDate.Day.ToString(), (nums[0] == 1) ? "".PadLeft(10) + nums[0].ToString() : "".PadLeft(13) + nums[0].ToString(), (nums[0] == 1) ? "/" + nums[1].ToString() : "");
                     useDate = useDate.AddDays(1);
                     MatrixColor[line][column] = btn.BackColor;
                     num++;
@@ -119,11 +120,14 @@ namespace CalendarNum1
             {
                 column = DateOfWeek.IndexOf(useDate.DayOfWeek.ToString());
                 int[] nums = lunnarCalendar.ConvertSolarDateToLunarDate(useDate.Day, useDate.Month, useDate.Year, 7);
-                Button btn = Matrix[line][column];
+                CustomBtn btn = Matrix[line][column];
 
-                btn.BackColor = Color.PaleTurquoise;
-                btn.TextAlign = ContentAlignment.MiddleLeft;
-                btn.Text = String.Format("{0} \n {1}{2}", i.ToString(), (nums[0] == 1) ? "".PadLeft(10) + nums[0].ToString() : "".PadLeft(13) + nums[0].ToString(), (nums[0] == 1) ? "/" + nums[1].ToString() : "");
+                //btn.BackColor = Color.PaleTurquoise;
+                btn.Horizontal_Alignment = StringAlignment.Near;
+                btn.ButtonText = i.ToString();
+                btn.SLunnarDay = nums[0];
+                btn.SLunnarMonth = nums[1];
+                btn.LunnarDayColor = Color.Red;
                 btn.Click += new EventHandler(btn_click);
 
                 if (IsEqualDate(useDate, DateTime.Now))
@@ -198,7 +202,7 @@ namespace CalendarNum1
                 {
                     for (int j = 0; j < Cons.DayOfWeek; j++)
                     {
-                        Button btn = Matrix[i][j];
+                        CustomBtn btn = Matrix[i][j];
                         MatrixColor[i][j] = btn.BackColor;
                         btn.Visible = false;
                     }
@@ -218,12 +222,13 @@ namespace CalendarNum1
                 {
                     column = DateOfWeek.IndexOf(useDate.DayOfWeek.ToString());
                     int[] nums = lunnarCalendar.ConvertSolarDateToLunarDate(useDate.Day, useDate.Month, useDate.Year, 7);
-                    Button btn = Matrix[line][column];
-                    btn.BackColor = Color.PaleTurquoise;
-                    btn.ForeColor = Color.DarkGray;
-                    btn.TextAlign = ContentAlignment.MiddleLeft;
+                    CustomBtn btn = Matrix[line][column];
                     btn.Click += new EventHandler(NextBttn_Click);
-                    btn.Text = String.Format("{0} \n {1} {2}", i.ToString(), (nums[0] == 1) ? "".PadLeft(10) + nums[0].ToString() : "".PadLeft(13) + nums[0].ToString(), (nums[0] == 1) ? "/" + nums[1].ToString() : "");
+                    btn.ButtonText = useDate.Day.ToString();
+                    btn.SLunnarDay = nums[0];
+                    btn.SLunnarMonth = nums[1];
+                    
+                    btn.TextColor = Color.DarkGray;
                     MatrixColor[line][column] = btn.BackColor;
                     if (column >= 6)
                         line++;
@@ -233,7 +238,7 @@ namespace CalendarNum1
                 {
                     for (int i = 0; i < Cons.DayOfWeek; i++)
                     {
-                        Button btn = Matrix[line][i];
+                        CustomBtn btn = Matrix[line][i];
                         MatrixColor[line][i] = btn.BackColor;
                         btn.Visible = false;
                     }
@@ -250,11 +255,10 @@ namespace CalendarNum1
             {
                 for (int j = 0; j < Matrix[i].Count; j++)
                 {
-                    Button btn = Matrix[i][j];
+                    CustomBtn btn = Matrix[i][j];
                     btn.Visible = true;
                     btn.Text = "";
-                    btn.BackColor = Color.PaleTurquoise;
-                    btn.ForeColor = Color.Black;
+                    btn.TextColor = Color.Black;
                     btn.Click -= new EventHandler(btn_click);
                     btn.Click -= new EventHandler(PreviousBttn_Click);
                     btn.Click -= new EventHandler(NextBttn_Click);
@@ -299,9 +303,7 @@ namespace CalendarNum1
                     Location = new Point(oldbtn.Location.X, oldbtn.Location.Y + oldbtn.Height + Cons.Margin),
                     Font = new Font("Microsoft Sans Serif",10,FontStyle.Bold),
                     TabStop = false,
-                    FlatStyle = FlatStyle.Flat
                 };
-                btn1.FlatAppearance.BorderSize = 0;
                 NumEventPanel.Controls.Add(btn1);
                 ListBT.Add(btn1);
                 oldbtn = btn1;
@@ -317,7 +319,6 @@ namespace CalendarNum1
                 btn.Visible = true;
                 btn.ForeColor = Color.Black;
                 btn.BackColor = Color.LightCyan;
-                btn.TextAlign = ContentAlignment.MiddleLeft;
                 btn.Click -= new EventHandler(btnClick);
                 btn.Click -= new EventHandler(Buttonevent_Click);
             }
@@ -494,9 +495,9 @@ namespace CalendarNum1
 
         private void buttonDOW(object sender,EventArgs e)
         {
-            Button btn = sender as Button;
+            CustomBtn btn = sender as CustomBtn;
             int colum;
-            switch(btn.Text)
+            switch(btn.ButtonText)
             {
                 case "Thứ 2":
                     colum = 0;
@@ -591,7 +592,7 @@ namespace CalendarNum1
         }
         private void btn_click(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
+            CustomBtn btn = sender as CustomBtn;
             DateTime date = new DateTime(dtpkDate.Value.Year, dtpkDate.Value.Month, 1);
             int line = 0;
             int column = 0;

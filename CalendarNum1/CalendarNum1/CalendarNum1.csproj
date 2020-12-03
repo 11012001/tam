@@ -33,8 +33,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Google.Apis, Version=1.49.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.49.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.49.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.49.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.49.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.49.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Calendar.v3, Version=1.49.0.2142, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Calendar.v3.1.49.0.2142\lib\net45\Google.Apis.Calendar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.49.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.49.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.49.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.49.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,27 +66,34 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\XanderUI.DLL</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\CalendarProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\CalendarProject.Designer.cs">
+      <DependentUpon>CalendarProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adayjob.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Adayjob.Designer.cs">
       <DependentUpon>Adayjob.cs</DependentUpon>
     </Compile>
-    <Compile Include="Calendar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Calendar.Designer.cs">
-      <DependentUpon>Calendar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cons.cs" />
+    <Compile Include="CustonBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DailyPlan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DailyPlan.Designer.cs">
       <DependentUpon>DailyPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="HolidayInfo.cs" />
     <Compile Include="LichDuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,9 +105,15 @@
     <Compile Include="PlanItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicHoliday.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PublicHoliday.Designer.cs">
+      <DependentUpon>PublicHoliday.cs</DependentUpon>
+    </Compile>
     <Compile Include="SolarEvent.cs" />
-    <EmbeddedResource Include="Calendar.resx">
-      <DependentUpon>Calendar.cs</DependentUpon>
+    <EmbeddedResource Include="..\..\..\CalendarProject.resx">
+      <DependentUpon>CalendarProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailyPlan.resx">
       <DependentUpon>DailyPlan.cs</DependentUpon>
@@ -95,6 +130,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PublicHoliday.resx">
+      <DependentUpon>PublicHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
