@@ -1,0 +1,15 @@
+Thunderstorm|Bão tố có sấm sét
+Drizzle|Mưa phùn
+Rain|Mưa
+Snow|Tuyết
+Mist|Sương mù (do mưa phùn gây ra)
+Somke|Sương mù kèm khói bụi
+Haze|Sương mù mỏng
+Dust|Bụi
+Fog|Sương mù
+Sand|Cát
+Ash|Tro
+Squall|Mưa đá
+Tornado|Lốc xoáy
+Clear|Trời quang đãng
+Clouds|Mây

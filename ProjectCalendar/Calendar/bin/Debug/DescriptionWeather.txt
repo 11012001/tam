@@ -1,0 +1,55 @@
+thunderstorm with light rain|giông bão có mưa nhẹ
+thunderstorm with rain|giông bão có mưa
+thunderstorm with heavy rain|giông bão có mưa lớn
+light thunderstorm|giông bão nhẹ
+thunderstorm|giông bão
+heavy thunderstorm|giông bão mạnh 
+ragged thunderstorm|giông bão rải rác
+thunderstorm with light drizzle|giông bão với mưa phùn nhẹ
+thunderstorm with drizzle|giông bão với mưa phùn 
+thunderstorm with heavy drizzle|giông bão với mưa phùn lớn
+light intensity drizzle|mưa phùn cường độ nhẹ
+drizzle|mưa phùn
+heavy intensity drizzle|mưa phùn cường độ mạnh
+light intensity drizzle rain|cơn mưa phùn cường độ nhẹ
+drizzle rain|cơn mưa phùn
+heavy intensity drizzle rain|cơn mưa phùn cường độ mạnh
+shower rain and drizzle|mưa rào và mưa phùn
+heavy shower rain and drizzle|mưa rào nặng và mưa phùn
+shower drizzle|mưa rào hạt nhẹ
+light rain|mưa nhẹ
+moderate rain|mưa vừa
+heavy intensity rain|mưa cường độ mạnh
+very heavy rain|mưa rất lớn
+extreme rain|mưa cực lớn
+freezing rain|mưa lạnh
+light intensity shower rain|mưa rào cường độ nhẹ
+shower rain|mưa rào
+heavy intensity shower rain|mưa rào cường độ mạnh
+ragged shower rain|mưa rào rải rác
+light snow|tuyết nhẹ
+Snow|tuyết
+Heavy snow|tuyết mạnh
+Sleet|mưa tuyết
+Light shower sleet|mưa tuyết rào nhẹ
+Shower sleet|mưa tuyết rào
+Light rain and snow|mưa nhẹ và tuyết
+Rain and snow|mưa và tuyết
+Light shower snow|mưa rào nhẹ và tuyết
+Shower snow|mưa rào và tuyết
+Heavy shower snow|mưa rào nặng và tuyết
+mist|sương muối
+Smoke|sương khói
+Haze|Sương mù mỏng do hơi nóng gây ra
+sand/ dust whirls|cát/bụi xoáy
+fog|sương mù
+sand|cát
+dust|bụi
+volcanic ash|tro do núi lửa gây ra
+squalls|mưa dá
+tornado|lốc xoáy
+clear sky|bầu trời quang đãng
+few clouds|mây ít: 11-25%
+scattered clouds|mây rải rác: 25-50%
+broken clouds|mây thất thường: 51-84%
+overcast clouds|mây phủ đầy: 85-100%
