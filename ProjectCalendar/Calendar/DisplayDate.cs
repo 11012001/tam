@@ -19,6 +19,7 @@ namespace Calendar
         public Color ColorHourLunnar { get; set; }
 
         public DateTime Date = DateTime.Now;
+
         public DisplayDate()
         {
             InitializeComponent();

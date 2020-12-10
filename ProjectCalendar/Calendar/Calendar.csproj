@@ -105,6 +105,12 @@
     <Compile Include="DisplayCountDay.Designer.cs">
       <DependentUpon>DisplayCountDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplayDetailEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayDetailEvent.Designer.cs">
+      <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplayWF.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayCountDay.resx">
       <DependentUpon>DisplayCountDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayDetailEvent.resx">
+      <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayWF.resx">
       <DependentUpon>DisplayWF.cs</DependentUpon>

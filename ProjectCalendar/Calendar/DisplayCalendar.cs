@@ -94,7 +94,7 @@ namespace Calendar
                     btn.SLunnarMonth = lunnardate.Month;
                     btn.ZodiacDay = lunnarCalendar.IsZodiacDay(useDate, lunnardate.Month);
                     btn.LunnarDayColor = Color.DarkGray;
-                    btn.Click += new EventHandler(PreviousBttn_Click);
+                    btn.Click +=PreviousBttn_Click;
                     useDate = useDate.AddDays(1);
                     MatrixColor[line][column] = btn.BackColor;
                     num++;
@@ -114,6 +114,7 @@ namespace Calendar
                 btn.SLunnarMonth = lunnardate.Month;
                 btn.ZodiacDay = lunnarCalendar.IsZodiacDay(useDate, lunnardate.Month);
                 btn.LunnarDayColor = Color.Red;
+                btn.Click += ButtonNum_Click;
 
                 if (IsEqualDate(useDate, DateTime.Now))
                     btn.TextColor = Color.Aqua;
@@ -209,7 +210,7 @@ namespace Calendar
                     column = DateOfWeek.IndexOf(useDate.DayOfWeek.ToString());
                     LuniSolarDate<VietnameseLocalInfoProvider> lunnardate = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromSolarDate(useDate);
                     CustomButton btn = Matrix[line][column];
-                    btn.Click += new EventHandler(NextBttn_Click);
+                    btn.Click += NextBttn_Click;
                     btn.Horizontal_Alignment = StringAlignment.Near;
                     btn.ButtonText = useDate.Day.ToString();
                     btn.SLunnarDay = lunnardate.Day;
@@ -247,8 +248,9 @@ namespace Calendar
                     btn.Visible = true;
                     btn.Text = "";
                     btn.TextColor = Color.Black;
-                    btn.Click -= new EventHandler(PreviousBttn_Click);
-                    btn.Click -= new EventHandler(NextBttn_Click);
+                    btn.Click -= ButtonNum_Click;
+                    btn.Click -= PreviousBttn_Click;
+                    btn.Click -= NextBttn_Click;
                 }
             }
         }
@@ -303,6 +305,19 @@ namespace Calendar
         private void timer1_Tick(object sender, EventArgs e)
         {
             DigitalClock.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        public event EventHandler ClickButton;
+        public static DateTime Date { get; set; }
+
+        private void ButtonNum_Click(object sender, EventArgs e)
+        {
+            if(ClickButton != null)
+            {
+                CustomButton btn = sender as CustomButton;
+                Date = new DateTime(dtpk.Value.Year,dtpk.Value.Month,Convert.ToInt32(btn.ButtonText));
+                ClickButton(sender, e);
+            }
         }
     }
 }

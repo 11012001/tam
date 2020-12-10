@@ -32,6 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Project));
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
+            this.ButtonCount = new Guna.UI2.WinForms.Guna2Button();
+            this.iconButtonClose = new FontAwesome.Sharp.IconButton();
+            this.ButtonDate = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonCalendar = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonChangeDate = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonWeatherForecast = new Guna.UI2.WinForms.Guna2Button();
             this.PanelIcon = new Guna.UI2.WinForms.Guna2Panel();
             this.xuiClock1 = new XanderUI.XUIClock();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
@@ -41,15 +47,12 @@
             this.PanelDisplay = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.ButtonCount = new Guna.UI2.WinForms.Guna2Button();
-            this.iconButtonClose = new FontAwesome.Sharp.IconButton();
-            this.ButtonDate = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonCalendar = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonChangeDate = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonWeatherForecast = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.displayCalendar1 = new Calendar.DisplayCalendar();
             this.PanelSetting.SuspendLayout();
             this.PanelIcon.SuspendLayout();
             this.PanelControl.SuspendLayout();
+            this.PanelDisplay.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowForm1
@@ -71,120 +74,8 @@
             this.PanelSetting.Location = new System.Drawing.Point(0, 0);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
-            this.PanelSetting.Size = new System.Drawing.Size(140, 630);
+            this.PanelSetting.Size = new System.Drawing.Size(140, 640);
             this.PanelSetting.TabIndex = 1;
-            // 
-            // PanelIcon
-            // 
-            this.PanelIcon.BorderColor = System.Drawing.Color.White;
-            this.PanelIcon.Controls.Add(this.xuiClock1);
-            this.PanelIcon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelIcon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.PanelIcon.Location = new System.Drawing.Point(0, 0);
-            this.PanelIcon.Name = "PanelIcon";
-            this.PanelIcon.ShadowDecoration.Parent = this.PanelIcon;
-            this.PanelIcon.Size = new System.Drawing.Size(140, 150);
-            this.PanelIcon.TabIndex = 0;
-            // 
-            // xuiClock1
-            // 
-            this.xuiClock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.xuiClock1.CircleThickness = 7;
-            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
-            this.xuiClock1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
-            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.White;
-            this.xuiClock1.FilledSecondColor = System.Drawing.Color.Red;
-            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
-            this.xuiClock1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.xuiClock1.HexagonColor = System.Drawing.Color.Black;
-            this.xuiClock1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.xuiClock1.Location = new System.Drawing.Point(0, 0);
-            this.xuiClock1.Name = "xuiClock1";
-            this.xuiClock1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.xuiClock1.ShowAmPm = true;
-            this.xuiClock1.ShowHexagon = true;
-            this.xuiClock1.ShowMinutesCircle = true;
-            this.xuiClock1.ShowSecondsCircle = true;
-            this.xuiClock1.Size = new System.Drawing.Size(140, 150);
-            this.xuiClock1.TabIndex = 0;
-            this.xuiClock1.Text = "xuiClock1";
-            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.White;
-            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.White;
-            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.White;
-            // 
-            // guna2VSeparator1
-            // 
-            this.guna2VSeparator1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2VSeparator1.FillThickness = 10;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(140, 0);
-            this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 630);
-            this.guna2VSeparator1.TabIndex = 1;
-            // 
-            // PanelControl
-            // 
-            this.PanelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.PanelControl.Controls.Add(this.ControlMinimum);
-            this.PanelControl.Controls.Add(this.ControlClose);
-            this.PanelControl.ForeColor = System.Drawing.Color.White;
-            this.PanelControl.Location = new System.Drawing.Point(150, 0);
-            this.PanelControl.Name = "PanelControl";
-            this.PanelControl.ShadowDecoration.Parent = this.PanelControl;
-            this.PanelControl.Size = new System.Drawing.Size(530, 30);
-            this.PanelControl.TabIndex = 3;
-            // 
-            // ControlMinimum
-            // 
-            this.ControlMinimum.BorderThickness = 2;
-            this.ControlMinimum.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.ControlMinimum.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ControlMinimum.FillColor = System.Drawing.Color.Transparent;
-            this.ControlMinimum.HoverState.Parent = this.ControlMinimum;
-            this.ControlMinimum.IconColor = System.Drawing.Color.Black;
-            this.ControlMinimum.Location = new System.Drawing.Point(440, 0);
-            this.ControlMinimum.Name = "ControlMinimum";
-            this.ControlMinimum.ShadowDecoration.Parent = this.ControlMinimum;
-            this.ControlMinimum.Size = new System.Drawing.Size(45, 30);
-            this.ControlMinimum.TabIndex = 1;
-            // 
-            // ControlClose
-            // 
-            this.ControlClose.BorderThickness = 2;
-            this.ControlClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ControlClose.FillColor = System.Drawing.Color.Transparent;
-            this.ControlClose.HoverState.Parent = this.ControlClose;
-            this.ControlClose.IconColor = System.Drawing.Color.Black;
-            this.ControlClose.Location = new System.Drawing.Point(485, 0);
-            this.ControlClose.Name = "ControlClose";
-            this.ControlClose.ShadowDecoration.Parent = this.ControlClose;
-            this.ControlClose.Size = new System.Drawing.Size(45, 30);
-            this.ControlClose.TabIndex = 0;
-            // 
-            // PanelDisplay
-            // 
-            this.PanelDisplay.Location = new System.Drawing.Point(150, 30);
-            this.PanelDisplay.Name = "PanelDisplay";
-            this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(530, 590);
-            this.PanelDisplay.TabIndex = 4;
-            // 
-            // guna2VSeparator2
-            // 
-            this.guna2VSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2VSeparator2.FillThickness = 10;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(680, 0);
-            this.guna2VSeparator2.Name = "guna2VSeparator2";
-            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 630);
-            this.guna2VSeparator2.TabIndex = 5;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillThickness = 10;
-            this.guna2Separator1.Location = new System.Drawing.Point(150, 620);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(530, 10);
-            this.guna2Separator1.TabIndex = 6;
             // 
             // ButtonCount
             // 
@@ -216,7 +107,7 @@
             this.iconButtonClose.IconColor = System.Drawing.Color.Black;
             this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonClose.IconSize = 60;
-            this.iconButtonClose.Location = new System.Drawing.Point(0, 555);
+            this.iconButtonClose.Location = new System.Drawing.Point(0, 565);
             this.iconButtonClose.Name = "iconButtonClose";
             this.iconButtonClose.Size = new System.Drawing.Size(140, 75);
             this.iconButtonClose.TabIndex = 7;
@@ -305,12 +196,141 @@
             this.ButtonWeatherForecast.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ButtonWeatherForecast.Click += new System.EventHandler(this.ButtonWeatherForecast_Click);
             // 
+            // PanelIcon
+            // 
+            this.PanelIcon.BorderColor = System.Drawing.Color.White;
+            this.PanelIcon.Controls.Add(this.xuiClock1);
+            this.PanelIcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelIcon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PanelIcon.Location = new System.Drawing.Point(0, 0);
+            this.PanelIcon.Name = "PanelIcon";
+            this.PanelIcon.ShadowDecoration.Parent = this.PanelIcon;
+            this.PanelIcon.Size = new System.Drawing.Size(140, 150);
+            this.PanelIcon.TabIndex = 0;
+            // 
+            // xuiClock1
+            // 
+            this.xuiClock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.xuiClock1.CircleThickness = 7;
+            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
+            this.xuiClock1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
+            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.White;
+            this.xuiClock1.FilledSecondColor = System.Drawing.Color.Red;
+            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
+            this.xuiClock1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.xuiClock1.HexagonColor = System.Drawing.Color.Black;
+            this.xuiClock1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.xuiClock1.Location = new System.Drawing.Point(0, 0);
+            this.xuiClock1.Name = "xuiClock1";
+            this.xuiClock1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.xuiClock1.ShowAmPm = true;
+            this.xuiClock1.ShowHexagon = true;
+            this.xuiClock1.ShowMinutesCircle = true;
+            this.xuiClock1.ShowSecondsCircle = true;
+            this.xuiClock1.Size = new System.Drawing.Size(140, 150);
+            this.xuiClock1.TabIndex = 0;
+            this.xuiClock1.Text = "xuiClock1";
+            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.White;
+            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.White;
+            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.White;
+            // 
+            // guna2VSeparator1
+            // 
+            this.guna2VSeparator1.FillThickness = 10;
+            this.guna2VSeparator1.Location = new System.Drawing.Point(140, 30);
+            this.guna2VSeparator1.Name = "guna2VSeparator1";
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 610);
+            this.guna2VSeparator1.TabIndex = 1;
+            // 
+            // PanelControl
+            // 
+            this.PanelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.PanelControl.Controls.Add(this.ControlMinimum);
+            this.PanelControl.Controls.Add(this.ControlClose);
+            this.PanelControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelControl.ForeColor = System.Drawing.Color.White;
+            this.PanelControl.Location = new System.Drawing.Point(140, 0);
+            this.PanelControl.Name = "PanelControl";
+            this.PanelControl.ShadowDecoration.Parent = this.PanelControl;
+            this.PanelControl.Size = new System.Drawing.Size(550, 30);
+            this.PanelControl.TabIndex = 3;
+            // 
+            // ControlMinimum
+            // 
+            this.ControlMinimum.BorderThickness = 2;
+            this.ControlMinimum.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.ControlMinimum.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ControlMinimum.FillColor = System.Drawing.Color.Transparent;
+            this.ControlMinimum.HoverState.Parent = this.ControlMinimum;
+            this.ControlMinimum.IconColor = System.Drawing.Color.Black;
+            this.ControlMinimum.Location = new System.Drawing.Point(460, 0);
+            this.ControlMinimum.Name = "ControlMinimum";
+            this.ControlMinimum.ShadowDecoration.Parent = this.ControlMinimum;
+            this.ControlMinimum.Size = new System.Drawing.Size(45, 30);
+            this.ControlMinimum.TabIndex = 1;
+            // 
+            // ControlClose
+            // 
+            this.ControlClose.BorderThickness = 2;
+            this.ControlClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ControlClose.FillColor = System.Drawing.Color.Transparent;
+            this.ControlClose.HoverState.Parent = this.ControlClose;
+            this.ControlClose.IconColor = System.Drawing.Color.Black;
+            this.ControlClose.Location = new System.Drawing.Point(505, 0);
+            this.ControlClose.Name = "ControlClose";
+            this.ControlClose.ShadowDecoration.Parent = this.ControlClose;
+            this.ControlClose.Size = new System.Drawing.Size(45, 30);
+            this.ControlClose.TabIndex = 0;
+            // 
+            // PanelDisplay
+            // 
+            this.PanelDisplay.Controls.Add(this.displayCalendar1);
+            this.PanelDisplay.Location = new System.Drawing.Point(150, 40);
+            this.PanelDisplay.Name = "PanelDisplay";
+            this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
+            this.PanelDisplay.Size = new System.Drawing.Size(530, 590);
+            this.PanelDisplay.TabIndex = 4;
+            // 
+            // guna2VSeparator2
+            // 
+            this.guna2VSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2VSeparator2.FillThickness = 10;
+            this.guna2VSeparator2.Location = new System.Drawing.Point(680, 30);
+            this.guna2VSeparator2.Name = "guna2VSeparator2";
+            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 610);
+            this.guna2VSeparator2.TabIndex = 5;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillThickness = 10;
+            this.guna2Separator1.Location = new System.Drawing.Point(150, 630);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(530, 10);
+            this.guna2Separator1.TabIndex = 6;
+            // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.FillThickness = 10;
+            this.guna2Separator2.Location = new System.Drawing.Point(150, 30);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(530, 10);
+            this.guna2Separator2.TabIndex = 7;
+            // 
+            // displayCalendar1
+            // 
+            this.displayCalendar1.Location = new System.Drawing.Point(2, 3);
+            this.displayCalendar1.Name = "displayCalendar1";
+            this.displayCalendar1.Size = new System.Drawing.Size(530, 590);
+            this.displayCalendar1.TabIndex = 0;
+            // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(690, 630);
+            this.ClientSize = new System.Drawing.Size(690, 640);
+            this.Controls.Add(this.guna2Separator2);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.guna2VSeparator2);
             this.Controls.Add(this.PanelControl);
@@ -324,6 +344,7 @@
             this.PanelSetting.ResumeLayout(false);
             this.PanelIcon.ResumeLayout(false);
             this.PanelControl.ResumeLayout(false);
+            this.PanelDisplay.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -347,5 +368,7 @@
         private Guna.UI2.WinForms.Guna2Panel PanelDisplay;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
+        private DisplayCalendar displayCalendar1;
     }
 }

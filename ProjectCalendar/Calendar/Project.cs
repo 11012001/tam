@@ -15,6 +15,7 @@ namespace Calendar
         public Project()
         {
             InitializeComponent();
+            EventCalendar();
         }
         private void iconButtonClose_Click(object sender, EventArgs e)
         {
@@ -78,6 +79,25 @@ namespace Calendar
             }
             else
                 DisplayCountDay.CountDayDisplay.BringToFront();
+        }
+        private void ButtonNumDay_Click(object sender,EventArgs e)
+        {
+            DisplayDate displayDate = new DisplayDate(DisplayCalendar.Date);
+            if(PanelDisplay.Contains(DisplayDate.DateDisplay))
+            {
+                PanelDisplay.Controls.Remove(DisplayDate.DateDisplay);
+                PanelDisplay.Controls.Add(displayDate);
+                displayDate.Dock = DockStyle.Fill;
+                displayDate.BringToFront();
+            }
+            else
+            {
+                displayDate.BringToFront();
+            }
+        }
+        public void EventCalendar()
+        {
+            this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
         }
     }
 }

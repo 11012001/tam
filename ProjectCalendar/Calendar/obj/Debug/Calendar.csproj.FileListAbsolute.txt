@@ -22,3 +22,4 @@ D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Newtonsof
 D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayChangeDate.resources
 D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCountDay.resources
 D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCalendar.resources
+D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayDetailEvent.resources

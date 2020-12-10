@@ -54,7 +54,6 @@ namespace Calendar
             this.ButtonLunnarMonth = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLunnarName = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonNameHour = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.dtpk = new System.Windows.Forms.DateTimePicker();
             this.PanelImage = new Guna.UI2.WinForms.Guna2Panel();
@@ -414,10 +413,6 @@ namespace Calendar
             this.ButtonNameHour.TabIndex = 4;
             this.ButtonNameHour.Text = "GIỜ";
             // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            // 
             // timer
             // 
             this.timer.Interval = 1000;
@@ -586,7 +581,6 @@ namespace Calendar
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private Guna.UI2.WinForms.Guna2CircleButton ButtonToday;
         private Guna.UI2.WinForms.Guna2Button ButtonMonth;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private FontAwesome.Sharp.IconButton ButtonNext;
         private FontAwesome.Sharp.IconButton ButtonPre;
         private System.Windows.Forms.Timer timer;
