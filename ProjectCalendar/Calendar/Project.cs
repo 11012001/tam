@@ -97,7 +97,19 @@ namespace Calendar
         }
         public void EventCalendar()
         {
-            this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
+            //this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
+        }
+
+        private void ButtonHistory_Click(object sender, EventArgs e)
+        {
+            if (!PanelDisplay.Contains(DisplayDetailEvent.DetailEventDisplay))
+            {
+                PanelDisplay.Controls.Add(DisplayDetailEvent.DetailEventDisplay);
+                DisplayDetailEvent.DetailEventDisplay.Dock = DockStyle.Fill;
+                DisplayDetailEvent.DetailEventDisplay.BringToFront();
+            }
+            else
+                DisplayDetailEvent.DetailEventDisplay.BringToFront();
         }
     }
 }

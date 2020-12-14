@@ -64,6 +64,8 @@ namespace Calendar
             this.PanelDay = new Guna.UI2.WinForms.Guna2Panel();
             this.labelDOW = new System.Windows.Forms.Label();
             this.labelDay = new System.Windows.Forms.Label();
+            this.PanelEvent = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelEvent = new System.Windows.Forms.Label();
             this.PanelMonth.SuspendLayout();
             this.PanelLunnarDate.SuspendLayout();
             this.PanelLunnarDay.SuspendLayout();
@@ -74,6 +76,7 @@ namespace Calendar
             this.PanelImage.SuspendLayout();
             this.PanelQuote.SuspendLayout();
             this.PanelDay.SuspendLayout();
+            this.PanelEvent.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelMonth
@@ -428,6 +431,7 @@ namespace Calendar
             // 
             // PanelImage
             // 
+            this.PanelImage.Controls.Add(this.PanelEvent);
             this.PanelImage.Controls.Add(this.ButtonNote);
             this.PanelImage.Controls.Add(this.PanelQuote);
             this.PanelImage.Controls.Add(this.PanelDay);
@@ -460,10 +464,10 @@ namespace Calendar
             this.PanelQuote.Controls.Add(this.labelAuthor);
             this.PanelQuote.Controls.Add(this.labelQuote);
             this.PanelQuote.ForeColor = System.Drawing.Color.Red;
-            this.PanelQuote.Location = new System.Drawing.Point(9, 229);
+            this.PanelQuote.Location = new System.Drawing.Point(26, 263);
             this.PanelQuote.Name = "PanelQuote";
             this.PanelQuote.ShadowDecoration.Parent = this.PanelQuote;
-            this.PanelQuote.Size = new System.Drawing.Size(487, 149);
+            this.PanelQuote.Size = new System.Drawing.Size(481, 115);
             this.PanelQuote.TabIndex = 6;
             // 
             // labelAuthor
@@ -471,7 +475,7 @@ namespace Calendar
             this.labelAuthor.AutoSize = true;
             this.labelAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelAuthor.Location = new System.Drawing.Point(211, 123);
+            this.labelAuthor.Location = new System.Drawing.Point(215, 95);
             this.labelAuthor.Name = "labelAuthor";
             this.labelAuthor.Size = new System.Drawing.Size(49, 15);
             this.labelAuthor.TabIndex = 1;
@@ -498,7 +502,7 @@ namespace Calendar
             this.PanelDay.Location = new System.Drawing.Point(154, 3);
             this.PanelDay.Name = "PanelDay";
             this.PanelDay.ShadowDecoration.Parent = this.PanelDay;
-            this.PanelDay.Size = new System.Drawing.Size(190, 220);
+            this.PanelDay.Size = new System.Drawing.Size(190, 207);
             this.PanelDay.TabIndex = 5;
             // 
             // labelDOW
@@ -527,6 +531,28 @@ namespace Calendar
             this.labelDay.Text = "6";
             this.labelDay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // PanelEvent
+            // 
+            this.PanelEvent.BackColor = System.Drawing.Color.Transparent;
+            this.PanelEvent.Controls.Add(this.labelEvent);
+            this.PanelEvent.Location = new System.Drawing.Point(26, 216);
+            this.PanelEvent.Name = "PanelEvent";
+            this.PanelEvent.ShadowDecoration.Parent = this.PanelEvent;
+            this.PanelEvent.Size = new System.Drawing.Size(481, 41);
+            this.PanelEvent.TabIndex = 8;
+            // 
+            // labelEvent
+            // 
+            this.labelEvent.AutoSize = true;
+            this.labelEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEvent.ForeColor = System.Drawing.Color.Blue;
+            this.labelEvent.Location = new System.Drawing.Point(5, 9);
+            this.labelEvent.Name = "labelEvent";
+            this.labelEvent.Size = new System.Drawing.Size(29, 18);
+            this.labelEvent.TabIndex = 2;
+            this.labelEvent.Text = "Tết\r\n";
+            this.labelEvent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // DisplayDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,6 +579,8 @@ namespace Calendar
             this.PanelQuote.PerformLayout();
             this.PanelDay.ResumeLayout(false);
             this.PanelDay.PerformLayout();
+            this.PanelEvent.ResumeLayout(false);
+            this.PanelEvent.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -593,5 +621,7 @@ namespace Calendar
         private Guna.UI2.WinForms.Guna2Panel PanelDay;
         private System.Windows.Forms.Label labelDOW;
         private System.Windows.Forms.Label labelDay;
+        private Guna.UI2.WinForms.Guna2Panel PanelEvent;
+        private System.Windows.Forms.Label labelEvent;
     }
 }

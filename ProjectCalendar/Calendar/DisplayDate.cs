@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -43,7 +44,6 @@ namespace Calendar
             base.OnPaint(e);
             DisplaySolarDate();
             DisplayLunnar();
-            DisplayQuote();
         }
 
         #region Lấy thông tin giờ, giờ âm
@@ -75,6 +75,8 @@ namespace Calendar
         {
             DateTime date = (sender as DateTimePicker).Value;
             Date = date;
+            DisplayQuote();
+            DisplayEvent();
         }
         #endregion
 
@@ -258,5 +260,44 @@ namespace Calendar
         }
         #endregion
 
+        #region Hiển thị ngày lễ
+        // connection string : chuoi ket noi
+        public static string connectionstring = @"Data Source=MSI\SQLEXPRESS;Initial Catalog=Calendar;Integrated Security=True";
+        DataTable GetAllVN(int day, int month, int year)
+        {
+            DataTable data = new DataTable();
+
+            //Sql Connection
+            //sử dụng using để sau khi xài xong tự hủy (không ngốn ram)
+            string query = string.Format("select NameEvent from PublicDate where DAY(DateEvent) = {0} and MONTH(DateEvent) = {1} and YEAR(DateEvent) <= {2}", day, month, year);
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                adapter.Fill(data);
+                con.Close();
+            }
+            //Sql Command
+            //Sql DataAdapter
+
+            return data;
+        }
+        public void DisplayEvent()
+        {
+            labelEvent.DataBindings.Clear();
+            string s = labelEvent.Text;
+            DateTime date = new DateTime();
+            labelEvent.DataBindings.Add("Text", GetAllVN(dtpk.Value.Day, dtpk.Value.Month, dtpk.Value.Year), "NameEvent");
+            if((labelEvent.Text == s) && (date != dtpk.Value))
+            {
+                labelEvent.Visible = false;
+            }
+            else
+            {
+                labelEvent.Visible = true;
+                date = dtpk.Value;
+            }
+        }
+        #endregion
     }
 }

@@ -98,15 +98,22 @@ namespace LunnarSample
         public List<QuoteClass> QuoteList = new List<QuoteClass>();
         public void GetQuote()
         {
-            string line = "";
-            StreamReader streamReader = new StreamReader("ChamNgon.txt", Encoding.UTF8);
-            while ((line = streamReader.ReadLine()) != null)
+            try
             {
-                QuoteClass quote = new QuoteClass();
-                string[] words = line.Split('|');
-                quote.Author = words[0];
-                quote.Quote = words[1];
-                QuoteList.Add(quote);
+                string line = "";
+                StreamReader streamReader = new StreamReader("ChamNgon.txt", Encoding.UTF8);
+                while ((line = streamReader.ReadLine()) != null)
+                {
+                    QuoteClass quote = new QuoteClass();
+                    string[] words = line.Split('|');
+                    quote.Author = words[0];
+                    quote.Quote = words[1];
+                    QuoteList.Add(quote);
+                }
+            }
+            catch (FileNotFoundException e)
+            {
+                File.Create(e.FileName);
             }
         }
         public QuoteClass MakeRandomQuote()
