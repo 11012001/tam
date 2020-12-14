@@ -23,3 +23,26 @@ D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.
 D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCountDay.resources
 D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCalendar.resources
 D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayDetailEvent.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Calendar.exe.config
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Calendar.exe
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Calendar.pdb
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\XanderUI.dll
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Augustine.VietnameseCalendar.Core.pdb
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\bin\Debug\Augustine.VietnameseCalendar.Core.dll.config
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCalendar.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayChangeDate.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCountDay.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayDetailEvent.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayWF.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.Project.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayDate.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.exe
+C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.pdb

@@ -132,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicDate.cs" />
     <Compile Include="StringText.cs" />
     <Compile Include="WeatherInfo.cs" />
     <EmbeddedResource Include="DisplayCalendar.resx">
