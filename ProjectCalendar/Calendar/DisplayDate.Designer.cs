@@ -31,10 +31,11 @@ namespace Calendar
         {
             this.components = new System.ComponentModel.Container();
             this.PanelMonth = new Guna.UI2.WinForms.Guna2Panel();
+            this.ButtonMonth = new Guna.UI2.WinForms.Guna2Button();
+            this.dtpk = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.ButtonNext = new FontAwesome.Sharp.IconButton();
             this.ButtonPre = new FontAwesome.Sharp.IconButton();
             this.ButtonToday = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.ButtonMonth = new Guna.UI2.WinForms.Guna2Button();
             this.PanelLunnarDate = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelLunnarDay = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
@@ -55,17 +56,16 @@ namespace Calendar
             this.ButtonLunnarName = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonNameHour = new Guna.UI2.WinForms.Guna2Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.dtpk = new System.Windows.Forms.DateTimePicker();
             this.PanelImage = new Guna.UI2.WinForms.Guna2Panel();
+            this.PanelEvent = new Guna.UI2.WinForms.Guna2Panel();
+            this.TextboxEvent = new Guna.UI2.WinForms.Guna2TextBox();
             this.ButtonNote = new FontAwesome.Sharp.IconButton();
             this.PanelQuote = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelAuthor = new System.Windows.Forms.Label();
-            this.labelQuote = new System.Windows.Forms.Label();
+            this.TextboxAuthor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextboxQuote = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelDay = new Guna.UI2.WinForms.Guna2Panel();
             this.labelDOW = new System.Windows.Forms.Label();
             this.labelDay = new System.Windows.Forms.Label();
-            this.PanelEvent = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelEvent = new System.Windows.Forms.Label();
             this.PanelMonth.SuspendLayout();
             this.PanelLunnarDate.SuspendLayout();
             this.PanelLunnarDay.SuspendLayout();
@@ -74,23 +74,60 @@ namespace Calendar
             this.PanelHourLunnar.SuspendLayout();
             this.PanelName.SuspendLayout();
             this.PanelImage.SuspendLayout();
+            this.PanelEvent.SuspendLayout();
             this.PanelQuote.SuspendLayout();
             this.PanelDay.SuspendLayout();
-            this.PanelEvent.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelMonth
             // 
+            this.PanelMonth.Controls.Add(this.ButtonMonth);
+            this.PanelMonth.Controls.Add(this.dtpk);
             this.PanelMonth.Controls.Add(this.ButtonNext);
             this.PanelMonth.Controls.Add(this.ButtonPre);
             this.PanelMonth.Controls.Add(this.ButtonToday);
-            this.PanelMonth.Controls.Add(this.ButtonMonth);
             this.PanelMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.PanelMonth.Location = new System.Drawing.Point(3, 0);
+            this.PanelMonth.Location = new System.Drawing.Point(0, 0);
             this.PanelMonth.Name = "PanelMonth";
             this.PanelMonth.ShadowDecoration.Parent = this.PanelMonth;
-            this.PanelMonth.Size = new System.Drawing.Size(527, 60);
+            this.PanelMonth.Size = new System.Drawing.Size(530, 60);
             this.PanelMonth.TabIndex = 0;
+            // 
+            // ButtonMonth
+            // 
+            this.ButtonMonth.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonMonth.BorderColor = System.Drawing.Color.White;
+            this.ButtonMonth.BorderRadius = 15;
+            this.ButtonMonth.BorderThickness = 4;
+            this.ButtonMonth.CheckedState.Parent = this.ButtonMonth;
+            this.ButtonMonth.CustomImages.Parent = this.ButtonMonth;
+            this.ButtonMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ButtonMonth.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.ButtonMonth.ForeColor = System.Drawing.Color.White;
+            this.ButtonMonth.HoverState.Parent = this.ButtonMonth;
+            this.ButtonMonth.Location = new System.Drawing.Point(122, 3);
+            this.ButtonMonth.Name = "ButtonMonth";
+            this.ButtonMonth.ShadowDecoration.Parent = this.ButtonMonth;
+            this.ButtonMonth.Size = new System.Drawing.Size(238, 56);
+            this.ButtonMonth.TabIndex = 0;
+            this.ButtonMonth.Text = "THÁNG 11 - 2020";
+            this.ButtonMonth.Click += new System.EventHandler(this.ButtonMonth_Click);
+            // 
+            // dtpk
+            // 
+            this.dtpk.CheckedState.Parent = this.dtpk;
+            this.dtpk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpk.HoverState.Parent = this.dtpk;
+            this.dtpk.Location = new System.Drawing.Point(160, 14);
+            this.dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpk.Name = "dtpk";
+            this.dtpk.ShadowDecoration.Parent = this.dtpk;
+            this.dtpk.Size = new System.Drawing.Size(10, 10);
+            this.dtpk.TabIndex = 9;
+            this.dtpk.Value = new System.DateTime(2020, 12, 15, 10, 43, 21, 676);
+            this.dtpk.ValueChanged += new System.EventHandler(this.dtpk_ValueChanged);
             // 
             // ButtonNext
             // 
@@ -117,7 +154,7 @@ namespace Calendar
             this.ButtonPre.IconColor = System.Drawing.Color.Black;
             this.ButtonPre.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonPre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ButtonPre.Location = new System.Drawing.Point(65, 0);
+            this.ButtonPre.Location = new System.Drawing.Point(65, 4);
             this.ButtonPre.Name = "ButtonPre";
             this.ButtonPre.Size = new System.Drawing.Size(51, 56);
             this.ButtonPre.TabIndex = 5;
@@ -136,7 +173,7 @@ namespace Calendar
             this.ButtonToday.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.ButtonToday.ForeColor = System.Drawing.Color.White;
             this.ButtonToday.HoverState.Parent = this.ButtonToday;
-            this.ButtonToday.Location = new System.Drawing.Point(457, 0);
+            this.ButtonToday.Location = new System.Drawing.Point(460, 0);
             this.ButtonToday.Name = "ButtonToday";
             this.ButtonToday.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.ButtonToday.ShadowDecoration.Parent = this.ButtonToday;
@@ -144,24 +181,6 @@ namespace Calendar
             this.ButtonToday.TabIndex = 1;
             this.ButtonToday.Text = "6";
             this.ButtonToday.Click += new System.EventHandler(this.ButtonToday_Click);
-            // 
-            // ButtonMonth
-            // 
-            this.ButtonMonth.BorderColor = System.Drawing.Color.White;
-            this.ButtonMonth.BorderRadius = 15;
-            this.ButtonMonth.BorderThickness = 4;
-            this.ButtonMonth.CheckedState.Parent = this.ButtonMonth;
-            this.ButtonMonth.CustomImages.Parent = this.ButtonMonth;
-            this.ButtonMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ButtonMonth.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.ButtonMonth.ForeColor = System.Drawing.Color.White;
-            this.ButtonMonth.HoverState.Parent = this.ButtonMonth;
-            this.ButtonMonth.Location = new System.Drawing.Point(122, 3);
-            this.ButtonMonth.Name = "ButtonMonth";
-            this.ButtonMonth.ShadowDecoration.Parent = this.ButtonMonth;
-            this.ButtonMonth.Size = new System.Drawing.Size(241, 56);
-            this.ButtonMonth.TabIndex = 0;
-            this.ButtonMonth.Text = "THÁNG 11 - 2020";
             // 
             // PanelLunnarDate
             // 
@@ -376,7 +395,7 @@ namespace Calendar
             this.ButtonLunnarMonth.ShadowDecoration.Parent = this.ButtonLunnarMonth;
             this.ButtonLunnarMonth.Size = new System.Drawing.Size(190, 40);
             this.ButtonLunnarMonth.TabIndex = 6;
-            this.ButtonLunnarMonth.Text = "THÁNG 10";
+            this.ButtonLunnarMonth.Text = "THÁNG MƯỜI MỘT";
             // 
             // ButtonLunnarName
             // 
@@ -421,14 +440,6 @@ namespace Calendar
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // dtpk
-            // 
-            this.dtpk.Location = new System.Drawing.Point(0, 0);
-            this.dtpk.Name = "dtpk";
-            this.dtpk.Size = new System.Drawing.Size(10, 20);
-            this.dtpk.TabIndex = 7;
-            this.dtpk.ValueChanged += new System.EventHandler(this.dtpk_ValueChanged);
-            // 
             // PanelImage
             // 
             this.PanelImage.Controls.Add(this.PanelEvent);
@@ -443,6 +454,46 @@ namespace Calendar
             this.PanelImage.Size = new System.Drawing.Size(530, 390);
             this.PanelImage.TabIndex = 8;
             // 
+            // PanelEvent
+            // 
+            this.PanelEvent.BackColor = System.Drawing.Color.Transparent;
+            this.PanelEvent.Controls.Add(this.TextboxEvent);
+            this.PanelEvent.Location = new System.Drawing.Point(33, 181);
+            this.PanelEvent.Name = "PanelEvent";
+            this.PanelEvent.ShadowDecoration.Parent = this.PanelEvent;
+            this.PanelEvent.Size = new System.Drawing.Size(481, 57);
+            this.PanelEvent.TabIndex = 8;
+            // 
+            // TextboxEvent
+            // 
+            this.TextboxEvent.AcceptsReturn = true;
+            this.TextboxEvent.BorderThickness = 0;
+            this.TextboxEvent.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextboxEvent.DefaultText = "";
+            this.TextboxEvent.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextboxEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextboxEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextboxEvent.DisabledState.Parent = this.TextboxEvent;
+            this.TextboxEvent.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextboxEvent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextboxEvent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.TextboxEvent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextboxEvent.FocusedState.Parent = this.TextboxEvent;
+            this.TextboxEvent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextboxEvent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextboxEvent.HoverState.Parent = this.TextboxEvent;
+            this.TextboxEvent.Location = new System.Drawing.Point(0, 0);
+            this.TextboxEvent.Multiline = true;
+            this.TextboxEvent.Name = "TextboxEvent";
+            this.TextboxEvent.PasswordChar = '\0';
+            this.TextboxEvent.PlaceholderText = "";
+            this.TextboxEvent.ReadOnly = true;
+            this.TextboxEvent.SelectedText = "";
+            this.TextboxEvent.ShadowDecoration.Parent = this.TextboxEvent;
+            this.TextboxEvent.Size = new System.Drawing.Size(481, 57);
+            this.TextboxEvent.TabIndex = 0;
+            this.TextboxEvent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // ButtonNote
             // 
             this.ButtonNote.BackColor = System.Drawing.Color.Transparent;
@@ -452,7 +503,7 @@ namespace Calendar
             this.ButtonNote.IconColor = System.Drawing.Color.Black;
             this.ButtonNote.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonNote.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ButtonNote.Location = new System.Drawing.Point(464, 17);
+            this.ButtonNote.Location = new System.Drawing.Point(476, 0);
             this.ButtonNote.Name = "ButtonNote";
             this.ButtonNote.Size = new System.Drawing.Size(51, 56);
             this.ButtonNote.TabIndex = 7;
@@ -461,37 +512,75 @@ namespace Calendar
             // PanelQuote
             // 
             this.PanelQuote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.PanelQuote.Controls.Add(this.labelAuthor);
-            this.PanelQuote.Controls.Add(this.labelQuote);
+            this.PanelQuote.Controls.Add(this.TextboxAuthor);
+            this.PanelQuote.Controls.Add(this.TextboxQuote);
             this.PanelQuote.ForeColor = System.Drawing.Color.Red;
-            this.PanelQuote.Location = new System.Drawing.Point(26, 263);
+            this.PanelQuote.Location = new System.Drawing.Point(26, 252);
             this.PanelQuote.Name = "PanelQuote";
             this.PanelQuote.ShadowDecoration.Parent = this.PanelQuote;
-            this.PanelQuote.Size = new System.Drawing.Size(481, 115);
+            this.PanelQuote.Size = new System.Drawing.Size(481, 126);
             this.PanelQuote.TabIndex = 6;
             // 
-            // labelAuthor
+            // TextboxAuthor
             // 
-            this.labelAuthor.AutoSize = true;
-            this.labelAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelAuthor.Location = new System.Drawing.Point(215, 95);
-            this.labelAuthor.Name = "labelAuthor";
-            this.labelAuthor.Size = new System.Drawing.Size(49, 15);
-            this.labelAuthor.TabIndex = 1;
-            this.labelAuthor.Text = "Nobody";
+            this.TextboxAuthor.BackColor = System.Drawing.Color.Transparent;
+            this.TextboxAuthor.BorderThickness = 0;
+            this.TextboxAuthor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextboxAuthor.DefaultText = "";
+            this.TextboxAuthor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextboxAuthor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextboxAuthor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextboxAuthor.DisabledState.Parent = this.TextboxAuthor;
+            this.TextboxAuthor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextboxAuthor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TextboxAuthor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.TextboxAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextboxAuthor.FocusedState.Parent = this.TextboxAuthor;
+            this.TextboxAuthor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextboxAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextboxAuthor.HoverState.Parent = this.TextboxAuthor;
+            this.TextboxAuthor.Location = new System.Drawing.Point(0, 96);
+            this.TextboxAuthor.Name = "TextboxAuthor";
+            this.TextboxAuthor.PasswordChar = '\0';
+            this.TextboxAuthor.PlaceholderText = "";
+            this.TextboxAuthor.ReadOnly = true;
+            this.TextboxAuthor.SelectedText = "";
+            this.TextboxAuthor.ShadowDecoration.Parent = this.TextboxAuthor;
+            this.TextboxAuthor.Size = new System.Drawing.Size(481, 30);
+            this.TextboxAuthor.TabIndex = 2;
+            this.TextboxAuthor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // labelQuote
+            // TextboxQuote
             // 
-            this.labelQuote.AutoSize = true;
-            this.labelQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuote.ForeColor = System.Drawing.Color.Blue;
-            this.labelQuote.Location = new System.Drawing.Point(3, 0);
-            this.labelQuote.Name = "labelQuote";
-            this.labelQuote.Size = new System.Drawing.Size(216, 18);
-            this.labelQuote.TabIndex = 0;
-            this.labelQuote.Text = "Có cố gắng mới có thành công.\r\n";
-            this.labelQuote.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TextboxQuote.BackColor = System.Drawing.Color.Transparent;
+            this.TextboxQuote.BorderThickness = 0;
+            this.TextboxQuote.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TextboxQuote.DefaultText = "adsfdds\r\ndsafd\r\nadsfads\r\n";
+            this.TextboxQuote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextboxQuote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextboxQuote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextboxQuote.DisabledState.Parent = this.TextboxQuote;
+            this.TextboxQuote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextboxQuote.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TextboxQuote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.TextboxQuote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextboxQuote.FocusedState.Parent = this.TextboxQuote;
+            this.TextboxQuote.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextboxQuote.HideSelection = false;
+            this.TextboxQuote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextboxQuote.HoverState.Parent = this.TextboxQuote;
+            this.TextboxQuote.Location = new System.Drawing.Point(0, 0);
+            this.TextboxQuote.Multiline = true;
+            this.TextboxQuote.Name = "TextboxQuote";
+            this.TextboxQuote.PasswordChar = '\0';
+            this.TextboxQuote.PlaceholderText = "";
+            this.TextboxQuote.ReadOnly = true;
+            this.TextboxQuote.SelectedText = "";
+            this.TextboxQuote.SelectionStart = 25;
+            this.TextboxQuote.ShadowDecoration.Parent = this.TextboxQuote;
+            this.TextboxQuote.Size = new System.Drawing.Size(481, 89);
+            this.TextboxQuote.TabIndex = 1;
+            this.TextboxQuote.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PanelDay
             // 
@@ -499,10 +588,10 @@ namespace Calendar
             this.PanelDay.Controls.Add(this.labelDay);
             this.PanelDay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelDay.ForeColor = System.Drawing.Color.Red;
-            this.PanelDay.Location = new System.Drawing.Point(154, 3);
+            this.PanelDay.Location = new System.Drawing.Point(170, 0);
             this.PanelDay.Name = "PanelDay";
             this.PanelDay.ShadowDecoration.Parent = this.PanelDay;
-            this.PanelDay.Size = new System.Drawing.Size(190, 207);
+            this.PanelDay.Size = new System.Drawing.Size(190, 187);
             this.PanelDay.TabIndex = 5;
             // 
             // labelDOW
@@ -511,7 +600,7 @@ namespace Calendar
             this.labelDOW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.labelDOW.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDOW.ForeColor = System.Drawing.Color.Red;
-            this.labelDOW.Location = new System.Drawing.Point(0, 145);
+            this.labelDOW.Location = new System.Drawing.Point(-6, 132);
             this.labelDOW.Name = "labelDOW";
             this.labelDOW.Size = new System.Drawing.Size(196, 46);
             this.labelDOW.TabIndex = 1;
@@ -531,36 +620,13 @@ namespace Calendar
             this.labelDay.Text = "6";
             this.labelDay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // PanelEvent
-            // 
-            this.PanelEvent.BackColor = System.Drawing.Color.Transparent;
-            this.PanelEvent.Controls.Add(this.labelEvent);
-            this.PanelEvent.Location = new System.Drawing.Point(26, 216);
-            this.PanelEvent.Name = "PanelEvent";
-            this.PanelEvent.ShadowDecoration.Parent = this.PanelEvent;
-            this.PanelEvent.Size = new System.Drawing.Size(481, 41);
-            this.PanelEvent.TabIndex = 8;
-            // 
-            // labelEvent
-            // 
-            this.labelEvent.AutoSize = true;
-            this.labelEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEvent.ForeColor = System.Drawing.Color.Blue;
-            this.labelEvent.Location = new System.Drawing.Point(5, 9);
-            this.labelEvent.Name = "labelEvent";
-            this.labelEvent.Size = new System.Drawing.Size(29, 18);
-            this.labelEvent.TabIndex = 2;
-            this.labelEvent.Text = "Tết\r\n";
-            this.labelEvent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // DisplayDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelMonth);
             this.Controls.Add(this.PanelImage);
             this.Controls.Add(this.PanelLunnarDate);
-            this.Controls.Add(this.PanelMonth);
-            this.Controls.Add(this.dtpk);
             this.Name = "DisplayDate";
             this.Size = new System.Drawing.Size(530, 590);
             this.Load += new System.EventHandler(this.DisplayDate_Load);
@@ -575,12 +641,10 @@ namespace Calendar
             this.PanelHourLunnar.PerformLayout();
             this.PanelName.ResumeLayout(false);
             this.PanelImage.ResumeLayout(false);
+            this.PanelEvent.ResumeLayout(false);
             this.PanelQuote.ResumeLayout(false);
-            this.PanelQuote.PerformLayout();
             this.PanelDay.ResumeLayout(false);
             this.PanelDay.PerformLayout();
-            this.PanelEvent.ResumeLayout(false);
-            this.PanelEvent.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -612,16 +676,16 @@ namespace Calendar
         private FontAwesome.Sharp.IconButton ButtonNext;
         private FontAwesome.Sharp.IconButton ButtonPre;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.DateTimePicker dtpk;
         private Guna.UI2.WinForms.Guna2Panel PanelImage;
         private FontAwesome.Sharp.IconButton ButtonNote;
         private Guna.UI2.WinForms.Guna2Panel PanelQuote;
-        private System.Windows.Forms.Label labelAuthor;
-        private System.Windows.Forms.Label labelQuote;
         private Guna.UI2.WinForms.Guna2Panel PanelDay;
         private System.Windows.Forms.Label labelDOW;
         private System.Windows.Forms.Label labelDay;
         private Guna.UI2.WinForms.Guna2Panel PanelEvent;
-        private System.Windows.Forms.Label labelEvent;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxEvent;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxAuthor;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxQuote;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
     }
 }

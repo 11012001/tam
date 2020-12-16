@@ -42,6 +42,185 @@ namespace Calendar
 
             #region Thêm dữ liệu vào DataTable
 
+            #region Ngày Âm Lịch
+            LuniSolarDate<VietnameseLocalInfoProvider> luni;
+
+            #region 1/1 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 1);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 1");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 2/1 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 2);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 2");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 3/1 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 3);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 3");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 4/1 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 4);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 4");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 5/1 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 5);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 5");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 5/1 AL (LS)
+            if(year >= 1789)
+            {
+                row = dt.NewRow();
+                luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 5);
+                row["Date"] = luni.SolarDate;
+                row["Event"] = string.Format("Chiến Thắng Ngọc Hồi - Đống Đa(1789)");
+                row["Important"] = true;
+                dt.Rows.Add(row);
+            }
+            #endregion
+
+            #region 15/1 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 15);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Nguyên Tiêu");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 3/3 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 3, false, 3);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Hàn Thực");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 10/3 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 3, false, 10);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Giỗ Tổ Hùng Vương");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 14/4 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 4, false, 14);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Dân tộc Khmer");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 15/4 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 4, false, 15);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Lễ Phật Đản");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 5/5 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 5, false, 5);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Đoan Ngọ");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 15/7 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 7, false, 15);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Lễ Vu Lan/Lễ Xá Tội Vong Nhân");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 1/8 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 8, false, 1);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Lễ Hội Katé");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 15/8 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 8, false, 15);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Trung Thu");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 9/9 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 9, false, 9);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Trùng Cửu");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 10/10 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 10, false, 10);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Tết Trùng Thập");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 23/12 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 12, false, 23);
+            row["Date"] = luni.SolarDate;
+            row["Event"] = string.Format("Ngày Ông Táo Về Trời");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 30/12 AL
+            row = dt.NewRow();
+            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 1);
+            row["Date"] = luni.SolarDate.AddDays(-1);
+            row["Event"] = string.Format("Tết Nguyên Đán - Đêm Giao thừa");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
+            #endregion
+
             #region Ngày Dương Lịch
 
             #region 1/1
@@ -88,6 +267,14 @@ namespace Calendar
             row = dt.NewRow();
             row["Date"] = new DateTime(1955, 02, 27);
             row["Event"] = string.Format("Ngày Thầy Thuốc Việt Nam(1955)");
+            row["Important"] = false;
+            dt.Rows.Add(row);
+            #endregion
+
+            #region 3/3
+            row = dt.NewRow();
+            row["Date"] = new DateTime(2014, 03, 03);
+            row["Event"] = string.Format("Ngày Sinh Giới Hoang Dã Thế giới(2014)");
             row["Important"] = false;
             dt.Rows.Add(row);
             #endregion
@@ -430,208 +617,319 @@ namespace Calendar
             dt.Rows.Add(row);
             #endregion
 
+            #region 24/12
+            row = dt.NewRow();
+            row["Date"] = new DateTime(0001, 12, 24);
+            row["Event"] = string.Format("Đêm Vọng Lễ Giáng Sinh");
+            row["Important"] = true;
+            dt.Rows.Add(row);
+            #endregion
+
             #region 25/12
             row = dt.NewRow();
             row["Date"] = new DateTime(0001, 12, 25);
             row["Event"] = string.Format("Ngày Lễ Giáng Sinh");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-            #endregion
-
-            #region Thêm Âm Lịch
-            LuniSolarDate<VietnameseLocalInfoProvider> luni;
-
-            #region 1/1 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year,1,false,1);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 1");
             row["Important"] = true;
             dt.Rows.Add(row);
             #endregion
 
-            #region 2/1 AL
+            #region 31/12
             row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 2);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 2");
-            row["Important"] = true;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 3/1 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 3);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 3");
-            row["Important"] = true;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 4/1 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 4);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Nguyên Đán - Mùng 4");
-            row["Important"] = true;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 15/1 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 15);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Nguyên Tiêu");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 3/3 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 3, false, 3);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Hàn Thực");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 10/3 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 3, false, 10);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Giỗ Tổ Hùng Vương");
-            row["Important"] = true;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 14/4 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 4, false, 14);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Dân tộc Khmer");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 15/4 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 4, false, 15);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Lễ Phật Đản");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 5/5 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 5, false, 5);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Đoan Ngọ");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 15/7 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 7, false, 15);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Lễ Vu Lan/Lễ Xá Tội Vong Nhân");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 1/8 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 8, false, 1);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Lễ Hội Katé");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 15/8 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 8, false, 15);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Trung Thu");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 9/9 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 9, false, 9);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Trùng Cửu");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 10/10 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 10, false, 10);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Tết Trùng Thập");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 23/12 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 12, false, 23);
-            row["Date"] = luni.SolarDate;
-            row["Event"] = string.Format("Ngày Ông Táo Về Trời");
-            row["Important"] = false;
-            dt.Rows.Add(row);
-            #endregion
-
-            #region 30/12 AL
-            row = dt.NewRow();
-            luni = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(year, 1, false, 1);
-            row["Date"] = luni.SolarDate.AddDays(-1);
-            row["Event"] = string.Format("Tết Nguyên Đán - Đêm Giao thừa");
+            row["Date"] = new DateTime(0001, 12, 31);
+            row["Event"] = string.Format("Đêm Giao thừa");
             row["Important"] = true;
             dt.Rows.Add(row);
             #endregion
 
             #endregion
+
 
             #endregion
 
             return dt;
         }
 
-        public static int IsPublic(DateTime date)
+        public static DateTime FatherDate(int year)
         {
-            foreach(DataRow row in PublicDate.TableDate(date.Year).Rows)
+            DateTime date = new DateTime(1,1,1);
+            if (year >= 1972)
+            {
+                int sunday = 0;
+                int count = 0;
+                for (int day = 1; day <= 30; day++)
+                {
+                    DateTime dt = new DateTime(year, 6, day);
+                    if (dt.DayOfWeek == DayOfWeek.Sunday)
+                        count++;
+                    if (count == 3)
+                    {
+                        sunday = day;
+                        break;
+                    }
+                }
+               date = new DateTime(year, 6, sunday);
+            }
+            return date;
+        }
+        public static DateTime MotherDate(int year)
+        {
+            DateTime date = new DateTime(1, 1, 1);
+            if(year >= 1914)
+            {
+                int sunday = 0;
+                int count = 0;
+                for (int day = 1; day <= 31; day++)
+                {
+                    DateTime dt = new DateTime(year, 5, day);
+                    if (dt.DayOfWeek == DayOfWeek.Sunday)
+                        count++;
+                    if (count == 2)
+                    {
+                        sunday = day;
+                        break;
+                    }
+                }
+                date = new DateTime(year, 5, sunday);
+            }
+            return date;
+        }
+
+
+        //Kiểm tra ngày đó có phải ngày lễ hay không (1 lễ nghỉ, 0 lễ, -1 không phải lễ)
+        public static int[] IsPublic(DateTime date)
+        {
+            int[] ispublics = new int[3] { -1, -1, -1 };
+            int i = 0;
+
+
+            //Ngày của Cha
+            if ((date.Month == 6)  && (date.Year >= 1972))
+            {
+                int sunday = 0;
+                int count = 0;
+                for (int day = 1; day <= 30; day++)
+                {
+                    DateTime dt = new DateTime(date.Year, 6, day);
+                    if (dt.DayOfWeek == DayOfWeek.Sunday)
+                        count++;
+                    if (count == 3)
+                    {
+                        sunday = day;
+                        break;
+                    }
+                }
+                if (date.Day == sunday)
+                {
+                    ispublics[0] = 0;
+                    i++;
+                }
+            }
+            //Ngày của mẹ
+            else if((date.Month == 5) && (date.Year >= 1914))
+            {
+                int sunday = 0;
+                int count = 0;
+                for (int day = 1; day <= 30; day++)
+                {
+                    DateTime dt = new DateTime(date.Year, 5, day);
+                    if (dt.DayOfWeek == DayOfWeek.Sunday)
+                        count++;
+                    if (count == 2)
+                    {
+                        sunday = day;
+                        break;
+                    }
+                }
+                if (date.Day == sunday)
+                {
+                    ispublics[0] = 0;
+                    i++;
+                }
+            }
+
+            foreach (DataRow row in PublicDate.TableDate(date.Year).Rows)
             {
                 DateTime daterow = (DateTime)row["Date"];
                 if ((date.Day == daterow.Day) && (date.Month == daterow.Month) && (date.Year >= daterow.Year))
                 {
                     bool holidays = (bool)row["Important"];
                     if (holidays == true)
-                        return 1;
+                    {
+                        if (ispublics[0] == -1)
+                        {
+                            ispublics[0] = 1;
+                            i++;
+                        }
+                        else if (ispublics[1] == -1)
+                        {
+                            ispublics[1] = 1;
+                            i++;
+                        }
+                        else
+                        {
+                            ispublics[2] = 1;
+                            i++;
+                        }
+                    }
                     else
-                        return 0;
+                    {
+                        if (ispublics[0] == -1)
+                        {
+                            ispublics[0] = 0;
+                            i++;
+                        }
+                        else if (ispublics[1] == -1)
+                        {
+                            ispublics[1] = 0;
+                            i++;
+                        }
+                        else
+                        {
+                            ispublics[2] = 0;
+                            i++;
+                        }
+                    }
                 }
             }
-            return -1;
+            if(i == 0)
+            {
+                int[] arrint = new int[1] { -1 };
+                return arrint;
+            }
+            else
+            {
+                int[] arrint = new int[i];
+                for(int k = 0;k<i;k++)
+                {
+                    arrint[k] = ispublics[k];
+                }
+                return arrint;
+            }
         }
 
-        public static string IsPublicString(DateTime date)
+        //Tìm tên của ngày lễ đó
+        public static string[] IsPublicString(DateTime date)
         {
-            string s = "";
+            string[] events = new string[3] { "", "", "" };
+            int i = 0;
+            //Ngày của Cha
+            if (date.Month == 6)
+            {
+                int sunday = 0;
+                int count = 0;
+                for (int day = 1; day <= 30; day++)
+                {
+                    DateTime dt = new DateTime(date.Year, 6, day);
+                    if (dt.DayOfWeek == DayOfWeek.Sunday)
+                        count++;
+                    if (count == 3)
+                    { 
+                        sunday = day;
+                        break;
+                    }
+                }
+                if (date.Day == sunday)
+                {
+                    events[0] = "Ngày Của Cha";
+                    i++;
+                }
+            }
+            //Ngày của mẹ
+            else if (date.Month == 5)
+            {
+                int sunday = 0;
+                int count = 0;
+                for (int day = 1; day <= 31; day++)
+                {
+                    DateTime dt = new DateTime(date.Year, 5, day);
+                    if (dt.DayOfWeek == DayOfWeek.Sunday)
+                        count++;
+                    if (count == 2)
+                    {
+                        sunday = day;
+                        break;
+                    }
+                }
+                if (date.Day == sunday)
+                {
+                    events[0] = "Ngày Của Mẹ";
+                    i++;
+                }
+            }
+
             foreach (DataRow row in PublicDate.TableDate(date.Year).Rows)
             {
                 DateTime daterow = (DateTime)row["Date"];
                 if ((date.Day == daterow.Day) && (date.Month == daterow.Month) && (date.Year >= daterow.Year))
                 {
                     String name = (string)row["Event"];
-                    s = s + name + "    ";
+                    if(events[0] == "")
+                    {
+                        events[0] = name;
+                        i++;
+                    }
+                    else if(events[1] == "")
+                    {
+                        events[1] = name;
+                        i++;
+                    }
+                    else
+                    {
+                        events[2] = name;
+                        i++;
+                    }
                 }
             }
-            return s;
+            if(i== 0)
+            {
+                string[] arr = new string[1] { "" };
+                return arr;
+            }
+            else
+            {
+                string[] arr = new string[i];
+                for (int k = 0; k < i; k++)
+                {
+                    arr[k] = events[k];
+                }
+                return arr;
+            }
+        }
+
+        public static DateTime IsPublicDate(string s,int year)
+        {
+            foreach(DataRow row in PublicDate.TableDate(year).Rows)
+            {
+                string name = (string)row["Event"];
+                DateTime date = (DateTime)row["Date"];
+                if (s == name)
+                    return date;
+            }
+            if(s == "Ngày Của Cha")
+            {
+                DateTime date = FatherDate(year);
+                if((date.Day == 1) && (date.Month == 1) &&(date.Year == 1))
+                {
+                    return new DateTime(1, 1, 1);
+                }
+                else
+                {
+                    return date;
+                }
+            }
+            else if (s == "Ngày Của Mẹ")
+            {
+                DateTime date = MotherDate(year);
+                if ((date.Day == 1) && (date.Month == 1) && (date.Year == 1))
+                {
+                    return new DateTime(1, 1, 1);
+                }
+                else
+                {
+                    return date;
+                }
+            }
+            return new DateTime(1,1,1);
         }
     }
 }

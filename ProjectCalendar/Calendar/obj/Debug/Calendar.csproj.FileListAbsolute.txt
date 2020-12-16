@@ -46,3 +46,4 @@ C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debu
 C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
 C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.exe
 C:\Users\Admin\OneDrive\Máy tính\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.pdb
+D:\B Pro Coder\Calendar\NewCalendar\ProjectCalendar\Calendar\obj\Debug\Calendar.DisplayCalendarPlus.resources

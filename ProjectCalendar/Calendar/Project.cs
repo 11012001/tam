@@ -60,6 +60,7 @@ namespace Calendar
 
         private void ButtonDate_Click(object sender, EventArgs e)
         { 
+            
                 if (!PanelDisplay.Contains(DisplayDate.DateDisplay))
                 {
                     PanelDisplay.Controls.Add(DisplayDate.DateDisplay);
@@ -82,7 +83,7 @@ namespace Calendar
         }
         private void ButtonNumDay_Click(object sender,EventArgs e)
         {
-            DisplayDate displayDate = new DisplayDate(DisplayCalendar.Date);
+            DisplayDate displayDate = new DisplayDate(displayCalendar1.Date);
             if(PanelDisplay.Contains(DisplayDate.DateDisplay))
             {
                 PanelDisplay.Controls.Remove(DisplayDate.DateDisplay);
@@ -97,7 +98,7 @@ namespace Calendar
         }
         public void EventCalendar()
         {
-            //this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
+            this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
         }
 
         private void ButtonHistory_Click(object sender, EventArgs e)
@@ -110,6 +111,18 @@ namespace Calendar
             }
             else
                 DisplayDetailEvent.DetailEventDisplay.BringToFront();
+        }
+
+        private void ButtonSolarCalendar_Click(object sender, EventArgs e)
+        {
+            if (!PanelDisplay.Contains(DisplayCalendarPlus.CalendarPlusDisplay))
+            {
+                PanelDisplay.Controls.Add(DisplayCalendarPlus.CalendarPlusDisplay);
+                DisplayCalendarPlus.CalendarPlusDisplay.Dock = DockStyle.Fill;
+                DisplayCalendarPlus.CalendarPlusDisplay.BringToFront();
+            }
+            else
+                DisplayCalendarPlus.CalendarPlusDisplay.BringToFront();
         }
     }
 }

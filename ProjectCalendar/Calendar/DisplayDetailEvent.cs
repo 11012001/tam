@@ -13,7 +13,6 @@ namespace Calendar
 {
     public partial class DisplayDetailEvent : UserControl
     {
-        private DateTime date;
         private static DisplayDetailEvent detaileventdisplay;
         public static DisplayDetailEvent DetailEventDisplay
         {
@@ -28,17 +27,64 @@ namespace Calendar
         {
             InitializeComponent();
         }
-        void ShowTIHVN()
+        private void SetUpDate()
         {
-            date = dtpk.Value;
+            #region Set Up Năm
+            ComboBoxSolarYear.Items.AddRange(Enumerable.Range(1, 9999).Select(i => (object)i).ToArray());
+            int year = DateTime.Now.Year;
+            ComboBoxSolarYear.Text = year.ToString();
+            #endregion
+
+            #region Set Up Tháng
+            ComboBoxSolarMonth.Items.AddRange(Enumerable.Range(1, 12).Select(i => (object)i).ToArray());
+            int month = DateTime.Now.Month;
+            ComboBoxSolarMonth.Text = month.ToString();
+            #endregion
+
+            SetUpDay(month, year);
+        }
+        #region Set Up Ngày
+        private void SetUpDay(int month, int year)
+        {
+            ComboBoxSolarDay.Items.Clear();
+            switch (month)
+            {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    ComboBoxSolarDay.Items.AddRange(Enumerable.Range(1, 31).Select(i => (object)i).ToArray());
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    ComboBoxSolarDay.Items.AddRange(Enumerable.Range(1, 30).Select(i => (object)i).ToArray());
+                    break;
+                case 2:
+                    if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+                        ComboBoxSolarDay.Items.AddRange(Enumerable.Range(1, 29).Select(i => (object)i).ToArray());
+                    else
+                        ComboBoxSolarDay.Items.AddRange(Enumerable.Range(1, 28).Select(i => (object)i).ToArray());
+                    break;
+                default:
+                    break;
+            }
+            ComboBoxSolarDay.Text = DateTime.Now.Day.ToString();
+        }
+        #endregion
+        void ShowTIHVN(DateTime date)
+        {
             DataGridViewVN.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             DataGridViewVN.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             DataGridViewVN.DataSource = GetAllVN(date.Day,date.Month,date.Year).Tables[0];
             //DataGridViewVN.DataMember = "EventCalendar";
         }
-        void ShowTIHTG()
+        void ShowTIHTG(DateTime date)
         {
-            date = dtpk.Value;
             DataGridViewTG.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             DataGridViewTG.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             DataGridViewTG.DataSource = GetAllTG(date.Day, date.Month,date.Year).Tables[0];
@@ -86,15 +132,9 @@ namespace Calendar
         }
         private void DisplayDetailEvent_Load(object sender, EventArgs e)
         {
-            ShowTIHVN();
-            ShowTIHTG();
-        }
-
-        private void dtpk_ValueChanged(object sender, EventArgs e)
-        {
-            date = (sender as Guna.UI2.WinForms.Guna2DateTimePicker).Value;
-            ShowTIHVN();
-            ShowTIHTG();
+            SetUpDate();
+            ShowTIHVN(DateTime.Now);
+            ShowTIHTG(DateTime.Now);
         }
 
         private void ButtonWorld_Click(object sender, EventArgs e)
@@ -105,6 +145,13 @@ namespace Calendar
         private void ButtonVN_Click(object sender, EventArgs e)
         {
             PanelWorld.BringToFront();
+        }
+
+        private void ButtonFind1_Click(object sender, EventArgs e)
+        {
+            DateTime date = new DateTime(Convert.ToInt32(ComboBoxSolarYear.Text), Convert.ToInt32(ComboBoxSolarMonth.Text), Convert.ToInt32(ComboBoxSolarDay.Text));
+            ShowTIHVN(date);
+            ShowTIHTG(date);
         }
     }
 }

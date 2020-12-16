@@ -121,60 +121,14 @@ namespace Calendar
                 if ((IsEqualDate(useDate, dtpk.Value)) && (btn.BackColor != Color.Aqua))
                     btn.TextColor = Color.LightPink;
 
-                //Những ngày lễ được nghỉ
-                Color color = Color.Red;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 1, 1)))
-                    btn.TextColor = color;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 4, 30)))
-                    btn.TextColor = color;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 5, 1)))
-                    btn.TextColor = color;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 9, 2)))
-                    btn.TextColor = color;
-                LuniSolarDate<VietnameseLocalInfoProvider> lunnardatetemp = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(useDate.Year, 1, false, 1);
-                if (IsEqualDate(useDate, lunnardatetemp.SolarDate))
-                {
-                    btn.TextColor = color;
-                }
-                if (IsEqualDate(useDate, lunnardatetemp.SolarDate.AddDays(-1)))
-                {
-                    btn.TextColor = color;
-                }
-                lunnardatetemp = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(useDate.Year, 1, false, 2);
-                if (IsEqualDate(useDate, lunnardatetemp.SolarDate))
-                {
-                    btn.TextColor = color;
-                }
-                lunnardatetemp = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(useDate.Year, 1, false, 3);
-                if (IsEqualDate(useDate, lunnardatetemp.SolarDate))
-                {
-                    btn.TextColor = color;
-                }
-                lunnardatetemp = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(useDate.Year, 3, false, 10);
-                if (IsEqualDate(useDate, lunnardatetemp.SolarDate))
-                {
-                    btn.TextColor = color;
-                }
-
-                //Những ngày lễ không được nghỉ nhưng quan trong
-                Color colorLe = Color.BlueViolet;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 3, 8)))
-                    btn.TextColor = colorLe;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 6, 1)))
-                    btn.TextColor = colorLe;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 10, 20)))
-                    btn.TextColor = colorLe;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 11, 20)))
-                    btn.TextColor = colorLe;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 10, 31)))
-                    btn.TextColor = colorLe;
-                if (IsEqualDate(useDate, new DateTime(useDate.Year, 12, 24)))
-                    btn.TextColor = colorLe;
-                lunnardatetemp = LuniSolarCalendar<VietnameseLocalInfoProvider>.LuniSolarDateFromLunarInfo(useDate.Year, 8, false, 15);
-                if (IsEqualDate(useDate, lunnardatetemp.SolarDate))
-                {
-                    btn.TextColor = colorLe;
-                }
+                //Những ngày lễ 
+                int k = IsPublicDay(useDate);
+                if (k == 1)
+                    btn.TextColor = Color.Red;
+                else if (k == 0)
+                    btn.TextColor = Color.BlueViolet;
+                else if (k == -1)
+                    btn.TextColor = Color.Orange;
 
                 MatrixColor[line][column] = btn.BackColor;
                 if (column >= 6)
@@ -251,6 +205,7 @@ namespace Calendar
                     btn.Click -= ButtonNum_Click;
                     btn.Click -= PreviousBttn_Click;
                     btn.Click -= NextBttn_Click;
+                    btn.BackgroundColor = Color.FromArgb(255, 255, 255);
                 }
             }
         }
@@ -292,11 +247,13 @@ namespace Calendar
         {
             DateTime date = (sender as Guna.UI2.WinForms.Guna2DateTimePicker).Value;
             AddNumberIntoMatrix(date);
+            ShowEvent(dtpk.Value.Month, dtpk.Value.Year);
         }
 
         private void DisplayCalendar_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            ShowEvent(dtpk.Value.Month, dtpk.Value.Year);
         }
         private void BackToDateBttn_Click(object sender, EventArgs e)
         {
@@ -308,7 +265,7 @@ namespace Calendar
         }
 
         public event EventHandler ClickButton;
-        public static DateTime Date { get; set; }
+        public DateTime Date { get; set; }
 
         private void ButtonNum_Click(object sender, EventArgs e)
         {
@@ -316,7 +273,154 @@ namespace Calendar
             {
                 CustomButton btn = sender as CustomButton;
                 Date = new DateTime(dtpk.Value.Year,dtpk.Value.Month,Convert.ToInt32(btn.ButtonText));
-                ClickButton(sender, e);
+                ClickButton(sender, new EventArgs());
+            }
+        }
+        private int IsPublicDay(DateTime date)
+        {
+            int[] arrint = PublicDate.IsPublic(date);
+            if (arrint[0] == -1)
+            {
+                if (date.DayOfWeek == DayOfWeek.Sunday)
+                {
+                    return -1;
+                }
+                else
+                {
+                    return -2;
+                }
+            }
+            else
+            {
+                int k = 0;
+                for (int i = 0; i < arrint.Length; i++)
+                {
+                    if (k < arrint[i])
+                        k = arrint[i];
+                }
+                if (k == 1)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+
+
+        //Xử lí datagridview sự kiện
+        private void ShowEvent(int month,int year)
+        {
+            dtgv.Rows.Clear();
+            dtgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dtgv.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            int day = DayOfMonth(new DateTime(year, month, 1));
+            for(int i = 1;i<=day;i++)
+            {
+                DateTime date = new DateTime(year, month, i);
+                IsPublicDate(date);
+            }
+            int k = 0;
+            Color[] colors = ColorPublicMonth(month, year);
+            foreach(DataGridViewRow row in dtgv.Rows)
+            {
+                row.DefaultCellStyle.ForeColor = colors[k];
+                k++;
+            }
+        }
+        private void IsPublicDate(DateTime date)
+        {
+            string[] arrstring = PublicDate.IsPublicString(date);
+
+            if (arrstring[0] == "")
+            {
+                return;
+            }
+            else
+            {
+                for(int i=0;i<arrstring.Length;i++)
+                {
+                    dtgv.Rows.Add(arrstring[i]);
+                }
+            }
+        }
+        private Color[] ColorPublicDate(DateTime date)
+        {
+            int[] arrint = PublicDate.IsPublic(date);
+            if (arrint[0] == -1)
+                return null;
+            else
+            {
+                Color[] colors = new Color[arrint.Length];
+                for(int i=0;i<arrint.Length;i++)
+                {
+                    if (arrint[i] == 1)
+                        colors[i] = Color.Red;
+                    else
+                        colors[i] = Color.Blue;
+                }
+                return colors;
+            }
+        }
+        private Color[] ColorPublicMonth(int month,int year)
+        {
+            int day = DayOfMonth(new DateTime(year, month, 1));
+            Color[] colors = new Color[20];
+            int num = 0;
+            for (int i = 1; i <= day; i++)
+            {
+                DateTime date = new DateTime(year, month, i);
+                Color[] colors1 = ColorPublicDate(date);
+                if(colors1 != null)
+                {
+                    for(int j=0;j<colors1.Length;j++)
+                    {
+                        colors[num] = colors1[j];
+                        num++;
+                    }
+                }
+            }
+            Color[] colors2 = new Color[num];
+            for (int i = 0; i < num; i++)
+                colors2[i] = colors[i];
+            return colors2;
+        }
+
+        private void dtgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtgv.Rows[e.RowIndex];
+
+                DateTime date = PublicDate.IsPublicDate(row.Cells[0].Value.ToString(), dtpk.Value.Year);
+                if ((date.Day == 1) && (date.Month == 1) && (date.Year == 1))
+                {
+                    return;
+                }
+                for (int i = 0;i<Cons.DayOfColumn;i++)
+                {
+                    for(int j=0;j<Cons.DayOfWeek;j++)
+                    {
+                        if (Matrix[i][j].TextColor != Color.DarkGray)
+                        {
+                            if (Convert.ToInt32(Matrix[i][j].ButtonText) == date.Day)
+                            {
+                                if(Matrix[i][j].BackgroundColor != Color.Pink)
+                                {
+                                    Matrix[i][j].BackgroundColor = Color.Pink;
+                                    return;
+                                }
+                                else
+                                {
+                                    Matrix[i][j].BackgroundColor = Color.FromArgb(255,255,255);
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

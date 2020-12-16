@@ -910,7 +910,7 @@ namespace LunnarSample
                     return string.Format("{0} (Từ ngày 20/4 đến 5/5)", s);
                 case "Lập Hạ":
                     return string.Format("{0} (Từ ngày 6/5 đến 20/5)", s);
-                case "Tiển Mãn":
+                case "Tiểu Mãn":
                     return string.Format("{0} (Từ ngày 21/5 đến 5/6)", s);
                 case "Mang Chủng":
                     return string.Format("{0} (Từ ngày 6/6 đến 20/6)", s);

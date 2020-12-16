@@ -15,11 +15,14 @@ namespace Calendar
     public partial class DisplayDate : UserControl
     {
         private static DisplayDate dateDisplay;
-        public Color ColorSolar { get; set; }
-        public Color ColorLunnar { get; set; }
+        public static Color ColorSolar { get; set; }
+        public static Color ColorLunnar { get; set; }
         public Color ColorHourLunnar { get; set; }
 
         public DateTime Date = DateTime.Now;
+
+        public DateTimePicker DateTimePicker { get; set; }
+
 
         public DisplayDate()
         {
@@ -38,12 +41,6 @@ namespace Calendar
                     dateDisplay = new DisplayDate();
                 return dateDisplay;
             }
-        }
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            DisplaySolarDate();
-            DisplayLunnar();
         }
 
         #region Lấy thông tin giờ, giờ âm
@@ -64,8 +61,7 @@ namespace Calendar
         {
             timer.Enabled = true;
             timer.Start();
-            DisplayQuote();
-            DisplayEvent();
+            DisplayGeneral();
         }
         #endregion
 
@@ -75,10 +71,18 @@ namespace Calendar
         //Sự kiện của DateTimePicker để thay đổi giá trị của ngày
         private void dtpk_ValueChanged(object sender, EventArgs e)
         {
-            DateTime date = (sender as DateTimePicker).Value;
+            DateTime date = (sender as Guna.UI2.WinForms.Guna2DateTimePicker).Value;
             Date = date;
+            DisplayGeneral();
+        }
+
+        private void DisplayGeneral()
+        {
             DisplayQuote();
             DisplayEvent();
+            ColorEvent();
+            DisplaySolarDate();
+            DisplayLunnar();
         }
         #endregion
 
@@ -161,7 +165,7 @@ namespace Calendar
             #endregion
 
             #region Lấy thông tin tháng âm
-            ButtonLunnarMonth.Text = string.Format("Tháng {0}",lunnardate.MonthShortName);
+            ButtonLunnarMonth.Text = string.Format("Tháng {0}",lunnardate.Month);
             #endregion
 
         }
@@ -225,48 +229,93 @@ namespace Calendar
         }
         #endregion
 
+        #region Màu sắc cho các ngày đặc biệt
+        private void ColorEvent()
+        {
+            int[] arrint = PublicDate.IsPublic(dtpk.Value);
+            if(arrint[0] == -1)
+            {
+                if(dtpk.Value.DayOfWeek == DayOfWeek.Sunday)
+                {
+                    ColorSolar = Color.OrangeRed;
+                    ColorLunnar = Color.OrangeRed;
+                }
+                else
+                {
+                    ColorSolar = Color.Black;
+                    ColorLunnar = Color.Black;
+                }
+            }
+            else
+            {
+                int k = 0;
+                for(int i = 0;i<arrint.Length;i++)
+                {
+                    if (k < arrint[i])
+                        k = arrint[i];
+                }
+                if(k==1)
+                {
+                    ColorSolar = Color.Red;
+                    ColorLunnar = Color.Red;
+                    TextboxEvent.ForeColor = Color.Red;
+                }
+                else
+                {
+                    ColorSolar = Color.Blue;
+                    ColorLunnar = Color.Blue;
+                    TextboxEvent.ForeColor = Color.Blue;
+                }
+            }   
+        }
+        #endregion
+
         #endregion
 
         #region Hiển thị câu châm ngôn
-        //Căt dòng trong chuỗi
-        private string SlipQuote(string s)
-        {
-            if (s.Length < 60)
-                return s;
-            string text = "";
-            string str = "";
-            string[] words = s.Split(' ');
-            int num = 0;
-            foreach(var word in words)
-            {
-                num++;
-                str = string.Format("{0} {1}",str,word);
-                if(num > 13)
-                {
-                    str = string.Format("{0}\n",str);
-                    num = 0;
-                }
-
-            }
-            text = string.Format("{0}.", str);
-            return text;
-        }
         //Hiển thị thông tin châm ngôn
         private void DisplayQuote()
         {
             LunnarSample.StringText text = new LunnarSample.StringText();
             text.GetQuote();
             LunnarSample.StringText.QuoteClass quote = text.MakeRandomQuote();
-            labelQuote.Text = SlipQuote(quote.Quote);
-            labelAuthor.Text = quote.Author;
+            TextboxQuote.Text = quote.Quote;
+            TextboxAuthor.Text = quote.Author;
         }
         #endregion
 
         #region Hiển thị ngày lễ
         void DisplayEvent()
         {
-            labelEvent.Text=PublicDate.IsPublicString(dtpk.Value);
+            TextboxEvent.Clear();
+
+            string[] arr = PublicDate.IsPublicString(dtpk.Value);
+            if(arr[0] == "")
+            {
+                TextboxEvent.Text = "";
+            }
+            else
+            {
+                for(int i=0;i<arr.Length;i++)
+                {
+                    if(i== arr.Length -1)
+                    {
+                        TextboxEvent.Text += arr[i];
+                    }
+                    else
+                    {
+                        TextboxEvent.Text += arr[i] + "\r\n";
+                    }
+                    TextboxEvent.Lines[i] = arr[i];
+                }
+            }
         }
         #endregion
+
+        private void ButtonMonth_Click(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

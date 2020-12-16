@@ -93,6 +93,12 @@
     <Compile Include="DisplayCalendar.Designer.cs">
       <DependentUpon>DisplayCalendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplayCalendarPlus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayCalendarPlus.Designer.cs">
+      <DependentUpon>DisplayCalendarPlus.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplayChangeDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     <Compile Include="WeatherInfo.cs" />
     <EmbeddedResource Include="DisplayCalendar.resx">
       <DependentUpon>DisplayCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayCalendarPlus.resx">
+      <DependentUpon>DisplayCalendarPlus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayChangeDate.resx">
       <DependentUpon>DisplayChangeDate.cs</DependentUpon>

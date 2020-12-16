@@ -20,10 +20,5 @@ namespace LunnarSample
         public static int Margin = 0;
 
         public static int MaxEvent = 10;
-
-        public static int SmallDateButtonWidth = 55;
-        public static int SmallDateButtonHeight = 26;
-
-        public static int SmallMargin = 10;
     }
 }
