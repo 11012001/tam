@@ -9,6 +9,11 @@ namespace LunnarSample
 {
     class StringText
     {
+        private static string FileText(String fileName)
+        {
+            string filePath = Path.Combine(Environment.CurrentDirectory, @"FileText\", fileName);
+            return filePath;
+        }
         public class CityIDClass
         {
             public string CityName { get; set; }
@@ -30,7 +35,7 @@ namespace LunnarSample
         public void GetList()
         {
             string line = "";
-                StreamReader streamReader = new StreamReader("IDCity.txt", Encoding.UTF8);
+                StreamReader streamReader = new StreamReader(FileText("IDCity.txt"), Encoding.UTF8);
                 while ((line = streamReader.ReadLine()) != null)
                 {
                     CityIDClass cityid = new CityIDClass();
@@ -39,7 +44,7 @@ namespace LunnarSample
                     cityid.CityID = words[1];
                     CityIDList.Add(cityid);
                 }
-                streamReader = new StreamReader("MainWeather.txt", Encoding.UTF8);
+                streamReader = new StreamReader(FileText("MainWeather.txt"), Encoding.UTF8);
                 while ((line = streamReader.ReadLine()) != null)
                 {
                     MainWeatherClass mainWeather = new MainWeatherClass();
@@ -48,7 +53,7 @@ namespace LunnarSample
                     mainWeather.vMainWeather = words[1];
                     MainWeatherList.Add(mainWeather);
                 }
-                streamReader = new StreamReader("DescriptionWeather.txt", Encoding.UTF8);
+                streamReader = new StreamReader(FileText("DescriptionWeather.txt"), Encoding.UTF8);
                 while ((line = streamReader.ReadLine()) != null)
                 {
                     DescriptionWeatherClass descriptionWeather = new DescriptionWeatherClass();
@@ -101,7 +106,7 @@ namespace LunnarSample
             try
             {
                 string line = "";
-                StreamReader streamReader = new StreamReader("ChamNgon.txt", Encoding.UTF8);
+                StreamReader streamReader = new StreamReader(FileText("ChamNgon.txt"), Encoding.UTF8);
                 while ((line = streamReader.ReadLine()) != null)
                 {
                     QuoteClass quote = new QuoteClass();

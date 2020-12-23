@@ -123,7 +123,14 @@
     <Compile Include="DisplayWF.Designer.cs">
       <DependentUpon>DisplayWF.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralNoteForm.Designer.cs">
+      <DependentUpon>GeneralNoteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LunnarCalendar.cs" />
+    <Compile Include="NoteData.cs" />
     <Compile Include="Project.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,8 +145,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="PublicDate.cs" />
     <Compile Include="StringText.cs" />
+    <Compile Include="ToDoClass.cs" />
+    <Compile Include="ToDoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToDoControl.Designer.cs">
+      <DependentUpon>ToDoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToDoNote.Designer.cs">
+      <DependentUpon>ToDoNote.cs</DependentUpon>
+    </Compile>
     <Compile Include="WeatherInfo.cs" />
     <EmbeddedResource Include="DisplayCalendar.resx">
       <DependentUpon>DisplayCalendar.cs</DependentUpon>
@@ -159,6 +184,9 @@
     <EmbeddedResource Include="DisplayWF.resx">
       <DependentUpon>DisplayWF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GeneralNoteForm.resx">
+      <DependentUpon>GeneralNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Project.resx">
       <DependentUpon>Project.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,14 +195,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="ToDoControl.resx">
+      <DependentUpon>ToDoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToDoNote.resx">
+      <DependentUpon>ToDoNote.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -192,6 +221,14 @@
   <ItemGroup>
     <Folder Include="bin\Debug\" />
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileText\ChamNgon.txt" />
+    <Content Include="FileText\DescriptionWeather.txt" />
+    <Content Include="FileText\IDCity.txt" />
+    <Content Include="FileText\MainWeather.txt" />
+    <Content Include="Images\HacDao.png" />
+    <Content Include="Images\HoangDao.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

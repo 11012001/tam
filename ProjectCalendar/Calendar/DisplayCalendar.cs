@@ -269,12 +269,11 @@ namespace Calendar
 
         private void ButtonNum_Click(object sender, EventArgs e)
         {
-            if(ClickButton != null)
-            {
-                CustomButton btn = sender as CustomButton;
-                Date = new DateTime(dtpk.Value.Year,dtpk.Value.Month,Convert.ToInt32(btn.ButtonText));
-                ClickButton(sender, new EventArgs());
-            }
+            CustomButton btn = sender as CustomButton;
+            Date = new DateTime(dtpk.Value.Year, dtpk.Value.Month, Convert.ToInt32(btn.ButtonText));
+            var NoteForm = new GeneralNoteForm();
+            NoteForm.Dtpk.Value = Date;
+            NoteForm.ShowDialog();
         }
         private int IsPublicDay(DateTime date)
         {

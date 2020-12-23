@@ -91,7 +91,7 @@ namespace Calendar
             //DataGridViewTG.DataMember = "EventWorldCalendar";
         }
         // connection string : chuoi ket noi
-        public static string connectionstring = @"Data Source=MSI\SQLEXPRESS;Initial Catalog=Calendar;Integrated Security=True";
+        public static string connectionstring = @"Data Source=LAPTOP-2RGA5N71;Initial Catalog=Calendar;Integrated Security=True";
         DataSet GetAllVN(int day,int month,int year)
         {
             DataSet data = new DataSet();

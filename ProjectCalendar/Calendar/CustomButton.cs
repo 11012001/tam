@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Calendar
 {
@@ -37,7 +38,12 @@ namespace Calendar
             base.OnPaint(pevent);
             DrawLunnarDate();
         }
-
+        private static Image loadImage(String fileName)
+        {
+            string filePath = Path.Combine(Environment.CurrentDirectory, @"Images\", fileName);
+            Image image = new Bitmap(filePath);
+            return image;
+        }
         public void DrawLunnarDate()
         {
             Graphics g = this.CreateGraphics();
@@ -45,12 +51,14 @@ namespace Calendar
 
             if (ZodiacDay == 1)
             {
-                Bitmap bitmap = new Bitmap("D:/B Pro Coder/Calendar/NewCalendar/ProjectCalendar/Calendar/Resources/HoangDao.png");
+                Image HoangDao = loadImage("HoangDao.png");
+                Bitmap bitmap = new Bitmap(HoangDao);
                 g.DrawImage(bitmap, this.Width * 0.7f, this.Height * 0.2f, this.Width * 3 / 10, this.Height * 3 / 10);
             }
             else if (ZodiacDay == -1)
             {
-                Bitmap bitmap = new Bitmap("D:/B Pro Coder/Calendar/NewCalendar/ProjectCalendar/Calendar/Resources/HacDao.png");
+                Image HacDao = loadImage("HacDao.png");
+                Bitmap bitmap = new Bitmap(HacDao);
                 g.DrawImage(bitmap, this.Width * 0.7f, this.Height * 0.2f, this.Width * 3 / 10, this.Height * 3 / 10);
             }
             int fontSize = Convert.ToInt32(min * 0.15f);
