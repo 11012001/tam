@@ -48,14 +48,14 @@ namespace Calendar
 
         private void ButtonCalendar_Click(object sender, EventArgs e)
         {
-            if (!PanelDisplay.Contains(DisplayCalendar.CalendarDisplay))
+            if (!PanelDisplay.Contains(DisplayLunnar.CalendarDisplay))
             {
-                PanelDisplay.Controls.Add(DisplayCalendar.CalendarDisplay);
-                DisplayCalendar.CalendarDisplay.Dock = DockStyle.Fill;
-                DisplayCalendar.CalendarDisplay.BringToFront();
+                PanelDisplay.Controls.Add(DisplayLunnar.CalendarDisplay);
+                DisplayLunnar.CalendarDisplay.Dock = DockStyle.Fill;
+                DisplayLunnar.CalendarDisplay.BringToFront();
             }
             else
-                DisplayCalendar.CalendarDisplay.BringToFront();
+                DisplayLunnar.CalendarDisplay.BringToFront();
         }
 
         private void ButtonDate_Click(object sender, EventArgs e)
@@ -83,22 +83,22 @@ namespace Calendar
         }
         private void ButtonNumDay_Click(object sender,EventArgs e)
         {
-            DisplayDate displayDate = new DisplayDate(displayCalendar1.Date);
-            if(PanelDisplay.Contains(DisplayDate.DateDisplay))
-            {
-                PanelDisplay.Controls.Remove(DisplayDate.DateDisplay);
-                PanelDisplay.Controls.Add(displayDate);
-                displayDate.Dock = DockStyle.Fill;
-                displayDate.BringToFront();
-            }
-            else
-            {
-                displayDate.BringToFront();
-            }
+            ////DisplayDate displayDate = new DisplayDate(displayCalendar1.Date);
+            //if(PanelDisplay.Contains(DisplayDate.DateDisplay))
+            //{
+            //    PanelDisplay.Controls.Remove(DisplayDate.DateDisplay);
+            //    PanelDisplay.Controls.Add(displayDate);
+            //    displayDate.Dock = DockStyle.Fill;
+            //    displayDate.BringToFront();
+            //}
+            //else
+            //{
+            //    displayDate.BringToFront();
+            //}
         }
         public void EventCalendar()
         {
-            this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
+            //this.displayCalendar1.ClickButton += new EventHandler(ButtonCalendar_Click);
         }
 
         private void ButtonHistory_Click(object sender, EventArgs e)
@@ -115,14 +115,14 @@ namespace Calendar
 
         private void ButtonSolarCalendar_Click(object sender, EventArgs e)
         {
-            if (!PanelDisplay.Contains(DisplayCalendarPlus.CalendarPlusDisplay))
+            if (!PanelDisplay.Contains(DisplaySolar.CalendarPlusDisplay))
             {
-                PanelDisplay.Controls.Add(DisplayCalendarPlus.CalendarPlusDisplay);
-                DisplayCalendarPlus.CalendarPlusDisplay.Dock = DockStyle.Fill;
-                DisplayCalendarPlus.CalendarPlusDisplay.BringToFront();
+                PanelDisplay.Controls.Add(DisplaySolar.CalendarPlusDisplay);
+                DisplaySolar.CalendarPlusDisplay.Dock = DockStyle.Fill;
+                DisplaySolar.CalendarPlusDisplay.BringToFront();
             }
             else
-                DisplayCalendarPlus.CalendarPlusDisplay.BringToFront();
+                DisplaySolar.CalendarPlusDisplay.BringToFront();
         }
     }
 }

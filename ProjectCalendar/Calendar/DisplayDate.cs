@@ -14,6 +14,7 @@ namespace Calendar
 {
     public partial class DisplayDate : UserControl
     {
+        
         private static DisplayDate dateDisplay;
         public static Color ColorSolar { get; set; }
         public static Color ColorLunnar { get; set; }
@@ -61,6 +62,7 @@ namespace Calendar
         {
             timer.Enabled = true;
             timer.Start();
+            dtpk.Value = DateTime.Now;
             DisplayGeneral();
         }
         #endregion
@@ -95,7 +97,7 @@ namespace Calendar
             {
                 labelDay.Text = Date.Day.ToString();
                 labelDay.ForeColor = ColorSolar;
-                labelDay.Location = new Point(0, 0);
+                labelDay.Location = new Point((PanelDay.Size.Width/2) - (labelDay.Size.Width/2), 0);
                 labelDOW.Text = lunnar.GetThu(Date);
                 labelDOW.ForeColor = ColorSolar;
             }
@@ -134,17 +136,9 @@ namespace Calendar
 
             #region Lấy thông tin ngày âm
             if (lunnardate.Day >= 10)
-            {
-                labelLunnarDay.Text = lunnardate.Day.ToString();
-                labelLunnarDay.ForeColor = ColorLunnar;
-                labelLunnarDay.Location = new Point(43, 28);
-            }
-            else
-            {
-                labelLunnarDay.Text = lunnardate.Day.ToString();
-                labelLunnarDay.ForeColor = ColorLunnar;
-                labelLunnarDay.Location = new Point(60, 28);
-            }
+            labelLunnarDay.Text = lunnardate.Day.ToString();
+            labelLunnarDay.ForeColor = ColorLunnar;
+            labelLunnarDay.Location = new Point((PanelLunnarDay.Size.Width / 2) - (labelLunnarDay.Size.Width / 2), 28);
             #endregion
 
             #region Lấy thông tin ngày hoàng đạo
@@ -312,9 +306,14 @@ namespace Calendar
         }
         #endregion
 
-        private void ButtonMonth_Click(object sender, EventArgs e)
+
+        private void ButtonNote_Click(object sender, EventArgs e)
         {
-           
+            CustomButton btn = sender as CustomButton;
+            Date = dtpk.Value;
+            var NoteForm = new GeneralNoteForm();
+            NoteForm.Dtpk.Value = Date;
+            NoteForm.ShowDialog();
         }
 
     }

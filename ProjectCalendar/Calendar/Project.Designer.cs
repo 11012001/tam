@@ -31,18 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Project));
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.PanelControl = new Guna.UI2.WinForms.Guna2Panel();
             this.ControlMinimum = new Guna.UI2.WinForms.Guna2ControlBox();
             this.ControlClose = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.PanelDisplay = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelIcon = new Guna.UI2.WinForms.Guna2Panel();
-            this.xuiClock1 = new XanderUI.XUIClock();
             this.dtpk = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.xuiClock1 = new XanderUI.XUIClock();
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
+            this.ButtonSolarCalendar = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonHistory = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonCount = new Guna.UI2.WinForms.Guna2Button();
             this.iconButtonClose = new FontAwesome.Sharp.IconButton();
@@ -50,8 +47,7 @@
             this.ButtonCalendar = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonChangeDate = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonWeatherForecast = new Guna.UI2.WinForms.Guna2Button();
-            this.displayCalendar1 = new Calendar.DisplayCalendar();
-            this.ButtonSolarCalendar = new Guna.UI2.WinForms.Guna2Button();
+            this.displayCalendarPlus1 = new Calendar.DisplaySolar();
             this.PanelControl.SuspendLayout();
             this.PanelDisplay.SuspendLayout();
             this.PanelIcon.SuspendLayout();
@@ -63,14 +59,6 @@
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // guna2VSeparator1
-            // 
-            this.guna2VSeparator1.FillThickness = 10;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(140, 30);
-            this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 610);
-            this.guna2VSeparator1.TabIndex = 1;
-            // 
             // PanelControl
             // 
             this.PanelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -81,7 +69,7 @@
             this.PanelControl.Location = new System.Drawing.Point(140, 0);
             this.PanelControl.Name = "PanelControl";
             this.PanelControl.ShadowDecoration.Parent = this.PanelControl;
-            this.PanelControl.Size = new System.Drawing.Size(550, 30);
+            this.PanelControl.Size = new System.Drawing.Size(1009, 30);
             this.PanelControl.TabIndex = 3;
             // 
             // ControlMinimum
@@ -92,7 +80,7 @@
             this.ControlMinimum.FillColor = System.Drawing.Color.Transparent;
             this.ControlMinimum.HoverState.Parent = this.ControlMinimum;
             this.ControlMinimum.IconColor = System.Drawing.Color.Black;
-            this.ControlMinimum.Location = new System.Drawing.Point(460, 0);
+            this.ControlMinimum.Location = new System.Drawing.Point(919, 0);
             this.ControlMinimum.Name = "ControlMinimum";
             this.ControlMinimum.ShadowDecoration.Parent = this.ControlMinimum;
             this.ControlMinimum.Size = new System.Drawing.Size(45, 30);
@@ -105,44 +93,19 @@
             this.ControlClose.FillColor = System.Drawing.Color.Transparent;
             this.ControlClose.HoverState.Parent = this.ControlClose;
             this.ControlClose.IconColor = System.Drawing.Color.Black;
-            this.ControlClose.Location = new System.Drawing.Point(505, 0);
+            this.ControlClose.Location = new System.Drawing.Point(964, 0);
             this.ControlClose.Name = "ControlClose";
             this.ControlClose.ShadowDecoration.Parent = this.ControlClose;
             this.ControlClose.Size = new System.Drawing.Size(45, 30);
             this.ControlClose.TabIndex = 0;
             // 
-            // guna2VSeparator2
-            // 
-            this.guna2VSeparator2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2VSeparator2.FillThickness = 10;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(680, 30);
-            this.guna2VSeparator2.Name = "guna2VSeparator2";
-            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 610);
-            this.guna2VSeparator2.TabIndex = 5;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillThickness = 10;
-            this.guna2Separator1.Location = new System.Drawing.Point(150, 630);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(530, 10);
-            this.guna2Separator1.TabIndex = 6;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.FillThickness = 10;
-            this.guna2Separator2.Location = new System.Drawing.Point(150, 30);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(530, 10);
-            this.guna2Separator2.TabIndex = 7;
-            // 
             // PanelDisplay
             // 
-            this.PanelDisplay.Controls.Add(this.displayCalendar1);
-            this.PanelDisplay.Location = new System.Drawing.Point(150, 40);
+            this.PanelDisplay.Controls.Add(this.displayCalendarPlus1);
+            this.PanelDisplay.Location = new System.Drawing.Point(140, 30);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(530, 590);
+            this.PanelDisplay.Size = new System.Drawing.Size(1009, 590);
             this.PanelDisplay.TabIndex = 8;
             // 
             // PanelIcon
@@ -156,6 +119,22 @@
             this.PanelIcon.ShadowDecoration.Parent = this.PanelIcon;
             this.PanelIcon.Size = new System.Drawing.Size(140, 200);
             this.PanelIcon.TabIndex = 0;
+            // 
+            // dtpk
+            // 
+            this.dtpk.CheckedState.Parent = this.dtpk;
+            this.dtpk.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpk.HoverState.Parent = this.dtpk;
+            this.dtpk.Location = new System.Drawing.Point(0, 166);
+            this.dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpk.Name = "dtpk";
+            this.dtpk.ShadowDecoration.Parent = this.dtpk;
+            this.dtpk.Size = new System.Drawing.Size(140, 34);
+            this.dtpk.TabIndex = 1;
+            this.dtpk.Value = new System.DateTime(2020, 12, 15, 10, 42, 52, 648);
             // 
             // xuiClock1
             // 
@@ -184,22 +163,6 @@
             this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.White;
             this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.White;
             // 
-            // dtpk
-            // 
-            this.dtpk.CheckedState.Parent = this.dtpk;
-            this.dtpk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpk.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpk.HoverState.Parent = this.dtpk;
-            this.dtpk.Location = new System.Drawing.Point(0, 166);
-            this.dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpk.Name = "dtpk";
-            this.dtpk.ShadowDecoration.Parent = this.dtpk;
-            this.dtpk.Size = new System.Drawing.Size(140, 34);
-            this.dtpk.TabIndex = 1;
-            this.dtpk.Value = new System.DateTime(2020, 12, 15, 10, 42, 52, 648);
-            // 
             // PanelSetting
             // 
             this.PanelSetting.Controls.Add(this.ButtonSolarCalendar);
@@ -216,8 +179,28 @@
             this.PanelSetting.Location = new System.Drawing.Point(0, 0);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
-            this.PanelSetting.Size = new System.Drawing.Size(140, 640);
+            this.PanelSetting.Size = new System.Drawing.Size(140, 621);
             this.PanelSetting.TabIndex = 1;
+            // 
+            // ButtonSolarCalendar
+            // 
+            this.ButtonSolarCalendar.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonSolarCalendar.CheckedState.Parent = this.ButtonSolarCalendar;
+            this.ButtonSolarCalendar.CustomImages.Parent = this.ButtonSolarCalendar;
+            this.ButtonSolarCalendar.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonSolarCalendar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSolarCalendar.ForeColor = System.Drawing.Color.Black;
+            this.ButtonSolarCalendar.HoverState.Parent = this.ButtonSolarCalendar;
+            this.ButtonSolarCalendar.Image = ((System.Drawing.Image)(resources.GetObject("ButtonSolarCalendar.Image")));
+            this.ButtonSolarCalendar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonSolarCalendar.Location = new System.Drawing.Point(0, 257);
+            this.ButtonSolarCalendar.Name = "ButtonSolarCalendar";
+            this.ButtonSolarCalendar.ShadowDecoration.Parent = this.ButtonSolarCalendar;
+            this.ButtonSolarCalendar.Size = new System.Drawing.Size(140, 45);
+            this.ButtonSolarCalendar.TabIndex = 10;
+            this.ButtonSolarCalendar.Text = "Lịch Dương";
+            this.ButtonSolarCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonSolarCalendar.Click += new System.EventHandler(this.ButtonSolarCalendar_Click);
             // 
             // ButtonHistory
             // 
@@ -269,7 +252,7 @@
             this.iconButtonClose.IconColor = System.Drawing.Color.Black;
             this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonClose.IconSize = 60;
-            this.iconButtonClose.Location = new System.Drawing.Point(0, 565);
+            this.iconButtonClose.Location = new System.Drawing.Point(0, 546);
             this.iconButtonClose.Name = "iconButtonClose";
             this.iconButtonClose.Size = new System.Drawing.Size(140, 75);
             this.iconButtonClose.TabIndex = 7;
@@ -312,7 +295,7 @@
             this.ButtonCalendar.ShadowDecoration.Parent = this.ButtonCalendar;
             this.ButtonCalendar.Size = new System.Drawing.Size(140, 45);
             this.ButtonCalendar.TabIndex = 5;
-            this.ButtonCalendar.Text = "Lịch Tháng";
+            this.ButtonCalendar.Text = "Lịch Âm";
             this.ButtonCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ButtonCalendar.Click += new System.EventHandler(this.ButtonCalendar_Click);
             // 
@@ -356,46 +339,21 @@
             this.ButtonWeatherForecast.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ButtonWeatherForecast.Click += new System.EventHandler(this.ButtonWeatherForecast_Click);
             // 
-            // displayCalendar1
+            // displayCalendarPlus1
             // 
-            this.displayCalendar1.Date = new System.DateTime(((long)(0)));
-            this.displayCalendar1.Location = new System.Drawing.Point(0, 0);
-            this.displayCalendar1.Name = "displayCalendar1";
-            this.displayCalendar1.Size = new System.Drawing.Size(530, 590);
-            this.displayCalendar1.TabIndex = 1;
-            // 
-            // ButtonSolarCalendar
-            // 
-            this.ButtonSolarCalendar.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonSolarCalendar.CheckedState.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.CustomImages.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonSolarCalendar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSolarCalendar.ForeColor = System.Drawing.Color.Black;
-            this.ButtonSolarCalendar.HoverState.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.Image = ((System.Drawing.Image)(resources.GetObject("ButtonSolarCalendar.Image")));
-            this.ButtonSolarCalendar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonSolarCalendar.Location = new System.Drawing.Point(0, 257);
-            this.ButtonSolarCalendar.Name = "ButtonSolarCalendar";
-            this.ButtonSolarCalendar.ShadowDecoration.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.Size = new System.Drawing.Size(140, 45);
-            this.ButtonSolarCalendar.TabIndex = 10;
-            this.ButtonSolarCalendar.Text = "Lịch Dương";
-            this.ButtonSolarCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ButtonSolarCalendar.Click += new System.EventHandler(this.ButtonSolarCalendar_Click);
+            this.displayCalendarPlus1.Location = new System.Drawing.Point(0, 0);
+            this.displayCalendarPlus1.Name = "displayCalendarPlus1";
+            this.displayCalendarPlus1.Size = new System.Drawing.Size(1009, 590);
+            this.displayCalendarPlus1.TabIndex = 0;
             // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(690, 640);
+            this.ClientSize = new System.Drawing.Size(1149, 621);
             this.Controls.Add(this.PanelDisplay);
-            this.Controls.Add(this.guna2Separator2);
-            this.Controls.Add(this.guna2Separator1);
-            this.Controls.Add(this.guna2VSeparator2);
             this.Controls.Add(this.PanelControl);
-            this.Controls.Add(this.guna2VSeparator1);
             this.Controls.Add(this.PanelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Project";
@@ -412,13 +370,9 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
-        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private Guna.UI2.WinForms.Guna2Panel PanelControl;
         private Guna.UI2.WinForms.Guna2ControlBox ControlMinimum;
         private Guna.UI2.WinForms.Guna2ControlBox ControlClose;
-        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator2;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Panel PanelDisplay;
         private Guna.UI2.WinForms.Guna2Panel PanelSetting;
         private Guna.UI2.WinForms.Guna2Button ButtonHistory;
@@ -431,7 +385,7 @@
         private Guna.UI2.WinForms.Guna2Panel PanelIcon;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
         private XanderUI.XUIClock xuiClock1;
-        private DisplayCalendar displayCalendar1;
         private Guna.UI2.WinForms.Guna2Button ButtonSolarCalendar;
+        private DisplaySolar displayCalendarPlus1;
     }
 }

@@ -69,8 +69,6 @@ namespace Calendar
                     Bitmap newbitmap = new Bitmap(stream);
                     Bitmap icon = newbitmap;
                     PictureWeather.Image = newbitmap;
-                    labelCity.Text = ComboBoxCity.Text;
-                    labelCountry.Text = "Việt Nam";
                     labelLog.Text = string.Format("{0}\u00B0", Math.Round(output.coord.lon, 1));
                     labelLat.Text = string.Format("{0}\u00B0", Math.Round(output.coord.lat, 1));
                     labelTemp.Text = string.Format("{0}\u00B0" + "C", Math.Round(output.main.temp, 0));
@@ -87,6 +85,9 @@ namespace Calendar
                     labelDate.Text = string.Format("NGÀY {0}/{1}/{2}"
                         , getDate(output.dt).Day, getDate(output.dt).Month, getDate(output.dt).Year);
                     labelHour.Text = string.Format("Giờ {0}", getDate(output.dt).ToShortTimeString());
+                    labelWeather.Location = new Point((PanelDisplayWT.Size.Width / 2) - (labelWeather.Size.Width / 2), 0);
+                    labelTemp.Location = new Point((PanelDisplayWT.Size.Width / 2) - (labelTemp.Size.Width / 2), 54);
+                    labelHour.Text = DateTime.Now.ToString("t");
                 }
                 catch (WebException we)
                 {
@@ -118,5 +119,10 @@ namespace Calendar
             GetWeather();
         }
         #endregion
+
+        private void labelHour_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

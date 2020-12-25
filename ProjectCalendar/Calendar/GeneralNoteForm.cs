@@ -12,6 +12,7 @@ namespace Calendar
 {
     public partial class GeneralNoteForm : Form
     {
+        public int Button = 1;
         public ToDoClass c = new ToDoClass();
         public GeneralNoteForm()
         {
@@ -20,44 +21,50 @@ namespace Calendar
         }
         public void AddNoteToDay()
         {
-
-            int y = 0;
-            int i = 0;
-
-            DateTime datefirst = Dtpk.Value;
-            DateTime dateafter = Dtpk.Value.AddDays(1);
-            string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}# order by FromH asc, FromM asc";
-            DataTable dt = NoteData.QueryAsDatatable(sql);
-
-            foreach (DataRow row in dt.Rows)
+            if (Button == 1)
             {
-                ToDoControl Td = new ToDoControl();
-                Td.Deleted += Td_Deleted;
-                //Td.Edited -= TD_Edited;
-                Td.BackColor = System.Drawing.Color.WhiteSmoke;
-                Td.Location = new System.Drawing.Point(1, -1 + y);
-                Td.Size = new System.Drawing.Size(812, 86);
-                Td.TabIndex = i++;
-                c.Id = Convert.ToInt32(row["IdNote"]);
-                if (Convert.ToInt32(row["Important"]) == 1)
+                int y = 0;
+                int i = 0;
+
+                DateTime datefirst = Dtpk.Value;
+                DateTime dateafter = Dtpk.Value.AddDays(1);
+                string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}# order by FromH asc, FromM asc";
+                DataTable dt = NoteData.QueryAsDatatable(sql);
+
+                foreach (DataRow row in dt.Rows)
                 {
-                    c.CheckImportant = true;
+                    ToDoControl Td = new ToDoControl();
+                    Td.Deleted += Td_Deleted;
+                    //Td.Edited -= TD_Edited;
+                    Td.BackColor = System.Drawing.Color.WhiteSmoke;
+                    Td.Location = new System.Drawing.Point(1, -1 + y);
+                    Td.Size = new System.Drawing.Size(812, 86);
+                    Td.TabIndex = i++;
+                    c.Id = Convert.ToInt32(row["IdNote"]);
+                    if (Convert.ToInt32(row["Important"]) == 1)
+                    {
+                        c.CheckImportant = true;
+                    }
+                    else c.CheckImportant = false;
+                    Td.Tag = Convert.ToInt32(row["IdNote"]);
+                    c.Date = Convert.ToDateTime(row["AppDate"]);
+                    c.Description = row["Description"].ToString();
+                    c.FHours = Convert.ToInt32(row["FromH"]);
+                    c.FMinutes = Convert.ToInt32(row["FromM"]);
+                    c.THours = Convert.ToInt32(row["ToH"]);
+                    c.TMinutes = Convert.ToInt32(row["ToM"]);
+                    c.Notes = row["NoteText"].ToString();
+                    Td.AddDetails(c);
+                    Td.Deleted += Td_Deleted;
+                    Td.Edited += Td_Edited;
+                    Td.Details += Td_Details;
+                    ControlPanel.Controls.Add(Td);
+                    y += Td.Height;
                 }
-                else c.CheckImportant = false;
-                Td.Tag = Convert.ToInt32(row["IdNote"]);
-                c.Date = Convert.ToDateTime(row["AppDate"]);
-                c.Description = row["Description"].ToString();
-                c.FHours = Convert.ToInt32(row["FromH"]);
-                c.FMinutes = Convert.ToInt32(row["FromM"]);
-                c.THours = Convert.ToInt32(row["ToH"]);
-                c.TMinutes = Convert.ToInt32(row["ToM"]);
-                c.Notes = row["NoteText"].ToString();
-                Td.AddDetails(c);
-                Td.Deleted += Td_Deleted;
-                Td.Edited += Td_Edited;
-                Td.Details += Td_Details;
-                ControlPanel.Controls.Add(Td);
-                y += Td.Height;
+            }
+            if (Button == 2)
+            {
+                
             }
         }
         void Td_Deleted(object sender, EventArgs e)
@@ -136,8 +143,6 @@ namespace Calendar
             First = new DateTime(Dtpk.Value.Year, Dtpk.Value.Month, Dtpk.Value.Day);
             Last = First.AddDays(1);
         }
-
-
         private void AddJobBtn_Click_1(object sender, EventArgs e)
         {
             var TDN = new ToDoNote();
@@ -164,6 +169,18 @@ namespace Calendar
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Button = 2;
+            ControlPanel.Controls.Clear();
+            AddNoteToDay();
+        }
+
+        private void ToDoBtn_Click(object sender, EventArgs e)
+        {
+            Button = 1;
         }
     }
 }

@@ -51,7 +51,6 @@ namespace Calendar
             this.labelTo1 = new System.Windows.Forms.Label();
             this.labelFrom1 = new System.Windows.Forms.Label();
             this.buttonCountDay = new XanderUI.XUIButton();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.PanelName.SuspendLayout();
             this.PanelChangeDay.SuspendLayout();
             this.panelFromChange.SuspendLayout();
@@ -159,6 +158,7 @@ namespace Calendar
             this.TextBoxFromChange.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxFromChange.HoverState.Parent = this.TextBoxFromChange;
             this.TextBoxFromChange.Location = new System.Drawing.Point(155, 82);
+            this.TextBoxFromChange.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TextBoxFromChange.Name = "TextBoxFromChange";
             this.TextBoxFromChange.PasswordChar = '\0';
             this.TextBoxFromChange.PlaceholderText = "";
@@ -254,7 +254,7 @@ namespace Calendar
             this.buttonChangeDay.BackgroundColor = System.Drawing.Color.Transparent;
             this.buttonChangeDay.ButtonImage = null;
             this.buttonChangeDay.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.buttonChangeDay.ButtonText = "Đổi Ngày";
+            this.buttonChangeDay.ButtonText = "ĐỔI NGÀY";
             this.buttonChangeDay.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.buttonChangeDay.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.buttonChangeDay.CornerRadius = 5;
@@ -402,7 +402,7 @@ namespace Calendar
             this.buttonCountDay.BackgroundColor = System.Drawing.Color.Transparent;
             this.buttonCountDay.ButtonImage = null;
             this.buttonCountDay.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.buttonCountDay.ButtonText = "Đếm Ngày";
+            this.buttonCountDay.ButtonText = "ĐẾM NGÀY";
             this.buttonCountDay.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.buttonCountDay.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.buttonCountDay.CornerRadius = 5;
@@ -420,19 +420,10 @@ namespace Calendar
             this.buttonCountDay.TextColor = System.Drawing.Color.DodgerBlue;
             this.buttonCountDay.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillThickness = 10;
-            this.guna2Separator1.Location = new System.Drawing.Point(0, 320);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(530, 10);
-            this.guna2Separator1.TabIndex = 3;
-            // 
             // DisplayCountDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.PanelCountDay);
             this.Controls.Add(this.PanelChangeDay);
             this.Controls.Add(this.PanelName);
@@ -472,6 +463,5 @@ namespace Calendar
         private Guna.UI2.WinForms.Guna2TextBox TextBoxFromChange;
         private FontAwesome.Sharp.IconButton ButtonChangeFrom;
         private FontAwesome.Sharp.IconButton ButtonChangeTo;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }

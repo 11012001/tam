@@ -79,6 +79,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(406, 45);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Deadlines phải hoàn thành trong ngày";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // ToDoBtn
             // 
@@ -95,6 +96,7 @@
             this.ToDoBtn.Size = new System.Drawing.Size(406, 45);
             this.ToDoBtn.TabIndex = 0;
             this.ToDoBtn.Text = "Công việc trong ngày";
+            this.ToDoBtn.Click += new System.EventHandler(this.ToDoBtn_Click);
             // 
             // ControlPanel
             // 

@@ -56,7 +56,6 @@ namespace Calendar
             this.ButtonLunnar = new XanderUI.XUIButton();
             this.PanelSoLuName = new Guna.UI2.WinForms.Guna2Panel();
             this.ButtonChangeLuSo = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.PanelGeneral.SuspendLayout();
             this.PanelChangeLuSo.SuspendLayout();
             this.PanelChangeSolar.SuspendLayout();
@@ -78,7 +77,6 @@ namespace Calendar
             // 
             // PanelChangeLuSo
             // 
-            this.PanelChangeLuSo.Controls.Add(this.guna2Separator1);
             this.PanelChangeLuSo.Controls.Add(this.PanelChangeSolar);
             this.PanelChangeLuSo.Controls.Add(this.PanelChangeLunnar);
             this.PanelChangeLuSo.Controls.Add(this.PanelSoLuName);
@@ -469,14 +467,6 @@ namespace Calendar
             this.ButtonChangeLuSo.TabIndex = 0;
             this.ButtonChangeLuSo.Text = "CHUYỂN ĐỔI LỊCH";
             // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillThickness = 10;
-            this.guna2Separator1.Location = new System.Drawing.Point(-3, 362);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(530, 10);
-            this.guna2Separator1.TabIndex = 25;
-            // 
             // DisplayChangeDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -527,6 +517,5 @@ namespace Calendar
         private System.Windows.Forms.Label labelSolarName;
         private System.Windows.Forms.Label labelLunnarDayChange;
         private System.Windows.Forms.Label labelSolarDay;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }

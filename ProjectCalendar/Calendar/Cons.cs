@@ -11,8 +11,8 @@ namespace LunnarSample
         public static int DayOfWeek = 7;
         public static int DayOfColumn = 6;
 
-        public static int dateButtonWidth = 75;
-        public static int dateButtonHeight = 70;
+        public static int dateButtonWidth = 90;
+        public static int dateButtonHeight = 75;
 
         public static int eventButtonWidth = 535;
         public static int eventButtonHeigh = 30;

@@ -121,6 +121,26 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ButtonSolarCalendar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMtSURBVFhHzZdZ
+        qE1RGICPzJGpTCVJSClDpih5QHkhihdlSuQaCgkZyjyT8cFchhdlCGUeHkwPCmV6MJQhZSqPovi+vc86
+        7XuGXfdcl/vV1/33v9de6z9777XWvpkUDuB33B0dlccetI990VEVaISfsCF+w7pYVbzGa+3DvuwzldF4
+        B1/hG/yZjX/h62xcFb3Ga43tyz6Nb+MorERX9GQ/bIkd8EM2Ltc2+Dkvp/3Rsbpgjim4Iw4jvG1fsFl0
+        VB7hEbSIjirjWJPjMGYGborDHCvwSByWzWI8EYeVcCzHzFGsgJqkdhbgXO2cpy+jtMf8c9XRsQoK+IgP
+        8ryF9fBsIvc3dKyCAmrNO9AUx+J4dMFwSgaGoHntaCKLccjbJuC19mF+DNq3pBawDq+jz+k+zkTphu/Q
+        /FG8hwFjc56zjW2lAu3DvH2uRUktYC9OiMPMIlwah5mBeCkOM23xRRxGGJsT29hWvNY+xD7tW1ILcPdb
+        hn1xJ7qYiEvoXTQ/Ap9hwNic52xjW/Fa+zBvn2FnTS3A/eACXsXTGNbs+ngIzV/BiRiYhOY8dxBtK+4x
+        Z9C8fVqIpBbwL0gtoBOuwY24Eluj1MF5aF6HYsA45G1jW2mC3in7n4qtUFIL2I7eRnOncAFKb3yK5hfi
+        YwwYm/OcbWwrc/AmWti57F9JLeC/z4JtmLwD81F6YvIOPMTAI0zeAduKg+/H4bged6GkFuAGtAq9XU6d
+        8Nx8rrPQ/AYchAFjc55z8QnvgCvkYTyJx7AHymYsWUBN0xz99ixZgL/mIjp3z2N3FNf142hep2PA60Pe
+        X9oAxTXEx+OnWfAr/saSBfgtn1wJl6Dkr4TPMeBzH4b5K6EFO/0CjfEa+plesoByZkG4S5KcBTewTxzm
+        Bt+Kqe/AakzuhqGht/Mtht3Q7/vAZXTmeM42YfkOBSQHF8cqKGBLHEaN/SfFPXwkhnVd/GXmx2E7E1mM
+        zXlugIksFjAYk4NL0QL8tcmPj+rii/gSfVTJwaWggGnod1qx78JyfY8/cDnm42LnmDlcu59gsS/Y6ljs
+        H1I3N2dNr+gowVy06uScrQkdYzZCJvMHB8knEt/h+doAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="ButtonHistory.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -225,26 +245,6 @@
         oh1Lrt2gPSdYCWQiOfz+6cRhvg928jK/voM4Pe75+qwLk+ki+NL44zEarsNXuAf+G6hh4FJ8AQaaTO5s
         BuB5PlBHrg75VXWFa2A7/x+SywrGl7uXL4P412MQjoxluM+vQK1t9l/yLN8L8WfUoXZ5WvNryxmIRed/
         k1vyMbDKddcziFMwGxIoy34A5JH6eiItYnAAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="ButtonSolarCalendar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMtSURBVFhHzZdZ
-        qE1RGICPzJGpTCVJSClDpih5QHkhihdlSuQaCgkZyjyT8cFchhdlCGUeHkwPCmV6MJQhZSqPovi+vc86
-        7XuGXfdcl/vV1/33v9de6z9777XWvpkUDuB33B0dlccetI990VEVaISfsCF+w7pYVbzGa+3DvuwzldF4
-        B1/hG/yZjX/h62xcFb3Ga43tyz6Nb+MorERX9GQ/bIkd8EM2Ltc2+Dkvp/3Rsbpgjim4Iw4jvG1fsFl0
-        VB7hEbSIjirjWJPjMGYGborDHCvwSByWzWI8EYeVcCzHzFGsgJqkdhbgXO2cpy+jtMf8c9XRsQoK+IgP
-        8ryF9fBsIvc3dKyCAmrNO9AUx+J4dMFwSgaGoHntaCKLccjbJuC19mF+DNq3pBawDq+jz+k+zkTphu/Q
-        /FG8hwFjc56zjW2lAu3DvH2uRUktYC9OiMPMIlwah5mBeCkOM23xRRxGGJsT29hWvNY+xD7tW1ILcPdb
-        hn1xJ7qYiEvoXTQ/Ap9hwNic52xjW/Fa+zBvn2FnTS3A/eACXsXTGNbs+ngIzV/BiRiYhOY8dxBtK+4x
-        Z9C8fVqIpBbwL0gtoBOuwY24Eluj1MF5aF6HYsA45G1jW2mC3in7n4qtUFIL2I7eRnOncAFKb3yK5hfi
-        YwwYm/OcbWwrc/AmWti57F9JLeC/z4JtmLwD81F6YvIOPMTAI0zeAduKg+/H4bged6GkFuAGtAq9XU6d
-        8Nx8rrPQ/AYchAFjc55z8QnvgCvkYTyJx7AHymYsWUBN0xz99ixZgL/mIjp3z2N3FNf142hep2PA60Pe
-        X9oAxTXEx+OnWfAr/saSBfgtn1wJl6Dkr4TPMeBzH4b5K6EFO/0CjfEa+plesoByZkG4S5KcBTewTxzm
-        Bt+Kqe/AakzuhqGht/Mtht3Q7/vAZXTmeM42YfkOBSQHF8cqKGBLHEaN/SfFPXwkhnVd/GXmx2E7E1mM
-        zXlugIksFjAYk4NL0QL8tcmPj+rii/gSfVTJwaWggGnod1qx78JyfY8/cDnm42LnmDlcu59gsS/Y6ljs
-        H1I3N2dNr+gowVy06uScrQkdYzZCJvMHB8knEt/h+doAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

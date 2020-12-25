@@ -38,11 +38,11 @@ namespace Calendar
             this.ButtonToday = new Guna.UI2.WinForms.Guna2CircleButton();
             this.PanelLunnarDate = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelLunnarDay = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.PictureZodiac = new FontAwesome.Sharp.IconPictureBox();
             this.labelLunnarDay = new System.Windows.Forms.Label();
             this.PanelLunnarMonth = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.labelLunnarDayName = new System.Windows.Forms.Label();
             this.labelLunnarYearName = new System.Windows.Forms.Label();
             this.labelLunnarMonthName = new System.Windows.Forms.Label();
@@ -59,13 +59,14 @@ namespace Calendar
             this.PanelImage = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelEvent = new Guna.UI2.WinForms.Guna2Panel();
             this.TextboxEvent = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ButtonNote = new FontAwesome.Sharp.IconButton();
             this.PanelQuote = new Guna.UI2.WinForms.Guna2Panel();
             this.TextboxAuthor = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextboxQuote = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ButtonNote = new FontAwesome.Sharp.IconButton();
             this.PanelDay = new Guna.UI2.WinForms.Guna2Panel();
             this.labelDOW = new System.Windows.Forms.Label();
             this.labelDay = new System.Windows.Forms.Label();
+            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.PanelMonth.SuspendLayout();
             this.PanelLunnarDate.SuspendLayout();
             this.PanelLunnarDay.SuspendLayout();
@@ -90,7 +91,7 @@ namespace Calendar
             this.PanelMonth.Location = new System.Drawing.Point(0, 0);
             this.PanelMonth.Name = "PanelMonth";
             this.PanelMonth.ShadowDecoration.Parent = this.PanelMonth;
-            this.PanelMonth.Size = new System.Drawing.Size(530, 60);
+            this.PanelMonth.Size = new System.Drawing.Size(1009, 60);
             this.PanelMonth.TabIndex = 0;
             // 
             // ButtonMonth
@@ -105,13 +106,12 @@ namespace Calendar
             this.ButtonMonth.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.ButtonMonth.ForeColor = System.Drawing.Color.White;
             this.ButtonMonth.HoverState.Parent = this.ButtonMonth;
-            this.ButtonMonth.Location = new System.Drawing.Point(122, 3);
+            this.ButtonMonth.Location = new System.Drawing.Point(385, 3);
             this.ButtonMonth.Name = "ButtonMonth";
             this.ButtonMonth.ShadowDecoration.Parent = this.ButtonMonth;
             this.ButtonMonth.Size = new System.Drawing.Size(238, 56);
             this.ButtonMonth.TabIndex = 0;
             this.ButtonMonth.Text = "THÁNG 11 - 2020";
-            this.ButtonMonth.Click += new System.EventHandler(this.ButtonMonth_Click);
             // 
             // dtpk
             // 
@@ -119,7 +119,7 @@ namespace Calendar
             this.dtpk.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpk.HoverState.Parent = this.dtpk;
-            this.dtpk.Location = new System.Drawing.Point(160, 14);
+            this.dtpk.Location = new System.Drawing.Point(444, 26);
             this.dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpk.Name = "dtpk";
@@ -138,7 +138,7 @@ namespace Calendar
             this.ButtonNext.IconColor = System.Drawing.Color.Black;
             this.ButtonNext.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonNext.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ButtonNext.Location = new System.Drawing.Point(364, 3);
+            this.ButtonNext.Location = new System.Drawing.Point(629, 4);
             this.ButtonNext.Name = "ButtonNext";
             this.ButtonNext.Size = new System.Drawing.Size(51, 56);
             this.ButtonNext.TabIndex = 6;
@@ -154,7 +154,7 @@ namespace Calendar
             this.ButtonPre.IconColor = System.Drawing.Color.Black;
             this.ButtonPre.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonPre.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ButtonPre.Location = new System.Drawing.Point(65, 4);
+            this.ButtonPre.Location = new System.Drawing.Point(328, 4);
             this.ButtonPre.Name = "ButtonPre";
             this.ButtonPre.Size = new System.Drawing.Size(51, 56);
             this.ButtonPre.TabIndex = 5;
@@ -173,7 +173,7 @@ namespace Calendar
             this.ButtonToday.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.ButtonToday.ForeColor = System.Drawing.Color.White;
             this.ButtonToday.HoverState.Parent = this.ButtonToday;
-            this.ButtonToday.Location = new System.Drawing.Point(460, 0);
+            this.ButtonToday.Location = new System.Drawing.Point(939, 0);
             this.ButtonToday.Name = "ButtonToday";
             this.ButtonToday.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.ButtonToday.ShadowDecoration.Parent = this.ButtonToday;
@@ -192,37 +192,28 @@ namespace Calendar
             this.PanelLunnarDate.Location = new System.Drawing.Point(0, 450);
             this.PanelLunnarDate.Name = "PanelLunnarDate";
             this.PanelLunnarDate.ShadowDecoration.Parent = this.PanelLunnarDate;
-            this.PanelLunnarDate.Size = new System.Drawing.Size(530, 140);
+            this.PanelLunnarDate.Size = new System.Drawing.Size(1009, 140);
             this.PanelLunnarDate.TabIndex = 1;
             // 
             // PanelLunnarDay
             // 
-            this.PanelLunnarDay.Controls.Add(this.guna2VSeparator2);
+            this.PanelLunnarDay.Controls.Add(this.guna2VSeparator3);
             this.PanelLunnarDay.Controls.Add(this.guna2VSeparator1);
             this.PanelLunnarDay.Controls.Add(this.PictureZodiac);
             this.PanelLunnarDay.Controls.Add(this.labelLunnarDay);
             this.PanelLunnarDay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelLunnarDay.FillColor = System.Drawing.Color.LightGreen;
-            this.PanelLunnarDay.Location = new System.Drawing.Point(170, 40);
+            this.PanelLunnarDay.Location = new System.Drawing.Point(164, 40);
             this.PanelLunnarDay.Name = "PanelLunnarDay";
             this.PanelLunnarDay.ShadowDecoration.Parent = this.PanelLunnarDay;
-            this.PanelLunnarDay.Size = new System.Drawing.Size(190, 100);
+            this.PanelLunnarDay.Size = new System.Drawing.Size(675, 100);
             this.PanelLunnarDay.TabIndex = 3;
-            // 
-            // guna2VSeparator2
-            // 
-            this.guna2VSeparator2.BackColor = System.Drawing.Color.LightGreen;
-            this.guna2VSeparator2.FillColor = System.Drawing.Color.Black;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(180, 0);
-            this.guna2VSeparator2.Name = "guna2VSeparator2";
-            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 98);
-            this.guna2VSeparator2.TabIndex = 5;
             // 
             // guna2VSeparator1
             // 
             this.guna2VSeparator1.BackColor = System.Drawing.Color.LightGreen;
             this.guna2VSeparator1.FillColor = System.Drawing.Color.Black;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(0, 0);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(-10, 1);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(10, 98);
             this.guna2VSeparator1.TabIndex = 4;
@@ -234,7 +225,7 @@ namespace Calendar
             this.PictureZodiac.IconColor = System.Drawing.Color.White;
             this.PictureZodiac.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.PictureZodiac.IconSize = 31;
-            this.PictureZodiac.Location = new System.Drawing.Point(82, 3);
+            this.PictureZodiac.Location = new System.Drawing.Point(319, 3);
             this.PictureZodiac.Name = "PictureZodiac";
             this.PictureZodiac.Size = new System.Drawing.Size(32, 31);
             this.PictureZodiac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,7 +238,7 @@ namespace Calendar
             this.labelLunnarDay.BackColor = System.Drawing.Color.Transparent;
             this.labelLunnarDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLunnarDay.ForeColor = System.Drawing.Color.Red;
-            this.labelLunnarDay.Location = new System.Drawing.Point(43, 28);
+            this.labelLunnarDay.Location = new System.Drawing.Point(275, 28);
             this.labelLunnarDay.Name = "labelLunnarDay";
             this.labelLunnarDay.Size = new System.Drawing.Size(109, 76);
             this.labelLunnarDay.TabIndex = 0;
@@ -255,16 +246,26 @@ namespace Calendar
             // 
             // PanelLunnarMonth
             // 
+            this.PanelLunnarMonth.Controls.Add(this.guna2VSeparator2);
             this.PanelLunnarMonth.Controls.Add(this.labelLunnarDayName);
             this.PanelLunnarMonth.Controls.Add(this.labelLunnarYearName);
             this.PanelLunnarMonth.Controls.Add(this.labelLunnarMonthName);
             this.PanelLunnarMonth.Dock = System.Windows.Forms.DockStyle.Right;
             this.PanelLunnarMonth.FillColor = System.Drawing.Color.LightGreen;
-            this.PanelLunnarMonth.Location = new System.Drawing.Point(360, 40);
+            this.PanelLunnarMonth.Location = new System.Drawing.Point(839, 40);
             this.PanelLunnarMonth.Name = "PanelLunnarMonth";
             this.PanelLunnarMonth.ShadowDecoration.Parent = this.PanelLunnarMonth;
             this.PanelLunnarMonth.Size = new System.Drawing.Size(170, 100);
             this.PanelLunnarMonth.TabIndex = 2;
+            // 
+            // guna2VSeparator2
+            // 
+            this.guna2VSeparator2.BackColor = System.Drawing.Color.LightGreen;
+            this.guna2VSeparator2.FillColor = System.Drawing.Color.Black;
+            this.guna2VSeparator2.Location = new System.Drawing.Point(-5, 1);
+            this.guna2VSeparator2.Name = "guna2VSeparator2";
+            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 98);
+            this.guna2VSeparator2.TabIndex = 5;
             // 
             // labelLunnarDayName
             // 
@@ -313,7 +314,7 @@ namespace Calendar
             this.PanelHourLunnar.Location = new System.Drawing.Point(0, 40);
             this.PanelHourLunnar.Name = "PanelHourLunnar";
             this.PanelHourLunnar.ShadowDecoration.Parent = this.PanelHourLunnar;
-            this.PanelHourLunnar.Size = new System.Drawing.Size(170, 100);
+            this.PanelHourLunnar.Size = new System.Drawing.Size(164, 100);
             this.PanelHourLunnar.TabIndex = 1;
             // 
             // labelZodiac2
@@ -375,7 +376,7 @@ namespace Calendar
             this.PanelName.Location = new System.Drawing.Point(0, 0);
             this.PanelName.Name = "PanelName";
             this.PanelName.ShadowDecoration.Parent = this.PanelName;
-            this.PanelName.Size = new System.Drawing.Size(530, 40);
+            this.PanelName.Size = new System.Drawing.Size(1009, 40);
             this.PanelName.TabIndex = 0;
             // 
             // ButtonLunnarMonth
@@ -390,7 +391,7 @@ namespace Calendar
             this.ButtonLunnarMonth.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.ButtonLunnarMonth.ForeColor = System.Drawing.Color.White;
             this.ButtonLunnarMonth.HoverState.Parent = this.ButtonLunnarMonth;
-            this.ButtonLunnarMonth.Location = new System.Drawing.Point(170, 0);
+            this.ButtonLunnarMonth.Location = new System.Drawing.Point(409, 0);
             this.ButtonLunnarMonth.Name = "ButtonLunnarMonth";
             this.ButtonLunnarMonth.ShadowDecoration.Parent = this.ButtonLunnarMonth;
             this.ButtonLunnarMonth.Size = new System.Drawing.Size(190, 40);
@@ -409,7 +410,7 @@ namespace Calendar
             this.ButtonLunnarName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.ButtonLunnarName.ForeColor = System.Drawing.Color.White;
             this.ButtonLunnarName.HoverState.Parent = this.ButtonLunnarName;
-            this.ButtonLunnarName.Location = new System.Drawing.Point(360, 0);
+            this.ButtonLunnarName.Location = new System.Drawing.Point(839, 0);
             this.ButtonLunnarName.Name = "ButtonLunnarName";
             this.ButtonLunnarName.ShadowDecoration.Parent = this.ButtonLunnarName;
             this.ButtonLunnarName.Size = new System.Drawing.Size(170, 40);
@@ -443,22 +444,22 @@ namespace Calendar
             // PanelImage
             // 
             this.PanelImage.Controls.Add(this.PanelEvent);
-            this.PanelImage.Controls.Add(this.ButtonNote);
             this.PanelImage.Controls.Add(this.PanelQuote);
+            this.PanelImage.Controls.Add(this.ButtonNote);
             this.PanelImage.Controls.Add(this.PanelDay);
             this.PanelImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelImage.ImeMode = System.Windows.Forms.ImeMode.On;
             this.PanelImage.Location = new System.Drawing.Point(0, 60);
             this.PanelImage.Name = "PanelImage";
             this.PanelImage.ShadowDecoration.Parent = this.PanelImage;
-            this.PanelImage.Size = new System.Drawing.Size(530, 390);
+            this.PanelImage.Size = new System.Drawing.Size(1009, 390);
             this.PanelImage.TabIndex = 8;
             // 
             // PanelEvent
             // 
             this.PanelEvent.BackColor = System.Drawing.Color.Transparent;
             this.PanelEvent.Controls.Add(this.TextboxEvent);
-            this.PanelEvent.Location = new System.Drawing.Point(33, 181);
+            this.PanelEvent.Location = new System.Drawing.Point(263, 217);
             this.PanelEvent.Name = "PanelEvent";
             this.PanelEvent.ShadowDecoration.Parent = this.PanelEvent;
             this.PanelEvent.Size = new System.Drawing.Size(481, 57);
@@ -479,10 +480,11 @@ namespace Calendar
             this.TextboxEvent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TextboxEvent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxEvent.FocusedState.Parent = this.TextboxEvent;
-            this.TextboxEvent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextboxEvent.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.TextboxEvent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxEvent.HoverState.Parent = this.TextboxEvent;
             this.TextboxEvent.Location = new System.Drawing.Point(0, 0);
+            this.TextboxEvent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextboxEvent.Multiline = true;
             this.TextboxEvent.Name = "TextboxEvent";
             this.TextboxEvent.PasswordChar = '\0';
@@ -494,31 +496,17 @@ namespace Calendar
             this.TextboxEvent.TabIndex = 0;
             this.TextboxEvent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ButtonNote
-            // 
-            this.ButtonNote.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonNote.FlatAppearance.BorderSize = 0;
-            this.ButtonNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonNote.IconChar = FontAwesome.Sharp.IconChar.StickyNote;
-            this.ButtonNote.IconColor = System.Drawing.Color.Black;
-            this.ButtonNote.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ButtonNote.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ButtonNote.Location = new System.Drawing.Point(476, 0);
-            this.ButtonNote.Name = "ButtonNote";
-            this.ButtonNote.Size = new System.Drawing.Size(51, 56);
-            this.ButtonNote.TabIndex = 7;
-            this.ButtonNote.UseVisualStyleBackColor = false;
-            // 
             // PanelQuote
             // 
             this.PanelQuote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelQuote.Controls.Add(this.TextboxAuthor);
             this.PanelQuote.Controls.Add(this.TextboxQuote);
+            this.PanelQuote.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelQuote.ForeColor = System.Drawing.Color.Red;
-            this.PanelQuote.Location = new System.Drawing.Point(26, 252);
+            this.PanelQuote.Location = new System.Drawing.Point(241, 280);
             this.PanelQuote.Name = "PanelQuote";
             this.PanelQuote.ShadowDecoration.Parent = this.PanelQuote;
-            this.PanelQuote.Size = new System.Drawing.Size(481, 126);
+            this.PanelQuote.Size = new System.Drawing.Size(536, 104);
             this.PanelQuote.TabIndex = 6;
             // 
             // TextboxAuthor
@@ -532,21 +520,20 @@ namespace Calendar
             this.TextboxAuthor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextboxAuthor.DisabledState.Parent = this.TextboxAuthor;
             this.TextboxAuthor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextboxAuthor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.TextboxAuthor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TextboxAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxAuthor.FocusedState.Parent = this.TextboxAuthor;
             this.TextboxAuthor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextboxAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxAuthor.HoverState.Parent = this.TextboxAuthor;
-            this.TextboxAuthor.Location = new System.Drawing.Point(0, 96);
+            this.TextboxAuthor.Location = new System.Drawing.Point(0, 64);
             this.TextboxAuthor.Name = "TextboxAuthor";
             this.TextboxAuthor.PasswordChar = '\0';
             this.TextboxAuthor.PlaceholderText = "";
             this.TextboxAuthor.ReadOnly = true;
             this.TextboxAuthor.SelectedText = "";
             this.TextboxAuthor.ShadowDecoration.Parent = this.TextboxAuthor;
-            this.TextboxAuthor.Size = new System.Drawing.Size(481, 30);
+            this.TextboxAuthor.Size = new System.Drawing.Size(536, 37);
             this.TextboxAuthor.TabIndex = 2;
             this.TextboxAuthor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -555,32 +542,47 @@ namespace Calendar
             this.TextboxQuote.BackColor = System.Drawing.Color.Transparent;
             this.TextboxQuote.BorderThickness = 0;
             this.TextboxQuote.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TextboxQuote.DefaultText = "adsfdds\r\ndsafd\r\nadsfads\r\n";
+            this.TextboxQuote.DefaultText = "adsfdds\r\ndsafd\r\nadsfads\r\nQuote TextBox Test";
             this.TextboxQuote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextboxQuote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextboxQuote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextboxQuote.DisabledState.Parent = this.TextboxQuote;
             this.TextboxQuote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextboxQuote.Dock = System.Windows.Forms.DockStyle.Top;
             this.TextboxQuote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TextboxQuote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxQuote.FocusedState.Parent = this.TextboxQuote;
-            this.TextboxQuote.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextboxQuote.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextboxQuote.HideSelection = false;
             this.TextboxQuote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxQuote.HoverState.Parent = this.TextboxQuote;
-            this.TextboxQuote.Location = new System.Drawing.Point(0, 0);
+            this.TextboxQuote.Location = new System.Drawing.Point(0, -9);
             this.TextboxQuote.Multiline = true;
             this.TextboxQuote.Name = "TextboxQuote";
             this.TextboxQuote.PasswordChar = '\0';
             this.TextboxQuote.PlaceholderText = "";
             this.TextboxQuote.ReadOnly = true;
             this.TextboxQuote.SelectedText = "";
-            this.TextboxQuote.SelectionStart = 25;
+            this.TextboxQuote.SelectionStart = 43;
             this.TextboxQuote.ShadowDecoration.Parent = this.TextboxQuote;
-            this.TextboxQuote.Size = new System.Drawing.Size(481, 89);
+            this.TextboxQuote.Size = new System.Drawing.Size(536, 76);
             this.TextboxQuote.TabIndex = 1;
             this.TextboxQuote.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ButtonNote
+            // 
+            this.ButtonNote.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonNote.FlatAppearance.BorderSize = 0;
+            this.ButtonNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonNote.IconChar = FontAwesome.Sharp.IconChar.StickyNote;
+            this.ButtonNote.IconColor = System.Drawing.Color.Black;
+            this.ButtonNote.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ButtonNote.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ButtonNote.Location = new System.Drawing.Point(955, 3);
+            this.ButtonNote.Name = "ButtonNote";
+            this.ButtonNote.Size = new System.Drawing.Size(51, 56);
+            this.ButtonNote.TabIndex = 7;
+            this.ButtonNote.UseVisualStyleBackColor = false;
+            this.ButtonNote.Click += new System.EventHandler(this.ButtonNote_Click);
             // 
             // PanelDay
             // 
@@ -588,10 +590,10 @@ namespace Calendar
             this.PanelDay.Controls.Add(this.labelDay);
             this.PanelDay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelDay.ForeColor = System.Drawing.Color.Red;
-            this.PanelDay.Location = new System.Drawing.Point(170, 0);
+            this.PanelDay.Location = new System.Drawing.Point(409, 17);
             this.PanelDay.Name = "PanelDay";
             this.PanelDay.ShadowDecoration.Parent = this.PanelDay;
-            this.PanelDay.Size = new System.Drawing.Size(190, 187);
+            this.PanelDay.Size = new System.Drawing.Size(213, 194);
             this.PanelDay.TabIndex = 5;
             // 
             // labelDOW
@@ -600,7 +602,7 @@ namespace Calendar
             this.labelDOW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.labelDOW.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDOW.ForeColor = System.Drawing.Color.Red;
-            this.labelDOW.Location = new System.Drawing.Point(-6, 132);
+            this.labelDOW.Location = new System.Drawing.Point(3, 141);
             this.labelDOW.Name = "labelDOW";
             this.labelDOW.Size = new System.Drawing.Size(196, 46);
             this.labelDOW.TabIndex = 1;
@@ -613,22 +615,31 @@ namespace Calendar
             this.labelDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.labelDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 87.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDay.ForeColor = System.Drawing.Color.Red;
-            this.labelDay.Location = new System.Drawing.Point(34, 0);
+            this.labelDay.Location = new System.Drawing.Point(3, 9);
             this.labelDay.Name = "labelDay";
-            this.labelDay.Size = new System.Drawing.Size(121, 132);
+            this.labelDay.Size = new System.Drawing.Size(187, 132);
             this.labelDay.TabIndex = 0;
-            this.labelDay.Text = "6";
+            this.labelDay.Text = "30";
             this.labelDay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // guna2VSeparator3
+            // 
+            this.guna2VSeparator3.BackColor = System.Drawing.Color.LightGreen;
+            this.guna2VSeparator3.FillColor = System.Drawing.Color.Black;
+            this.guna2VSeparator3.Location = new System.Drawing.Point(-4, -1);
+            this.guna2VSeparator3.Name = "guna2VSeparator3";
+            this.guna2VSeparator3.Size = new System.Drawing.Size(10, 98);
+            this.guna2VSeparator3.TabIndex = 7;
             // 
             // DisplayDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.PanelMonth);
             this.Controls.Add(this.PanelImage);
+            this.Controls.Add(this.PanelMonth);
             this.Controls.Add(this.PanelLunnarDate);
             this.Name = "DisplayDate";
-            this.Size = new System.Drawing.Size(530, 590);
+            this.Size = new System.Drawing.Size(1009, 590);
             this.Load += new System.EventHandler(this.DisplayDate_Load);
             this.PanelMonth.ResumeLayout(false);
             this.PanelLunnarDate.ResumeLayout(false);
@@ -683,9 +694,10 @@ namespace Calendar
         private System.Windows.Forms.Label labelDOW;
         private System.Windows.Forms.Label labelDay;
         private Guna.UI2.WinForms.Guna2Panel PanelEvent;
-        private Guna.UI2.WinForms.Guna2TextBox TextboxEvent;
         private Guna.UI2.WinForms.Guna2TextBox TextboxAuthor;
         private Guna.UI2.WinForms.Guna2TextBox TextboxQuote;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
+        private Guna.UI2.WinForms.Guna2TextBox TextboxEvent;
+        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator3;
     }
 }
