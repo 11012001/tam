@@ -56,6 +56,7 @@ namespace Calendar
             this.ButtonLunnar = new XanderUI.XUIButton();
             this.PanelSoLuName = new Guna.UI2.WinForms.Guna2Panel();
             this.ButtonChangeLuSo = new Guna.UI2.WinForms.Guna2Button();
+            this.labelStar = new System.Windows.Forms.Label();
             this.PanelGeneral.SuspendLayout();
             this.PanelChangeLuSo.SuspendLayout();
             this.PanelChangeSolar.SuspendLayout();
@@ -105,6 +106,7 @@ namespace Calendar
             // 
             // PanelDetailLunnar
             // 
+            this.PanelDetailLunnar.Controls.Add(this.labelStar);
             this.PanelDetailLunnar.Controls.Add(this.labelNameGoodDay);
             this.PanelDetailLunnar.Controls.Add(this.labelNameSolarTerm);
             this.PanelDetailLunnar.Controls.Add(this.labelLunnarDay);
@@ -467,6 +469,17 @@ namespace Calendar
             this.ButtonChangeLuSo.TabIndex = 0;
             this.ButtonChangeLuSo.Text = "CHUYỂN ĐỔI LỊCH";
             // 
+            // labelStar
+            // 
+            this.labelStar.AutoSize = true;
+            this.labelStar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStar.Location = new System.Drawing.Point(207, 125);
+            this.labelStar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelStar.Name = "labelStar";
+            this.labelStar.Size = new System.Drawing.Size(118, 30);
+            this.labelStar.TabIndex = 28;
+            this.labelStar.Text = "SAO KHUE";
+            // 
             // DisplayChangeDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -517,5 +530,6 @@ namespace Calendar
         private System.Windows.Forms.Label labelSolarName;
         private System.Windows.Forms.Label labelLunnarDayChange;
         private System.Windows.Forms.Label labelSolarDay;
+        private System.Windows.Forms.Label labelStar;
     }
 }

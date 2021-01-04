@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.OleDb;
 
 namespace Calendar
 {
@@ -76,75 +77,58 @@ namespace Calendar
             ComboBoxSolarDay.Text = DateTime.Now.Day.ToString();
         }
         #endregion
+
         void ShowTIHVN(DateTime date)
         {
             DataGridViewVN.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             DataGridViewVN.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            DataGridViewVN.DataSource = GetAllVN(date.Day,date.Month,date.Year).Tables[0];
-            //DataGridViewVN.DataMember = "EventCalendar";
+            DataGridViewVN.DataSource = GetAllVN(date.Day, date.Month, date.Year);
         }
         void ShowTIHTG(DateTime date)
         {
             DataGridViewTG.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             DataGridViewTG.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            DataGridViewTG.DataSource = GetAllTG(date.Day, date.Month,date.Year).Tables[0];
-            //DataGridViewTG.DataMember = "EventWorldCalendar";
+            DataGridViewTG.DataSource = GetAllTG(date.Day, date.Month,date.Year);
         }
         // connection string : chuoi ket noi
-        public static string connectionstring = @"Data Source=LAPTOP-2RGA5N71;Initial Catalog=Calendar;Integrated Security=True";
-        DataSet GetAllVN(int day,int month,int year)
+        public static string connectionstring = @"Data Source=MSI\SQLEXPRESS;Initial Catalog=Calendar;Integrated Security=True";
+        private static OleDbConnection cn = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = |DataDirectory|TodayInHistory.accdb");
+
+        public static void Connect()
         {
-            DataSet data = new DataSet();
-
-            //Sql Connection
-            //sử dụng using để sau khi xài xong tự hủy (không ngốn ram)
-            string query = string.Format("select NameEvent from EventCalendar where DAY(DateEvent) = {0} and MONTH(DateEvent) = {1} and YEAR(DateEvent) <= {2}", day, month, year);
-            using(SqlConnection con = new SqlConnection(connectionstring))
+            if (cn.State == ConnectionState.Closed)
             {
-                con.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                adapter.Fill(data);
-                con.Close();
+                cn.Open();
             }
-            //Sql Command
-            //Sql DataAdapter
-            
-            return data;
         }
-        DataSet GetAllTG(int day, int month,int year)
+        public static bool ExecuteQuery(string sql)
         {
-            DataSet data = new DataSet();
-
-            //Sql Connection
-            //sử dụng using để sau khi xài xong tự hủy (không ngốn ram)
-            string query = string.Format("select NameEvent from EventWorldCalendar where DAY(DateEvent) = {0} and MONTH(DateEvent) = {1} and YEAR(DateEvent) <= {2}", day, month, year);
-            using (SqlConnection con = new SqlConnection(connectionstring))
-            {
-                con.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                adapter.Fill(data);
-                con.Close();
-            }
-            //Sql Command
-            //Sql DataAdapter
-
-            return data;
+            Connect();
+            OleDbCommand cmd = new OleDbCommand(sql, cn);
+            return cmd.ExecuteNonQuery() > 0;
         }
+        public static DataTable GetAllVN(int day, int month,int year)
+        {
+            string query = string.Format("select NameEvent from EventCalendar where DAY(DateEvent) = {0} and MONTH(DateEvent) = {1} and YEAR(DateEvent) <= {2} order by YEAR(DateEvent)", day, month, year);
+            OleDbDataAdapter da = new OleDbDataAdapter(query, cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "result");
+            return ds.Tables["result"];
+        }
+        public static DataTable GetAllTG(int day, int month, int year)
+        {
+            string query = string.Format("select NameEvent from EventWorldCalendar where DAY(DateEvent) = {0} and MONTH(DateEvent) = {1} and YEAR(DateEvent) <= {2} order by YEAR(DateEvent)", day, month, year);
+            OleDbDataAdapter da = new OleDbDataAdapter(query, cn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "result");
+            return ds.Tables["result"];
+        }
+
         private void DisplayDetailEvent_Load(object sender, EventArgs e)
         {
             SetUpDate();
             ShowTIHVN(DateTime.Now);
             ShowTIHTG(DateTime.Now);
-        }
-
-        private void ButtonWorld_Click(object sender, EventArgs e)
-        {
-            PanelVN.BringToFront();
-        }
-
-        private void ButtonVN_Click(object sender, EventArgs e)
-        {
-            PanelWorld.BringToFront();
         }
 
         private void ButtonFind1_Click(object sender, EventArgs e)
@@ -153,5 +137,6 @@ namespace Calendar
             ShowTIHVN(date);
             ShowTIHTG(date);
         }
+
     }
 }

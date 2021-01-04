@@ -32,11 +32,12 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.ToDoBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.NextBtn = new Guna.UI2.WinForms.Guna2Button();
             this.AddJobBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Dtpk = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.DeadlineLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ControlPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(406, 45);
             this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Deadlines phải hoàn thành trong ngày";
+            this.guna2Button2.Text = "Deadlines phải hoàn thành";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // ToDoBtn
@@ -97,15 +98,6 @@
             this.ToDoBtn.TabIndex = 0;
             this.ToDoBtn.Text = "Công việc trong ngày";
             this.ToDoBtn.Click += new System.EventHandler(this.ToDoBtn_Click);
-            // 
-            // ControlPanel
-            // 
-            this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ControlPanel.Location = new System.Drawing.Point(0, 93);
-            this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.ShadowDecoration.Parent = this.ControlPanel;
-            this.ControlPanel.Size = new System.Drawing.Size(812, 537);
-            this.ControlPanel.TabIndex = 5;
             // 
             // NextBtn
             // 
@@ -171,23 +163,44 @@
             this.guna2Button1.Text = "Thoát";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // DeadlineLabel
+            // 
+            this.DeadlineLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DeadlineLabel.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeadlineLabel.Location = new System.Drawing.Point(260, 57);
+            this.DeadlineLabel.Name = "DeadlineLabel";
+            this.DeadlineLabel.Size = new System.Drawing.Size(291, 26);
+            this.DeadlineLabel.TabIndex = 12;
+            this.DeadlineLabel.Text = "Deadline theo độ ưu tiên";
+            // 
+            // ControlPanel
+            // 
+            this.ControlPanel.AutoScroll = true;
+            this.ControlPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ControlPanel.Location = new System.Drawing.Point(0, 89);
+            this.ControlPanel.Name = "ControlPanel";
+            this.ControlPanel.Size = new System.Drawing.Size(812, 542);
+            this.ControlPanel.TabIndex = 13;
+            // 
             // GeneralNoteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 630);
+            this.Controls.Add(this.ControlPanel);
+            this.Controls.Add(this.DeadlineLabel);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.PreviousBtn);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.ControlPanel);
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.AddJobBtn);
             this.Controls.Add(this.Dtpk);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "GeneralNoteForm";
             this.Text = "GeneralNoteForm";
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -197,10 +210,11 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button ToDoBtn;
-        public Guna.UI2.WinForms.Guna2Panel ControlPanel;
         private Guna.UI2.WinForms.Guna2Button NextBtn;
         private Guna.UI2.WinForms.Guna2GradientButton AddJobBtn;
         public Guna.UI2.WinForms.Guna2DateTimePicker Dtpk;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel DeadlineLabel;
+        private System.Windows.Forms.FlowLayoutPanel ControlPanel;
     }
 }

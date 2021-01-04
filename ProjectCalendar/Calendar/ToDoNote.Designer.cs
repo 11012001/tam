@@ -700,7 +700,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         public Guna.UI2.WinForms.Guna2ComboBox FMinutesCB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker ToDtpk;
         public Guna.UI2.WinForms.Guna2ComboBox FHoursCB;
         public Guna.UI2.WinForms.Guna2DateTimePicker FromDtpk;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
@@ -709,5 +708,6 @@
         public Guna.UI2.WinForms.Guna2TextBox MainNote;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         public Guna.UI2.WinForms.Guna2HtmlLabel TitleLabel;
+        public Guna.UI2.WinForms.Guna2DateTimePicker ToDtpk;
     }
 }

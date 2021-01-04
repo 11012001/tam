@@ -1,6 +1,6 @@
 ﻿namespace Calendar
 {
-    partial class Project
+    partial class CalendarProject
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Project));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarProject));
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.PanelControl = new Guna.UI2.WinForms.Guna2Panel();
-            this.ControlMinimum = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.ControlClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.PanelDisplay = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelIcon = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpk = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.xuiClock1 = new XanderUI.XUIClock();
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
-            this.ButtonSolarCalendar = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonHDSD = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonTuVi = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonVanKhan = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonDetailDate = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonHistory = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonCount = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonDay = new Guna.UI2.WinForms.Guna2Button();
             this.iconButtonClose = new FontAwesome.Sharp.IconButton();
             this.ButtonDate = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonCalendar = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonChangeDate = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonWeatherForecast = new Guna.UI2.WinForms.Guna2Button();
-            this.displayCalendarPlus1 = new Calendar.DisplaySolar();
-            this.PanelControl.SuspendLayout();
-            this.PanelDisplay.SuspendLayout();
             this.PanelIcon.SuspendLayout();
             this.PanelSetting.SuspendLayout();
             this.SuspendLayout();
@@ -59,119 +54,54 @@
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // PanelControl
-            // 
-            this.PanelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.PanelControl.Controls.Add(this.ControlMinimum);
-            this.PanelControl.Controls.Add(this.ControlClose);
-            this.PanelControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelControl.ForeColor = System.Drawing.Color.White;
-            this.PanelControl.Location = new System.Drawing.Point(140, 0);
-            this.PanelControl.Name = "PanelControl";
-            this.PanelControl.ShadowDecoration.Parent = this.PanelControl;
-            this.PanelControl.Size = new System.Drawing.Size(1009, 30);
-            this.PanelControl.TabIndex = 3;
-            // 
-            // ControlMinimum
-            // 
-            this.ControlMinimum.BorderThickness = 2;
-            this.ControlMinimum.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.ControlMinimum.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ControlMinimum.FillColor = System.Drawing.Color.Transparent;
-            this.ControlMinimum.HoverState.Parent = this.ControlMinimum;
-            this.ControlMinimum.IconColor = System.Drawing.Color.Black;
-            this.ControlMinimum.Location = new System.Drawing.Point(919, 0);
-            this.ControlMinimum.Name = "ControlMinimum";
-            this.ControlMinimum.ShadowDecoration.Parent = this.ControlMinimum;
-            this.ControlMinimum.Size = new System.Drawing.Size(45, 30);
-            this.ControlMinimum.TabIndex = 1;
-            // 
-            // ControlClose
-            // 
-            this.ControlClose.BorderThickness = 2;
-            this.ControlClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ControlClose.FillColor = System.Drawing.Color.Transparent;
-            this.ControlClose.HoverState.Parent = this.ControlClose;
-            this.ControlClose.IconColor = System.Drawing.Color.Black;
-            this.ControlClose.Location = new System.Drawing.Point(964, 0);
-            this.ControlClose.Name = "ControlClose";
-            this.ControlClose.ShadowDecoration.Parent = this.ControlClose;
-            this.ControlClose.Size = new System.Drawing.Size(45, 30);
-            this.ControlClose.TabIndex = 0;
-            // 
             // PanelDisplay
             // 
-            this.PanelDisplay.Controls.Add(this.displayCalendarPlus1);
-            this.PanelDisplay.Location = new System.Drawing.Point(140, 30);
+            this.PanelDisplay.Location = new System.Drawing.Point(190, 0);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(1009, 590);
+            this.PanelDisplay.Size = new System.Drawing.Size(1009, 620);
             this.PanelDisplay.TabIndex = 8;
             // 
             // PanelIcon
             // 
             this.PanelIcon.BorderColor = System.Drawing.Color.White;
             this.PanelIcon.Controls.Add(this.dtpk);
-            this.PanelIcon.Controls.Add(this.xuiClock1);
             this.PanelIcon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.PanelIcon.Location = new System.Drawing.Point(0, 0);
             this.PanelIcon.Name = "PanelIcon";
             this.PanelIcon.ShadowDecoration.Parent = this.PanelIcon;
-            this.PanelIcon.Size = new System.Drawing.Size(140, 200);
+            this.PanelIcon.Size = new System.Drawing.Size(190, 81);
             this.PanelIcon.TabIndex = 0;
             // 
             // dtpk
             // 
             this.dtpk.CheckedState.Parent = this.dtpk;
+            this.dtpk.CustomFormat = "dd/MM/yyyy";
             this.dtpk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtpk.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpk.HoverState.Parent = this.dtpk;
-            this.dtpk.Location = new System.Drawing.Point(0, 166);
+            this.dtpk.Location = new System.Drawing.Point(0, 0);
             this.dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpk.Name = "dtpk";
             this.dtpk.ShadowDecoration.Parent = this.dtpk;
-            this.dtpk.Size = new System.Drawing.Size(140, 34);
+            this.dtpk.Size = new System.Drawing.Size(190, 81);
             this.dtpk.TabIndex = 1;
             this.dtpk.Value = new System.DateTime(2020, 12, 15, 10, 42, 52, 648);
-            // 
-            // xuiClock1
-            // 
-            this.xuiClock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.xuiClock1.CircleThickness = 7;
-            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
-            this.xuiClock1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
-            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.White;
-            this.xuiClock1.FilledSecondColor = System.Drawing.Color.Red;
-            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
-            this.xuiClock1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.xuiClock1.HexagonColor = System.Drawing.Color.Black;
-            this.xuiClock1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.xuiClock1.Location = new System.Drawing.Point(0, 0);
-            this.xuiClock1.Name = "xuiClock1";
-            this.xuiClock1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.xuiClock1.ShowAmPm = true;
-            this.xuiClock1.ShowHexagon = true;
-            this.xuiClock1.ShowMinutesCircle = true;
-            this.xuiClock1.ShowSecondsCircle = true;
-            this.xuiClock1.Size = new System.Drawing.Size(140, 166);
-            this.xuiClock1.TabIndex = 0;
-            this.xuiClock1.Text = "xuiClock1";
-            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.White;
-            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.White;
-            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.White;
+            this.dtpk.ValueChanged += new System.EventHandler(this.dtpk_ValueChanged);
             // 
             // PanelSetting
             // 
-            this.PanelSetting.Controls.Add(this.ButtonSolarCalendar);
+            this.PanelSetting.Controls.Add(this.buttonHDSD);
+            this.PanelSetting.Controls.Add(this.buttonTuVi);
+            this.PanelSetting.Controls.Add(this.buttonVanKhan);
+            this.PanelSetting.Controls.Add(this.buttonDetailDate);
             this.PanelSetting.Controls.Add(this.ButtonHistory);
-            this.PanelSetting.Controls.Add(this.ButtonCount);
+            this.PanelSetting.Controls.Add(this.ButtonDay);
             this.PanelSetting.Controls.Add(this.iconButtonClose);
             this.PanelSetting.Controls.Add(this.ButtonDate);
             this.PanelSetting.Controls.Add(this.ButtonCalendar);
-            this.PanelSetting.Controls.Add(this.ButtonChangeDate);
             this.PanelSetting.Controls.Add(this.ButtonWeatherForecast);
             this.PanelSetting.Controls.Add(this.PanelIcon);
             this.PanelSetting.Dock = System.Windows.Forms.DockStyle.Left;
@@ -179,31 +109,96 @@
             this.PanelSetting.Location = new System.Drawing.Point(0, 0);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
-            this.PanelSetting.Size = new System.Drawing.Size(140, 621);
+            this.PanelSetting.Size = new System.Drawing.Size(190, 621);
             this.PanelSetting.TabIndex = 1;
             // 
-            // ButtonSolarCalendar
+            // buttonHDSD
             // 
-            this.ButtonSolarCalendar.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonSolarCalendar.CheckedState.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.CustomImages.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonSolarCalendar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSolarCalendar.ForeColor = System.Drawing.Color.Black;
-            this.ButtonSolarCalendar.HoverState.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.Image = ((System.Drawing.Image)(resources.GetObject("ButtonSolarCalendar.Image")));
-            this.ButtonSolarCalendar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonSolarCalendar.Location = new System.Drawing.Point(0, 257);
-            this.ButtonSolarCalendar.Name = "ButtonSolarCalendar";
-            this.ButtonSolarCalendar.ShadowDecoration.Parent = this.ButtonSolarCalendar;
-            this.ButtonSolarCalendar.Size = new System.Drawing.Size(140, 45);
-            this.ButtonSolarCalendar.TabIndex = 10;
-            this.ButtonSolarCalendar.Text = "Lịch Dương";
-            this.ButtonSolarCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ButtonSolarCalendar.Click += new System.EventHandler(this.ButtonSolarCalendar_Click);
+            this.buttonHDSD.Animated = true;
+            this.buttonHDSD.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHDSD.CheckedState.Parent = this.buttonHDSD;
+            this.buttonHDSD.CustomImages.Parent = this.buttonHDSD;
+            this.buttonHDSD.FillColor = System.Drawing.Color.Transparent;
+            this.buttonHDSD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.buttonHDSD.ForeColor = System.Drawing.Color.Black;
+            this.buttonHDSD.HoverState.Parent = this.buttonHDSD;
+            this.buttonHDSD.Image = ((System.Drawing.Image)(resources.GetObject("buttonHDSD.Image")));
+            this.buttonHDSD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonHDSD.Location = new System.Drawing.Point(3, 495);
+            this.buttonHDSD.Name = "buttonHDSD";
+            this.buttonHDSD.ShadowDecoration.Parent = this.buttonHDSD;
+            this.buttonHDSD.Size = new System.Drawing.Size(187, 45);
+            this.buttonHDSD.TabIndex = 14;
+            this.buttonHDSD.Text = "Hướng Dẫn Sử Dụng";
+            this.buttonHDSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonHDSD.Click += new System.EventHandler(this.buttonHDSD_Click);
+            // 
+            // buttonTuVi
+            // 
+            this.buttonTuVi.Animated = true;
+            this.buttonTuVi.BackColor = System.Drawing.Color.Transparent;
+            this.buttonTuVi.CheckedState.Parent = this.buttonTuVi;
+            this.buttonTuVi.CustomImages.Parent = this.buttonTuVi;
+            this.buttonTuVi.FillColor = System.Drawing.Color.Transparent;
+            this.buttonTuVi.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.buttonTuVi.ForeColor = System.Drawing.Color.Black;
+            this.buttonTuVi.HoverState.Parent = this.buttonTuVi;
+            this.buttonTuVi.Image = ((System.Drawing.Image)(resources.GetObject("buttonTuVi.Image")));
+            this.buttonTuVi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonTuVi.Location = new System.Drawing.Point(0, 291);
+            this.buttonTuVi.Name = "buttonTuVi";
+            this.buttonTuVi.ShadowDecoration.Parent = this.buttonTuVi;
+            this.buttonTuVi.Size = new System.Drawing.Size(190, 45);
+            this.buttonTuVi.TabIndex = 12;
+            this.buttonTuVi.Text = "Tử Vi";
+            this.buttonTuVi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonTuVi.Click += new System.EventHandler(this.buttonTuVi_Click);
+            // 
+            // buttonVanKhan
+            // 
+            this.buttonVanKhan.Animated = true;
+            this.buttonVanKhan.BackColor = System.Drawing.Color.Transparent;
+            this.buttonVanKhan.CheckedState.Parent = this.buttonVanKhan;
+            this.buttonVanKhan.CustomImages.Parent = this.buttonVanKhan;
+            this.buttonVanKhan.FillColor = System.Drawing.Color.Transparent;
+            this.buttonVanKhan.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.buttonVanKhan.ForeColor = System.Drawing.Color.Black;
+            this.buttonVanKhan.HoverState.Parent = this.buttonVanKhan;
+            this.buttonVanKhan.Image = ((System.Drawing.Image)(resources.GetObject("buttonVanKhan.Image")));
+            this.buttonVanKhan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonVanKhan.Location = new System.Drawing.Point(0, 444);
+            this.buttonVanKhan.Name = "buttonVanKhan";
+            this.buttonVanKhan.ShadowDecoration.Parent = this.buttonVanKhan;
+            this.buttonVanKhan.Size = new System.Drawing.Size(190, 45);
+            this.buttonVanKhan.TabIndex = 11;
+            this.buttonVanKhan.Text = "Văn Khấn";
+            this.buttonVanKhan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonVanKhan.Click += new System.EventHandler(this.buttonVanKhan_Click);
+            // 
+            // buttonDetailDate
+            // 
+            this.buttonDetailDate.Animated = true;
+            this.buttonDetailDate.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDetailDate.CheckedState.Parent = this.buttonDetailDate;
+            this.buttonDetailDate.CustomImages.Parent = this.buttonDetailDate;
+            this.buttonDetailDate.FillColor = System.Drawing.Color.Transparent;
+            this.buttonDetailDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.buttonDetailDate.ForeColor = System.Drawing.Color.Black;
+            this.buttonDetailDate.HoverState.Parent = this.buttonDetailDate;
+            this.buttonDetailDate.Image = ((System.Drawing.Image)(resources.GetObject("buttonDetailDate.Image")));
+            this.buttonDetailDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonDetailDate.Location = new System.Drawing.Point(0, 189);
+            this.buttonDetailDate.Name = "buttonDetailDate";
+            this.buttonDetailDate.ShadowDecoration.Parent = this.buttonDetailDate;
+            this.buttonDetailDate.Size = new System.Drawing.Size(190, 45);
+            this.buttonDetailDate.TabIndex = 10;
+            this.buttonDetailDate.Text = "Lịch Chi Tiết";
+            this.buttonDetailDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.buttonDetailDate.Click += new System.EventHandler(this.buttonDetailDate_Click);
             // 
             // ButtonHistory
             // 
+            this.ButtonHistory.Animated = true;
             this.ButtonHistory.BackColor = System.Drawing.Color.Transparent;
             this.ButtonHistory.CheckedState.Parent = this.ButtonHistory;
             this.ButtonHistory.CustomImages.Parent = this.ButtonHistory;
@@ -213,34 +208,35 @@
             this.ButtonHistory.HoverState.Parent = this.ButtonHistory;
             this.ButtonHistory.Image = ((System.Drawing.Image)(resources.GetObject("ButtonHistory.Image")));
             this.ButtonHistory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonHistory.Location = new System.Drawing.Point(0, 355);
+            this.ButtonHistory.Location = new System.Drawing.Point(0, 240);
             this.ButtonHistory.Name = "ButtonHistory";
             this.ButtonHistory.ShadowDecoration.Parent = this.ButtonHistory;
-            this.ButtonHistory.Size = new System.Drawing.Size(140, 45);
+            this.ButtonHistory.Size = new System.Drawing.Size(190, 45);
             this.ButtonHistory.TabIndex = 9;
             this.ButtonHistory.Text = "Sự Kiện Lịch Sử";
             this.ButtonHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ButtonHistory.Click += new System.EventHandler(this.ButtonHistory_Click);
             // 
-            // ButtonCount
+            // ButtonDay
             // 
-            this.ButtonCount.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonCount.CheckedState.Parent = this.ButtonCount;
-            this.ButtonCount.CustomImages.Parent = this.ButtonCount;
-            this.ButtonCount.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonCount.ForeColor = System.Drawing.Color.Black;
-            this.ButtonCount.HoverState.Parent = this.ButtonCount;
-            this.ButtonCount.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCount.Image")));
-            this.ButtonCount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonCount.Location = new System.Drawing.Point(0, 406);
-            this.ButtonCount.Name = "ButtonCount";
-            this.ButtonCount.ShadowDecoration.Parent = this.ButtonCount;
-            this.ButtonCount.Size = new System.Drawing.Size(140, 45);
-            this.ButtonCount.TabIndex = 8;
-            this.ButtonCount.Text = "Đếm Ngày";
-            this.ButtonCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ButtonCount.Click += new System.EventHandler(this.ButtonCount_Click);
+            this.ButtonDay.Animated = true;
+            this.ButtonDay.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonDay.CheckedState.Parent = this.ButtonDay;
+            this.ButtonDay.CustomImages.Parent = this.ButtonDay;
+            this.ButtonDay.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonDay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonDay.ForeColor = System.Drawing.Color.Black;
+            this.ButtonDay.HoverState.Parent = this.ButtonDay;
+            this.ButtonDay.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDay.Image")));
+            this.ButtonDay.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonDay.Location = new System.Drawing.Point(0, 342);
+            this.ButtonDay.Name = "ButtonDay";
+            this.ButtonDay.ShadowDecoration.Parent = this.ButtonDay;
+            this.ButtonDay.Size = new System.Drawing.Size(190, 45);
+            this.ButtonDay.TabIndex = 8;
+            this.ButtonDay.Text = "Đổi Ngày";
+            this.ButtonDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonDay.Click += new System.EventHandler(this.ButtonDay_Click);
             // 
             // iconButtonClose
             // 
@@ -254,26 +250,27 @@
             this.iconButtonClose.IconSize = 60;
             this.iconButtonClose.Location = new System.Drawing.Point(0, 546);
             this.iconButtonClose.Name = "iconButtonClose";
-            this.iconButtonClose.Size = new System.Drawing.Size(140, 75);
+            this.iconButtonClose.Size = new System.Drawing.Size(190, 75);
             this.iconButtonClose.TabIndex = 7;
             this.iconButtonClose.UseVisualStyleBackColor = false;
             this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
             // 
             // ButtonDate
             // 
+            this.ButtonDate.Animated = true;
             this.ButtonDate.BackColor = System.Drawing.Color.Transparent;
             this.ButtonDate.CheckedState.Parent = this.ButtonDate;
             this.ButtonDate.CustomImages.Parent = this.ButtonDate;
             this.ButtonDate.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ButtonDate.ForeColor = System.Drawing.Color.Black;
             this.ButtonDate.HoverState.Parent = this.ButtonDate;
             this.ButtonDate.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDate.Image")));
             this.ButtonDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonDate.Location = new System.Drawing.Point(0, 308);
+            this.ButtonDate.Location = new System.Drawing.Point(0, 138);
             this.ButtonDate.Name = "ButtonDate";
             this.ButtonDate.ShadowDecoration.Parent = this.ButtonDate;
-            this.ButtonDate.Size = new System.Drawing.Size(140, 45);
+            this.ButtonDate.Size = new System.Drawing.Size(190, 45);
             this.ButtonDate.TabIndex = 6;
             this.ButtonDate.Text = "Lịch Ngày";
             this.ButtonDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -281,86 +278,59 @@
             // 
             // ButtonCalendar
             // 
+            this.ButtonCalendar.Animated = true;
             this.ButtonCalendar.BackColor = System.Drawing.Color.Transparent;
             this.ButtonCalendar.CheckedState.Parent = this.ButtonCalendar;
             this.ButtonCalendar.CustomImages.Parent = this.ButtonCalendar;
             this.ButtonCalendar.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonCalendar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCalendar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ButtonCalendar.ForeColor = System.Drawing.Color.Black;
             this.ButtonCalendar.HoverState.Parent = this.ButtonCalendar;
             this.ButtonCalendar.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCalendar.Image")));
             this.ButtonCalendar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonCalendar.Location = new System.Drawing.Point(0, 206);
+            this.ButtonCalendar.Location = new System.Drawing.Point(0, 87);
             this.ButtonCalendar.Name = "ButtonCalendar";
             this.ButtonCalendar.ShadowDecoration.Parent = this.ButtonCalendar;
-            this.ButtonCalendar.Size = new System.Drawing.Size(140, 45);
+            this.ButtonCalendar.Size = new System.Drawing.Size(190, 45);
             this.ButtonCalendar.TabIndex = 5;
             this.ButtonCalendar.Text = "Lịch Âm";
             this.ButtonCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ButtonCalendar.Click += new System.EventHandler(this.ButtonCalendar_Click);
             // 
-            // ButtonChangeDate
-            // 
-            this.ButtonChangeDate.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonChangeDate.CheckedState.Parent = this.ButtonChangeDate;
-            this.ButtonChangeDate.CustomImages.Parent = this.ButtonChangeDate;
-            this.ButtonChangeDate.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonChangeDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonChangeDate.ForeColor = System.Drawing.Color.Black;
-            this.ButtonChangeDate.HoverState.Parent = this.ButtonChangeDate;
-            this.ButtonChangeDate.Image = ((System.Drawing.Image)(resources.GetObject("ButtonChangeDate.Image")));
-            this.ButtonChangeDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonChangeDate.Location = new System.Drawing.Point(0, 457);
-            this.ButtonChangeDate.Name = "ButtonChangeDate";
-            this.ButtonChangeDate.ShadowDecoration.Parent = this.ButtonChangeDate;
-            this.ButtonChangeDate.Size = new System.Drawing.Size(140, 45);
-            this.ButtonChangeDate.TabIndex = 4;
-            this.ButtonChangeDate.Text = "Đổi Ngày";
-            this.ButtonChangeDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ButtonChangeDate.Click += new System.EventHandler(this.ButtonChangeDate_Click);
-            // 
             // ButtonWeatherForecast
             // 
+            this.ButtonWeatherForecast.Animated = true;
             this.ButtonWeatherForecast.BackColor = System.Drawing.Color.Transparent;
             this.ButtonWeatherForecast.CheckedState.Parent = this.ButtonWeatherForecast;
             this.ButtonWeatherForecast.CustomImages.Parent = this.ButtonWeatherForecast;
             this.ButtonWeatherForecast.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonWeatherForecast.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonWeatherForecast.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ButtonWeatherForecast.ForeColor = System.Drawing.Color.Black;
             this.ButtonWeatherForecast.HoverState.Parent = this.ButtonWeatherForecast;
             this.ButtonWeatherForecast.Image = ((System.Drawing.Image)(resources.GetObject("ButtonWeatherForecast.Image")));
             this.ButtonWeatherForecast.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ButtonWeatherForecast.Location = new System.Drawing.Point(0, 508);
+            this.ButtonWeatherForecast.Location = new System.Drawing.Point(0, 393);
             this.ButtonWeatherForecast.Name = "ButtonWeatherForecast";
             this.ButtonWeatherForecast.ShadowDecoration.Parent = this.ButtonWeatherForecast;
-            this.ButtonWeatherForecast.Size = new System.Drawing.Size(140, 45);
+            this.ButtonWeatherForecast.Size = new System.Drawing.Size(190, 45);
             this.ButtonWeatherForecast.TabIndex = 3;
             this.ButtonWeatherForecast.Text = "Thời Tiết";
             this.ButtonWeatherForecast.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ButtonWeatherForecast.Click += new System.EventHandler(this.ButtonWeatherForecast_Click);
             // 
-            // displayCalendarPlus1
-            // 
-            this.displayCalendarPlus1.Location = new System.Drawing.Point(0, 0);
-            this.displayCalendarPlus1.Name = "displayCalendarPlus1";
-            this.displayCalendarPlus1.Size = new System.Drawing.Size(1009, 590);
-            this.displayCalendarPlus1.TabIndex = 0;
-            // 
-            // Project
+            // CalendarProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1149, 621);
+            this.ClientSize = new System.Drawing.Size(1199, 621);
             this.Controls.Add(this.PanelDisplay);
-            this.Controls.Add(this.PanelControl);
             this.Controls.Add(this.PanelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Project";
+            this.Name = "CalendarProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
-            this.PanelControl.ResumeLayout(false);
-            this.PanelDisplay.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.CalendarProject_Load);
             this.PanelIcon.ResumeLayout(false);
             this.PanelSetting.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -370,22 +340,19 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
-        private Guna.UI2.WinForms.Guna2Panel PanelControl;
-        private Guna.UI2.WinForms.Guna2ControlBox ControlMinimum;
-        private Guna.UI2.WinForms.Guna2ControlBox ControlClose;
         private Guna.UI2.WinForms.Guna2Panel PanelDisplay;
         private Guna.UI2.WinForms.Guna2Panel PanelSetting;
         private Guna.UI2.WinForms.Guna2Button ButtonHistory;
-        private Guna.UI2.WinForms.Guna2Button ButtonCount;
+        private Guna.UI2.WinForms.Guna2Button ButtonDay;
         private FontAwesome.Sharp.IconButton iconButtonClose;
         private Guna.UI2.WinForms.Guna2Button ButtonDate;
         private Guna.UI2.WinForms.Guna2Button ButtonCalendar;
-        private Guna.UI2.WinForms.Guna2Button ButtonChangeDate;
         private Guna.UI2.WinForms.Guna2Button ButtonWeatherForecast;
         private Guna.UI2.WinForms.Guna2Panel PanelIcon;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
-        private XanderUI.XUIClock xuiClock1;
-        private Guna.UI2.WinForms.Guna2Button ButtonSolarCalendar;
-        private DisplaySolar displayCalendarPlus1;
+        private Guna.UI2.WinForms.Guna2Button buttonVanKhan;
+        private Guna.UI2.WinForms.Guna2Button buttonDetailDate;
+        private Guna.UI2.WinForms.Guna2Button buttonTuVi;
+        private Guna.UI2.WinForms.Guna2Button buttonHDSD;
     }
 }

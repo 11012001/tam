@@ -50,13 +50,13 @@ namespace Calendar
                 {
                     case "Năm":
                         long year = count / 365;
-                        long month = (count - year * 365) / 12;
-                        long day = count - year * 365 - month * 12;
+                        long month = (count - year * 365) / 30;
+                        long day = count - year * 365 - month * 30;
                         labelCount.Text = string.Format("{0} năm {1} tháng {2} ngày", year, month, day);
                         break;
                     case "Tháng":
-                        month = count / 12;
-                        day = count - month * 12;
+                        month = count / 30;
+                        day = count - month * 30;
                         labelCount.Text = string.Format("{0} tháng {1} ngày", month, day);
                         break;
                     case "Ngày":
@@ -196,5 +196,13 @@ namespace Calendar
         #endregion
 
         #endregion
+
+        private void DisplayCountDay_Load(object sender, EventArgs e)
+        {
+            dtpkFrom.Value = DateTime.Now;
+            dtpkTo.Value = DateTime.Now;
+            dtpkFromChange.Value = DateTime.Now;
+            dtpkToChange.Value = DateTime.Now;
+        }
     }
 }

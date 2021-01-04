@@ -42,9 +42,9 @@
             // 
             // displayChangeDate1
             // 
-            this.displayChangeDate1.Location = new System.Drawing.Point(0, -3);
+            this.displayChangeDate1.Location = new System.Drawing.Point(-3, 0);
             this.displayChangeDate1.Name = "displayChangeDate1";
-            this.displayChangeDate1.Size = new System.Drawing.Size(505, 590);
+            this.displayChangeDate1.Size = new System.Drawing.Size(505, 620);
             this.displayChangeDate1.TabIndex = 1;
             // 
             // guna2VSeparator1
@@ -52,7 +52,7 @@
             this.guna2VSeparator1.FillThickness = 10;
             this.guna2VSeparator1.Location = new System.Drawing.Point(498, 0);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 590);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 620);
             this.guna2VSeparator1.TabIndex = 2;
             // 
             // DisplayDay
@@ -63,7 +63,7 @@
             this.Controls.Add(this.displayChangeDate1);
             this.Controls.Add(this.displayCountDay1);
             this.Name = "DisplayDay";
-            this.Size = new System.Drawing.Size(1009, 590);
+            this.Size = new System.Drawing.Size(1009, 620);
             this.ResumeLayout(false);
 
         }

@@ -37,11 +37,14 @@ namespace Calendar
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PanelGeneral = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.ComboBoxSolarYear = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonFind1 = new Guna.UI2.WinForms.Guna2Button();
             this.ComboBoxSolarMonth = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxSolarDay = new Guna.UI2.WinForms.Guna2ComboBox();
             this.PanelVN = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.DataGridViewVN = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ButtonVN = new Guna.UI2.WinForms.Guna2Button();
             this.PanelName = new Guna.UI2.WinForms.Guna2Panel();
@@ -50,10 +53,7 @@ namespace Calendar
             this.DataGridViewTG = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ButtonWorld = new Guna.UI2.WinForms.Guna2Button();
             this.calendarDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.PanelGeneral.SuspendLayout();
             this.PanelVN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewVN)).BeginInit();
@@ -71,15 +71,27 @@ namespace Calendar
             this.PanelGeneral.Controls.Add(this.ButtonFind1);
             this.PanelGeneral.Controls.Add(this.ComboBoxSolarMonth);
             this.PanelGeneral.Controls.Add(this.ComboBoxSolarDay);
-            this.PanelGeneral.Controls.Add(this.PanelVN);
             this.PanelGeneral.Controls.Add(this.PanelName);
-            this.PanelGeneral.Controls.Add(this.PanelWorld);
-            this.PanelGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelGeneral.Controls.Add(this.PanelVN);
             this.PanelGeneral.Location = new System.Drawing.Point(0, 0);
             this.PanelGeneral.Name = "PanelGeneral";
             this.PanelGeneral.ShadowDecoration.Parent = this.PanelGeneral;
             this.PanelGeneral.Size = new System.Drawing.Size(1009, 590);
             this.PanelGeneral.TabIndex = 0;
+            // 
+            // guna2VSeparator3
+            // 
+            this.guna2VSeparator3.Location = new System.Drawing.Point(273, 54);
+            this.guna2VSeparator3.Name = "guna2VSeparator3";
+            this.guna2VSeparator3.Size = new System.Drawing.Size(10, 36);
+            this.guna2VSeparator3.TabIndex = 21;
+            // 
+            // guna2VSeparator2
+            // 
+            this.guna2VSeparator2.Location = new System.Drawing.Point(567, 54);
+            this.guna2VSeparator2.Name = "guna2VSeparator2";
+            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 36);
+            this.guna2VSeparator2.TabIndex = 4;
             // 
             // ComboBoxSolarYear
             // 
@@ -177,11 +189,19 @@ namespace Calendar
             this.PanelVN.Controls.Add(this.guna2VSeparator1);
             this.PanelVN.Controls.Add(this.DataGridViewVN);
             this.PanelVN.Controls.Add(this.ButtonVN);
+            this.PanelVN.Controls.Add(this.PanelWorld);
             this.PanelVN.Location = new System.Drawing.Point(0, 90);
             this.PanelVN.Name = "PanelVN";
             this.PanelVN.ShadowDecoration.Parent = this.PanelVN;
             this.PanelVN.Size = new System.Drawing.Size(1009, 500);
             this.PanelVN.TabIndex = 2;
+            // 
+            // guna2VSeparator1
+            // 
+            this.guna2VSeparator1.Location = new System.Drawing.Point(284, -36);
+            this.guna2VSeparator1.Name = "guna2VSeparator1";
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 36);
+            this.guna2VSeparator1.TabIndex = 2;
             // 
             // DataGridViewVN
             // 
@@ -214,14 +234,13 @@ namespace Calendar
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridViewVN.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridViewVN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewVN.EnableHeadersVisualStyles = false;
             this.DataGridViewVN.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridViewVN.Location = new System.Drawing.Point(0, 45);
             this.DataGridViewVN.Name = "DataGridViewVN";
             this.DataGridViewVN.RowHeadersVisible = false;
             this.DataGridViewVN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewVN.Size = new System.Drawing.Size(1009, 455);
+            this.DataGridViewVN.Size = new System.Drawing.Size(505, 455);
             this.DataGridViewVN.TabIndex = 1;
             this.DataGridViewVN.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DataGridViewVN.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -250,17 +269,15 @@ namespace Calendar
             // 
             this.ButtonVN.CheckedState.Parent = this.ButtonVN;
             this.ButtonVN.CustomImages.Parent = this.ButtonVN;
-            this.ButtonVN.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonVN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ButtonVN.ForeColor = System.Drawing.Color.White;
             this.ButtonVN.HoverState.Parent = this.ButtonVN;
             this.ButtonVN.Location = new System.Drawing.Point(0, 0);
             this.ButtonVN.Name = "ButtonVN";
             this.ButtonVN.ShadowDecoration.Parent = this.ButtonVN;
-            this.ButtonVN.Size = new System.Drawing.Size(1009, 45);
+            this.ButtonVN.Size = new System.Drawing.Size(505, 45);
             this.ButtonVN.TabIndex = 0;
             this.ButtonVN.Text = "SỰ KIỆN TRONG NƯỚC";
-            this.ButtonVN.Click += new System.EventHandler(this.ButtonVN_Click);
             // 
             // PanelName
             // 
@@ -291,10 +308,10 @@ namespace Calendar
             // 
             this.PanelWorld.Controls.Add(this.DataGridViewTG);
             this.PanelWorld.Controls.Add(this.ButtonWorld);
-            this.PanelWorld.Location = new System.Drawing.Point(0, 90);
+            this.PanelWorld.Location = new System.Drawing.Point(505, 0);
             this.PanelWorld.Name = "PanelWorld";
             this.PanelWorld.ShadowDecoration.Parent = this.PanelWorld;
-            this.PanelWorld.Size = new System.Drawing.Size(1009, 500);
+            this.PanelWorld.Size = new System.Drawing.Size(504, 500);
             this.PanelWorld.TabIndex = 3;
             // 
             // DataGridViewTG
@@ -328,7 +345,6 @@ namespace Calendar
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridViewTG.DefaultCellStyle = dataGridViewCellStyle6;
-            this.DataGridViewTG.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGridViewTG.EnableHeadersVisualStyles = false;
             this.DataGridViewTG.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridViewTG.Location = new System.Drawing.Point(0, 45);
@@ -336,7 +352,7 @@ namespace Calendar
             this.DataGridViewTG.ReadOnly = true;
             this.DataGridViewTG.RowHeadersVisible = false;
             this.DataGridViewTG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewTG.Size = new System.Drawing.Size(1009, 455);
+            this.DataGridViewTG.Size = new System.Drawing.Size(504, 455);
             this.DataGridViewTG.TabIndex = 1;
             this.DataGridViewTG.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DataGridViewTG.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -365,38 +381,18 @@ namespace Calendar
             // 
             this.ButtonWorld.CheckedState.Parent = this.ButtonWorld;
             this.ButtonWorld.CustomImages.Parent = this.ButtonWorld;
-            this.ButtonWorld.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonWorld.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ButtonWorld.ForeColor = System.Drawing.Color.White;
             this.ButtonWorld.HoverState.Parent = this.ButtonWorld;
             this.ButtonWorld.Location = new System.Drawing.Point(0, 0);
             this.ButtonWorld.Name = "ButtonWorld";
             this.ButtonWorld.ShadowDecoration.Parent = this.ButtonWorld;
-            this.ButtonWorld.Size = new System.Drawing.Size(1009, 45);
+            this.ButtonWorld.Size = new System.Drawing.Size(504, 45);
             this.ButtonWorld.TabIndex = 0;
             this.ButtonWorld.Text = "SỰ KIỆN QUỐC TẾ";
-            this.ButtonWorld.Click += new System.EventHandler(this.ButtonWorld_Click);
             // 
-            // guna2VSeparator1
+            // calendarDataSetBindingSource
             // 
-            this.guna2VSeparator1.Location = new System.Drawing.Point(284, -36);
-            this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 36);
-            this.guna2VSeparator1.TabIndex = 2;
-            // 
-            // guna2VSeparator2
-            // 
-            this.guna2VSeparator2.Location = new System.Drawing.Point(567, 54);
-            this.guna2VSeparator2.Name = "guna2VSeparator2";
-            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 36);
-            this.guna2VSeparator2.TabIndex = 4;
-            // 
-            // guna2VSeparator3
-            // 
-            this.guna2VSeparator3.Location = new System.Drawing.Point(273, 54);
-            this.guna2VSeparator3.Name = "guna2VSeparator3";
-            this.guna2VSeparator3.Size = new System.Drawing.Size(10, 36);
-            this.guna2VSeparator3.TabIndex = 21;
             // 
             // DisplayDetailEvent
             // 

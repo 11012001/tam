@@ -391,12 +391,12 @@ namespace Calendar
         private Guna.UI2.WinForms.Guna2Button BtnTue;
         private Guna.UI2.WinForms.Guna2Button BtnMon;
         private Guna.UI2.WinForms.Guna2Panel PanelMatrix;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
         private FontAwesome.Sharp.IconButton BtnPre;
         private FontAwesome.Sharp.IconButton BtnNext;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv;
         private System.Windows.Forms.DataGridViewTextBoxColumn CountDayTB;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEvent;
+        public Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
     }
 }

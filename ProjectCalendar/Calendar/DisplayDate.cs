@@ -5,10 +5,13 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Augustine.VietnameseCalendar.Core.LuniSolarCalendar;
+using Newtonsoft.Json;
+using WMPLib;
 
 namespace Calendar
 {
@@ -31,7 +34,7 @@ namespace Calendar
         }
         public DisplayDate(DateTime date)
         {
-            dtpk.Value = date;
+            Date = date;
             InitializeComponent();
         }
         public static DisplayDate DateDisplay
@@ -55,6 +58,7 @@ namespace Calendar
             LunnarSample.LunnarCalendar lunnar = new LunnarSample.LunnarCalendar();
             int hour = DateTime.Now.Hour;
             labelHourLunnar.Text = string.Format("Giờ {0}",lunnar.GetGioAm(hour));
+            labelHour.Location = new Point(PanelHourLunnar.Size.Width / 2 - labelHour.Size.Width / 2, 28);
 
         }
         //Sự kiện để lấy thông tin giờ
@@ -62,7 +66,9 @@ namespace Calendar
         {
             timer.Enabled = true;
             timer.Start();
-            dtpk.Value = DateTime.Now;
+            dtpk.Value = Date;
+            labelHourLunnar.Location = new Point(PanelHourLunnar.Size.Width / 2 - labelHourLunnar.Size.Width / 2, 3);
+            //labelHour.Location = new Point(PanelHourLunnar.Size.Width / 2 - labelHour.Size.Width / 2, 28);
             DisplayGeneral();
         }
         #endregion
@@ -135,17 +141,16 @@ namespace Calendar
             #endregion
 
             #region Lấy thông tin ngày âm
-            if (lunnardate.Day >= 10)
             labelLunnarDay.Text = lunnardate.Day.ToString();
             labelLunnarDay.ForeColor = ColorLunnar;
-            labelLunnarDay.Location = new Point((PanelLunnarDay.Size.Width / 2) - (labelLunnarDay.Size.Width / 2), 28);
+            labelLunnarDay.Location = new Point((PanelLunnarDay.Size.Width / 2) - (labelLunnarDay.Size.Width / 2), 32);
             #endregion
 
             #region Lấy thông tin ngày hoàng đạo
             if (lunnar.IsZodiacDay(date,lunnardate.Month)  == 1)
             {
                 PictureZodiac.IconChar = FontAwesome.Sharp.IconChar.YinYang;
-                PictureZodiac.IconColor = Color.White;
+                PictureZodiac.IconColor = Color.Yellow;
             }
             else if (lunnar.IsZodiacDay(date, lunnardate.Month) == -1)
             {
@@ -176,15 +181,6 @@ namespace Calendar
             labelLunnarDayName.Text = string.Format("Ngày {0}",lunnardate.DayName);
 
             labelLunnarMonthName.Text = string.Format("Tháng {0}",lunnardate.MonthLongName);
-            int SizeText = labelLunnarMonthName.Text.Length;
-            if(SizeText > 15)
-            {
-                labelLunnarMonthName.Location = new Point(0,45);
-            }    
-            else
-            {
-                labelLunnarMonthName.Location = new Point(22, 45);
-            }
 
             labelLunnarYearName.Text = string.Format("Năm {0}",lunnardate.YearName);
             #endregion
@@ -198,28 +194,51 @@ namespace Calendar
             #endregion
 
             #region Thông tin giờ hoàng đạo
-            string[] ZodiacHours = lunnar.GetZodiacTimeSmallVersion(date).Split(',');
-            labelZodiac1.Text = string.Format(" {0}, {1}, {2}",ZodiacHours[0],ZodiacHours[1],ZodiacHours[2]);
-            labelZodiac2.Text = string.Format(" {0}, {1}, {2}", ZodiacHours[3], ZodiacHours[4], ZodiacHours[5]);
+            TextboxZodiacHour.Text = lunnar.GetZodiacTimeSmallVersion(date);
             #endregion
         }
         #endregion
 
         #region Các sự kiện liên quan tới ngày
         //Sự kiện khi nhấn vào ButtonPrevious để trở lại 1 ngày
+        private event EventHandler prebtn;
+        public event EventHandler Prebtn
+        {
+            add { prebtn += value; }
+            remove { prebtn -= value; ; }
+        }
+
         private void ButtonPre_Click(object sender, EventArgs e)
         {
             dtpk.Value = dtpk.Value.AddDays(-1);
+            if (prebtn != null)
+                prebtn(this, new EventArgs());
         }
         //Sự kiện khi nhấn vào ButtonNext để tiến tới 1 ngày
+        private event EventHandler nextbtn;
+        public event EventHandler Nextbtn
+        {
+            add { nextbtn += value; }
+            remove { nextbtn -= value; ; }
+        }
         private void ButtonNext_Click(object sender, EventArgs e)
         {
             dtpk.Value = dtpk.Value.AddDays(1);
+            if (nextbtn != null)
+                nextbtn(this, new EventArgs());
         }
         //Sự kiện khi nhấn vào ButtonToday để quay trở lại hiện tại
+        private event EventHandler tdbtn;
+        public event EventHandler TDbtn
+        {
+            add { tdbtn += value; }
+            remove { tdbtn -= value; ; }
+        }
         private void ButtonToday_Click(object sender, EventArgs e)
         {
             dtpk.Value = DateTime.Now;
+            if (tdbtn != null)
+                tdbtn(this, new EventArgs());
         }
         #endregion
 
@@ -271,7 +290,6 @@ namespace Calendar
         private void DisplayQuote()
         {
             LunnarSample.StringText text = new LunnarSample.StringText();
-            text.GetQuote();
             LunnarSample.StringText.QuoteClass quote = text.MakeRandomQuote();
             TextboxQuote.Text = quote.Quote;
             TextboxAuthor.Text = quote.Author;
@@ -306,6 +324,42 @@ namespace Calendar
         }
         #endregion
 
+        #region Sử dụng sự kiện âm thanh
+        public string url = "";
+        private void ibtnSpeech_Click(object sender, EventArgs e)
+        {
+            String sevent = string.Format("{0}", TextboxEvent.Text == "" ? "Không có sự kiện gì vào ngày hôm nay" : "Hôm nay có sự kiện là " + TextboxEvent.Text);
+            String payload = string.Format("Hôm nay. {0}. ngày {1}. tháng {2}. năm {3}. tức là {4}. {5}.{6} . {7}", labelDOW.Text, labelDay.Text, dtpk.Value.Month, dtpk.Value.Year
+                                            , labelLunnarDayName.Text, labelLunnarMonthName.Text, labelLunnarYearName.Text, sevent);
+            try
+            {
+                String result = Task.Run(async () =>
+                {
+                    HttpClient client = new HttpClient();
+                    client.DefaultRequestHeaders.Add("api-key", "X5ahWJsgKcX49i8Yw0rkmbUEMgBfH2vE");
+                    client.DefaultRequestHeaders.Add("speed", "");
+                    client.DefaultRequestHeaders.Add("voice", "linhsan");
+                    client.DefaultRequestHeaders.Add("callback_url", "");
+                    var response = await client.PostAsync("https://api.fpt.ai/hmi/tts/v5", new StringContent(payload));
+                    return await response.Content.ReadAsStringAsync();
+                }).GetAwaiter().GetResult();
+
+                var json = JsonConvert.DeserializeObject<SpeechJSon.root>(result);
+                SpeechJSon.root output = json;
+
+                url = string.Format("{0}", output.async);
+
+                WindowsMediaPlayer sound = new WindowsMediaPlayer();
+                sound.URL = url;
+                sound.controls.play();
+            }
+            catch (System.Net.Http.HttpRequestException)
+            {
+                MessageBox.Show("Hãy kết nối mạng trước khi sử dụng tính năng này.");
+            }
+        }
+        #endregion
+
 
         private void ButtonNote_Click(object sender, EventArgs e)
         {
@@ -315,6 +369,17 @@ namespace Calendar
             NoteForm.Dtpk.Value = Date;
             NoteForm.ShowDialog();
         }
+        private event EventHandler monthbtn;
+        public event EventHandler MonthBtn
+        {
+            add { monthbtn += value; }
+            remove { monthbtn -= value; ; }
+        }
 
+        private void ButtonMonth_Click(object sender, EventArgs e)
+        {
+            if (monthbtn != null)
+                monthbtn(this, new EventArgs());
+        }
     }
 }

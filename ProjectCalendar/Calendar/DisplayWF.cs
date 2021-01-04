@@ -89,24 +89,10 @@ namespace Calendar
                     labelTemp.Location = new Point((PanelDisplayWT.Size.Width / 2) - (labelTemp.Size.Width / 2), 54);
                     labelHour.Text = DateTime.Now.ToString("t");
                 }
-                catch (WebException we)
+                catch (System.Net.WebException)
                 {
-                    try
-                    {
-                        StreamReader reader = new StreamReader(we.Response.GetResponseStream());
-                        XmlDocument response_doc = new XmlDocument();
-                        response_doc.LoadXml(reader.ReadToEnd());
-                        XmlNode message_node = response_doc.SelectSingleNode("//message");
-                        MessageBox.Show(message_node.InnerText);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Unknown error\n" + ex.Message);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Unknown error\n" + ex.Message);
+                    PanelDisplayWT.Visible = false;
+                    MessageBox.Show("Vui lòng kết nối mạng trước khi sử dụng tính năng  này.");
                 }
             }
         }
@@ -115,14 +101,18 @@ namespace Calendar
         #region Sự kiện của button tìm kiếm
         private void ButtonFind_Click(object sender, EventArgs e)
         {
-            PanelDisplayWT.Visible = true;
-            GetWeather();
+            if (ComboBoxCity.Text == "")
+            {
+                PanelDisplayWT.Visible = false;
+                MessageBox.Show("Vui lòng chọn tỉnh mà bạn muốn xem dự báo thời tiết.");
+                return;
+            }
+            else
+            {
+                PanelDisplayWT.Visible = true;
+                GetWeather();
+            }
         }
         #endregion
-
-        private void labelHour_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

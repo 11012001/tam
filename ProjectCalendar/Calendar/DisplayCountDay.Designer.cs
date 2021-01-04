@@ -88,10 +88,10 @@ namespace Calendar
             this.PanelChangeDay.Controls.Add(this.panelFromChange);
             this.PanelChangeDay.Controls.Add(this.buttonChangeDay);
             this.PanelChangeDay.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelChangeDay.Location = new System.Drawing.Point(0, 330);
+            this.PanelChangeDay.Location = new System.Drawing.Point(0, 336);
             this.PanelChangeDay.Name = "PanelChangeDay";
             this.PanelChangeDay.ShadowDecoration.Parent = this.PanelChangeDay;
-            this.PanelChangeDay.Size = new System.Drawing.Size(530, 260);
+            this.PanelChangeDay.Size = new System.Drawing.Size(530, 284);
             this.PanelChangeDay.TabIndex = 1;
             // 
             // panelFromChange
@@ -104,11 +104,10 @@ namespace Calendar
             this.panelFromChange.Controls.Add(this.dtpkFromChange);
             this.panelFromChange.Controls.Add(this.labelTo2);
             this.panelFromChange.Controls.Add(this.labelFrom2);
-            this.panelFromChange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFromChange.Location = new System.Drawing.Point(0, 48);
+            this.panelFromChange.Location = new System.Drawing.Point(0, 50);
             this.panelFromChange.Margin = new System.Windows.Forms.Padding(2);
             this.panelFromChange.Name = "panelFromChange";
-            this.panelFromChange.Size = new System.Drawing.Size(530, 212);
+            this.panelFromChange.Size = new System.Drawing.Size(530, 232);
             this.panelFromChange.TabIndex = 20;
             // 
             // ButtonChangeTo
@@ -258,13 +257,12 @@ namespace Calendar
             this.buttonChangeDay.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.buttonChangeDay.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.buttonChangeDay.CornerRadius = 5;
-            this.buttonChangeDay.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonChangeDay.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold);
             this.buttonChangeDay.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.buttonChangeDay.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.buttonChangeDay.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.buttonChangeDay.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.buttonChangeDay.Location = new System.Drawing.Point(0, 0);
+            this.buttonChangeDay.Location = new System.Drawing.Point(3, -2);
             this.buttonChangeDay.Margin = new System.Windows.Forms.Padding(2);
             this.buttonChangeDay.Name = "buttonChangeDay";
             this.buttonChangeDay.Size = new System.Drawing.Size(530, 48);
@@ -282,7 +280,6 @@ namespace Calendar
             this.PanelCountDay.Controls.Add(this.labelTo1);
             this.PanelCountDay.Controls.Add(this.labelFrom1);
             this.PanelCountDay.Controls.Add(this.buttonCountDay);
-            this.PanelCountDay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelCountDay.Location = new System.Drawing.Point(0, 70);
             this.PanelCountDay.Name = "PanelCountDay";
             this.PanelCountDay.ShadowDecoration.Parent = this.PanelCountDay;
@@ -428,7 +425,8 @@ namespace Calendar
             this.Controls.Add(this.PanelChangeDay);
             this.Controls.Add(this.PanelName);
             this.Name = "DisplayCountDay";
-            this.Size = new System.Drawing.Size(530, 590);
+            this.Size = new System.Drawing.Size(530, 620);
+            this.Load += new System.EventHandler(this.DisplayCountDay_Load);
             this.PanelName.ResumeLayout(false);
             this.PanelChangeDay.ResumeLayout(false);
             this.panelFromChange.ResumeLayout(false);

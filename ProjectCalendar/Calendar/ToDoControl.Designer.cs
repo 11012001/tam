@@ -95,7 +95,7 @@
             this.DetailsBtn.IconChar = FontAwesome.Sharp.IconChar.None;
             this.DetailsBtn.IconColor = System.Drawing.Color.Black;
             this.DetailsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.DetailsBtn.Location = new System.Drawing.Point(639, 8);
+            this.DetailsBtn.Location = new System.Drawing.Point(617, 3);
             this.DetailsBtn.Name = "DetailsBtn";
             this.DetailsBtn.Size = new System.Drawing.Size(76, 39);
             this.DetailsBtn.TabIndex = 27;
@@ -111,7 +111,7 @@
             this.DeleteBtn.IconColor = System.Drawing.Color.Black;
             this.DeleteBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.DeleteBtn.IconSize = 30;
-            this.DeleteBtn.Location = new System.Drawing.Point(724, 8);
+            this.DeleteBtn.Location = new System.Drawing.Point(702, 3);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(6);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(35, 39);
@@ -126,7 +126,7 @@
             this.EditBtn.IconColor = System.Drawing.Color.Black;
             this.EditBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.EditBtn.IconSize = 30;
-            this.EditBtn.Location = new System.Drawing.Point(771, 8);
+            this.EditBtn.Location = new System.Drawing.Point(749, 6);
             this.EditBtn.Margin = new System.Windows.Forms.Padding(6);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(35, 39);
@@ -188,7 +188,7 @@
             this.Notes.ReadOnly = true;
             this.Notes.SelectedText = "";
             this.Notes.ShadowDecoration.Parent = this.Notes;
-            this.Notes.Size = new System.Drawing.Size(756, 29);
+            this.Notes.Size = new System.Drawing.Size(734, 29);
             this.Notes.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.Notes.TabIndex = 22;
             // 
@@ -330,7 +330,7 @@
             this.Controls.Add(this.LAbel);
             this.Controls.Add(this.FMinutes);
             this.Name = "ToDoControl";
-            this.Size = new System.Drawing.Size(812, 86);
+            this.Size = new System.Drawing.Size(790, 86);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);

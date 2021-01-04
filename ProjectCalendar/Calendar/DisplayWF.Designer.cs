@@ -93,7 +93,7 @@ namespace Calendar
             this.PanelDisplay.Location = new System.Drawing.Point(0, 0);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(1009, 590);
+            this.PanelDisplay.Size = new System.Drawing.Size(1009, 620);
             this.PanelDisplay.TabIndex = 0;
             // 
             // PanelWeather
@@ -102,11 +102,11 @@ namespace Calendar
             this.PanelWeather.Controls.Add(this.ButtonFind);
             this.PanelWeather.Controls.Add(this.ComboBoxCity);
             this.PanelWeather.Controls.Add(this.labelNameCity);
-            this.PanelWeather.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PanelWeather.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PanelWeather.Location = new System.Drawing.Point(0, 92);
             this.PanelWeather.Name = "PanelWeather";
             this.PanelWeather.ShadowDecoration.Parent = this.PanelWeather;
-            this.PanelWeather.Size = new System.Drawing.Size(1009, 498);
+            this.PanelWeather.Size = new System.Drawing.Size(1009, 528);
             this.PanelWeather.TabIndex = 1;
             // 
             // PanelDisplayWT
@@ -146,11 +146,11 @@ namespace Calendar
             this.PanelDisplayWT.Controls.Add(this.labelNameLat);
             this.PanelDisplayWT.Controls.Add(this.labelNameLog);
             this.PanelDisplayWT.Controls.Add(this.PictureWeather);
-            this.PanelDisplayWT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PanelDisplayWT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PanelDisplayWT.Location = new System.Drawing.Point(0, 50);
             this.PanelDisplayWT.Name = "PanelDisplayWT";
             this.PanelDisplayWT.ShadowDecoration.Parent = this.PanelDisplayWT;
-            this.PanelDisplayWT.Size = new System.Drawing.Size(1009, 448);
+            this.PanelDisplayWT.Size = new System.Drawing.Size(1009, 475);
             this.PanelDisplayWT.TabIndex = 3;
             this.PanelDisplayWT.Visible = false;
             // 
@@ -207,7 +207,7 @@ namespace Calendar
             this.guna2PictureBoxPressure.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBoxPressure.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBoxPressure.Image")));
             this.guna2PictureBoxPressure.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBoxPressure.InitialImage")));
-            this.guna2PictureBoxPressure.Location = new System.Drawing.Point(757, 348);
+            this.guna2PictureBoxPressure.Location = new System.Drawing.Point(708, 348);
             this.guna2PictureBoxPressure.Name = "guna2PictureBoxPressure";
             this.guna2PictureBoxPressure.ShadowDecoration.Parent = this.guna2PictureBoxPressure;
             this.guna2PictureBoxPressure.Size = new System.Drawing.Size(30, 32);
@@ -236,7 +236,7 @@ namespace Calendar
             this.iconPictureBoxCLound.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBoxCLound.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBoxCLound.IconSize = 30;
-            this.iconPictureBoxCLound.Location = new System.Drawing.Point(757, 267);
+            this.iconPictureBoxCLound.Location = new System.Drawing.Point(708, 267);
             this.iconPictureBoxCLound.Name = "iconPictureBoxCLound";
             this.iconPictureBoxCLound.Size = new System.Drawing.Size(30, 32);
             this.iconPictureBoxCLound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -251,7 +251,7 @@ namespace Calendar
             this.iconPictureBoxWind.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBoxWind.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBoxWind.IconSize = 30;
-            this.iconPictureBoxWind.Location = new System.Drawing.Point(757, 305);
+            this.iconPictureBoxWind.Location = new System.Drawing.Point(708, 305);
             this.iconPictureBoxWind.Name = "iconPictureBoxWind";
             this.iconPictureBoxWind.Size = new System.Drawing.Size(30, 32);
             this.iconPictureBoxWind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -278,7 +278,7 @@ namespace Calendar
             this.labelPressure.AutoSize = true;
             this.labelPressure.BackColor = System.Drawing.Color.Transparent;
             this.labelPressure.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPressure.Location = new System.Drawing.Point(916, 348);
+            this.labelPressure.Location = new System.Drawing.Point(867, 348);
             this.labelPressure.Name = "labelPressure";
             this.labelPressure.Size = new System.Drawing.Size(72, 25);
             this.labelPressure.TabIndex = 38;
@@ -289,7 +289,7 @@ namespace Calendar
             this.labelWind.AutoSize = true;
             this.labelWind.BackColor = System.Drawing.Color.Transparent;
             this.labelWind.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWind.Location = new System.Drawing.Point(916, 307);
+            this.labelWind.Location = new System.Drawing.Point(867, 307);
             this.labelWind.Name = "labelWind";
             this.labelWind.Size = new System.Drawing.Size(86, 25);
             this.labelWind.TabIndex = 37;
@@ -311,7 +311,7 @@ namespace Calendar
             this.labelTemp.AutoSize = true;
             this.labelTemp.BackColor = System.Drawing.Color.Transparent;
             this.labelTemp.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTemp.Location = new System.Drawing.Point(458, 54);
+            this.labelTemp.Location = new System.Drawing.Point(456, 75);
             this.labelTemp.Name = "labelTemp";
             this.labelTemp.Size = new System.Drawing.Size(92, 72);
             this.labelTemp.TabIndex = 35;
@@ -321,7 +321,7 @@ namespace Calendar
             // 
             this.guna2Separator10.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator10.FillThickness = 4;
-            this.guna2Separator10.Location = new System.Drawing.Point(757, 383);
+            this.guna2Separator10.Location = new System.Drawing.Point(708, 383);
             this.guna2Separator10.Name = "guna2Separator10";
             this.guna2Separator10.Size = new System.Drawing.Size(252, 10);
             this.guna2Separator10.TabIndex = 34;
@@ -330,7 +330,7 @@ namespace Calendar
             // 
             this.guna2Separator6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator6.FillThickness = 4;
-            this.guna2Separator6.Location = new System.Drawing.Point(757, 339);
+            this.guna2Separator6.Location = new System.Drawing.Point(708, 339);
             this.guna2Separator6.Name = "guna2Separator6";
             this.guna2Separator6.Size = new System.Drawing.Size(252, 10);
             this.guna2Separator6.TabIndex = 33;
@@ -339,7 +339,7 @@ namespace Calendar
             // 
             this.guna2Separator7.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator7.FillThickness = 4;
-            this.guna2Separator7.Location = new System.Drawing.Point(757, 295);
+            this.guna2Separator7.Location = new System.Drawing.Point(708, 295);
             this.guna2Separator7.Name = "guna2Separator7";
             this.guna2Separator7.Size = new System.Drawing.Size(249, 10);
             this.guna2Separator7.TabIndex = 32;
@@ -349,7 +349,7 @@ namespace Calendar
             this.labelNamePressure.AutoSize = true;
             this.labelNamePressure.BackColor = System.Drawing.Color.Transparent;
             this.labelNamePressure.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNamePressure.Location = new System.Drawing.Point(793, 352);
+            this.labelNamePressure.Location = new System.Drawing.Point(744, 352);
             this.labelNamePressure.Name = "labelNamePressure";
             this.labelNamePressure.Size = new System.Drawing.Size(91, 25);
             this.labelNamePressure.TabIndex = 31;
@@ -360,7 +360,7 @@ namespace Calendar
             this.labelCloud.AutoSize = true;
             this.labelCloud.BackColor = System.Drawing.Color.Transparent;
             this.labelCloud.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCloud.Location = new System.Drawing.Point(793, 267);
+            this.labelCloud.Location = new System.Drawing.Point(744, 267);
             this.labelCloud.Name = "labelCloud";
             this.labelCloud.Size = new System.Drawing.Size(52, 25);
             this.labelCloud.TabIndex = 30;
@@ -371,7 +371,7 @@ namespace Calendar
             this.labelNameWind.AutoSize = true;
             this.labelNameWind.BackColor = System.Drawing.Color.Transparent;
             this.labelNameWind.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameWind.Location = new System.Drawing.Point(793, 307);
+            this.labelNameWind.Location = new System.Drawing.Point(744, 307);
             this.labelNameWind.Name = "labelNameWind";
             this.labelNameWind.Size = new System.Drawing.Size(121, 25);
             this.labelNameWind.TabIndex = 29;
@@ -390,7 +390,7 @@ namespace Calendar
             // 
             this.guna2Separator8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator8.FillThickness = 4;
-            this.guna2Separator8.Location = new System.Drawing.Point(757, 254);
+            this.guna2Separator8.Location = new System.Drawing.Point(708, 254);
             this.guna2Separator8.Name = "guna2Separator8";
             this.guna2Separator8.Size = new System.Drawing.Size(249, 10);
             this.guna2Separator8.TabIndex = 28;
@@ -438,7 +438,7 @@ namespace Calendar
             this.labelWeather.AutoSize = true;
             this.labelWeather.BackColor = System.Drawing.Color.Transparent;
             this.labelWeather.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.labelWeather.Location = new System.Drawing.Point(396, 0);
+            this.labelWeather.Location = new System.Drawing.Point(394, 21);
             this.labelWeather.Name = "labelWeather";
             this.labelWeather.Size = new System.Drawing.Size(212, 54);
             this.labelWeather.TabIndex = 23;
@@ -469,12 +469,11 @@ namespace Calendar
             this.labelHour.AutoSize = true;
             this.labelHour.BackColor = System.Drawing.Color.Transparent;
             this.labelHour.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHour.Location = new System.Drawing.Point(815, 221);
+            this.labelHour.Location = new System.Drawing.Point(762, 221);
             this.labelHour.Name = "labelHour";
             this.labelHour.Size = new System.Drawing.Size(191, 30);
             this.labelHour.TabIndex = 20;
             this.labelHour.Text = "GIỜ 12:00:00 AM";
-            this.labelHour.Click += new System.EventHandler(this.labelHour_Click);
             // 
             // labelDate
             // 
@@ -492,7 +491,7 @@ namespace Calendar
             this.labelLat.AutoSize = true;
             this.labelLat.BackColor = System.Drawing.Color.Transparent;
             this.labelLat.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLat.Location = new System.Drawing.Point(632, 146);
+            this.labelLat.Location = new System.Drawing.Point(630, 167);
             this.labelLat.Name = "labelLat";
             this.labelLat.Size = new System.Drawing.Size(57, 32);
             this.labelLat.TabIndex = 18;
@@ -503,7 +502,7 @@ namespace Calendar
             this.labelLog.AutoSize = true;
             this.labelLog.BackColor = System.Drawing.Color.Transparent;
             this.labelLog.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLog.Location = new System.Drawing.Point(430, 146);
+            this.labelLog.Location = new System.Drawing.Point(428, 167);
             this.labelLog.Name = "labelLog";
             this.labelLog.Size = new System.Drawing.Size(64, 32);
             this.labelLog.TabIndex = 17;
@@ -514,7 +513,7 @@ namespace Calendar
             this.labelNameLat.AutoSize = true;
             this.labelNameLat.BackColor = System.Drawing.Color.Transparent;
             this.labelNameLat.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameLat.Location = new System.Drawing.Point(544, 146);
+            this.labelNameLat.Location = new System.Drawing.Point(542, 167);
             this.labelNameLat.Name = "labelNameLat";
             this.labelNameLat.Size = new System.Drawing.Size(82, 32);
             this.labelNameLat.TabIndex = 16;
@@ -525,7 +524,7 @@ namespace Calendar
             this.labelNameLog.AutoSize = true;
             this.labelNameLog.BackColor = System.Drawing.Color.Transparent;
             this.labelNameLog.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameLog.Location = new System.Drawing.Point(305, 146);
+            this.labelNameLog.Location = new System.Drawing.Point(303, 167);
             this.labelNameLog.Name = "labelNameLog";
             this.labelNameLog.Size = new System.Drawing.Size(119, 32);
             this.labelNameLog.TabIndex = 15;
@@ -652,22 +651,22 @@ namespace Calendar
             // 
             this.labelNameCity.AutoSize = true;
             this.labelNameCity.BackColor = System.Drawing.Color.Transparent;
-            this.labelNameCity.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameCity.Location = new System.Drawing.Point(157, 17);
+            this.labelNameCity.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameCity.Location = new System.Drawing.Point(215, 17);
             this.labelNameCity.Name = "labelNameCity";
-            this.labelNameCity.Size = new System.Drawing.Size(170, 25);
+            this.labelNameCity.Size = new System.Drawing.Size(112, 25);
             this.labelNameCity.TabIndex = 0;
-            this.labelNameCity.Text = "CHỌN THÀNH PHỐ";
+            this.labelNameCity.Text = "CHỌN TỈNH";
             // 
             // PanelName
             // 
             this.PanelName.Controls.Add(this.labelName);
             this.PanelName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.PanelName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PanelName.Location = new System.Drawing.Point(0, 0);
             this.PanelName.Name = "PanelName";
             this.PanelName.ShadowDecoration.Parent = this.PanelName;
-            this.PanelName.Size = new System.Drawing.Size(1009, 94);
+            this.PanelName.Size = new System.Drawing.Size(1009, 92);
             this.PanelName.TabIndex = 0;
             // 
             // labelName
@@ -688,7 +687,7 @@ namespace Calendar
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PanelDisplay);
             this.Name = "DisplayWF";
-            this.Size = new System.Drawing.Size(1009, 590);
+            this.Size = new System.Drawing.Size(1009, 620);
             this.PanelDisplay.ResumeLayout(false);
             this.PanelWeather.ResumeLayout(false);
             this.PanelWeather.PerformLayout();

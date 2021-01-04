@@ -405,6 +405,7 @@ namespace Calendar
             labelNameLunnarMY.Text = string.Format("THÁNG {0} - NĂM {1}",lunarDate.MonthLongName.ToUpper(),lunarDate.YearName.ToUpper());
             labelNameSolarTerm.Text = string.Format("TIẾT {0}",lunnarCalendar.SolarTermString(lunarDate.SolarTerm).ToUpper());
             labelNameGoodDay.Text = string.Format("TRỰC {0}", lunnarCalendar.GoodDayString(date).ToUpper());
+            labelStar.Text = string.Format("SAO {0}",LunnarSample.LunnarCalendar.GetStar28(date).ToUpper());
         }
         #endregion
 

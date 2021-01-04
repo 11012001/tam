@@ -57,8 +57,10 @@ namespace Calendar
             {
                 if (IdNote == 0)
                 {
+                    
                     if (RepeatCB.SelectedIndex == 0)
                     {
+                        FromDtpk.Value.AddSeconds(1);
                         sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
                            $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
                         NoteData.UpdateInsertDelete(sql);
@@ -168,5 +170,7 @@ namespace Calendar
                 DescriptionTB.ForeColor = Color.LightGray;
             }
         }
+
+
     }
 }

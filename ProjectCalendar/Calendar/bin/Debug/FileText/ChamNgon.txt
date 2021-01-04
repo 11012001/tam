@@ -1,47 +1,230 @@
-H.F.Amiel|Học... Học để là chính mình, và học để từ bỏ với vẽ thanh cao những gì không phải là mình
-Ngạn ngữ Đức|Tuần lễ của người chăm chỉ có bảy ngày, còn tuần lễ của kẻ lười biến có bảy ngày mai
-Xuân Hoài|Về quê gặp bến sông quê, thời gian đã vắt qua đê lối mòn, dẫu cho biết mẹ không còn, bến xưa nhòe lệ mắt con vẫn tìm
-Lễ Ký|Ngọc không giũa không thành đồ đẹp, người không học không biết lẽ phải
-Ngạn ngữ Nga|Rễ của sự học tập thì đắng, quả của sự học tập thì ngọt
-Khổng Tử|Người sáng suốt mà chăm học thì không lấy việc hỏi kẻ kém hơn mình là xấu hổ
-Khổng Tử|Người học cao hiểu rộng mà không mang tri thức giúp ích cho đời thì cũng giống như người nông dân, đã cày xới mà không gieo hạt
-Marius Grout|Người có học không phải người biết nhiều mà là biết rõ những gì mình phải biết và hiễu rõ những gì mình đã biết
-Thái Công|Muốn đánh giá người trước tiên tự đánh giá mình, nói lời tổn hại người khác ngược lại tổn hại mình. Ngậm máu phun người dơ miệng mình
-Ngoạn ngữ Mông Cổ|Không phải những người cười với ta đều là bạn ta, cũng không phải tất cả những người làm ta bực mình đều là kẻ thù của ta
-Phan Nhân|Hạnh phúc có khi đơn giản chỉ là một ly cà phê buổi sáng và một ly sữa ấm vào buổi tối. Có khi chỉ là một bữa cơm đông đủ gia đình vào ngày chủ nhật. Có khi đơn giản là một cái ôm của mẹ trước khi rời khỏi nhà… Hạnh phúc chính là những điều rất giản đơn, đâu phải tìm kiếm xa xôi đâu
+H.F.Amiel|Học... Học để là chính mình, và học để từ bỏ với vẽ thanh cao những gì không phải là mình.
+Ngạn ngữ Đức|Tuần lễ của người chăm chỉ có bảy ngày, còn tuần lễ của kẻ lười biến có bảy ngày mai.
+Xuân Hoài|Về quê gặp bến sông quê, thời gian đã vắt qua đê lối mòn, dẫu cho biết mẹ không còn, bến xưa nhòe lệ mắt con vẫn tìm.
+Lễ Ký|Ngọc không giũa không thành đồ đẹp, người không học không biết lẽ phải.
+Ngạn ngữ Nga|Rễ của sự học tập thì đắng, quả của sự học tập thì ngọt.
+Khổng Tử|Người sáng suốt mà chăm học thì không lấy việc hỏi kẻ kém hơn mình là xấu hổ.
+Khổng Tử|Người học cao hiểu rộng mà không mang tri thức giúp ích cho đời thì cũng giống như người nông dân, đã cày xới mà không gieo hạt.
+Marius Grout|Người có học không phải người biết nhiều mà là biết rõ những gì mình phải biết và hiễu rõ những gì mình đã biết.
+Thái Công|Muốn đánh giá người trước tiên tự đánh giá mình, nói lời tổn hại người khác ngược lại tổn hại mình. Ngậm máu phun người dơ miệng mình.
+Ngoạn ngữ Mông Cổ|Không phải những người cười với ta đều là bạn ta, cũng không phải tất cả những người làm ta bực mình đều là kẻ thù của ta.
+Phan Nhân|Hạnh phúc có khi đơn giản chỉ là một ly cà phê buổi sáng và một ly sữa ấm vào buổi tối. Có khi chỉ là một bữa cơm đông đủ gia đình vào ngày chủ nhật. Có khi đơn giản là một cái ôm của mẹ trước khi rời khỏi nhà… Hạnh phúc chính là những điều rất giản đơn, đâu phải tìm kiếm xa xôi đâu.
 Phan Nhân|Ai cũng bảo con gái không nên quá mạnh mẽ, quá độc lập, quá lợi hại, nếu không sẽ chẳng mấy người thích. Thế nhưng, nếu tôi không kiên cường, không độc lập, không lợi hại, lúc tôi bất lực nhất ai sẽ vươn tay cứu giúp tôi?
-Phan Nhân|Người đàn ông đích thực luôn biết cách để chuộc lỗi của mình, không đơn thuần chỉ là nói xin lỗi
-Phan Nhân|Viên mãn nhất trong tình cảm không phải là nắm giữ được bàn tay của một người nhất nhất không rời, mà là khi trải qua bao nhiêu mất mát đổi thay, họ vẫn về để nắm lấy tay bạn
-Phạm Lữ Ân|Bạn có thể yêu hay ghét, thích hay không còn thích nữa. Chỉ cần thành thật, bạn sẽ luôn luôn thanh thản
-Julia Roberts|Bạn sẽ biết rằng đó là tình yêu khi tất cả những gì bạn muốn là người đó hạnh phúc cho dù niềm hạnh phúc đó không có phần của bạn
-Phan Nhân|Để trưởng thành bạn cần phải đánh đổi bằng nhiều mối quan hệ và đánh mất rất nhiều người gọi là bạn
-Phan Nhân|Bạn có thể khiến một cô gái khóc, cũng có thể làm cô ấy tủi thân, nhưng không được khiến cô ấy trầm mặc im lặng. Bởi vì trầm mặc chính là mức độ tổn thương cao nhất, lặng im chính là tiếng khóc đau khổ nhất của một người con gái
-Phan Nhân|Sẽ có lúc bạn buồn mà chẳng biết tại sao. Cảm giác giống như đã đánh rơi thứ gì đó rất quan trọng nhưng chẳng thể nhớ đó là gì
-Phan Nhân|Chúng mình thức dậy mỗi ngày đều mong thấy được mình bên người mình yêu. Thiên đường của người này, đôi khi, chỉ là ánh mắt, bờ vai, tấm lưng, đôi bàn tay của người kia
-Phan Nhân|Đúng thời điểm hay không đúng thời điểm không quan trọng. Đúng người hay sai người không quan trọng. Quan trọng là có thương hay không thương. Đã thương thì không đúng thời điểm hay kể cả sai người, cũng chẳng thành vấn đề
-Phan Nhân|Đời người, thứ khó chấp nhận nhất chính là việc ta nhận ra rằng sau tất cả mọi cố gắng của bản thân vì một ai đó, một thứ gì đó, thì đến cuối cùng tất cả cũng rời bỏ ta
-Bill Gates|Mọi người sẽ không bao giờ ngó ngàng đến lòng tự trọng của bạn, điều mà họ quan tâm chính là thành tựu mà bạn đạt được. Do đó, trước khi có được những thành tựu thì bạn đừng nên quá chú trọng hay cường điệu lòng tự trọng của bản thân mình lên
-Martin Luther King|Bạn không thể điều khiển hướng gió, chỉ có thể điều khiển cánh buồm.Bạn không cần phải thấy hết các bậc thang mà chỉ cần đi bước đầu tiên với một niềm tin
-Nguyễn Ngọc Thạch|Nghịch lý thường nằm ở chỗ, chúng ta cứ thường phán xét cuộc sống của người khác dựa trên quan điểm cá nhân, rồi lại loay hoay tìm cách sống sao cho hợp với đánh giá theo quan điểm của người khác
-Phan Ý Yên|Có bao nhiêu người trên thế gian này, trái tim chung nhịp nhưng không thể cầm tay đi chung trên một con đường? Nhân duyên này sẽ khổ đau nhưng đó chính là thứ nhân duyên khiến bạn trở nên mạnh mẽ
-Phan Nhân|Thành công không phải chìa khóa mở cửa hạnh phúc. Hạnh phúc là chìa khóa dẫn tới thành công. Nếu bạn yêu điều bạn đang làm, bạn sẽ thành công
-Phan Nhân|Quá khứ của người yêu luôn là chủ đề muôn thuở của biết bao mối quan hệ. Chưa biết thì lại cố tìm hiểu để biết. Biết rồi thì trong lòng lại đau nhói không ngừng. Hóa ra rồi mới biết, khi bạn ghen với quá khứ còn đau khổ hơn là ghen ở hiện tại gấp trăm lần
-Phan Nhân|Thiên hạ vẫn hay bảo rằng sống trên đời này, yêu và được yêu là một điều may mắn. Tôi thì chưa rõ cái may mắn đó sẽ ra sao, chỉ biết là cuộc đời này, trước khi gặp được cái thứ gọi là may mắn, là cả một khoảng thời gian dài chìm trong đau khổ, xót xa và tuyệt vọng, mà nếu nó kéo dài quá lâu, đôi khi con người ta còn chẳng màng đến chuyện may mắn hay không nữa là
-Phan Ý Yên|Bạn sẽ biết rõ một người hơn rất nhiều dựa vào những gì anh ta thể hiện vào những ngày cuối cùng của một mối quan hệ chứ không phải bởi những gì anh ta đã làm vào buổi đầu tiên
-Phan Nhân|Càng về lớn, tôi càng phải học cách đừng bao giờ đặt kì vọng và chờ đợi ở người khác quá nhiều. Cái gì cũng phải tự thân tự lực, vì người quan tâm mình chắc chắn đã không để mình chờ đợi lâu đến như vậy
-Thái Trí Hằng|Tôi luôn cảm thấy thời gian như một chuyến xe lửa lao đi rất nhanh, nhưng tôi lại như hành khách ngủ trong xe, không hề hay biết. Tới khi tỉnh lại, đã bỏ qua rất nhiều thứ, thậm chí bỏ qua cả trạm dừng
-Phan Nhân|Dường như càng lớn, người ta càng phải đối diện với nhiều sự lựa chọn hơn lúc nhỏ, không chỉ đơn thuần là thích thì có thể chọn. Mọi thứ trở nên rắc rối hơn, và luôn luôn có sự do dự song song tồn tại. Cuối cùng, dù là lựa chọn con đường nào đi nữa, chúng ta sẽ vẫn chịu tổn thương
-Phan Nhân|Không phải vì em sợ đơn độc, không phải vì em sợ không có anh em sẽ không sống được. Mà vì những khoảnh khắc nhìn thấy anh trong thế giới của mình khiến em tin rằng : Đôi khi không được thương một người còn tệ hơn cả cái chết, tệ hơn cả việc khóc hàng đêm dài đằng đẵng
-Marc Levy|Ra đi không phải bao giờ cũng đồng nghĩa với một sự từ bỏ, đó cũng có thể là một cách để giữ gìn những gì đã trải qua, nếu người ta biết ra đi trước khi quá trễ
-Phan Nhân|Thời gian làm cho người ta tha hóa bớt dần sự bao dung, độ lượng và ích kỉ cứ đầy dần trong túi áo. Kể cả tôi trong những ngày này, ngoài gia đình ra chẳng còn sợ mất điều gì cả
-Bussy Rebutin|Tình yêu trong xa cách ví như ngọn lửa trong gió. Gió thổi tắt ngọn lửa nhỏ và thổi bùng ngọn lửa lớn
-Voltaire|Sự làm việc giúp ta thoát khỏi ba cái ác là buồn chán, tật xấu và túng thiếu
-Phan Văn Nhân|Những ai không biết tự trọng thì cũng khó mà đòi hỏi người khác tôn trọng mình
-Phan Văn Nhân|Đời sẽ dịu dàng biết mấy khi tất cả con người biết đặt mình vào vị trí người khác
-Chương Đặng|Điều tuyệt nhất khi còn thơ là chúng ta không hề biết mình đang sống những ngày hạnh phúc. Đến khi nhớ lại, ta không khỏi tiếc nuối ngày ta thức dậy và rắp tâm trở thành đàn ông, đàn bà…thay vì cứ là một đứa trẻ!
-Lời Phật|Nhân nghĩa chớ dính tiền, dính tiền nhân nghĩa tuyệt. Đường xa mới biết sức ngựa, sống lâu mới rõ lòng người
-Bohr|Mặt trời nhìn đẹp nhất khi mọc ở phía đông và lặng ở phía tây, tính nết con người nhìn rõ nhất khi còn bé và giờ phút hấp hối
-Ngoạn ngữ Mông Cổ|Không phải tất cả những người cười với ta đều là bạn, cũng không phải tất cả những người làm ta bực mình đều là kẻ thù
-Block|Thiện là bị động, nó phục tùng lý trí, ác là chủ động, nó sinh ra hành động. Thiện là thiên đường, ác là địa ngục
-Tiêu Hà|Thuốc hay thì đắng miện nhưng có lợi cho người bệnh, lời hay thì trái tai người nhưng có lợi cho công việc
-Tagore|Hãy đễ cho người chết đi tìm sự bất tử trong danh vọng và những người sống đi tìm sự bất tử trong tình yêu
+Phan Nhân|Người đàn ông đích thực luôn biết cách để chuộc lỗi của mình, không đơn thuần chỉ là nói xin lỗi.
+Phan Nhân|Viên mãn nhất trong tình cảm không phải là nắm giữ được bàn tay của một người nhất nhất không rời, mà là khi trải qua bao nhiêu mất mát đổi thay, họ vẫn về để nắm lấy tay bạn.
+Phạm Lữ Ân|Bạn có thể yêu hay ghét, thích hay không còn thích nữa. Chỉ cần thành thật, bạn sẽ luôn luôn thanh thản.
+Julia Roberts|Bạn sẽ biết rằng đó là tình yêu khi tất cả những gì bạn muốn là người đó hạnh phúc cho dù niềm hạnh phúc đó không có phần của bạn.
+Phan Nhân|Để trưởng thành bạn cần phải đánh đổi bằng nhiều mối quan hệ và đánh mất rất nhiều người gọi là bạn.
+Phan Nhân|Bạn có thể khiến một cô gái khóc, cũng có thể làm cô ấy tủi thân, nhưng không được khiến cô ấy trầm mặc im lặng. Bởi vì trầm mặc chính là mức độ tổn thương cao nhất, lặng im chính là tiếng khóc đau khổ nhất của một người con gái.
+Phan Nhân|Sẽ có lúc bạn buồn mà chẳng biết tại sao. Cảm giác giống như đã đánh rơi thứ gì đó rất quan trọng nhưng chẳng thể nhớ đó là gì.
+Phan Nhân|Chúng mình thức dậy mỗi ngày đều mong thấy được mình bên người mình yêu. Thiên đường của người này, đôi khi, chỉ là ánh mắt, bờ vai, tấm lưng, đôi bàn tay của người kia.
+Phan Nhân|Đúng thời điểm hay không đúng thời điểm không quan trọng. Đúng người hay sai người không quan trọng. Quan trọng là có thương hay không thương. Đã thương thì không đúng thời điểm hay kể cả sai người, cũng chẳng thành vấn đề.
+Phan Nhân|Đời người, thứ khó chấp nhận nhất chính là việc ta nhận ra rằng sau tất cả mọi cố gắng của bản thân vì một ai đó, một thứ gì đó, thì đến cuối cùng tất cả cũng rời bỏ ta.
+Bill Gates|Mọi người sẽ không bao giờ ngó ngàng đến lòng tự trọng của bạn, điều mà họ quan tâm chính là thành tựu mà bạn đạt được. Do đó, trước khi có được những thành tựu thì bạn đừng nên quá chú trọng hay cường điệu lòng tự trọng của bản thân mình lên.
+Martin Luther King|Bạn không thể điều khiển hướng gió, chỉ có thể điều khiển cánh buồm.Bạn không cần phải thấy hết các bậc thang mà chỉ cần đi bước đầu tiên với một niềm tin.
+Nguyễn Ngọc Thạch|Nghịch lý thường nằm ở chỗ, chúng ta cứ thường phán xét cuộc sống của người khác dựa trên quan điểm cá nhân, rồi lại loay hoay tìm cách sống sao cho hợp với đánh giá theo quan điểm của người khác.
+Phan Ý Yên|Có bao nhiêu người trên thế gian này, trái tim chung nhịp nhưng không thể cầm tay đi chung trên một con đường? Nhân duyên này sẽ khổ đau nhưng đó chính là thứ nhân duyên khiến bạn trở nên mạnh mẽ.
+Phan Nhân|Thành công không phải chìa khóa mở cửa hạnh phúc. Hạnh phúc là chìa khóa dẫn tới thành công. Nếu bạn yêu điều bạn đang làm, bạn sẽ thành công.
+Phan Nhân|Quá khứ của người yêu luôn là chủ đề muôn thuở của biết bao mối quan hệ. Chưa biết thì lại cố tìm hiểu để biết. Biết rồi thì trong lòng lại đau nhói không ngừng. Hóa ra rồi mới biết, khi bạn ghen với quá khứ còn đau khổ hơn là ghen ở hiện tại gấp trăm lần.
+Phan Nhân|Thiên hạ vẫn hay bảo rằng sống trên đời này, yêu và được yêu là một điều may mắn. Tôi thì chưa rõ cái may mắn đó sẽ ra sao, chỉ biết là cuộc đời này, trước khi gặp được cái thứ gọi là may mắn, là cả một khoảng thời gian dài chìm trong đau khổ, xót xa và tuyệt vọng, mà nếu nó kéo dài quá lâu, đôi khi con người ta còn chẳng màng đến chuyện may mắn hay không nữa là.
+Phan Ý Yên|Bạn sẽ biết rõ một người hơn rất nhiều dựa vào những gì anh ta thể hiện vào những ngày cuối cùng của một mối quan hệ chứ không phải bởi những gì anh ta đã làm vào buổi đầu tiên.
+Phan Nhân|Càng về lớn, tôi càng phải học cách đừng bao giờ đặt kì vọng và chờ đợi ở người khác quá nhiều. Cái gì cũng phải tự thân tự lực, vì người quan tâm mình chắc chắn đã không để mình chờ đợi lâu đến như vậy.
+Thái Trí Hằng|Tôi luôn cảm thấy thời gian như một chuyến xe lửa lao đi rất nhanh, nhưng tôi lại như hành khách ngủ trong xe, không hề hay biết. Tới khi tỉnh lại, đã bỏ qua rất nhiều thứ, thậm chí bỏ qua cả trạm dừng.
+Phan Nhân|Dường như càng lớn, người ta càng phải đối diện với nhiều sự lựa chọn hơn lúc nhỏ, không chỉ đơn thuần là thích thì có thể chọn. Mọi thứ trở nên rắc rối hơn, và luôn luôn có sự do dự song song tồn tại. Cuối cùng, dù là lựa chọn con đường nào đi nữa, chúng ta sẽ vẫn chịu tổn thương.
+Phan Nhân|Không phải vì em sợ đơn độc, không phải vì em sợ không có anh em sẽ không sống được. Mà vì những khoảnh khắc nhìn thấy anh trong thế giới của mình khiến em tin rằng : Đôi khi không được thương một người còn tệ hơn cả cái chết, tệ hơn cả việc khóc hàng đêm dài đằng đẵng.
+Marc Levy|Ra đi không phải bao giờ cũng đồng nghĩa với một sự từ bỏ, đó cũng có thể là một cách để giữ gìn những gì đã trải qua, nếu người ta biết ra đi trước khi quá trễ.
+Phan Nhân|Thời gian làm cho người ta tha hóa bớt dần sự bao dung, độ lượng và ích kỉ cứ đầy dần trong túi áo. Kể cả tôi trong những ngày này, ngoài gia đình ra chẳng còn sợ mất điều gì cả.
+Bussy Rebutin|Tình yêu trong xa cách ví như ngọn lửa trong gió. Gió thổi tắt ngọn lửa nhỏ và thổi bùng ngọn lửa lớn.
+Voltaire|Sự làm việc giúp ta thoát khỏi ba cái ác là buồn chán, tật xấu và túng thiếu.
+Phan Văn Nhân|Những ai không biết tự trọng thì cũng khó mà đòi hỏi người khác tôn trọng mình.
+Phan Văn Nhân|Đời sẽ dịu dàng biết mấy khi tất cả con người biết đặt mình vào vị trí người khác.
+Chương Đặng|Điều tuyệt nhất khi còn thơ là chúng ta không hề biết mình đang sống những ngày hạnh phúc. Đến khi nhớ lại, ta không khỏi tiếc nuối ngày ta thức dậy và rắp tâm trở thành đàn ông, đàn bà…thay vì cứ là một đứa trẻ!.
+Lời Phật|Nhân nghĩa chớ dính tiền, dính tiền nhân nghĩa tuyệt. Đường xa mới biết sức ngựa, sống lâu mới rõ lòng người.
+Bohr|Mặt trời nhìn đẹp nhất khi mọc ở phía đông và lặng ở phía tây, tính nết con người nhìn rõ nhất khi còn bé và giờ phút hấp hối.
+Ngoạn ngữ Mông Cổ|Không phải tất cả những người cười với ta đều là bạn, cũng không phải tất cả những người làm ta bực mình đều là kẻ thù.
+Block|Thiện là bị động, nó phục tùng lý trí, ác là chủ động, nó sinh ra hành động. Thiện là thiên đường, ác là địa ngục.
+Tiêu Hà|Thuốc hay thì đắng miện nhưng có lợi cho người bệnh, lời hay thì trái tai người nhưng có lợi cho công việc.
+Tagore|Hãy đễ cho người chết đi tìm sự bất tử trong danh vọng và những người sống đi tìm sự bất tử trong tình yêu.
+Sarah Louise Delany|Cuộc đời rất ngắn ngủi, và việc nó có ngọt ngào hay không là phụ thuộc vào bạn.
+Steve Maraboli|Thế giới là thánh đường của tôi. Hành động là lời cầu nguyện của tôi. Hành vi là tín điều của tôi.
+Andy Warhol|Và cuộc đời bạn khi nó đang diễn ra chẳng bao giờ tạo thành bầu không khí cho tới khi nó trở thành hồi ức.
+Andy Warhol|Người nghệ sĩ là người tạo ra thứ mà người ta không cần phải có.
+Steve Maraboli|Hãy mơ giấc mơ của mình; và nhận ra rằng bạn không chỉ là người mơ, bạn là điểm khởi đầu nơi giấc mơ trở thành hiện thực.
+Doug Hutchison|Tôi nghĩ luôn yêu đời chính là chìa khóa dẫn đến tuổi trẻ vĩnh hằng.
+Richard Bach|Mối liên hệ gắn kết gia đình chân chính của bạn không phải là huyết thống, mà là sự tôn trọng và niềm vui trong đời nhau.
+Steve Maraboli|Lối nghĩ coi mình là nạn nhân tạo ra ảo tưởng về lầm lỗi và oán trách, thứ che mắt khiến bạn không thấy được sự thật đơn giản về nguyên nhân và hệ quả.
+Andy Warhol|Việc bạn đi chậm thế nào không quan trọng, miễn là bạn không ngừng bước.
+Andy Warhol|Đôi khi người ta cứ để cùng một vấn đề làm mình khốn khổ nhiều năm trời, trong khi họ lẽ ra có thể chỉ cần nói, Thế thì sao chứ. Đó là một trong những câu nói tôi yêu thích nhất. Thế thì sao chứ.
+Conrad Hilton|Những người thành công luôn không ngừng vận động. Họ có thể phạm sai lầm, nhưng họ không bỏ cuộc.
+Steve Maraboli|Bằng việc phản ứng lại nỗi sợ hãi thay vì đáp ứng lại tình yêu thương, bạn bơm thuốc độc trực tiếp vào mạch máu của mối quan hệ.
+Steve Maraboli|Bạn có yêu bản thân đủ nhiều để TRỞ THÀNH con người mà bạn yêu bản thân đủ nhiều để MONG MUỐN hay không?
+Jesse Jackson|Nếu bạn tụt lại phía sau, hãy chạy nhanh hơn. Đừng bao giờ bỏ cuộc, đừng bao giờ đầu hàng, và hãy vượt lên tình thế bất lợi.
+Andy Warhol|Khi con người sẵn sàng, họ thay đổi. Họ chẳng bao giờ thay đổi trước đó, và đôi khi họ chết trước khi tới được thời điểm đó. Bạn không thể khiến người ta thay đổi khi họ không muốn, cũng như khi họ thật sự muốn, bạn cũng không thể ngăn cản.
+Maxwell Maltz|Thường thì sự khác biệt giữa người thành công và người thất bại không nằm ở việc ai có khả năng hay ý tưởng tốt hơn, mà ở lòng can đảm để đánh cược cho ý tưởng của mình, để chấp nhận rủi ro đã được tính kỹ, và hành động.
+Ralph Waldo Emerson|Anh hùng không can đảm hơn người bình thường, anh ta chỉ can đảm lâu hơn năm phút.
+Alexander Hamilton|Có sự nhiệt huyết rõ ràng đối với tự do, khiến bản tính con người vượt lên trên chính nó, trong những hành động can đảm và anh hùng.
+Hegel|Một khi nhà nước hình thành, không còn có anh hùng nữa. Họ chỉ xuất hiện trong những điều kiện không có văn minh.
+Tăng Quốc Phiên|Một bậc anh hùng cứu nạn, giúp nguy, thì cốt nhất là phải lao tâm, khổ lực.
+Vô Sắc công tử - Thẩm Tiểu Chi|Có lẽ những người nắm quyền lực trong tay, căn bản không có ai chân chính là người tốt hay kẻ xấu. Một vị anh hùng được vạn dân kính ngưỡng đồng thời cũng sẽ là kẻ thù của một quốc gia khác.
+Marcus Tullius Cicero|Thật khốn khổ cho một đất nước không có anh hùng, nhưng còn khốn khổ hơn cho một đất nước có anh hùng, nhưng không ghi nhớ và vinh danh họ.
+Smallville|Bạn cảm thấy cần mang thế giới trên vai. Cao thượng đấy. Nhưng ngoài kia có những người muốn giúp bạn trong cuộc chiến của cái thiện, và bạn cần mở lòng cho họ. Bởi đôi khi, thậm chí cả anh hùng cũng cần được cứu vớt.
+Brandon Mull|Nói ngắn gọn, sự anh hùng là làm điều đúng bất chấp hậu quả.
+Albert Camus|Nhưng anh biết không, tôi thấy thân thiết với những kẻ bại trận hơn với những vị thánh. Tính anh hùng và sự thiêng liêng không hấp dẫn tôi. Điều làm tôi thích thú là được làm con người.
+Gerard Way|Anh hùng là những người bình thường biến mình trở thành phi thường.
+Jose Carreras|Tôi có nơi ẩn náu tuyệt vời, đó là gia đình. Tôi có mối quan hệ tuyệt vời với anh chị em của tôi; điều này khiến tôi cảm thấy mình luôn biết mình thuộc về nơi đâu.
+Tục ngữ Tày-Nùng|Đường không qua lại cỏ gianh mọc.Anh em không đi về thành người dưng.
+Martin Luther King Jr.|Chúng ta đã bay trông không trung như chim và bơi dưới đại dương như cá, nhưng vẫn chưa học được hành động đơn giản là đi trên mặt đất như anh em.
+Khuyết danh|Chúng ta đều đi những con đường khác nhau trong đời, nhưng dù chúng ta đi tới đâu, chúng ta cũng mang theo mình một phần của nhau.
+Hồ Chí Minh|Học cái tốt thì khó, ví như người ta leo núi, phải vất vả, khó nhọc mới lên đến đỉnh. Học cái xấu thì dễ, như ở trên đỉnh núi trượt chân một cái là nhào xuống vực sâu.
+Albert Schweitzer|Hãy làm hết sức để gieo những hạt giống của tâm hồn bạn vào những người đi cùng bạn trên đường đời, và hãy chấp nhận những điều quý giá mà họ tặng lại cho bạn.
+Denis Diderot|Bạn xấu cũng có tính truyền thụ như sự phóng túng. Con người đem sự xóa bỏ thành kiến ra bù cho sự trong trắng đánh mất.
+Henry Drummond|Người ảnh hưởng tới bạn là người tin vào bạn.
+Mark Twain|Quần áo làm nên con người. Những kẻ trần truồng không có hay có rất ít ảnh hưởng lên xã hội.
+Les Brown|Đừng để quan điểm của người khác về bạn trở thành hiện thực của bạn.
+Henry Brooks Adams|Ảnh hưởng của người thầy là vĩnh cửu. Ta không thể biết được khi nào thì ảnh hưởng ấy dừng.
+Mẹ Teresa|Một mình tôi không thể thay đổi thế giới, nhưng tôi có thể ném hòn đá lên mặt nước để tạo nhiều con sóng.
+Walter Scott|Một chiếc đinh gỉ đặt cạnh cái la bàn trung thực sẽ lôi kéo nó rời khỏi sự thật, và làm đắm con tàu.
+Ralph Waldo Emerson|Những tư tưởng tốt nhất của chúng ta đến từ người khác.
+Eleanor Roosevelt|Bạn không bao giờ có thể thực sự sống cuộc đời của người khác, thậm chí cả của con mình. Ảnh hưởng bạn cho người khác hình thành qua cuộc đời bạn, và điều bạn đã trở thành chính mình.
+Menander|Bạn đồng hành xấu làm tha hóa tính cách tốt.
+Albert Einstein|Đừng phấn đấu để thành công mà hãy phấn đấu để mình có ích.
+Thomas Edison|Tôi chưa thất bại. Tôi chỉ là đã tìm ra 10,000 cách không hoạt động.
+Mark Twain|Để thành công trong cuộc sống, bạn cần hai thứ: sự ngu dốt và lòng tự tin.
+Elbert Hubbard|Không biết đã bao nhiêu lần con người buông tay từ bỏ khi mà chỉ một chút nỗ lực, một chút kiên trì nữa thôi là anh ta sẽ đạt được thành công.
+Helen Keller|Thành công và hạnh phúc nằm trong bạn. Quyết tâm hạnh phúc, và niềm vui sẽ đi cùng bạn để hình thành đạo quân bất khả chiến bại chống lại nghịch cảnh.
+Winston Churchill|Thành công không phải là cuối cùng, thất bại không phải là chết người: lòng can đảm đi tiếp mới quan trọng.
+Helen Keller|Tính cách không thể phát triển một cách dễ dàng và yên lặng. Chỉ qua trải nghiệm thử thách và gian khổ mà tâm hồn trở nên mạnh mẽ hơn, hoài bão hình thành và thành công đạt được.
+William Arthur Ward|Con người chẳng bao giờ lên kế hoạch để thất bại; chỉ đơn giản là họ đã thất bại trong việc lên kế hoạch để thành công.
+Frank Tyger|Để thành công, bạn phải sẵn lòng thất bại.
+Albert Schweitzer|Thành công không phải là chìa khóa mở cánh cửa hạnh phúc. Hạnh phúc là chìa khóa dẫn tới cánh cửa thành công. Nếu bạn yêu điều bạn đang làm, bạn sẽ thành công.
+Hồ Chí Minh|Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công.
+Thomas Edison|Tôi tìm thấy lạc thú lớn nhất, và cũng như phần thưởng, nằm trong công việc vượt qua điều mà thế giới gọi là thành công.
+Dale Carnegie|Xây dựng thành công từ thất bại. Sự chán nản và thất bại là hai bước đệm chắc chắn nhất dẫn tới thành công.
+Frank Tyger|Nấc thang thành công không quan tâm ai đang trèo nó.
+Brian Tracy|Những người thành công luôn luôn tìm kiếm cơ hội để giúp đỡ người khác. Những người không thành công luôn luôn hỏi, "Tôi được lợi gì?"
+Elbert Hubbard|Thêm một chút bền bỉ, một chút nỗ lực, và điều tưởng chừng như là thất bại vô vọng có thể biến thành thành công rực rỡ.
+Mark Twain|Bí quyết của thành công là hãy bắt đầu. Bí quyết để bắt đầu là chia nhỏ các công việc nặng nề, phức tạp thành những việc nhỏ dễ quản lý hơn, rồi bắt đầu với việc thứ nhất.
+Voltaire|Để thành công trong thế giới này, chỉ ngu xuẩn là không đủ, anh cũng phải biết xử thế.
+Brian Tracy|Tất cả những người đàn ông và phụ nữ thành công đều là những người mơ mộng. Họ mơ mộng về tương lai của họ, lý tưởng trên mọi phương diện, và rồi họ lao động mỗi ngày hướng về viễn cảnh xa xôi ấy, mục tiêu hay cái đích đó.
+Mark Twain|Cơ bản là có hai loại người. Người làm nên chuyện và người tuyên bố mình làm nên chuyện. Nhóm đầu tiên ít đông hơn.
+Brian Tracy|Chìa khóa thành công là tập trung lý trí của chúng ta vào những điều chúng ta muốn chứ không phải những điều chúng ta sợ.
+Dale Carnegie|Người ta hiếm khi thành công nếu không làm điều mình thấy vui thích.
+Elbert Hubbard|Ranh giới giữa thành công và thất bại nhỏ tới mức chúng ta hiếm khi biết được mình đã vượt qua nó khi nào: nhỏ tới mức chúng ta thường đứng trên nó mà không ý thức được.
+Dale Carnegie|Thành công là đạt được thứ bạn muốn. Hạnh phúc là muốn thứ bạn đạt được.
+Khuyết danh|Sự khác biệt giữa những người thành công và những người thất bại không phải ở sức mạnh, kiến thức hay sự hiểu biết - mà chính ở ý chí.
+Walter Scott|Để thành công, thái độ cũng quan trọng ngang bằng khả năng.
+John Adams|Chúng ta không thể đảm bảo thành công, nhưng chúng ta có thể xứng đáng với thành công.
+Biz Stone|Chọn đúng thời gian, sự bền bỉ và mười năm nỗ lực rồi cuối cùng sẽ khiến bạn có vẻ như thành công chỉ trong một đêm.
+Khuyết danh|Bạn không cần phải thức đêm để thành công; bạn chỉ cần tỉnh táo vào ban ngày.
+Steve Jobs|Tôi nghĩ nếu bạn làm điều gì đó và thu được kết quả tốt đẹp, bạn nên đi tiếp để làm những điều tuyệt vời khác, đừng dừng chân lại quá lâu. Hãy tìm xem nên làm gì tiếp.
+William James|Chính thái độ của chúng ta khi bắt đầu một việc khó khăn sẽ ảnh hưởng lên kết quả thành công nhiều hơn bất cứ điều gì khác.
+Benjamin Franklin|Để thành công, hãy chớp lấy cơ hội cũng nhanh như khi vội vã kết luận.
+Albert Camus|Bạn được tha thứ cho hạnh phúc và thành công của mình chỉ khi bạn sẵn sàng hào phóng chia sẻ chúng.
+Henry David Thoreau|Con người sinh ra để thành công, không phải để thất bại.
+Herbert Kaufman|Thất bại chỉ là thành công tạm thời bị trì hoãn, chừng nào lòng can đảm còn tôi luyện cho khát vọng. Thói quen kiên định chính là thói quen chiến thắng.
+Khuyết danh|Hãy mang cả thành công của người khác trong giấc mơ của mình, vì thành công của chính mình.
+Khuyết danh|Để trở thành người thắng cuộc, tất cả những gì bạn cần đến là tất cả những gì bạn có.
+Khuyết danh|Cách tốt nhất để thành công trong đời là hành động theo lời khuyên mà ta trao cho người khác.
+Maxwell Maltz|Nếu bạn nhất định phải có được sự công bằng để sống cuộc đời thành công và hạnh phúc, bạn sẽ không làm được điều đó trong kiếp này, trên hành tinh này.
+Henri Frederic Amiel|Chinh phục bất cứ một sự khó khăn nào luôn đem lại cho người ta một niềm vui sướng thầm lặng, bởi điều đó cũng có nghĩa là đẩy lùi một đường ranh giới và tăng thêm tự do của bản thân.
+Henry David Thoreau|Sự thành công thường đến với những ai không quá bận rộn đi tìm nó.
+Vince Lombardi|Sự khác biệt giữa người thành công và những người khác không phải là sự thiếu hụt sức mạnh, hay thiếu hụt kiến thức, mà đúng hơn là thiếu hụt ý chí.
+Robert Collier|Cơ hội thành công của bạn trong mọi chuyện luôn có thể được đo bằng niềm tin của bạn vào chính bản thân mình.
+Maxwell Maltz|Hãy nhớ rằng bạn không phải lúc nào cũng thắng. Một ngày nào đó, ngay cả người có tài xoay sở nhất cũng nếm mùi thất bại. Nhưng trong trường hợp này, luôn có ngày mai - sau khi bạn đã làm hết sức mình vì thành công của hôm nay.
+George Bernard Shaw|Thành công không nằm ở việc không bao giờ phạm sai lầm, mà nằm ở việc không bao giờ phạm phải cùng một sai lầm tới lần thứ hai.
+Pele|Thành công không phải ngẫu nhiên. Đó là sự chăm chỉ, bền bỉ, học hỏi, nghiên cứu, hy sinh và quan trọng nhất, tình yêu đối với việc mình đang làm.
+Khuyết danh|Con đường dẫn đến thành công luôn luôn đang được xây dựng.
+Brian Tracy|Về cơ bản, có ba loại người: người không thành công, người thành công trong chốc lát, và người thành công bền vững. Sự khác biệt nằm ở nghị lực.
+Stephen Hawking|Dù tôi không thể cử động, và tôi phải nói qua máy móc, trong trí óc tôi, tôi tự do.
+Khuyết danh|Tự do tối thượng của con người là khả năng quyết định thái độ của mình trong bất cứ hoàn cảnh nào.
+Nelson Mandela|Khi còn nghèo đói, không có tự do thật sự.
+Frank Tyger|Làm điều bạn thích là tự do. Thích điều bạn làm là hạnh phúc.
+Henry David Thoreau|Luật lệ không bao giờ khiến con người tự do, chính con người phải làm cho luật lệ tự do.
+Voltaire|Càng hiểu biết, con người càng tự do.
+Hồ Chí Minh|Tôi chỉ có một sự ham muốn, ham muốn tột bậc, là làm sao cho nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ai cũng có cơm ăn áo mặc, ai cũng được học hành.
+Voltaire|Tự do tư tưởng là sức sống của linh hồn.
+Balzac|Sự tự do về chính trị, sự hòa bình của một quốc gia và chính cả khoa học là những món quà mà Định mệnh đánh thuế nặng nề bằng máu!
+Jean Jacques Rousseau|Tôi ưa tự do với nguy hiểm hơn là hòa bình trong nô dịch.
+Mahatma Gandhi|Tự do không bao giờ là đắt đỏ. Nó là hơi thở của cuộc sống. Có điều gì con người lại không từ bỏ để được sống?
+John Adams|Quyền sở hữu chắc chắn cũng là quyền của con người như quyền tự do.
+John Adams|Hãy để trí óc con người tự do. Nó phải được tự do. Nó sẽ được tự do. Sự mê tín và giáo điều không thể giam cầm được nó.
+William Arthur Ward|Kẻ thù của tự do là lãng phí, thờ ơ, phóng đãng, và thái độ xảo quyệt muốn có mà chẳng bỏ công.
+Eleanor Roosevelt|Tự do đòi hỏi rất nhiều ở mỗi người. Đi cùng với tự do là trách nhiệm. Với người không sẵn sàng trưởng thành, người không muốn mang sức nặng của chính mình, đây là một viễn cảnh đáng sợ.
+Elbert Hubbard|Trách nhiệm là cái giá của tự do.
+Erich Fromm|Không thể có tự do thật sự mà không có tự do vấp ngã.
+John Adams|Nên giáo dục và hướng dẫn trẻ em những nguyên tắc của tự do.
+Hồ Chí Minh|Không có gì quý hơn độc lập, tự do!
+Samuel Johnson|Hãy kiên quyết đừng để mình trở nên nghèo túng: hãy sử dụng ít hơn bạn có. Sự nghèo túng là kẻ thù lớn đối với hạnh phúc của con người; nó phá hủy tự do, và nó khiến một vài đức hạnh trở thành không thực tế, và số còn lại cực kỳ khó khăn.
+Voltaire|Lịch sử chỉ có thể được viết tốt ở một đất nước tự do.
+Mahatma Gandhi|Tự do không đáng để có nếu nó không bao gồm tự do được sai lầm.
+John Adams|Cách bảo vệ tự do là đặt nó vào tay nhân dân, cũng có nghĩa là cho họ sức mạnh trong mọi lúc để bảo vệ nó một cách hợp pháp và trước các tòa án công lý.
+Jean Jacques Rousseau|Tự do phục tùng luật lệ mà một người tự thiết lập cho chính mình.
+William Arthur Ward|Người không mạo hiểm điều gì, không làm gì, không có gì, chẳng là gì. Anh ta có thể tránh được đau buồn và thống khổ. Nhưng anh ta không thể học hỏi, cảm nhận, thay đổi, trưởng thành hay thực sự sống. Bị xiềng xích bởi sự khuất phục, anh ta là kẻ nô lệ đã từ bỏ tất cả tự do. Chỉ người dám mạo hiểm mới có tự do.
+Albert Camus|Tự do không là gì khác ngoài cơ hội trở nên tốt đẹp hơn.
+Peter Marshall|Mong sao chúng ta nghĩ về tự do không phải như quyền làm bất cứ điều gì mình muốn, mà là cơ hội làm điều đúng đắn.
+Alexander Hamilton|Có sự nhiệt huyết rõ ràng đối với tự do, khiến bản tính con người vượt lên trên chính nó, trong những hành động can đảm và anh hùng.
+Will Durant|Con người trở nên tự do khi anh ta nhận ra mình bị luật lệ ràng buộc.
+John Adams|Tự do, theo quan điểm siêu hình học của tôi, là quyền lực tự quyết trong một thực thể có tư duy. Nó đưa đến suy nghĩ, lựa chọn và sức mạnh.
+Frank Herbert|Tìm kiếm tự do và trở thành tù nhân của dục vọng. Tìm kiếm kỷ luật và tìm thấy tự do.
+Hegel|Lịch sử của thế giới chính là tiến trình của ý thức tự do.
+Benjamin Franklin|Những người có thể từ bỏ tự do trân quý để đổi lấy sự an toàn tạm thời ít ỏi không xứng đáng với cả tự do lẫn sự an toàn.
+Aristotle|Người vượt qua được nỗi sợ của mình sẽ thực sự có tự do.
+Karl Marx|Sự cần thiết mù cho tới khi nó trở thành ý thức. Tự do là ý thức về sự cần thiết.
+Voltaire|Con người tự do vào lúc muốn mình tự do.
+Barack Obama|Mỗi chúng ta đều xứng đáng có được tự do để theo đuổi cách hạnh phúc của riêng mình. Không ai đáng phải chịu ức hiếp.
+Charles Dickens|Tôi chỉ muốn được tự do. Bướm rất tự do.
+Albert Einstein|Thông tin không phải là kiến thức.
+Anatole France|Kẻ ngu dốt nghĩ mình thông thái, nhưng người thông thái biết mình ngu dốt.
+Aristotle Onassis|Bí mật của kinh doanh là biết được điều gì đó mà không ai khác biết.
+Caleb Carr|Đây là sự thật lớn nhất của thời đại chúng ta: Thông tin không phải là tri thức.
+Khuyết danh|Trẻ con là những kẻ bắt chước bẩm sinh hành động giống như cha mẹ mình bất chấp mọi nỗ lực để dạy chúng cách xử thế.
+Richard L Evans|Chẳng bao giờ có loại thuốc bổ chữa được những căn bệnh xã hội hữu hiệu tốt hơn một mái ấm khỏe khoắn và hạnh phúc. Chẳng bao giờ có nguồn ổn định xã hội lớn hơn một gia đình yêu thương và biết cảm thông. Chẳng bao giờ có cách giúp trẻ em hạnh phúc tốt hơn lời tâm tình của bậc cha mẹ sáng suốt và trìu mến.
+Orlando Aloysius Battista|Di sản tốt nhất mà cha mẹ có thể dành cho con cái là chút ít thời gian mỗi ngày.
+Khổng Tử|Thờ cha mẹ, nên nhỏ nhẹ khuyên can, nếu thấy cha mẹ không theo ý mình thì vẫn cung kính mà không xúc phạm cha mẹ; tuy khó nhọc, lo buồn, nhưng không được oán hận.
+Richard L Evans|Còn điều gì tốt đẹp hơn mà cha mẹ và con cái có thể trao cho nhau ngoài sự quan tâm tôn trọng và thấu hiểu.
+Khuyết danh|Gia đình là gì? Đó là tình mến sợ cha, tình yêu mến mẹ, kính trọng thán phục nhân đức của cả cha lẫn mẹ, bỏ qua lỗi lầm, ghi nhớ công ơn, thông cảm nỗi đau khổ, cảm kích sự hy sinh của cha mẹ.
+Steve Maraboli|Ngày hôm nay hãy tham gia vào giấc mơ của mình. Ngày mới này mang đến vô số cơ hội. Hãy hành động vì những giấc mơ bạn đã ấp ủ trong tâm tưởng bao lâu nay. Hãy nhớ rằng, thành công là điều mà bạn trải nghiệm khi hành động phù hợp với thành công.
+Steve Maraboli|Một ngày mới: Hãy đủ cởi mở để nhìn thấy cơ hội. Hãy đủ khôn ngoan để cảm thấy biết ơn. Hãy đủ can đảm để hạnh phúc.
+Alexander Graham Bell|Khi một cánh cửa đóng lại, cánh cửa khác mở ra; nhưng chúng ta thường nuối tiếc nhìn mãi cánh cửa đóng đến nỗi ta không thấy cánh cửa đã mở ra.
+Victor Hugo|Tương lai có rất nhiều tên: Với kẻ yếu, nó là Điều không thể đạt được. Đối với người hay sợ hãi, nó là Điều chưa biết. Với ai dũng cảm, nó là Cơ hội.
+Kobe Bryant|Mọi thứ tiêu cực - áp lực, thử thách - đều là cơ hội để tôi vươn lên.
+Dale Carnegie|Hãy nắm lấy cơ hội! Tất cả cuộc đời là cơ hội. Người tiến xa nhất thường là người sẵn sàng hành động và chấp nhận thách thức.
+Brian Tracy|Bạn càng tìm kiếm sự bảo đảm, bạn càng ít có nó. Nhưng bạn càng tìm kiếm cơ hội, bạn càng có thể đạt được sự bảo đảm mà mình muốn.
+A. A. Milne|Thời gian vội vã lao đi; Cơ hội nảy sinh rồi tan biến... Vậy mà bạn vẫn chờ đợi và không dám thử - Con chim có đôi cánh mà không dám bay lên.
+Benjamin Franklin|Để thành công, hãy chớp lấy cơ hội cũng nhanh như khi vội vã kết luận.
+Mark Twain|Tôi hiếm khi nhận ra được cơ hội cho tới khi mà nó không còn là cơ hội.
+Frank Tyger|Hãy học cách lắng nghe. Cơ hội có thể gõ cửa rất khẽ khàng.
+Steve Jobs|Anh muốn bỏ phần còn lại của cuộc đời mình đi bán nước đường hay anh muốn có cơ hội thay đổi thế giới? - Câu hỏi nổi tiếng của Steve Jobs dành cho John Sculley, giám đốc trước của Apple.
+Khuyết danh|Thử thách càng lớn, cơ hội càng lớn.
+Robert Collier|Cơ hội thành công của bạn trong mọi chuyện luôn có thể được đo bằng niềm tin của bạn vào chính bản thân mình.
+Khuyết danh|Người bi quan luôn tìm thấy khó khăn trong mọi cơ hội. Người lạc quan luôn nhìn được cơ hội trong từng khó khăn.
+Khuyết danh|Hãy tập trung nỗ lực cao nhất vào những cơ hội tốt nhất chứ không phải những rắc rối tồi tệ nhất.
+Douglas MacArthur|Trên trái đất này không có sự bảo đảm; chỉ có cơ hội.
+Jack Ma|Nếu bạn không bỏ cuộc, bạn vẫn còn cơ hội. Bỏ cuộc là thất bại lớn nhất.
+William Arthur Ward|Cơ hội giống như bình minh. Nếu bạn chờ quá lâu, bạn sẽ bỏ lỡ nó.
+Edward Bulwer Lytton|Cơ hội đến với tất cả mọi người, nhưng ít người có thể nắm bắt được cơ hội.
+Khuyết danh|Anh ta chưa bao giờ thành công lắm. Khi cơ hội gõ cửa, anh ta phàn nàn về tiếng ồn.
+Albert Einstein|Nằm giữa khó khăn là cơ hội.
+Winston Churchill|Người lạc quan luôn nhìn thấy cơ hội trong mọi hiểm nguy, còn kẻ bi quan luôn nhìn thấy hiểm nguy trong mọi cơ hội.
+Hồ Chí Minh|Trời có bốn mùa: Xuân, Hạ, Thu, Đông. Đất có bốn phương: Đông, Tây, Nam, Bắc. Người có bốn đức: Cần, Kiệm, Liêm, Chính. Thiếu một mùa, thì không thành trời. Thiếu một phương, thì không thành đất.Thiếu một đức, thì không thành người.
+Ngạn ngữ Tây Ban Nha|Ngay cả khi trong túi hết tiền, cái mũ trên đầu anh cũng phải đội cho ngay ngắn.
+Hồ Chí Minh|Cần, Kiệm, Liêm, là gốc rễ của Chính. Nhưng một cây cần có gốc rễ, lại cần có cành, lá, hoa, quả mới là hoàn toàn. Một người phải Cần, Kiệm, Liêm, nhưng còn phải Chính mới là người hoàn toàn.
+Hồ Chí Minh|Những người trong các công sở đều có nhiều hoặc ít quyền hành. Nếu không giữ đúng Cần - Kiệm - Liêm - Chính thì dễ trở thành hủ bại, biến thành sâu mọt của dân.
+Hồ Chí Minh|Tự mình phải chính trước, mới giúp được người khác chính. Mình không chính, mà muốn người khác chính là vô lý.
+Ngạn ngữ Pháp|Lương thiện là đồng tiền duy nhất có thể đi khắp thế giới.
+George Washington|Không có đạo đức, và không có sự chính trực, những tài năng vượt trội nhất và những thành tựu rực rỡ nhất không bao giờ có thể nhận được sự tôn trọng và thu được lòng kính mến của nhóm người có giá trị nhất trong nhân loại.
+Sidney Mohede|Tài năng, kỹ năng hay tài hùng biện, dù nhiều bao nhiêu cũng không thể chống đỡ ta như sự chính trực, chí khí và thái độ.
+W. Clement Stone|Hãy can đảm nói không. Hãy can đảm đối mặt với sự thật. Hãy làm điều đúng vì như thế là đúng. Đó là những chiếc chìa khóa kỳ diệu mở cánh cửa vào cuộc đời chính trực.
+Nguyễn Trãi|Phú quý lòng hơn phú quý danh.
+Hồ Chí Minh|Công trạng của cá nhân chủ yếu là nhờ tập thể mà có. Vì vậy người có công trạng không nên tự kiêu mà cần khiêm tốn. Khiêm tốn và rộng lượng, đó là hai đức tính mà người cách mạng nào cũng phải có.
+Hồ Chí Minh|Do chủ nghĩa cá nhân mà sinh ra đòi hỏi hưởng thụ, đãi ngộ. Người ta ai cũng muốn ăn ngon mặc đẹp, nhưng muốn phải cho đúng thời, đúng hoàn cảnh. Trong lúc nhân dân ta còn thiếu thốn mà một người nào đó muốn riêng hưởng ăn ngon mặc đẹp, như vậy là không có đạo đức.
+Barack Obama|Một giọng nói có thể thay đổi cả căn phòng, và nếu một giọng nói có thể thay đổi cả căn phòng, nó có thể thay đổi một thành phố, và nếu nó có thể thay đổi một thành phố, nó có thể thay đổi một bang, và nếu nó có thể thay đổi một bang, nó có thể thay đổi một đất nước, và nếu nó có thể thay đổi một đất nước, nó có thể thay đổi cả thế giới. Giọng nói của bạn có thể thay đổi thế giới.
+Jean Jacques Rousseau|Người tầm thường không tin vào các cá nhân vĩ đại.
+Barack Obama|Việc đọc rất quan trọng. Nếu bạn biết cách đọc, cả thế giới sẽ mở ra cho bạn.
+Barack Obama|Bạn không thể để thất bại định hình mình. Bạn phải để thất bại dạy mình.
+Barack Obama|Thay đổi chẳng bao giờ dễ, nhưng luôn luôn có thể.
+Barack Obama|Tương lai trao thưởng cho những ai tiến lên phía trước. Tôi không có thời gian để cảm thấy tiếc nuối cho mình. Tôi không có thời gian để phàn nàn. Tôi sẽ tiến về phía trước.
+Barack Obama|Tập trung cả đời vào việc kiếm tiền cho thấy sự nghèo nàn về tham vọng. Bạn yêu cầu quá ít ở bản thân. Và điều đó sẽ khiến bạn không thỏa mãn.
+Barack Obama|Khi còn thở, ta còn hy vọng.
+Barack Obama|Cách tốt nhất để không cảm thấy vô vọng là đứng dậy và làm gì đó. Đừng đợi chuyện tốt đẹp xảy ra với mình. Nếu bạn ra ngoài và khiến điều gì đó tốt đẹp xảy ra, bạn sẽ đổ đầy thế giới với hy vọng, bạn sẽ đổ đầy bản thân mình với hy vọng.
+Barack Obama|Thay đổi xuất hiện nhờ những người bình thường làm những chuyện phi thường.

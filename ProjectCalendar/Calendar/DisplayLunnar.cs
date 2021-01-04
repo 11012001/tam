@@ -14,11 +14,21 @@ namespace Calendar
     public partial class DisplayLunnar : UserControl
     {
         private static DisplayLunnar calendardisplay;
+
+        public DateTime Date = DateTime.Now;
         public DisplayLunnar()
         {
             InitializeComponent();
             CreateMatrix();
         }
+
+        public DisplayLunnar(DateTime date)
+        {
+            InitializeComponent();
+            Date = date;
+            CreateMatrix();
+        }
+
         public static DisplayLunnar CalendarDisplay
         {
             get
@@ -119,16 +129,16 @@ namespace Calendar
                 if (IsEqualDate(useDate, DateTime.Now))
                     btn.TextColor = Color.Aqua;
                 if ((IsEqualDate(useDate, dtpk.Value)) && (btn.BackColor != Color.Aqua))
-                    btn.TextColor = Color.LightPink;
+                    btn.TextColor = Color.Yellow;
 
-                //Những ngày lễ 
+                //Những ngày lễ
                 int k = IsPublicDay(useDate);
-                if (k == 1)
+                //if (k == 1)
+                //    btn.TextColor = Color.Red;
+                //else if (k == 0)
+                //    btn.TextColor = Color.BlueViolet;
+               if (k == -1)
                     btn.TextColor = Color.Red;
-                else if (k == 0)
-                    btn.TextColor = Color.BlueViolet;
-                else if (k == -1)
-                    btn.TextColor = Color.Orange;
 
                 MatrixColor[line][column] = btn.BackColor;
                 if (column >= 6)
@@ -220,16 +230,26 @@ namespace Calendar
             dtpk.Value = dtpk.Value.AddMonths(-1);
         }
 
+        private event EventHandler Dtpk;
+        public event EventHandler DTPK
+        {
+            add { Dtpk += value; }
+            remove { Dtpk -= value; ; }
+        }
+
         private void dtpk_ValueChanged(object sender, EventArgs e)
         {
             DateTime date = (sender as Guna.UI2.WinForms.Guna2DateTimePicker).Value;
             AddNumberIntoMatrix(date);
             ShowEvent(dtpk.Value.Month, dtpk.Value.Year);
+            if (Dtpk != null)
+                Dtpk(this, new EventArgs());
         }
 
         private void DisplayCalendar_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            dtpk.Value = Date;
             ShowEvent(dtpk.Value.Month, dtpk.Value.Year);
         }
         private void BackToDateBttn_Click(object sender, EventArgs e)
@@ -240,8 +260,6 @@ namespace Calendar
         {
         }
 
-        public event EventHandler ClickButton;
-        public DateTime Date { get; set; }
 
         private void ButtonNum_Click(object sender, EventArgs e)
         {

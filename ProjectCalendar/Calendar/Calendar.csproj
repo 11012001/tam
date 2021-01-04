@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SQLite.3.13.0\build\net45\SQLite.props" Condition="Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -87,6 +90,25 @@
     <Compile Include="CustomButton.Designer.cs">
       <DependentUpon>CustomButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeadlineClass.cs" />
+    <Compile Include="DeadLineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeadLineControl.Designer.cs">
+      <DependentUpon>DeadLineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadLineNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadLineNote.Designer.cs">
+      <DependentUpon>DeadLineNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayDetailDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayDetailDate.Designer.cs">
+      <DependentUpon>DisplayDetailDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplayLunnar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +145,18 @@
     <Compile Include="DisplayDetailEvent.Designer.cs">
       <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplayTuVi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayTuVi.Designer.cs">
+      <DependentUpon>DisplayTuVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayVanKhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayVanKhan.Designer.cs">
+      <DependentUpon>DisplayVanKhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplayWF.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,6 +191,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="PublicDate.cs" />
+    <Compile Include="SpeechJSon.cs" />
     <Compile Include="StringText.cs" />
     <Compile Include="ToDoClass.cs" />
     <Compile Include="ToDoControl.cs">
@@ -171,7 +206,23 @@
     <Compile Include="ToDoNote.Designer.cs">
       <DependentUpon>ToDoNote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tutorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial.Designer.cs">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanKhanString.cs" />
     <Compile Include="WeatherInfo.cs" />
+    <EmbeddedResource Include="DeadLineControl.resx">
+      <DependentUpon>DeadLineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadLineNote.resx">
+      <DependentUpon>DeadLineNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayDetailDate.resx">
+      <DependentUpon>DisplayDetailDate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisplayLunnar.resx">
       <DependentUpon>DisplayLunnar.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +240,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayDetailEvent.resx">
       <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayTuVi.resx">
+      <DependentUpon>DisplayTuVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayVanKhan.resx">
+      <DependentUpon>DisplayVanKhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayWF.resx">
       <DependentUpon>DisplayWF.cs</DependentUpon>
@@ -213,6 +270,9 @@
     <EmbeddedResource Include="ToDoNote.resx">
       <DependentUpon>ToDoNote.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial.resx">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -229,7 +289,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FileText\ChamNgon.txt" />
@@ -238,6 +297,90 @@
     <Content Include="FileText\MainWeather.txt" />
     <Content Include="Images\HacDao.png" />
     <Content Include="Images\HoangDao.png" />
+    <Content Include="NhiThapBatTu\0.txt" />
+    <Content Include="NhiThapBatTu\1.txt" />
+    <Content Include="NhiThapBatTu\10.txt" />
+    <Content Include="NhiThapBatTu\11.txt" />
+    <Content Include="NhiThapBatTu\12.txt" />
+    <Content Include="NhiThapBatTu\13.txt" />
+    <Content Include="NhiThapBatTu\14.txt" />
+    <Content Include="NhiThapBatTu\15.txt" />
+    <Content Include="NhiThapBatTu\16.txt" />
+    <Content Include="NhiThapBatTu\17.txt" />
+    <Content Include="NhiThapBatTu\18.txt" />
+    <Content Include="NhiThapBatTu\19.txt" />
+    <Content Include="NhiThapBatTu\2.txt" />
+    <Content Include="NhiThapBatTu\20.txt" />
+    <Content Include="NhiThapBatTu\21.txt" />
+    <Content Include="NhiThapBatTu\22.txt" />
+    <Content Include="NhiThapBatTu\23.txt" />
+    <Content Include="NhiThapBatTu\24.txt" />
+    <Content Include="NhiThapBatTu\25.txt" />
+    <Content Include="NhiThapBatTu\26.txt" />
+    <Content Include="NhiThapBatTu\27.txt" />
+    <Content Include="NhiThapBatTu\3.txt" />
+    <Content Include="NhiThapBatTu\4.txt" />
+    <Content Include="NhiThapBatTu\5.txt" />
+    <Content Include="NhiThapBatTu\6.txt" />
+    <Content Include="NhiThapBatTu\7.txt" />
+    <Content Include="NhiThapBatTu\8.txt" />
+    <Content Include="NhiThapBatTu\9.txt" />
+    <Content Include="VanKhan\Chua\VKBCK.txt" />
+    <Content Include="VanKhan\Chua\VKBTQA.txt" />
+    <Content Include="VanKhan\Chua\VKDO.txt" />
+    <Content Include="VanKhan\Chua\VKDTH.txt" />
+    <Content Include="VanKhan\Chua\VKDTT.txt" />
+    <Content Include="VanKhan\Chua\VKLP.txt" />
+    <Content Include="VanKhan\Chua\VKMTN.txt" />
+    <Content Include="VanKhan\Chua\VKTH.txt" />
+    <Content Include="VanKhan\Chua\VKTMLH.txt" />
+    <Content Include="VanKhan\Cuoi\VKCH.txt" />
+    <Content Include="VanKhan\Cuoi\VKCM.txt" />
+    <Content Include="VanKhan\Khac\VKLKT.txt" />
+    <Content Include="VanKhan\Khac\VKLMT.txt" />
+    <Content Include="VanKhan\Nha\VKCNSN.txt" />
+    <Content Include="VanKhan\Nha\VKLNT.txt" />
+    <Content Include="VanKhan\Nha\VKLTG.txt" />
+    <Content Include="VanKhan\Ram\VKLTM.txt" />
+    <Content Include="VanKhan\Ram\VKM1VS15.txt" />
+    <Content Include="VanKhan\Ram\VKRT7.txt" />
+    <Content Include="VanKhan\Ram\VKRTG.txt" />
+    <Content Include="VanKhan\Ram\VKTDN.txt" />
+    <Content Include="VanKhan\Ram\VKTDTT.txt" />
+    <Content Include="VanKhan\Ram\VKTHT.txt" />
+    <Content Include="VanKhan\Ram\VKTTT.txt" />
+    <Content Include="VanKhan\Tang\VKKDTM.txt" />
+    <Content Include="VanKhan\Tang\VKLCT.txt" />
+    <Content Include="VanKhan\Tang\VKLCT49.txt" />
+    <Content Include="VanKhan\Tang\VKLDT.txt" />
+    <Content Include="VanKhan\Tang\VKNCG.txt" />
+    <Content Include="VanKhan\Tang\VKNGD.txt" />
+    <Content Include="VanKhan\Tang\VKNGH.txt" />
+    <Content Include="VanKhan\Tang\VKNGT.txt" />
+    <Content Include="VanKhan\Tet\VKLGT.txt" />
+    <Content Include="VanKhan\Tet\VKLOT.txt" />
+    <Content Include="VanKhan\Tet\VKLTM.txt" />
+    <Content Include="VanKhan\Tet\VKLTNM.txt" />
+    <Content Include="VanKhan\Tet\VKTLM1.txt" />
+    <Content Include="VanKhan\Tet\VKTN.txt" />
+    <Content Include="VanKhan\Tet\VKTTM1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLite.3.13.0\build\net45\SQLite.props'))" />
+  </Target>
 </Project>

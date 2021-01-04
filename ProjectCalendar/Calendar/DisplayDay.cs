@@ -16,5 +16,22 @@ namespace Calendar
         {
             InitializeComponent();
         }
+
+        private static DisplayDay daydisplay;
+
+        public static DisplayDay DayDisplay
+        {
+            get
+            {
+                if (daydisplay == null)
+                    daydisplay = new DisplayDay();
+                return daydisplay;
+            }
+        }
+
+        private void displayChangeDate1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
