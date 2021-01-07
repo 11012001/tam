@@ -25,6 +25,7 @@ namespace Calendar
         {
             InitializeComponent();
             DisplayDate(date);
+            Date = date;
         }
         #region Hiển thị chi tiết ngày
 
@@ -241,13 +242,13 @@ namespace Calendar
         private void dtpk_ValueChanged(object sender, EventArgs e)
         {
             DateTime date = (sender as Guna.UI2.WinForms.Guna2DateTimePicker).Value;
-            Date = date;
+            //Date = date;
             DisplayDate(date);
         }
 
         private void DisplayDetailDate_Load(object sender, EventArgs e)
         {
-            dtpk.Value = DateTime.Now;
+            dtpk.Value = Date;
         }
     }
 }
