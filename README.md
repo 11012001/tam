@@ -22,6 +22,6 @@ HƯỚNG DẪN SỬ DỤNG ỨNG DỤNG LỊCH VẠN NIÊN
 
 - Ghi Chú: cho phép bạn lập lịch để sắp xếp công việc một cách hợp lí và cho phép bạn thêm những sự kiện hay công việc sắp diễn ra để quản lí một cách hiệu quả hơn.
 
-* Ứng dụng của chúng tôi vẫn đang trong giai đoạn thử nghiệm nên vẫn không tránh được những sai sót. Nếu có sai sót thì một các bạn thông cảm và gửi những sai sót cho chúng tôi thông qua email sau 19522074@gm.uit.edu.vn.
+Ứng dụng của chúng tôi vẫn đang trong giai đoạn thử nghiệm nên vẫn không tránh được những sai sót. Nếu có sai sót thì một các bạn thông cảm và gửi những sai sót cho chúng tôi thông qua email sau 19522074@gm.uit.edu.vn.
 
-* Rất mong được các bạn ủng hộ. 
+Rất mong được các bạn ủng hộ. 
