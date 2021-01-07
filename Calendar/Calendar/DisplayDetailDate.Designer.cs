@@ -1790,6 +1790,7 @@ namespace Calendar
             this.Controls.Add(this.PanelLVN);
             this.Name = "DisplayDetailDate";
             this.Size = new System.Drawing.Size(1009, 590);
+            this.Load += new System.EventHandler(this.DisplayDetailDate_Load);
             this.PanelLVN.ResumeLayout(false);
             this.PanelLVN.PerformLayout();
             this.PanelDetailDate.ResumeLayout(false);

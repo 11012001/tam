@@ -244,5 +244,10 @@ namespace Calendar
             Date = date;
             DisplayDate(date);
         }
+
+        private void DisplayDetailDate_Load(object sender, EventArgs e)
+        {
+            dtpk.Value = DateTime.Now;
+        }
     }
 }
