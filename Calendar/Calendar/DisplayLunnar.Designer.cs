@@ -235,7 +235,7 @@ namespace Calendar
             this.dtpk.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpk.HoverState.Parent = this.dtpk;
-            this.dtpk.Location = new System.Drawing.Point(230, 3);
+            this.dtpk.Location = new System.Drawing.Point(221, 3);
             this.dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpk.Name = "dtpk";

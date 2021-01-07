@@ -36,11 +36,11 @@
             this.ClockLB = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtpk = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
-            this.buttonCountDay = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonHDSD = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonTuVi = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonVanKhan = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonDetailDate = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonCountDay = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonHDSD = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonTuVi = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonVanKhan = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonDetailDate = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonHistory = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonChangeDay = new Guna.UI2.WinForms.Guna2Button();
             this.iconButtonClose = new FontAwesome.Sharp.IconButton();
@@ -59,10 +59,10 @@
             // 
             // PanelDisplay
             // 
-            this.PanelDisplay.Location = new System.Drawing.Point(190, 0);
+            this.PanelDisplay.Location = new System.Drawing.Point(210, 0);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(1009, 620);
+            this.PanelDisplay.Size = new System.Drawing.Size(1006, 620);
             this.PanelDisplay.TabIndex = 8;
             // 
             // PanelIcon
@@ -73,7 +73,7 @@
             this.PanelIcon.Location = new System.Drawing.Point(0, 0);
             this.PanelIcon.Name = "PanelIcon";
             this.PanelIcon.ShadowDecoration.Parent = this.PanelIcon;
-            this.PanelIcon.Size = new System.Drawing.Size(190, 65);
+            this.PanelIcon.Size = new System.Drawing.Size(210, 65);
             this.PanelIcon.TabIndex = 0;
             // 
             // ClockLB
@@ -99,20 +99,20 @@
             this.dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpk.Name = "dtpk";
             this.dtpk.ShadowDecoration.Parent = this.dtpk;
-            this.dtpk.Size = new System.Drawing.Size(190, 41);
+            this.dtpk.Size = new System.Drawing.Size(210, 41);
             this.dtpk.TabIndex = 1;
-            this.dtpk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dtpk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpk.Value = new System.DateTime(2020, 12, 15, 10, 42, 52, 648);
             this.dtpk.ValueChanged += new System.EventHandler(this.dtpk_ValueChanged);
             // 
             // PanelSetting
             // 
-            this.PanelSetting.Controls.Add(this.buttonCountDay);
+            this.PanelSetting.Controls.Add(this.ButtonCountDay);
             this.PanelSetting.Controls.Add(this.dtpk);
-            this.PanelSetting.Controls.Add(this.buttonHDSD);
-            this.PanelSetting.Controls.Add(this.buttonTuVi);
-            this.PanelSetting.Controls.Add(this.buttonVanKhan);
-            this.PanelSetting.Controls.Add(this.buttonDetailDate);
+            this.PanelSetting.Controls.Add(this.ButtonHDSD);
+            this.PanelSetting.Controls.Add(this.ButtonTuVi);
+            this.PanelSetting.Controls.Add(this.ButtonVanKhan);
+            this.PanelSetting.Controls.Add(this.ButtonDetailDate);
             this.PanelSetting.Controls.Add(this.ButtonHistory);
             this.PanelSetting.Controls.Add(this.ButtonChangeDay);
             this.PanelSetting.Controls.Add(this.iconButtonClose);
@@ -125,123 +125,123 @@
             this.PanelSetting.Location = new System.Drawing.Point(0, 0);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
-            this.PanelSetting.Size = new System.Drawing.Size(190, 621);
+            this.PanelSetting.Size = new System.Drawing.Size(210, 621);
             this.PanelSetting.TabIndex = 1;
             // 
-            // buttonCountDay
+            // ButtonCountDay
             // 
-            this.buttonCountDay.Animated = true;
-            this.buttonCountDay.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCountDay.CheckedState.Parent = this.buttonCountDay;
-            this.buttonCountDay.CustomImages.Parent = this.buttonCountDay;
-            this.buttonCountDay.FillColor = System.Drawing.Color.Transparent;
-            this.buttonCountDay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.buttonCountDay.ForeColor = System.Drawing.Color.Black;
-            this.buttonCountDay.HoverState.Parent = this.buttonCountDay;
-            this.buttonCountDay.Image = ((System.Drawing.Image)(resources.GetObject("buttonCountDay.Image")));
-            this.buttonCountDay.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buttonCountDay.Location = new System.Drawing.Point(0, 289);
-            this.buttonCountDay.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonCountDay.Name = "buttonCountDay";
-            this.buttonCountDay.PressedColor = System.Drawing.Color.Gray;
-            this.buttonCountDay.ShadowDecoration.Parent = this.buttonCountDay;
-            this.buttonCountDay.Size = new System.Drawing.Size(190, 45);
-            this.buttonCountDay.TabIndex = 15;
-            this.buttonCountDay.Text = "Đếm Ngày";
-            this.buttonCountDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.buttonCountDay.Click += new System.EventHandler(this.buttonCountDay_Click);
+            this.ButtonCountDay.Animated = true;
+            this.ButtonCountDay.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonCountDay.CheckedState.Parent = this.ButtonCountDay;
+            this.ButtonCountDay.CustomImages.Parent = this.ButtonCountDay;
+            this.ButtonCountDay.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonCountDay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonCountDay.ForeColor = System.Drawing.Color.Black;
+            this.ButtonCountDay.HoverState.Parent = this.ButtonCountDay;
+            this.ButtonCountDay.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCountDay.Image")));
+            this.ButtonCountDay.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonCountDay.Location = new System.Drawing.Point(0, 289);
+            this.ButtonCountDay.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonCountDay.Name = "ButtonCountDay";
+            this.ButtonCountDay.PressedColor = System.Drawing.Color.Gray;
+            this.ButtonCountDay.ShadowDecoration.Parent = this.ButtonCountDay;
+            this.ButtonCountDay.Size = new System.Drawing.Size(210, 45);
+            this.ButtonCountDay.TabIndex = 15;
+            this.ButtonCountDay.Text = "ĐẾM NGÀY";
+            this.ButtonCountDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonCountDay.Click += new System.EventHandler(this.buttonCountDay_Click);
             // 
-            // buttonHDSD
+            // ButtonHDSD
             // 
-            this.buttonHDSD.Animated = true;
-            this.buttonHDSD.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHDSD.CheckedState.Parent = this.buttonHDSD;
-            this.buttonHDSD.CustomImages.Parent = this.buttonHDSD;
-            this.buttonHDSD.FillColor = System.Drawing.Color.Transparent;
-            this.buttonHDSD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.buttonHDSD.ForeColor = System.Drawing.Color.Black;
-            this.buttonHDSD.HoverState.Parent = this.buttonHDSD;
-            this.buttonHDSD.Image = ((System.Drawing.Image)(resources.GetObject("buttonHDSD.Image")));
-            this.buttonHDSD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buttonHDSD.Location = new System.Drawing.Point(3, 514);
-            this.buttonHDSD.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonHDSD.Name = "buttonHDSD";
-            this.buttonHDSD.PressedColor = System.Drawing.Color.Gray;
-            this.buttonHDSD.ShadowDecoration.Parent = this.buttonHDSD;
-            this.buttonHDSD.Size = new System.Drawing.Size(187, 45);
-            this.buttonHDSD.TabIndex = 14;
-            this.buttonHDSD.Text = "Hướng Dẫn Sử Dụng";
-            this.buttonHDSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.buttonHDSD.Click += new System.EventHandler(this.buttonHDSD_Click);
+            this.ButtonHDSD.Animated = true;
+            this.ButtonHDSD.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonHDSD.CheckedState.Parent = this.ButtonHDSD;
+            this.ButtonHDSD.CustomImages.Parent = this.ButtonHDSD;
+            this.ButtonHDSD.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonHDSD.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonHDSD.ForeColor = System.Drawing.Color.Black;
+            this.ButtonHDSD.HoverState.Parent = this.ButtonHDSD;
+            this.ButtonHDSD.Image = ((System.Drawing.Image)(resources.GetObject("ButtonHDSD.Image")));
+            this.ButtonHDSD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonHDSD.Location = new System.Drawing.Point(3, 514);
+            this.ButtonHDSD.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonHDSD.Name = "ButtonHDSD";
+            this.ButtonHDSD.PressedColor = System.Drawing.Color.Gray;
+            this.ButtonHDSD.ShadowDecoration.Parent = this.ButtonHDSD;
+            this.ButtonHDSD.Size = new System.Drawing.Size(210, 45);
+            this.ButtonHDSD.TabIndex = 14;
+            this.ButtonHDSD.Text = "HƯỚNG DẪN SỬ DỤNG";
+            this.ButtonHDSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonHDSD.Click += new System.EventHandler(this.buttonHDSD_Click);
             // 
-            // buttonTuVi
+            // ButtonTuVi
             // 
-            this.buttonTuVi.Animated = true;
-            this.buttonTuVi.BackColor = System.Drawing.Color.Transparent;
-            this.buttonTuVi.CheckedState.Parent = this.buttonTuVi;
-            this.buttonTuVi.CustomImages.Parent = this.buttonTuVi;
-            this.buttonTuVi.FillColor = System.Drawing.Color.Transparent;
-            this.buttonTuVi.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.buttonTuVi.ForeColor = System.Drawing.Color.Black;
-            this.buttonTuVi.HoverState.Parent = this.buttonTuVi;
-            this.buttonTuVi.Image = ((System.Drawing.Image)(resources.GetObject("buttonTuVi.Image")));
-            this.buttonTuVi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buttonTuVi.Location = new System.Drawing.Point(0, 469);
-            this.buttonTuVi.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonTuVi.Name = "buttonTuVi";
-            this.buttonTuVi.PressedColor = System.Drawing.Color.Gray;
-            this.buttonTuVi.ShadowDecoration.Parent = this.buttonTuVi;
-            this.buttonTuVi.Size = new System.Drawing.Size(190, 45);
-            this.buttonTuVi.TabIndex = 12;
-            this.buttonTuVi.Text = "Tử Vi";
-            this.buttonTuVi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.buttonTuVi.Click += new System.EventHandler(this.buttonTuVi_Click);
+            this.ButtonTuVi.Animated = true;
+            this.ButtonTuVi.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonTuVi.CheckedState.Parent = this.ButtonTuVi;
+            this.ButtonTuVi.CustomImages.Parent = this.ButtonTuVi;
+            this.ButtonTuVi.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonTuVi.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonTuVi.ForeColor = System.Drawing.Color.Black;
+            this.ButtonTuVi.HoverState.Parent = this.ButtonTuVi;
+            this.ButtonTuVi.Image = ((System.Drawing.Image)(resources.GetObject("ButtonTuVi.Image")));
+            this.ButtonTuVi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonTuVi.Location = new System.Drawing.Point(0, 469);
+            this.ButtonTuVi.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonTuVi.Name = "ButtonTuVi";
+            this.ButtonTuVi.PressedColor = System.Drawing.Color.Gray;
+            this.ButtonTuVi.ShadowDecoration.Parent = this.ButtonTuVi;
+            this.ButtonTuVi.Size = new System.Drawing.Size(210, 45);
+            this.ButtonTuVi.TabIndex = 12;
+            this.ButtonTuVi.Text = "TỬ VI";
+            this.ButtonTuVi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonTuVi.Click += new System.EventHandler(this.buttonTuVi_Click);
             // 
-            // buttonVanKhan
+            // ButtonVanKhan
             // 
-            this.buttonVanKhan.Animated = true;
-            this.buttonVanKhan.BackColor = System.Drawing.Color.Transparent;
-            this.buttonVanKhan.CheckedState.Parent = this.buttonVanKhan;
-            this.buttonVanKhan.CustomImages.Parent = this.buttonVanKhan;
-            this.buttonVanKhan.FillColor = System.Drawing.Color.Transparent;
-            this.buttonVanKhan.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.buttonVanKhan.ForeColor = System.Drawing.Color.Black;
-            this.buttonVanKhan.HoverState.Parent = this.buttonVanKhan;
-            this.buttonVanKhan.Image = ((System.Drawing.Image)(resources.GetObject("buttonVanKhan.Image")));
-            this.buttonVanKhan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buttonVanKhan.Location = new System.Drawing.Point(3, 424);
-            this.buttonVanKhan.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonVanKhan.Name = "buttonVanKhan";
-            this.buttonVanKhan.PressedColor = System.Drawing.Color.Gray;
-            this.buttonVanKhan.ShadowDecoration.Parent = this.buttonVanKhan;
-            this.buttonVanKhan.Size = new System.Drawing.Size(190, 45);
-            this.buttonVanKhan.TabIndex = 11;
-            this.buttonVanKhan.Text = "Văn Khấn";
-            this.buttonVanKhan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.buttonVanKhan.Click += new System.EventHandler(this.buttonVanKhan_Click);
+            this.ButtonVanKhan.Animated = true;
+            this.ButtonVanKhan.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonVanKhan.CheckedState.Parent = this.ButtonVanKhan;
+            this.ButtonVanKhan.CustomImages.Parent = this.ButtonVanKhan;
+            this.ButtonVanKhan.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonVanKhan.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonVanKhan.ForeColor = System.Drawing.Color.Black;
+            this.ButtonVanKhan.HoverState.Parent = this.ButtonVanKhan;
+            this.ButtonVanKhan.Image = ((System.Drawing.Image)(resources.GetObject("ButtonVanKhan.Image")));
+            this.ButtonVanKhan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonVanKhan.Location = new System.Drawing.Point(3, 424);
+            this.ButtonVanKhan.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonVanKhan.Name = "ButtonVanKhan";
+            this.ButtonVanKhan.PressedColor = System.Drawing.Color.Gray;
+            this.ButtonVanKhan.ShadowDecoration.Parent = this.ButtonVanKhan;
+            this.ButtonVanKhan.Size = new System.Drawing.Size(210, 45);
+            this.ButtonVanKhan.TabIndex = 11;
+            this.ButtonVanKhan.Text = "VĂN KHẤN";
+            this.ButtonVanKhan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonVanKhan.Click += new System.EventHandler(this.buttonVanKhan_Click);
             // 
-            // buttonDetailDate
+            // ButtonDetailDate
             // 
-            this.buttonDetailDate.Animated = true;
-            this.buttonDetailDate.BackColor = System.Drawing.Color.Transparent;
-            this.buttonDetailDate.CheckedState.Parent = this.buttonDetailDate;
-            this.buttonDetailDate.CustomImages.Parent = this.buttonDetailDate;
-            this.buttonDetailDate.FillColor = System.Drawing.Color.Transparent;
-            this.buttonDetailDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.buttonDetailDate.ForeColor = System.Drawing.Color.Black;
-            this.buttonDetailDate.HoverState.Parent = this.buttonDetailDate;
-            this.buttonDetailDate.Image = ((System.Drawing.Image)(resources.GetObject("buttonDetailDate.Image")));
-            this.buttonDetailDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.buttonDetailDate.Location = new System.Drawing.Point(0, 199);
-            this.buttonDetailDate.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonDetailDate.Name = "buttonDetailDate";
-            this.buttonDetailDate.PressedColor = System.Drawing.Color.Gray;
-            this.buttonDetailDate.ShadowDecoration.Parent = this.buttonDetailDate;
-            this.buttonDetailDate.Size = new System.Drawing.Size(190, 45);
-            this.buttonDetailDate.TabIndex = 10;
-            this.buttonDetailDate.Text = "Lịch Chi Tiết";
-            this.buttonDetailDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.buttonDetailDate.Click += new System.EventHandler(this.buttonDetailDate_Click);
+            this.ButtonDetailDate.Animated = true;
+            this.ButtonDetailDate.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonDetailDate.CheckedState.Parent = this.ButtonDetailDate;
+            this.ButtonDetailDate.CustomImages.Parent = this.ButtonDetailDate;
+            this.ButtonDetailDate.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonDetailDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonDetailDate.ForeColor = System.Drawing.Color.Black;
+            this.ButtonDetailDate.HoverState.Parent = this.ButtonDetailDate;
+            this.ButtonDetailDate.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDetailDate.Image")));
+            this.ButtonDetailDate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonDetailDate.Location = new System.Drawing.Point(0, 199);
+            this.ButtonDetailDate.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonDetailDate.Name = "ButtonDetailDate";
+            this.ButtonDetailDate.PressedColor = System.Drawing.Color.Gray;
+            this.ButtonDetailDate.ShadowDecoration.Parent = this.ButtonDetailDate;
+            this.ButtonDetailDate.Size = new System.Drawing.Size(210, 45);
+            this.ButtonDetailDate.TabIndex = 10;
+            this.ButtonDetailDate.Text = "LỊCH CHI TIẾT";
+            this.ButtonDetailDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonDetailDate.Click += new System.EventHandler(this.buttonDetailDate_Click);
             // 
             // ButtonHistory
             // 
@@ -260,10 +260,10 @@
             this.ButtonHistory.Name = "ButtonHistory";
             this.ButtonHistory.PressedColor = System.Drawing.Color.Gray;
             this.ButtonHistory.ShadowDecoration.Parent = this.ButtonHistory;
-            this.ButtonHistory.Size = new System.Drawing.Size(190, 45);
+            this.ButtonHistory.Size = new System.Drawing.Size(210, 45);
             this.ButtonHistory.TabIndex = 9;
-            this.ButtonHistory.Text = "Sự Kiện Lịch Sử";
-            this.ButtonHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonHistory.Text = "SỰ KIỆN LỊCH SỬ";
+            this.ButtonHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonHistory.Click += new System.EventHandler(this.ButtonHistory_Click);
             // 
             // ButtonChangeDay
@@ -283,10 +283,10 @@
             this.ButtonChangeDay.Name = "ButtonChangeDay";
             this.ButtonChangeDay.PressedColor = System.Drawing.Color.Gray;
             this.ButtonChangeDay.ShadowDecoration.Parent = this.ButtonChangeDay;
-            this.ButtonChangeDay.Size = new System.Drawing.Size(190, 45);
+            this.ButtonChangeDay.Size = new System.Drawing.Size(210, 45);
             this.ButtonChangeDay.TabIndex = 8;
-            this.ButtonChangeDay.Text = "Đổi Ngày Âm Dương";
-            this.ButtonChangeDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonChangeDay.Text = "ĐỔI NGÀY ÂM DƯƠNG";
+            this.ButtonChangeDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonChangeDay.Click += new System.EventHandler(this.ButtonDay_Click);
             // 
             // iconButtonClose
@@ -301,7 +301,7 @@
             this.iconButtonClose.IconSize = 40;
             this.iconButtonClose.Location = new System.Drawing.Point(0, 572);
             this.iconButtonClose.Name = "iconButtonClose";
-            this.iconButtonClose.Size = new System.Drawing.Size(190, 49);
+            this.iconButtonClose.Size = new System.Drawing.Size(210, 49);
             this.iconButtonClose.TabIndex = 7;
             this.iconButtonClose.UseVisualStyleBackColor = false;
             this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
@@ -323,10 +323,10 @@
             this.ButtonDate.Name = "ButtonDate";
             this.ButtonDate.PressedColor = System.Drawing.Color.Gray;
             this.ButtonDate.ShadowDecoration.Parent = this.ButtonDate;
-            this.ButtonDate.Size = new System.Drawing.Size(190, 45);
+            this.ButtonDate.Size = new System.Drawing.Size(210, 45);
             this.ButtonDate.TabIndex = 6;
-            this.ButtonDate.Text = "Lịch Ngày";
-            this.ButtonDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonDate.Text = "LỊCH NGÀY";
+            this.ButtonDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonDate.Click += new System.EventHandler(this.ButtonDate_Click);
             // 
             // ButtonCalendar
@@ -346,10 +346,10 @@
             this.ButtonCalendar.Name = "ButtonCalendar";
             this.ButtonCalendar.PressedColor = System.Drawing.Color.Gray;
             this.ButtonCalendar.ShadowDecoration.Parent = this.ButtonCalendar;
-            this.ButtonCalendar.Size = new System.Drawing.Size(190, 45);
+            this.ButtonCalendar.Size = new System.Drawing.Size(210, 45);
             this.ButtonCalendar.TabIndex = 5;
-            this.ButtonCalendar.Text = "Lịch Âm";
-            this.ButtonCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonCalendar.Text = "LỊCH ÂM";
+            this.ButtonCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonCalendar.Click += new System.EventHandler(this.ButtonCalendar_Click);
             // 
             // ButtonWeatherForecast
@@ -369,10 +369,10 @@
             this.ButtonWeatherForecast.Name = "ButtonWeatherForecast";
             this.ButtonWeatherForecast.PressedColor = System.Drawing.Color.Gray;
             this.ButtonWeatherForecast.ShadowDecoration.Parent = this.ButtonWeatherForecast;
-            this.ButtonWeatherForecast.Size = new System.Drawing.Size(190, 45);
+            this.ButtonWeatherForecast.Size = new System.Drawing.Size(210, 45);
             this.ButtonWeatherForecast.TabIndex = 3;
-            this.ButtonWeatherForecast.Text = "Thời Tiết";
-            this.ButtonWeatherForecast.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ButtonWeatherForecast.Text = "THỜI TIẾT";
+            this.ButtonWeatherForecast.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonWeatherForecast.Click += new System.EventHandler(this.ButtonWeatherForecast_Click);
             // 
             // timer1
@@ -384,7 +384,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1199, 621);
+            this.ClientSize = new System.Drawing.Size(1219, 621);
             this.Controls.Add(this.PanelDisplay);
             this.Controls.Add(this.PanelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -412,11 +412,11 @@
         private Guna.UI2.WinForms.Guna2Button ButtonWeatherForecast;
         private Guna.UI2.WinForms.Guna2Panel PanelIcon;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpk;
-        private Guna.UI2.WinForms.Guna2Button buttonVanKhan;
-        private Guna.UI2.WinForms.Guna2Button buttonDetailDate;
-        private Guna.UI2.WinForms.Guna2Button buttonTuVi;
-        private Guna.UI2.WinForms.Guna2Button buttonHDSD;
-        private Guna.UI2.WinForms.Guna2Button buttonCountDay;
+        private Guna.UI2.WinForms.Guna2Button ButtonVanKhan;
+        private Guna.UI2.WinForms.Guna2Button ButtonDetailDate;
+        private Guna.UI2.WinForms.Guna2Button ButtonTuVi;
+        private Guna.UI2.WinForms.Guna2Button ButtonHDSD;
+        private Guna.UI2.WinForms.Guna2Button ButtonCountDay;
         private Guna.UI2.WinForms.Guna2HtmlLabel ClockLB;
         private System.Windows.Forms.Timer timer1;
     }

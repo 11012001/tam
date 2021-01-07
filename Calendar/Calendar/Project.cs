@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace Calendar
 {
@@ -15,6 +16,7 @@ namespace Calendar
         public CalendarProject()
         {
             InitializeComponent();
+            SetUpPanelSetting();
         }
         private void iconButtonClose_Click(object sender, EventArgs e)
         {
@@ -27,6 +29,7 @@ namespace Calendar
 
         private void ButtonWeatherForecast_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color6);
             if (!PanelDisplay.Contains(DisplayWF.WFDisplay))
             {
                 PanelDisplay.Controls.Add(DisplayWF.WFDisplay);
@@ -39,6 +42,7 @@ namespace Calendar
 
         private void ButtonCalendar_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color2);
             var Lunnar = new DisplayLunnar();
             Lunnar.Location = new Point(0, 0);
             Lunnar.Size = new Size(1009, 620);
@@ -49,12 +53,15 @@ namespace Calendar
 
         void Lunnar_DTPK(object sender, EventArgs e)
         {
+            ActivateButton(ButtonCalendar, RGBColors.color2);
+            condition = 2;
             DisplayLunnar display = sender as DisplayLunnar;
             dtpk.Value = display.dtpk.Value;
         }
 
         private void ButtonDate_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             DisplayDate display = new DisplayDate(dtpk.Value);
             display.Size = new Size(1009, 620);
             display.Location = new Point(0, 0);
@@ -71,7 +78,7 @@ namespace Calendar
             DateTime date = displayDate.Date;
 
             PanelDisplay.Controls.Clear();
-            
+            ActivateButton(ButtonCalendar, RGBColors.color2);
             DisplayLunnar displayLunnar = new DisplayLunnar(date);
             PanelDisplay.Controls.Add(displayLunnar);
             displayLunnar.Dock = DockStyle.Fill;
@@ -93,6 +100,7 @@ namespace Calendar
         }
         private void ButtonDay_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color7);
             var ChangeDate = new DisplayChangeDate();
             ChangeDate.Location = new Point(0, 0);
             ChangeDate.Size = new Size(1009, 620);
@@ -106,6 +114,7 @@ namespace Calendar
             DisplayChangeDate displayDate = sender as DisplayChangeDate;
             PanelDisplay.Controls.Clear();
 
+            ActivateButton(ButtonDetailDate, RGBColors.color3);
             DisplayDetailDate DetailDate = new DisplayDetailDate(displayDate.Solar);
             DetailDate.Location = new Point(0, 0);
             DetailDate.Size = new Size(1009, 620);
@@ -116,12 +125,14 @@ namespace Calendar
             DisplayChangeDate displayDate = sender as DisplayChangeDate;
             PanelDisplay.Controls.Clear();
 
+            ActivateButton(ButtonDate, RGBColors.color1);
             DisplayDate displaydate = new DisplayDate(displayDate.Lunar);
             PanelDisplay.Controls.Add(displaydate);
         }
 
         private void ButtonHistory_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color4);
             if (!PanelDisplay.Contains(DisplayDetailEvent.DetailEventDisplay))
             {
                 PanelDisplay.Controls.Add(DisplayDetailEvent.DetailEventDisplay);
@@ -130,10 +141,6 @@ namespace Calendar
             }
             else
                 DisplayDetailEvent.DetailEventDisplay.BringToFront();
-        }
-        public void EventDate()
-        {
-
         }
 
         private void CalendarProject_Load(object sender, EventArgs e)
@@ -173,15 +180,19 @@ namespace Calendar
             DateTime date = (sender as Guna.UI2.WinForms.Guna2DateTimePicker).Value;
             if (condition == 1)
             {
+                ActivateButton(ButtonDetailDate, RGBColors.color3);
                 AddDisplayDetailDateCondition(date);
             }
-            else {
+            else if (condition == 0)
+            {
+                ActivateButton(ButtonDate, RGBColors.color1);
                 AddDisplayDateCondition(date);
             }
         }
 
         private void buttonDetailDate_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color3);
             var DetailDate = new DisplayDetailDate(dtpk.Value);
             DetailDate.Location = new Point(0, 0);
             DetailDate.Size = new Size(1009, 620);
@@ -205,6 +216,7 @@ namespace Calendar
 
         private void buttonVanKhan_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color8);
             var VanKhan = new DisplayVanKhan();
             VanKhan.Location = new Point(0, 0);
             VanKhan.Size = new Size(1009, 590);
@@ -215,6 +227,7 @@ namespace Calendar
 
         private void buttonTuVi_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color9);
             if (!PanelDisplay.Contains(DisplayTuVi.TuViDisplay))
             {
                 PanelDisplay.Controls.Add(DisplayTuVi.TuViDisplay);
@@ -227,6 +240,7 @@ namespace Calendar
 
         private void buttonHDSD_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color10);
             if (!PanelDisplay.Contains(DisplayTutorial.Tutorial))
             {
                 PanelDisplay.Controls.Add(DisplayTutorial.Tutorial);
@@ -239,6 +253,7 @@ namespace Calendar
 
         private void buttonCountDay_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color5);
             if (!PanelDisplay.Contains(DisplayCountDay.CountDayDisplay))
             {
                 PanelDisplay.Controls.Add(DisplayCountDay.CountDayDisplay);
@@ -263,6 +278,79 @@ namespace Calendar
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //Fields
+        private Guna2Button currentBtn;
+        private Panel leftBorderBtn;
+        //Constructor
+        public void SetUpPanelSetting()
+        {
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(5, 45);
+            PanelSetting.Controls.Add(leftBorderBtn);
+        }
+        //Structs
+        private struct RGBColors
+        {
+            //Màu cho Button Date (Lịch Ngày)
+            public static Color color1 = Color.FromArgb(172, 126, 241);
+
+            //Màu cho Button Calendar (Lịch Âm)
+            public static Color color2 = Color.FromArgb(249, 118, 176);
+
+            //Màu cho Button DetailDate (Lịch Chi Tiết)
+            public static Color color3 = Color.FromArgb(253, 138, 114);
+
+            //Màu cho Button History (Sự Kiện Lịch Sử)
+            public static Color color4 = Color.FromArgb(95, 77, 221);
+
+            //Màu cho Button CountDay (Đếm Ngày)
+            public static Color color5 = Color.FromArgb(249, 88, 155);
+
+            //Màu cho Button Weather (Thời Tiết)
+            public static Color color6 = Color.FromArgb(24, 161, 251);
+
+            //Màu cho Button ChangeDate (Đổi Ngày Âm Dương)
+            public static Color color7 = Color.FromArgb(24, 161, 251);
+
+            //Màu cho Button VanKhan (Văn Khấn)
+            public static Color color8 = Color.FromArgb(24, 161, 251);
+
+            //Màu cho Button TuVi (Tử Vi)
+            public static Color color9 = Color.FromArgb(24, 161, 251);
+
+            //Màu cho Button HDSD (Hướng Dẫn Sử Dụng)
+            public static Color color10 = Color.FromArgb(24, 161, 251);
+        }
+        //Methods
+        private void ActivateButton(object senderBtn, Color color)
+        {
+            if (senderBtn != null)
+            {
+                DisableButton();
+                //Button
+                currentBtn = (Guna2Button)senderBtn;
+                currentBtn.BackColor = Color.Cornsilk;
+                currentBtn.ForeColor = color;
+                currentBtn.TextAlign = HorizontalAlignment.Center;
+                currentBtn.ImageAlign = HorizontalAlignment.Right;
+                //Left border button
+                leftBorderBtn.BackColor = color;
+                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                leftBorderBtn.Visible = true;
+                leftBorderBtn.BringToFront();
+            }
+        }
+        private void DisableButton()
+        {
+            if (currentBtn != null)
+            {
+                currentBtn.BackColor = Color.Transparent;
+                currentBtn.ForeColor = Color.Black;
+                currentBtn.TextAlign = HorizontalAlignment.Left;
+                currentBtn.ImageAlign = HorizontalAlignment.Left;
+            }
         }
     }
 }
