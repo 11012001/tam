@@ -1,6 +1,6 @@
 HƯỚNG DẪN SỬ DỤNG ỨNG DỤNG LỊCH VẠN NIÊN
 
-* Lịch vạn niên của chúng tôi có một số chức năng sau:
+# Lịch vạn niên của chúng tôi có một số chức năng sau:
 
 - Lịch Âm: cho phép bạn xem thông tin của 1 tháng (ngày dương, ngày âm, ngày hoàng đạo), đồng thời cũng cung cấp thêm những sự kiện liên quan tới tháng đó.
 
@@ -24,4 +24,4 @@ HƯỚNG DẪN SỬ DỤNG ỨNG DỤNG LỊCH VẠN NIÊN
 
 Ứng dụng của chúng tôi vẫn đang trong giai đoạn thử nghiệm nên vẫn không tránh được những sai sót. Nếu có sai sót thì một các bạn thông cảm và gửi những sai sót cho chúng tôi thông qua email sau 19522074@gm.uit.edu.vn.
 
-Rất mong được các bạn ủng hộ. 
+Rất mong được các bạn ủng hộ.
