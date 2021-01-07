@@ -203,7 +203,7 @@ namespace Calendar
             // 
             this.labelLVN.AutoSize = true;
             this.labelLVN.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLVN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.labelLVN.ForeColor = System.Drawing.Color.Silver;
             this.labelLVN.Location = new System.Drawing.Point(332, 9);
             this.labelLVN.Name = "labelLVN";
             this.labelLVN.Size = new System.Drawing.Size(382, 65);
@@ -264,7 +264,7 @@ namespace Calendar
             this.tbNTBTName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNTBTName.FocusedState.Parent = this.tbNTBTName;
             this.tbNTBTName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNTBTName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbNTBTName.ForeColor = System.Drawing.Color.Maroon;
             this.tbNTBTName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNTBTName.HoverState.Parent = this.tbNTBTName;
             this.tbNTBTName.Location = new System.Drawing.Point(4, 7);
@@ -373,7 +373,7 @@ namespace Calendar
             this.tbSaoXauName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoXauName.FocusedState.Parent = this.tbSaoXauName;
             this.tbSaoXauName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSaoXauName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbSaoXauName.ForeColor = System.Drawing.Color.Maroon;
             this.tbSaoXauName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoXauName.HoverState.Parent = this.tbSaoXauName;
             this.tbSaoXauName.Location = new System.Drawing.Point(246, 65);
@@ -403,7 +403,7 @@ namespace Calendar
             this.tbSaoTotName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoTotName.FocusedState.Parent = this.tbSaoTotName;
             this.tbSaoTotName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSaoTotName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbSaoTotName.ForeColor = System.Drawing.Color.Maroon;
             this.tbSaoTotName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoTotName.HoverState.Parent = this.tbSaoTotName;
             this.tbSaoTotName.Location = new System.Drawing.Point(16, 63);
@@ -433,7 +433,7 @@ namespace Calendar
             this.tbNameSao.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNameSao.FocusedState.Parent = this.tbNameSao;
             this.tbNameSao.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNameSao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbNameSao.ForeColor = System.Drawing.Color.Maroon;
             this.tbNameSao.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNameSao.HoverState.Parent = this.tbNameSao;
             this.tbNameSao.Location = new System.Drawing.Point(4, 7);
@@ -572,7 +572,7 @@ namespace Calendar
             this.tbVKNL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbVKNL.FocusedState.Parent = this.tbVKNL;
             this.tbVKNL.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVKNL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbVKNL.ForeColor = System.Drawing.Color.Maroon;
             this.tbVKNL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbVKNL.HoverState.Parent = this.tbVKNL;
             this.tbVKNL.Location = new System.Drawing.Point(246, 62);
@@ -602,7 +602,7 @@ namespace Calendar
             this.tbVNL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbVNL.FocusedState.Parent = this.tbVNL;
             this.tbVNL.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVNL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbVNL.ForeColor = System.Drawing.Color.Maroon;
             this.tbVNL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbVNL.HoverState.Parent = this.tbVNL;
             this.tbVNL.Location = new System.Drawing.Point(16, 60);
@@ -632,7 +632,7 @@ namespace Calendar
             this.tbTrucName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTrucName.FocusedState.Parent = this.tbTrucName;
             this.tbTrucName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTrucName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbTrucName.ForeColor = System.Drawing.Color.Maroon;
             this.tbTrucName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTrucName.HoverState.Parent = this.tbTrucName;
             this.tbTrucName.Location = new System.Drawing.Point(4, 8);
@@ -770,7 +770,7 @@ namespace Calendar
             // 
             this.labelBadTimeName.AutoSize = true;
             this.labelBadTimeName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBadTimeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.labelBadTimeName.ForeColor = System.Drawing.Color.Maroon;
             this.labelBadTimeName.Location = new System.Drawing.Point(17, 151);
             this.labelBadTimeName.Name = "labelBadTimeName";
             this.labelBadTimeName.Size = new System.Drawing.Size(125, 25);
@@ -884,7 +884,7 @@ namespace Calendar
             // 
             this.labelGoodTimeName.AutoSize = true;
             this.labelGoodTimeName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGoodTimeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.labelGoodTimeName.ForeColor = System.Drawing.Color.Maroon;
             this.labelGoodTimeName.Location = new System.Drawing.Point(17, 13);
             this.labelGoodTimeName.Name = "labelGoodTimeName";
             this.labelGoodTimeName.Size = new System.Drawing.Size(149, 25);
@@ -926,7 +926,7 @@ namespace Calendar
             // 
             this.labelTietKhi.AutoSize = true;
             this.labelTietKhi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTietKhi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelTietKhi.ForeColor = System.Drawing.Color.Navy;
             this.labelTietKhi.Location = new System.Drawing.Point(113, 75);
             this.labelTietKhi.Name = "labelTietKhi";
             this.labelTietKhi.Size = new System.Drawing.Size(287, 21);
@@ -937,7 +937,7 @@ namespace Calendar
             // 
             this.labelDetailDate.AutoSize = true;
             this.labelDetailDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDetailDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelDetailDate.ForeColor = System.Drawing.Color.Navy;
             this.labelDetailDate.Location = new System.Drawing.Point(41, 53);
             this.labelDetailDate.Name = "labelDetailDate";
             this.labelDetailDate.Size = new System.Drawing.Size(352, 17);
@@ -948,7 +948,7 @@ namespace Calendar
             // 
             this.labelLunnarDate.AutoSize = true;
             this.labelLunnarDate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLunnarDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelLunnarDate.ForeColor = System.Drawing.Color.Navy;
             this.labelLunnarDate.Location = new System.Drawing.Point(41, 33);
             this.labelLunnarDate.Name = "labelLunnarDate";
             this.labelLunnarDate.Size = new System.Drawing.Size(389, 17);
@@ -959,7 +959,7 @@ namespace Calendar
             // 
             this.labelLA.AutoSize = true;
             this.labelLA.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.labelLA.ForeColor = System.Drawing.Color.Maroon;
             this.labelLA.Location = new System.Drawing.Point(194, 3);
             this.labelLA.Name = "labelLA";
             this.labelLA.Size = new System.Drawing.Size(101, 30);
@@ -1584,7 +1584,7 @@ namespace Calendar
             this.tbGXH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXH.FocusedState.Parent = this.tbGXH;
             this.tbGXH.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGXH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXH.ForeColor = System.Drawing.Color.Maroon;
             this.tbGXH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXH.HoverState.Parent = this.tbGXH;
             this.tbGXH.Location = new System.Drawing.Point(8, 7);
@@ -1659,7 +1659,7 @@ namespace Calendar
             this.tbNXHName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNXHName.FocusedState.Parent = this.tbNXHName;
             this.tbNXHName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNXHName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbNXHName.ForeColor = System.Drawing.Color.Maroon;
             this.tbNXHName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNXHName.HoverState.Parent = this.tbNXHName;
             this.tbNXHName.Location = new System.Drawing.Point(8, 7);
@@ -1695,7 +1695,7 @@ namespace Calendar
             // 
             this.labelHacThan.AutoSize = true;
             this.labelHacThan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHacThan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelHacThan.ForeColor = System.Drawing.Color.Navy;
             this.labelHacThan.Location = new System.Drawing.Point(96, 75);
             this.labelHacThan.Name = "labelHacThan";
             this.labelHacThan.Size = new System.Drawing.Size(332, 21);
@@ -1706,7 +1706,7 @@ namespace Calendar
             // 
             this.labelHyThan.AutoSize = true;
             this.labelHyThan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHyThan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelHyThan.ForeColor = System.Drawing.Color.Navy;
             this.labelHyThan.Location = new System.Drawing.Point(118, 54);
             this.labelHyThan.Name = "labelHyThan";
             this.labelHyThan.Size = new System.Drawing.Size(282, 21);
@@ -1717,7 +1717,7 @@ namespace Calendar
             // 
             this.labelTaiThan.AutoSize = true;
             this.labelTaiThan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTaiThan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelTaiThan.ForeColor = System.Drawing.Color.Navy;
             this.labelTaiThan.Location = new System.Drawing.Point(66, 33);
             this.labelTaiThan.Name = "labelTaiThan";
             this.labelTaiThan.Size = new System.Drawing.Size(401, 21);
@@ -1728,7 +1728,7 @@ namespace Calendar
             // 
             this.labelNameHXH.AutoSize = true;
             this.labelNameHXH.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameHXH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.labelNameHXH.ForeColor = System.Drawing.Color.Maroon;
             this.labelNameHXH.Location = new System.Drawing.Point(139, 3);
             this.labelNameHXH.Name = "labelNameHXH";
             this.labelNameHXH.Size = new System.Drawing.Size(193, 30);
@@ -1752,7 +1752,7 @@ namespace Calendar
             // 
             this.labelNameXH.AutoSize = true;
             this.labelNameXH.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameXH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.labelNameXH.ForeColor = System.Drawing.Color.Brown;
             this.labelNameXH.Location = new System.Drawing.Point(139, 3);
             this.labelNameXH.Name = "labelNameXH";
             this.labelNameXH.Size = new System.Drawing.Size(192, 30);

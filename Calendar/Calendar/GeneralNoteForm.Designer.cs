@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeneralNoteForm));
             this.PreviousBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -45,10 +46,11 @@
             // 
             this.PreviousBtn.CheckedState.Parent = this.PreviousBtn;
             this.PreviousBtn.CustomImages.Parent = this.PreviousBtn;
+            this.PreviousBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PreviousBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PreviousBtn.ForeColor = System.Drawing.Color.White;
             this.PreviousBtn.HoverState.Parent = this.PreviousBtn;
-            this.PreviousBtn.Location = new System.Drawing.Point(242, 51);
+            this.PreviousBtn.Location = new System.Drawing.Point(216, 51);
             this.PreviousBtn.Margin = new System.Windows.Forms.Padding(6);
             this.PreviousBtn.Name = "PreviousBtn";
             this.PreviousBtn.ShadowDecoration.Parent = this.PreviousBtn;
@@ -71,8 +73,9 @@
             // 
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(406, 0);
             this.guna2Button2.Name = "guna2Button2";
@@ -87,8 +90,8 @@
             this.ToDoBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ToDoBtn.CheckedState.Parent = this.ToDoBtn;
             this.ToDoBtn.CustomImages.Parent = this.ToDoBtn;
-            this.ToDoBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ToDoBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDoBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ToDoBtn.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToDoBtn.ForeColor = System.Drawing.Color.Black;
             this.ToDoBtn.HoverState.Parent = this.ToDoBtn;
             this.ToDoBtn.Location = new System.Drawing.Point(0, 0);
@@ -103,10 +106,11 @@
             // 
             this.NextBtn.CheckedState.Parent = this.NextBtn;
             this.NextBtn.CustomImages.Parent = this.NextBtn;
+            this.NextBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.NextBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NextBtn.ForeColor = System.Drawing.Color.White;
             this.NextBtn.HoverState.Parent = this.NextBtn;
-            this.NextBtn.Location = new System.Drawing.Point(539, 51);
+            this.NextBtn.Location = new System.Drawing.Point(565, 51);
             this.NextBtn.Margin = new System.Windows.Forms.Padding(6);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.ShadowDecoration.Parent = this.NextBtn;
@@ -119,8 +123,10 @@
             // 
             this.AddJobBtn.CheckedState.Parent = this.AddJobBtn;
             this.AddJobBtn.CustomImages.Parent = this.AddJobBtn;
-            this.AddJobBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddJobBtn.ForeColor = System.Drawing.Color.White;
+            this.AddJobBtn.FillColor = System.Drawing.Color.Olive;
+            this.AddJobBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.AddJobBtn.Font = new System.Drawing.Font("Consolas", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddJobBtn.ForeColor = System.Drawing.Color.Black;
             this.AddJobBtn.HoverState.Parent = this.AddJobBtn;
             this.AddJobBtn.Location = new System.Drawing.Point(12, 51);
             this.AddJobBtn.Name = "AddJobBtn";
@@ -133,16 +139,17 @@
             // Dtpk
             // 
             this.Dtpk.CheckedState.Parent = this.Dtpk;
+            this.Dtpk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Dtpk.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.Dtpk.HoverState.Parent = this.Dtpk;
-            this.Dtpk.Location = new System.Drawing.Point(285, 51);
+            this.Dtpk.Location = new System.Drawing.Point(259, 51);
             this.Dtpk.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.Dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Dtpk.Name = "Dtpk";
             this.Dtpk.ShadowDecoration.Parent = this.Dtpk;
-            this.Dtpk.Size = new System.Drawing.Size(242, 36);
+            this.Dtpk.Size = new System.Drawing.Size(294, 36);
             this.Dtpk.TabIndex = 6;
             this.Dtpk.Value = new System.DateTime(2020, 12, 19, 0, 0, 0, 0);
             this.Dtpk.ValueChanged += new System.EventHandler(this.Dtpk_ValueChanged);
@@ -151,8 +158,9 @@
             // 
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.FillColor = System.Drawing.Color.LightGray;
+            this.guna2Button1.Font = new System.Drawing.Font("Consolas", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(617, 51);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
@@ -167,7 +175,7 @@
             // 
             this.DeadlineLabel.BackColor = System.Drawing.Color.Transparent;
             this.DeadlineLabel.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeadlineLabel.Location = new System.Drawing.Point(260, 57);
+            this.DeadlineLabel.Location = new System.Drawing.Point(262, 61);
             this.DeadlineLabel.Name = "DeadlineLabel";
             this.DeadlineLabel.Size = new System.Drawing.Size(291, 26);
             this.DeadlineLabel.TabIndex = 12;
@@ -177,6 +185,7 @@
             // 
             this.ControlPanel.AutoScroll = true;
             this.ControlPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ControlPanel.BackColor = System.Drawing.Color.Transparent;
             this.ControlPanel.Location = new System.Drawing.Point(0, 89);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(812, 542);
@@ -186,9 +195,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(812, 630);
-            this.Controls.Add(this.ControlPanel);
             this.Controls.Add(this.DeadlineLabel);
+            this.Controls.Add(this.ControlPanel);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.PreviousBtn);
             this.Controls.Add(this.guna2Panel1);

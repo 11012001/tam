@@ -232,7 +232,9 @@ namespace Calendar
             this.dtpk.BorderThickness = 4;
             this.dtpk.CheckedState.Parent = this.dtpk;
             this.dtpk.CustomFormat = "dddd,dd MMMM ,yyyy";
+            this.dtpk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.dtpk.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpk.ForeColor = System.Drawing.Color.Black;
             this.dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpk.HoverState.Parent = this.dtpk;
             this.dtpk.Location = new System.Drawing.Point(221, 3);

@@ -147,7 +147,7 @@ namespace Calendar
         {
             dtpk.Value = DateTime.Now;
             ClockLB.Text = DateTime.Now.ToString("T");
-            ClockLB.Location = new Point(PanelIcon.Size.Width/2 - ClockLB.Size.Width/2, 12);
+            ClockLB.Location = new Point(PanelIcon.Size.Width/2 - ClockLB.Size.Width/2,12);
             timer1.Start();
         }
 
@@ -264,20 +264,11 @@ namespace Calendar
                 DisplayCountDay.CountDayDisplay.BringToFront();
         }
 
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             ClockLB.Text = DateTime.Now.ToString("T");
             ClockLB.Location = new Point(PanelIcon.Size.Width / 2 - ClockLB.Size.Width / 2, 12);
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
         }
 
         //Fields
@@ -294,34 +285,34 @@ namespace Calendar
         private struct RGBColors
         {
             //Màu cho Button Date (Lịch Ngày)
-            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color1 = Color.LightCoral;
 
             //Màu cho Button Calendar (Lịch Âm)
-            public static Color color2 = Color.FromArgb(249, 118, 176);
+            public static Color color2 = Color.Orange;
 
             //Màu cho Button DetailDate (Lịch Chi Tiết)
-            public static Color color3 = Color.FromArgb(253, 138, 114);
+            public static Color color3 = Color.Red;
 
             //Màu cho Button History (Sự Kiện Lịch Sử)
-            public static Color color4 = Color.FromArgb(95, 77, 221);
+            public static Color color4 = Color.Purple;
 
             //Màu cho Button CountDay (Đếm Ngày)
-            public static Color color5 = Color.FromArgb(249, 88, 155);
+            public static Color color5 = Color.Pink;
 
             //Màu cho Button Weather (Thời Tiết)
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color6 = Color.Brown;
 
             //Màu cho Button ChangeDate (Đổi Ngày Âm Dương)
-            public static Color color7 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.Green;
 
             //Màu cho Button VanKhan (Văn Khấn)
-            public static Color color8 = Color.FromArgb(24, 161, 251);
+            public static Color color8 = Color.PaleTurquoise;
 
             //Màu cho Button TuVi (Tử Vi)
-            public static Color color9 = Color.FromArgb(24, 161, 251);
+            public static Color color9 = Color.BurlyWood;
 
             //Màu cho Button HDSD (Hướng Dẫn Sử Dụng)
-            public static Color color10 = Color.FromArgb(24, 161, 251);
+            public static Color color10 = Color.Maroon;
         }
         //Methods
         private void ActivateButton(object senderBtn, Color color)

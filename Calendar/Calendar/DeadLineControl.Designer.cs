@@ -58,7 +58,7 @@
             this.HoursTB.Font = new System.Drawing.Font("Consolas", 15.75F);
             this.HoursTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.HoursTB.HoverState.Parent = this.HoursTB;
-            this.HoursTB.Location = new System.Drawing.Point(50, 30);
+            this.HoursTB.Location = new System.Drawing.Point(50, 10);
             this.HoursTB.Margin = new System.Windows.Forms.Padding(6);
             this.HoursTB.Name = "HoursTB";
             this.HoursTB.PasswordChar = '\0';
@@ -77,7 +77,7 @@
             this.DetailsBtn.IconChar = FontAwesome.Sharp.IconChar.None;
             this.DetailsBtn.IconColor = System.Drawing.Color.Black;
             this.DetailsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.DetailsBtn.Location = new System.Drawing.Point(617, 20);
+            this.DetailsBtn.Location = new System.Drawing.Point(617, 0);
             this.DetailsBtn.Name = "DetailsBtn";
             this.DetailsBtn.Size = new System.Drawing.Size(76, 39);
             this.DetailsBtn.TabIndex = 67;
@@ -93,7 +93,7 @@
             this.DeleteBtn.IconColor = System.Drawing.Color.Black;
             this.DeleteBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.DeleteBtn.IconSize = 30;
-            this.DeleteBtn.Location = new System.Drawing.Point(702, 20);
+            this.DeleteBtn.Location = new System.Drawing.Point(702, 0);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(6);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(35, 39);
@@ -108,7 +108,7 @@
             this.EditBtn.IconColor = System.Drawing.Color.Black;
             this.EditBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.EditBtn.IconSize = 30;
-            this.EditBtn.Location = new System.Drawing.Point(749, 20);
+            this.EditBtn.Location = new System.Drawing.Point(749, 0);
             this.EditBtn.Margin = new System.Windows.Forms.Padding(6);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(35, 39);
@@ -124,7 +124,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 29;
-            this.iconPictureBox2.Location = new System.Drawing.Point(6, 30);
+            this.iconPictureBox2.Location = new System.Drawing.Point(6, 10);
             this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(32, 29);
@@ -139,7 +139,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 29;
-            this.iconPictureBox1.Location = new System.Drawing.Point(6, 65);
+            this.iconPictureBox1.Location = new System.Drawing.Point(6, 45);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 29);
@@ -162,7 +162,7 @@
             this.Notes.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Notes.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Notes.HoverState.Parent = this.Notes;
-            this.Notes.Location = new System.Drawing.Point(50, 65);
+            this.Notes.Location = new System.Drawing.Point(50, 45);
             this.Notes.Margin = new System.Windows.Forms.Padding(6);
             this.Notes.Name = "Notes";
             this.Notes.PasswordChar = '\0';
@@ -178,7 +178,7 @@
             // 
             this.LAbel.BackColor = System.Drawing.Color.Transparent;
             this.LAbel.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LAbel.Location = new System.Drawing.Point(140, 30);
+            this.LAbel.Location = new System.Drawing.Point(140, 10);
             this.LAbel.Margin = new System.Windows.Forms.Padding(6);
             this.LAbel.Name = "LAbel";
             this.LAbel.Size = new System.Drawing.Size(15, 26);
@@ -201,7 +201,7 @@
             this.MinutesTB.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinutesTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MinutesTB.HoverState.Parent = this.MinutesTB;
-            this.MinutesTB.Location = new System.Drawing.Point(167, 30);
+            this.MinutesTB.Location = new System.Drawing.Point(167, 10);
             this.MinutesTB.Margin = new System.Windows.Forms.Padding(6);
             this.MinutesTB.Name = "MinutesTB";
             this.MinutesTB.PasswordChar = '\0';
@@ -218,7 +218,7 @@
             // 
             this.DateLB.BackColor = System.Drawing.Color.Transparent;
             this.DateLB.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLB.Location = new System.Drawing.Point(265, 29);
+            this.DateLB.Location = new System.Drawing.Point(265, 9);
             this.DateLB.Name = "DateLB";
             this.DateLB.Size = new System.Drawing.Size(51, 26);
             this.DateLB.TabIndex = 69;
@@ -239,7 +239,7 @@
             this.Controls.Add(this.LAbel);
             this.Controls.Add(this.MinutesTB);
             this.Name = "DeadLineControl";
-            this.Size = new System.Drawing.Size(790, 106);
+            this.Size = new System.Drawing.Size(790, 81);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);

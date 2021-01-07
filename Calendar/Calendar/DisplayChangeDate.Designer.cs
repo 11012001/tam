@@ -330,13 +330,13 @@ namespace Calendar
             this.buttonSolar.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.buttonSolar.ButtonText = "DƯƠNG LỊCH";
             this.buttonSolar.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.buttonSolar.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.buttonSolar.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonSolar.CornerRadius = 5;
             this.buttonSolar.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonSolar.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSolar.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.buttonSolar.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.buttonSolar.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.buttonSolar.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonSolar.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.buttonSolar.Location = new System.Drawing.Point(0, 0);
             this.buttonSolar.Margin = new System.Windows.Forms.Padding(2);
@@ -541,7 +541,7 @@ namespace Calendar
             this.ButtonChangeLuSo.CheckedState.Parent = this.ButtonChangeLuSo;
             this.ButtonChangeLuSo.CustomImages.Parent = this.ButtonChangeLuSo;
             this.ButtonChangeLuSo.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonChangeLuSo.ForeColor = System.Drawing.Color.White;
+            this.ButtonChangeLuSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ButtonChangeLuSo.HoverState.Parent = this.ButtonChangeLuSo;
             this.ButtonChangeLuSo.Location = new System.Drawing.Point(0, 0);
             this.ButtonChangeLuSo.Name = "ButtonChangeLuSo";

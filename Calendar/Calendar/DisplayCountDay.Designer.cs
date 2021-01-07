@@ -111,8 +111,9 @@ namespace Calendar
             // 
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.ForeColor = System.Drawing.Color.LemonChiffon;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
             this.guna2Button1.Name = "guna2Button1";
@@ -536,8 +537,9 @@ namespace Calendar
             // 
             this.ButtonCount.CheckedState.Parent = this.ButtonCount;
             this.ButtonCount.CustomImages.Parent = this.ButtonCount;
+            this.ButtonCount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ButtonCount.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonCount.ForeColor = System.Drawing.Color.White;
+            this.ButtonCount.ForeColor = System.Drawing.Color.Black;
             this.ButtonCount.HoverState.Parent = this.ButtonCount;
             this.ButtonCount.Location = new System.Drawing.Point(362, 52);
             this.ButtonCount.Name = "ButtonCount";
@@ -551,6 +553,7 @@ namespace Calendar
             // 
             this.dtpkTo.CheckedState.Parent = this.dtpkTo;
             this.dtpkTo.CustomFormat = "dd/MM/yyyy";
+            this.dtpkTo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dtpkTo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.dtpkTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkTo.HoverState.Parent = this.dtpkTo;
@@ -567,6 +570,7 @@ namespace Calendar
             // 
             this.dtpkFrom.CheckedState.Parent = this.dtpkFrom;
             this.dtpkFrom.CustomFormat = "dd/MM/yyyy";
+            this.dtpkFrom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dtpkFrom.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.dtpkFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkFrom.HoverState.Parent = this.dtpkFrom;
@@ -608,16 +612,17 @@ namespace Calendar
             this.buttonCountDay.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.buttonCountDay.ButtonText = "ĐẾM NGÀY";
             this.buttonCountDay.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.buttonCountDay.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCountDay.ClickTextColor = System.Drawing.Color.MidnightBlue;
             this.buttonCountDay.CornerRadius = 5;
             this.buttonCountDay.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold);
             this.buttonCountDay.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.buttonCountDay.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.buttonCountDay.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCountDay.HoverTextColor = System.Drawing.Color.MidnightBlue;
             this.buttonCountDay.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.buttonCountDay.Location = new System.Drawing.Point(2, 2);
             this.buttonCountDay.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCountDay.Name = "buttonCountDay";
+            this.buttonCountDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonCountDay.Size = new System.Drawing.Size(496, 45);
             this.buttonCountDay.TabIndex = 17;
             this.buttonCountDay.TextColor = System.Drawing.Color.DodgerBlue;

@@ -108,6 +108,8 @@
             this.PanelName.BorderThickness = 3;
             this.PanelName.Controls.Add(this.labelName);
             this.PanelName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelName.FillColor = System.Drawing.Color.White;
+            this.PanelName.ForeColor = System.Drawing.Color.White;
             this.PanelName.Location = new System.Drawing.Point(0, 0);
             this.PanelName.Name = "PanelName";
             this.PanelName.ShadowDecoration.Parent = this.PanelName;
@@ -117,13 +119,14 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(22, 16);
+            this.labelName.BackColor = System.Drawing.Color.Transparent;
+            this.labelName.Font = new System.Drawing.Font("Arial", 32F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelName.Location = new System.Drawing.Point(401, 9);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(957, 41);
+            this.labelName.Size = new System.Drawing.Size(249, 49);
             this.labelName.TabIndex = 1;
-            this.labelName.Text = "                                         VĂN KHẤN                                " +
-    "   \r\n";
+            this.labelName.Text = "VĂN KHẤN";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanelSetting
@@ -152,6 +155,7 @@
             this.panelVKK.Controls.Add(this.btnKhacLKT);
             this.panelVKK.Controls.Add(this.tbName6);
             this.panelVKK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVKK.FillColor = System.Drawing.Color.Transparent;
             this.panelVKK.Location = new System.Drawing.Point(0, 2252);
             this.panelVKK.Name = "panelVKK";
             this.panelVKK.ShadowDecoration.Parent = this.panelVKK;
@@ -160,6 +164,7 @@
             // 
             // btnKhacLMT
             // 
+            this.btnKhacLMT.BackColor = System.Drawing.Color.Transparent;
             this.btnKhacLMT.BorderRadius = 15;
             this.btnKhacLMT.BorderThickness = 2;
             this.btnKhacLMT.CheckedState.Parent = this.btnKhacLMT;
@@ -177,6 +182,7 @@
             // 
             // btnKhacLKT
             // 
+            this.btnKhacLKT.BackColor = System.Drawing.Color.Transparent;
             this.btnKhacLKT.BorderRadius = 15;
             this.btnKhacLKT.BorderThickness = 2;
             this.btnKhacLKT.CheckedState.Parent = this.btnKhacLKT;
@@ -194,6 +200,7 @@
             // 
             // tbName6
             // 
+            this.tbName6.BackColor = System.Drawing.Color.Transparent;
             this.tbName6.BorderRadius = 15;
             this.tbName6.BorderThickness = 2;
             this.tbName6.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -231,6 +238,7 @@
             this.panelVKLNCNTG.Controls.Add(this.btnNhaKCN);
             this.panelVKLNCNTG.Controls.Add(this.tbName5);
             this.panelVKLNCNTG.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVKLNCNTG.FillColor = System.Drawing.Color.Transparent;
             this.panelVKLNCNTG.Location = new System.Drawing.Point(0, 2037);
             this.panelVKLNCNTG.Name = "panelVKLNCNTG";
             this.panelVKLNCNTG.ShadowDecoration.Parent = this.panelVKLNCNTG;
@@ -239,6 +247,7 @@
             // 
             // btnNhaMTG
             // 
+            this.btnNhaMTG.BackColor = System.Drawing.Color.Transparent;
             this.btnNhaMTG.BorderRadius = 15;
             this.btnNhaMTG.BorderThickness = 2;
             this.btnNhaMTG.CheckedState.Parent = this.btnNhaMTG;
@@ -256,6 +265,7 @@
             // 
             // btnNhaLNT
             // 
+            this.btnNhaLNT.BackColor = System.Drawing.Color.Transparent;
             this.btnNhaLNT.BorderRadius = 15;
             this.btnNhaLNT.BorderThickness = 2;
             this.btnNhaLNT.CheckedState.Parent = this.btnNhaLNT;
@@ -273,6 +283,7 @@
             // 
             // btnNhaKCN
             // 
+            this.btnNhaKCN.BackColor = System.Drawing.Color.Transparent;
             this.btnNhaKCN.BorderRadius = 15;
             this.btnNhaKCN.BorderThickness = 2;
             this.btnNhaKCN.CheckedState.Parent = this.btnNhaKCN;
@@ -290,6 +301,7 @@
             // 
             // tbName5
             // 
+            this.tbName5.BackColor = System.Drawing.Color.Transparent;
             this.tbName5.BorderRadius = 15;
             this.tbName5.BorderThickness = 2;
             this.tbName5.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -326,6 +338,7 @@
             this.panelVKLCHSC.Controls.Add(this.btnCuoiCBM);
             this.panelVKLCHSC.Controls.Add(this.tbName4);
             this.panelVKLCHSC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVKLCHSC.FillColor = System.Drawing.Color.Transparent;
             this.panelVKLCHSC.Location = new System.Drawing.Point(0, 1876);
             this.panelVKLCHSC.Name = "panelVKLCHSC";
             this.panelVKLCHSC.ShadowDecoration.Parent = this.panelVKLCHSC;
@@ -334,6 +347,7 @@
             // 
             // btnCuoiNLC
             // 
+            this.btnCuoiNLC.BackColor = System.Drawing.Color.Transparent;
             this.btnCuoiNLC.BorderRadius = 15;
             this.btnCuoiNLC.BorderThickness = 2;
             this.btnCuoiNLC.CheckedState.Parent = this.btnCuoiNLC;
@@ -351,6 +365,7 @@
             // 
             // btnCuoiCBM
             // 
+            this.btnCuoiCBM.BackColor = System.Drawing.Color.Transparent;
             this.btnCuoiCBM.BorderRadius = 15;
             this.btnCuoiCBM.BorderThickness = 2;
             this.btnCuoiCBM.CheckedState.Parent = this.btnCuoiCBM;
@@ -368,6 +383,7 @@
             // 
             // tbName4
             // 
+            this.tbName4.BackColor = System.Drawing.Color.Transparent;
             this.tbName4.BorderRadius = 15;
             this.tbName4.BorderThickness = 2;
             this.tbName4.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -410,6 +426,7 @@
             this.panelLTGTT.Controls.Add(this.btnTangLCT);
             this.panelLTGTT.Controls.Add(this.tbName3);
             this.panelLTGTT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLTGTT.FillColor = System.Drawing.Color.Transparent;
             this.panelLTGTT.Location = new System.Drawing.Point(0, 1405);
             this.panelLTGTT.Name = "panelLTGTT";
             this.panelLTGTT.ShadowDecoration.Parent = this.panelLTGTT;
@@ -418,6 +435,7 @@
             // 
             // btnTangGT
             // 
+            this.btnTangGT.BackColor = System.Drawing.Color.Transparent;
             this.btnTangGT.BorderRadius = 15;
             this.btnTangGT.BorderThickness = 2;
             this.btnTangGT.CheckedState.Parent = this.btnTangGT;
@@ -435,6 +453,7 @@
             // 
             // btnTangNCG
             // 
+            this.btnTangNCG.BackColor = System.Drawing.Color.Transparent;
             this.btnTangNCG.BorderRadius = 15;
             this.btnTangNCG.BorderThickness = 2;
             this.btnTangNCG.CheckedState.Parent = this.btnTangNCG;
@@ -452,6 +471,7 @@
             // 
             // btnTangNGT
             // 
+            this.btnTangNGT.BackColor = System.Drawing.Color.Transparent;
             this.btnTangNGT.BorderRadius = 15;
             this.btnTangNGT.BorderThickness = 2;
             this.btnTangNGT.CheckedState.Parent = this.btnTangNGT;
@@ -469,6 +489,7 @@
             // 
             // btnTangNGH
             // 
+            this.btnTangNGH.BackColor = System.Drawing.Color.Transparent;
             this.btnTangNGH.BorderRadius = 15;
             this.btnTangNGH.BorderThickness = 2;
             this.btnTangNGH.CheckedState.Parent = this.btnTangNGH;
@@ -486,6 +507,7 @@
             // 
             // btnTangNGD
             // 
+            this.btnTangNGD.BackColor = System.Drawing.Color.Transparent;
             this.btnTangNGD.BorderRadius = 15;
             this.btnTangNGD.BorderThickness = 2;
             this.btnTangNGD.CheckedState.Parent = this.btnTangNGD;
@@ -503,6 +525,7 @@
             // 
             // btnTangLCTTK
             // 
+            this.btnTangLCTTK.BackColor = System.Drawing.Color.Transparent;
             this.btnTangLCTTK.BorderRadius = 15;
             this.btnTangLCTTK.BorderThickness = 2;
             this.btnTangLCTTK.CheckedState.Parent = this.btnTangLCTTK;
@@ -520,6 +543,7 @@
             // 
             // btnTangLDT
             // 
+            this.btnTangLDT.BackColor = System.Drawing.Color.Transparent;
             this.btnTangLDT.BorderRadius = 15;
             this.btnTangLDT.BorderThickness = 2;
             this.btnTangLDT.CheckedState.Parent = this.btnTangLDT;
@@ -537,6 +561,7 @@
             // 
             // btnTangLCT
             // 
+            this.btnTangLCT.BackColor = System.Drawing.Color.Transparent;
             this.btnTangLCT.BorderRadius = 15;
             this.btnTangLCT.BorderThickness = 2;
             this.btnTangLCT.CheckedState.Parent = this.btnTangLCT;
@@ -554,6 +579,7 @@
             // 
             // tbName3
             // 
+            this.tbName3.BackColor = System.Drawing.Color.Transparent;
             this.tbName3.BorderRadius = 15;
             this.tbName3.BorderThickness = 2;
             this.tbName3.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -583,6 +609,7 @@
             // 
             // panelVKLRM1
             // 
+            this.panelVKLRM1.BackColor = System.Drawing.Color.Transparent;
             this.panelVKLRM1.BorderColor = System.Drawing.Color.Black;
             this.panelVKLRM1.BorderRadius = 15;
             this.panelVKLRM1.BorderThickness = 2;
@@ -596,6 +623,7 @@
             this.panelVKLRM1.Controls.Add(this.btnRamLNT);
             this.panelVKLRM1.Controls.Add(this.tbName2);
             this.panelVKLRM1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVKLRM1.FillColor = System.Drawing.Color.Transparent;
             this.panelVKLRM1.Location = new System.Drawing.Point(0, 937);
             this.panelVKLRM1.Name = "panelVKLRM1";
             this.panelVKLRM1.ShadowDecoration.Parent = this.panelVKLRM1;
@@ -638,6 +666,7 @@
             // 
             // btnRamT7
             // 
+            this.btnRamT7.BackColor = System.Drawing.Color.Transparent;
             this.btnRamT7.BorderRadius = 15;
             this.btnRamT7.BorderThickness = 2;
             this.btnRamT7.CheckedState.Parent = this.btnRamT7;
@@ -655,6 +684,7 @@
             // 
             // btnRamTTT
             // 
+            this.btnRamTTT.BackColor = System.Drawing.Color.Transparent;
             this.btnRamTTT.BorderRadius = 15;
             this.btnRamTTT.BorderThickness = 2;
             this.btnRamTTT.CheckedState.Parent = this.btnRamTTT;
@@ -672,6 +702,7 @@
             // 
             // btnRamTDN
             // 
+            this.btnRamTDN.BackColor = System.Drawing.Color.Transparent;
             this.btnRamTDN.BorderRadius = 15;
             this.btnRamTDN.BorderThickness = 2;
             this.btnRamTDN.CheckedState.Parent = this.btnRamTDN;
@@ -689,6 +720,7 @@
             // 
             // btnRamTHT
             // 
+            this.btnRamTHT.BackColor = System.Drawing.Color.Transparent;
             this.btnRamTHT.BorderRadius = 15;
             this.btnRamTHT.BorderThickness = 2;
             this.btnRamTHT.CheckedState.Parent = this.btnRamTHT;
@@ -706,6 +738,7 @@
             // 
             // btnRamLTM
             // 
+            this.btnRamLTM.BackColor = System.Drawing.Color.Transparent;
             this.btnRamLTM.BorderRadius = 15;
             this.btnRamLTM.BorderThickness = 2;
             this.btnRamLTM.CheckedState.Parent = this.btnRamLTM;
@@ -723,6 +756,7 @@
             // 
             // btnRamLNT
             // 
+            this.btnRamLNT.BackColor = System.Drawing.Color.Transparent;
             this.btnRamLNT.BorderRadius = 15;
             this.btnRamLNT.BorderThickness = 2;
             this.btnRamLNT.CheckedState.Parent = this.btnRamLNT;
@@ -740,6 +774,7 @@
             // 
             // tbName2
             // 
+            this.tbName2.BackColor = System.Drawing.Color.Transparent;
             this.tbName2.BorderRadius = 15;
             this.tbName2.BorderThickness = 2;
             this.tbName2.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -782,6 +817,7 @@
             this.panelVKLCDM.Controls.Add(this.btnChuaLP);
             this.panelVKLCDM.Controls.Add(this.tbName1);
             this.panelVKLCDM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVKLCDM.FillColor = System.Drawing.Color.Transparent;
             this.panelVKLCDM.Location = new System.Drawing.Point(0, 417);
             this.panelVKLCDM.Name = "panelVKLCDM";
             this.panelVKLCDM.ShadowDecoration.Parent = this.panelVKLCDM;
@@ -790,6 +826,7 @@
             // 
             // btnChuaDTH
             // 
+            this.btnChuaDTH.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaDTH.BorderRadius = 15;
             this.btnChuaDTH.BorderThickness = 2;
             this.btnChuaDTH.CheckedState.Parent = this.btnChuaDTH;
@@ -807,6 +844,7 @@
             // 
             // btnChuaDO
             // 
+            this.btnChuaDO.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaDO.BorderRadius = 15;
             this.btnChuaDO.BorderThickness = 2;
             this.btnChuaDO.CheckedState.Parent = this.btnChuaDO;
@@ -824,6 +862,7 @@
             // 
             // btnChuaBCK
             // 
+            this.btnChuaBCK.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaBCK.BorderRadius = 15;
             this.btnChuaBCK.BorderThickness = 2;
             this.btnChuaBCK.CheckedState.Parent = this.btnChuaBCK;
@@ -841,6 +880,7 @@
             // 
             // btnChuaDTT
             // 
+            this.btnChuaDTT.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaDTT.BorderRadius = 15;
             this.btnChuaDTT.BorderThickness = 2;
             this.btnChuaDTT.CheckedState.Parent = this.btnChuaDTT;
@@ -858,6 +898,7 @@
             // 
             // btnChuaTMLH
             // 
+            this.btnChuaTMLH.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaTMLH.BorderRadius = 15;
             this.btnChuaTMLH.BorderThickness = 2;
             this.btnChuaTMLH.CheckedState.Parent = this.btnChuaTMLH;
@@ -875,6 +916,7 @@
             // 
             // btnChuaMTN
             // 
+            this.btnChuaMTN.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaMTN.BorderRadius = 15;
             this.btnChuaMTN.BorderThickness = 2;
             this.btnChuaMTN.CheckedState.Parent = this.btnChuaMTN;
@@ -892,6 +934,7 @@
             // 
             // btnChuaTH
             // 
+            this.btnChuaTH.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaTH.BorderRadius = 15;
             this.btnChuaTH.BorderThickness = 2;
             this.btnChuaTH.CheckedState.Parent = this.btnChuaTH;
@@ -909,6 +952,7 @@
             // 
             // btnChuaQABT
             // 
+            this.btnChuaQABT.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaQABT.BorderRadius = 15;
             this.btnChuaQABT.BorderThickness = 2;
             this.btnChuaQABT.CheckedState.Parent = this.btnChuaQABT;
@@ -926,6 +970,7 @@
             // 
             // btnChuaLP
             // 
+            this.btnChuaLP.BackColor = System.Drawing.Color.Transparent;
             this.btnChuaLP.BorderRadius = 15;
             this.btnChuaLP.BorderThickness = 2;
             this.btnChuaLP.CheckedState.Parent = this.btnChuaLP;
@@ -943,6 +988,7 @@
             // 
             // tbName1
             // 
+            this.tbName1.BackColor = System.Drawing.Color.Transparent;
             this.tbName1.BorderRadius = 15;
             this.tbName1.BorderThickness = 2;
             this.tbName1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -972,6 +1018,7 @@
             // 
             // panelVKTND
             // 
+            this.panelVKTND.BackColor = System.Drawing.Color.Transparent;
             this.panelVKTND.BorderColor = System.Drawing.Color.Black;
             this.panelVKTND.BorderRadius = 15;
             this.panelVKTND.BorderThickness = 2;
@@ -984,6 +1031,7 @@
             this.panelVKTND.Controls.Add(this.btnTetOT);
             this.panelVKTND.Controls.Add(this.tbName0);
             this.panelVKTND.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVKTND.FillColor = System.Drawing.Color.Transparent;
             this.panelVKTND.Location = new System.Drawing.Point(0, 0);
             this.panelVKTND.Name = "panelVKTND";
             this.panelVKTND.ShadowDecoration.Parent = this.panelVKTND;
@@ -992,10 +1040,12 @@
             // 
             // btnTetNM
             // 
+            this.btnTetNM.BackColor = System.Drawing.Color.Transparent;
             this.btnTetNM.BorderRadius = 15;
             this.btnTetNM.BorderThickness = 2;
             this.btnTetNM.CheckedState.Parent = this.btnTetNM;
             this.btnTetNM.CustomImages.Parent = this.btnTetNM;
+            this.btnTetNM.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetNM.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTetNM.ForeColor = System.Drawing.Color.White;
             this.btnTetNM.HoverState.Parent = this.btnTetNM;
@@ -1009,10 +1059,12 @@
             // 
             // btnTetTLM1
             // 
+            this.btnTetTLM1.BackColor = System.Drawing.Color.Transparent;
             this.btnTetTLM1.BorderRadius = 15;
             this.btnTetTLM1.BorderThickness = 2;
             this.btnTetTLM1.CheckedState.Parent = this.btnTetTLM1;
             this.btnTetTLM1.CustomImages.Parent = this.btnTetTLM1;
+            this.btnTetTLM1.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetTLM1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTetTLM1.ForeColor = System.Drawing.Color.White;
             this.btnTetTLM1.HoverState.Parent = this.btnTetTLM1;
@@ -1026,10 +1078,12 @@
             // 
             // btnTetTTM1
             // 
+            this.btnTetTTM1.BackColor = System.Drawing.Color.Transparent;
             this.btnTetTTM1.BorderRadius = 15;
             this.btnTetTTM1.BorderThickness = 2;
             this.btnTetTTM1.CheckedState.Parent = this.btnTetTTM1;
             this.btnTetTTM1.CustomImages.Parent = this.btnTetTTM1;
+            this.btnTetTTM1.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetTTM1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTetTTM1.ForeColor = System.Drawing.Color.White;
             this.btnTetTTM1.HoverState.Parent = this.btnTetTTM1;
@@ -1043,10 +1097,12 @@
             // 
             // btnTetVKTM
             // 
+            this.btnTetVKTM.BackColor = System.Drawing.Color.Transparent;
             this.btnTetVKTM.BorderRadius = 15;
             this.btnTetVKTM.BorderThickness = 2;
             this.btnTetVKTM.CheckedState.Parent = this.btnTetVKTM;
             this.btnTetVKTM.CustomImages.Parent = this.btnTetVKTM;
+            this.btnTetVKTM.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetVKTM.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTetVKTM.ForeColor = System.Drawing.Color.White;
             this.btnTetVKTM.HoverState.Parent = this.btnTetVKTM;
@@ -1060,10 +1116,12 @@
             // 
             // btnTetTN
             // 
+            this.btnTetTN.BackColor = System.Drawing.Color.Transparent;
             this.btnTetTN.BorderRadius = 15;
             this.btnTetTN.BorderThickness = 2;
             this.btnTetTN.CheckedState.Parent = this.btnTetTN;
             this.btnTetTN.CustomImages.Parent = this.btnTetTN;
+            this.btnTetTN.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetTN.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTetTN.ForeColor = System.Drawing.Color.White;
             this.btnTetTN.HoverState.Parent = this.btnTetTN;
@@ -1077,10 +1135,12 @@
             // 
             // btnTetGK
             // 
+            this.btnTetGK.BackColor = System.Drawing.Color.Transparent;
             this.btnTetGK.BorderRadius = 15;
             this.btnTetGK.BorderThickness = 2;
             this.btnTetGK.CheckedState.Parent = this.btnTetGK;
             this.btnTetGK.CustomImages.Parent = this.btnTetGK;
+            this.btnTetGK.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetGK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnTetGK.ForeColor = System.Drawing.Color.White;
             this.btnTetGK.HoverState.Parent = this.btnTetGK;
@@ -1094,10 +1154,12 @@
             // 
             // btnTetOT
             // 
+            this.btnTetOT.BackColor = System.Drawing.Color.Transparent;
             this.btnTetOT.BorderRadius = 15;
             this.btnTetOT.BorderThickness = 2;
             this.btnTetOT.CheckedState.Parent = this.btnTetOT;
             this.btnTetOT.CustomImages.Parent = this.btnTetOT;
+            this.btnTetOT.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnTetOT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTetOT.ForeColor = System.Drawing.Color.White;
             this.btnTetOT.HoverState.Parent = this.btnTetOT;
@@ -1111,6 +1173,7 @@
             // 
             // tbName0
             // 
+            this.tbName0.BackColor = System.Drawing.Color.Transparent;
             this.tbName0.BorderRadius = 15;
             this.tbName0.BorderThickness = 2;
             this.tbName0.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1140,11 +1203,13 @@
             // 
             // panelShow
             // 
+            this.panelShow.BackColor = System.Drawing.Color.Transparent;
             this.panelShow.Controls.Add(this.buttonClose);
             this.panelShow.Controls.Add(this.buttonMinus);
             this.panelShow.Controls.Add(this.buttonAdd);
             this.panelShow.Controls.Add(this.rtbRead);
             this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelShow.FillColor = System.Drawing.Color.Transparent;
             this.panelShow.Location = new System.Drawing.Point(0, 0);
             this.panelShow.Name = "panelShow";
             this.panelShow.ShadowDecoration.Parent = this.panelShow;
@@ -1219,7 +1284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.PanelSetting);
             this.Controls.Add(this.PanelName);
             this.Controls.Add(this.panelShow);

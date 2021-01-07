@@ -30,23 +30,27 @@
         {
             this.PanelGeneral = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelDisplay = new Guna.UI2.WinForms.Guna2Panel();
+            this.tbLuuY1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconbtnMinus = new FontAwesome.Sharp.IconButton();
             this.iconbtnPlus = new FontAwesome.Sharp.IconButton();
             this.rtbRead = new System.Windows.Forms.RichTextBox();
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
+            this.tbLuuY2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.comboBoxGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonFind = new Guna.UI2.WinForms.Guna2Button();
             this.ComboBoxSolarYear = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxSolarMonth = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxSolarDay = new Guna.UI2.WinForms.Guna2ComboBox();
             this.PanelName = new Guna.UI2.WinForms.Guna2Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.PictureZodiac = new FontAwesome.Sharp.IconPictureBox();
             this.buttonName = new Guna.UI2.WinForms.Guna2Button();
-            this.tbLuuY1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbLuuY2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelGeneral.SuspendLayout();
             this.PanelDisplay.SuspendLayout();
             this.PanelSetting.SuspendLayout();
             this.PanelName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureZodiac)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelGeneral
@@ -74,6 +78,35 @@
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
             this.PanelDisplay.Size = new System.Drawing.Size(1009, 450);
             this.PanelDisplay.TabIndex = 2;
+            // 
+            // tbLuuY1
+            // 
+            this.tbLuuY1.BorderThickness = 0;
+            this.tbLuuY1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbLuuY1.DefaultText = "*LƯU Ý: Dữ liệu tử vi này chủ yếu chỉ mang tính chất tham khảo. Bạn cần cân nhắc " +
+    "trước khi áp dụng thực tế.";
+            this.tbLuuY1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbLuuY1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbLuuY1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbLuuY1.DisabledState.Parent = this.tbLuuY1;
+            this.tbLuuY1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbLuuY1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbLuuY1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbLuuY1.FocusedState.Parent = this.tbLuuY1;
+            this.tbLuuY1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLuuY1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbLuuY1.HoverState.Parent = this.tbLuuY1;
+            this.tbLuuY1.Location = new System.Drawing.Point(75, 400);
+            this.tbLuuY1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbLuuY1.Name = "tbLuuY1";
+            this.tbLuuY1.PasswordChar = '\0';
+            this.tbLuuY1.PlaceholderText = "";
+            this.tbLuuY1.SelectedText = "";
+            this.tbLuuY1.SelectionStart = 107;
+            this.tbLuuY1.ShadowDecoration.Parent = this.tbLuuY1;
+            this.tbLuuY1.Size = new System.Drawing.Size(859, 50);
+            this.tbLuuY1.TabIndex = 3;
+            this.tbLuuY1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // iconbtnMinus
             // 
@@ -133,6 +166,35 @@
             this.PanelSetting.Size = new System.Drawing.Size(1009, 100);
             this.PanelSetting.TabIndex = 1;
             // 
+            // tbLuuY2
+            // 
+            this.tbLuuY2.BorderColor = System.Drawing.Color.DarkGray;
+            this.tbLuuY2.BorderThickness = 0;
+            this.tbLuuY2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tbLuuY2.DefaultText = "CHỌN GIỚI TÍNH VÀ NGÀY SINH (DƯƠNG LỊCH)";
+            this.tbLuuY2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbLuuY2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbLuuY2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbLuuY2.DisabledState.Parent = this.tbLuuY2;
+            this.tbLuuY2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbLuuY2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbLuuY2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbLuuY2.FocusedState.Parent = this.tbLuuY2;
+            this.tbLuuY2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLuuY2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbLuuY2.HoverState.Parent = this.tbLuuY2;
+            this.tbLuuY2.Location = new System.Drawing.Point(0, 0);
+            this.tbLuuY2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbLuuY2.Name = "tbLuuY2";
+            this.tbLuuY2.PasswordChar = '\0';
+            this.tbLuuY2.PlaceholderText = "";
+            this.tbLuuY2.SelectedText = "";
+            this.tbLuuY2.SelectionStart = 40;
+            this.tbLuuY2.ShadowDecoration.Parent = this.tbLuuY2;
+            this.tbLuuY2.Size = new System.Drawing.Size(1009, 50);
+            this.tbLuuY2.TabIndex = 22;
+            this.tbLuuY2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // comboBoxGioiTinh
             // 
             this.comboBoxGioiTinh.BackColor = System.Drawing.Color.Transparent;
@@ -160,8 +222,9 @@
             // 
             this.ButtonFind.CheckedState.Parent = this.ButtonFind;
             this.ButtonFind.CustomImages.Parent = this.ButtonFind;
+            this.ButtonFind.FillColor = System.Drawing.Color.PaleGreen;
             this.ButtonFind.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.ButtonFind.ForeColor = System.Drawing.Color.White;
+            this.ButtonFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ButtonFind.HoverState.Parent = this.ButtonFind;
             this.ButtonFind.Location = new System.Drawing.Point(802, 49);
             this.ButtonFind.Name = "ButtonFind";
@@ -233,6 +296,8 @@
             // 
             // PanelName
             // 
+            this.PanelName.Controls.Add(this.iconPictureBox1);
+            this.PanelName.Controls.Add(this.PictureZodiac);
             this.PanelName.Controls.Add(this.buttonName);
             this.PanelName.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelName.Location = new System.Drawing.Point(0, 0);
@@ -241,13 +306,44 @@
             this.PanelName.Size = new System.Drawing.Size(1009, 70);
             this.PanelName.TabIndex = 0;
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.YinYang;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 60;
+            this.iconPictureBox1.Location = new System.Drawing.Point(616, 0);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(52, 67);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconPictureBox1.TabIndex = 3;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // PictureZodiac
+            // 
+            this.PictureZodiac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.PictureZodiac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PictureZodiac.IconChar = FontAwesome.Sharp.IconChar.YinYang;
+            this.PictureZodiac.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PictureZodiac.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PictureZodiac.IconSize = 60;
+            this.PictureZodiac.Location = new System.Drawing.Point(345, 0);
+            this.PictureZodiac.Name = "PictureZodiac";
+            this.PictureZodiac.Size = new System.Drawing.Size(53, 67);
+            this.PictureZodiac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureZodiac.TabIndex = 2;
+            this.PictureZodiac.TabStop = false;
+            // 
             // buttonName
             // 
             this.buttonName.CheckedState.Parent = this.buttonName;
             this.buttonName.CustomImages.Parent = this.buttonName;
             this.buttonName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonName.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonName.ForeColor = System.Drawing.Color.White;
+            this.buttonName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.buttonName.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.buttonName.HoverState.Parent = this.buttonName;
             this.buttonName.Location = new System.Drawing.Point(0, 0);
             this.buttonName.Name = "buttonName";
@@ -255,61 +351,6 @@
             this.buttonName.Size = new System.Drawing.Size(1009, 70);
             this.buttonName.TabIndex = 0;
             this.buttonName.Text = "TỬ VI";
-            // 
-            // tbLuuY1
-            // 
-            this.tbLuuY1.BorderThickness = 0;
-            this.tbLuuY1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tbLuuY1.DefaultText = "*LƯU Ý: Dữ liệu tử vi này chủ yếu chỉ mang tính chất tham khảo. Bạn cần cân nhắc " +
-    "trước khi áp dụng thực tế.";
-            this.tbLuuY1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbLuuY1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbLuuY1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbLuuY1.DisabledState.Parent = this.tbLuuY1;
-            this.tbLuuY1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbLuuY1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbLuuY1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbLuuY1.FocusedState.Parent = this.tbLuuY1;
-            this.tbLuuY1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLuuY1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbLuuY1.HoverState.Parent = this.tbLuuY1;
-            this.tbLuuY1.Location = new System.Drawing.Point(75, 400);
-            this.tbLuuY1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbLuuY1.Name = "tbLuuY1";
-            this.tbLuuY1.PasswordChar = '\0';
-            this.tbLuuY1.PlaceholderText = "";
-            this.tbLuuY1.SelectedText = "";
-            this.tbLuuY1.ShadowDecoration.Parent = this.tbLuuY1;
-            this.tbLuuY1.Size = new System.Drawing.Size(859, 50);
-            this.tbLuuY1.TabIndex = 3;
-            this.tbLuuY1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbLuuY2
-            // 
-            this.tbLuuY2.BorderThickness = 0;
-            this.tbLuuY2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tbLuuY2.DefaultText = "CHỌN GIỚI TÍNH VÀ NGÀY SINH (DƯƠNG LỊCH)";
-            this.tbLuuY2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbLuuY2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbLuuY2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbLuuY2.DisabledState.Parent = this.tbLuuY2;
-            this.tbLuuY2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbLuuY2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbLuuY2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbLuuY2.FocusedState.Parent = this.tbLuuY2;
-            this.tbLuuY2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLuuY2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbLuuY2.HoverState.Parent = this.tbLuuY2;
-            this.tbLuuY2.Location = new System.Drawing.Point(0, 0);
-            this.tbLuuY2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbLuuY2.Name = "tbLuuY2";
-            this.tbLuuY2.PasswordChar = '\0';
-            this.tbLuuY2.PlaceholderText = "";
-            this.tbLuuY2.SelectedText = "";
-            this.tbLuuY2.ShadowDecoration.Parent = this.tbLuuY2;
-            this.tbLuuY2.Size = new System.Drawing.Size(1009, 50);
-            this.tbLuuY2.TabIndex = 22;
-            this.tbLuuY2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DisplayTuVi
             // 
@@ -323,6 +364,8 @@
             this.PanelDisplay.ResumeLayout(false);
             this.PanelSetting.ResumeLayout(false);
             this.PanelName.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureZodiac)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,5 +387,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxGioiTinh;
         private Guna.UI2.WinForms.Guna2TextBox tbLuuY1;
         private Guna.UI2.WinForms.Guna2TextBox tbLuuY2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox PictureZodiac;
     }
 }

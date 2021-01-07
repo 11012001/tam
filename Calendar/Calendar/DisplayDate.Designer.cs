@@ -89,7 +89,7 @@ namespace Calendar
             this.ibtnSpeech.FlatAppearance.BorderSize = 0;
             this.ibtnSpeech.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibtnSpeech.IconChar = FontAwesome.Sharp.IconChar.VolumeUp;
-            this.ibtnSpeech.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ibtnSpeech.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ibtnSpeech.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnSpeech.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ibtnSpeech.Location = new System.Drawing.Point(880, 6);
@@ -109,7 +109,7 @@ namespace Calendar
             this.labelLunnarMonthName.AutoSize = true;
             this.labelLunnarMonthName.BackColor = System.Drawing.Color.Transparent;
             this.labelLunnarMonthName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLunnarMonthName.ForeColor = System.Drawing.Color.White;
+            this.labelLunnarMonthName.ForeColor = System.Drawing.Color.DarkRed;
             this.labelLunnarMonthName.Location = new System.Drawing.Point(7, 51);
             this.labelLunnarMonthName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.labelLunnarMonthName.Name = "labelLunnarMonthName";
@@ -122,7 +122,7 @@ namespace Calendar
             this.labelLunnarYearName.AutoSize = true;
             this.labelLunnarYearName.BackColor = System.Drawing.Color.Transparent;
             this.labelLunnarYearName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLunnarYearName.ForeColor = System.Drawing.Color.White;
+            this.labelLunnarYearName.ForeColor = System.Drawing.Color.DarkRed;
             this.labelLunnarYearName.Location = new System.Drawing.Point(14, 96);
             this.labelLunnarYearName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.labelLunnarYearName.Name = "labelLunnarYearName";
@@ -135,8 +135,8 @@ namespace Calendar
             this.labelLunnarDayName.AutoSize = true;
             this.labelLunnarDayName.BackColor = System.Drawing.Color.Transparent;
             this.labelLunnarDayName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLunnarDayName.ForeColor = System.Drawing.Color.White;
-            this.labelLunnarDayName.Location = new System.Drawing.Point(6, 4);
+            this.labelLunnarDayName.ForeColor = System.Drawing.Color.Maroon;
+            this.labelLunnarDayName.Location = new System.Drawing.Point(14, 3);
             this.labelLunnarDayName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.labelLunnarDayName.Name = "labelLunnarDayName";
             this.labelLunnarDayName.Size = new System.Drawing.Size(174, 29);
@@ -150,7 +150,7 @@ namespace Calendar
             this.PanelLunnarMonth.Controls.Add(this.labelLunnarDayName);
             this.PanelLunnarMonth.Controls.Add(this.labelLunnarYearName);
             this.PanelLunnarMonth.Controls.Add(this.labelLunnarMonthName);
-            this.PanelLunnarMonth.FillColor = System.Drawing.Color.Cyan;
+            this.PanelLunnarMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.PanelLunnarMonth.Location = new System.Drawing.Point(794, 40);
             this.PanelLunnarMonth.Name = "PanelLunnarMonth";
             this.PanelLunnarMonth.ShadowDecoration.Parent = this.PanelLunnarMonth;
@@ -165,7 +165,7 @@ namespace Calendar
             this.PanelName.Controls.Add(this.ButtonLunnarMonth);
             this.PanelName.Controls.Add(this.ButtonLunnarName);
             this.PanelName.Controls.Add(this.ButtonNameHour);
-            this.PanelName.FillColor = System.Drawing.Color.Cyan;
+            this.PanelName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.PanelName.Location = new System.Drawing.Point(0, 0);
             this.PanelName.Name = "PanelName";
             this.PanelName.ShadowDecoration.Parent = this.PanelName;
@@ -174,15 +174,14 @@ namespace Calendar
             // 
             // ButtonLunnarMonth
             // 
-            this.ButtonLunnarMonth.BackColor = System.Drawing.Color.Cyan;
-            this.ButtonLunnarMonth.BorderColor = System.Drawing.Color.White;
+            this.ButtonLunnarMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonLunnarMonth.BorderRadius = 15;
             this.ButtonLunnarMonth.BorderThickness = 2;
             this.ButtonLunnarMonth.CheckedState.Parent = this.ButtonLunnarMonth;
             this.ButtonLunnarMonth.CustomImages.Parent = this.ButtonLunnarMonth;
-            this.ButtonLunnarMonth.FillColor = System.Drawing.Color.Red;
+            this.ButtonLunnarMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ButtonLunnarMonth.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.ButtonLunnarMonth.ForeColor = System.Drawing.Color.White;
+            this.ButtonLunnarMonth.ForeColor = System.Drawing.Color.Black;
             this.ButtonLunnarMonth.HoverState.Parent = this.ButtonLunnarMonth;
             this.ButtonLunnarMonth.Location = new System.Drawing.Point(414, 3);
             this.ButtonLunnarMonth.Name = "ButtonLunnarMonth";
@@ -193,15 +192,14 @@ namespace Calendar
             // 
             // ButtonLunnarName
             // 
-            this.ButtonLunnarName.BackColor = System.Drawing.Color.Cyan;
-            this.ButtonLunnarName.BorderColor = System.Drawing.Color.White;
+            this.ButtonLunnarName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonLunnarName.BorderRadius = 15;
             this.ButtonLunnarName.BorderThickness = 2;
             this.ButtonLunnarName.CheckedState.Parent = this.ButtonLunnarName;
             this.ButtonLunnarName.CustomImages.Parent = this.ButtonLunnarName;
             this.ButtonLunnarName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonLunnarName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.ButtonLunnarName.ForeColor = System.Drawing.Color.White;
+            this.ButtonLunnarName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ButtonLunnarName.HoverState.Parent = this.ButtonLunnarName;
             this.ButtonLunnarName.Location = new System.Drawing.Point(845, 3);
             this.ButtonLunnarName.Name = "ButtonLunnarName";
@@ -212,15 +210,14 @@ namespace Calendar
             // 
             // ButtonNameHour
             // 
-            this.ButtonNameHour.BackColor = System.Drawing.Color.Cyan;
-            this.ButtonNameHour.BorderColor = System.Drawing.Color.White;
+            this.ButtonNameHour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ButtonNameHour.BorderRadius = 15;
             this.ButtonNameHour.BorderThickness = 2;
             this.ButtonNameHour.CheckedState.Parent = this.ButtonNameHour;
             this.ButtonNameHour.CustomImages.Parent = this.ButtonNameHour;
             this.ButtonNameHour.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ButtonNameHour.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.ButtonNameHour.ForeColor = System.Drawing.Color.White;
+            this.ButtonNameHour.ForeColor = System.Drawing.Color.Black;
             this.ButtonNameHour.HoverState.Parent = this.ButtonNameHour;
             this.ButtonNameHour.Location = new System.Drawing.Point(52, 3);
             this.ButtonNameHour.Name = "ButtonNameHour";
@@ -236,7 +233,7 @@ namespace Calendar
             this.PanelHourLunnar.Controls.Add(this.TextboxZodiacHour);
             this.PanelHourLunnar.Controls.Add(this.labelHour);
             this.PanelHourLunnar.Controls.Add(this.labelHourLunnar);
-            this.PanelHourLunnar.FillColor = System.Drawing.Color.Cyan;
+            this.PanelHourLunnar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.PanelHourLunnar.Location = new System.Drawing.Point(0, 40);
             this.PanelHourLunnar.Name = "PanelHourLunnar";
             this.PanelHourLunnar.ShadowDecoration.Parent = this.PanelHourLunnar;
@@ -254,11 +251,11 @@ namespace Calendar
             this.TextboxZodiacHour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextboxZodiacHour.DisabledState.Parent = this.TextboxZodiacHour;
             this.TextboxZodiacHour.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextboxZodiacHour.FillColor = System.Drawing.Color.Cyan;
+            this.TextboxZodiacHour.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.TextboxZodiacHour.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxZodiacHour.FocusedState.Parent = this.TextboxZodiacHour;
             this.TextboxZodiacHour.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextboxZodiacHour.ForeColor = System.Drawing.Color.Yellow;
+            this.TextboxZodiacHour.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.TextboxZodiacHour.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxZodiacHour.HoverState.Parent = this.TextboxZodiacHour;
             this.TextboxZodiacHour.Location = new System.Drawing.Point(5, 60);
@@ -280,7 +277,7 @@ namespace Calendar
             this.labelHour.AutoSize = true;
             this.labelHour.BackColor = System.Drawing.Color.Transparent;
             this.labelHour.Font = new System.Drawing.Font("Arial", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHour.ForeColor = System.Drawing.Color.White;
+            this.labelHour.ForeColor = System.Drawing.Color.DarkRed;
             this.labelHour.Location = new System.Drawing.Point(73, 34);
             this.labelHour.Name = "labelHour";
             this.labelHour.Size = new System.Drawing.Size(59, 27);
@@ -292,7 +289,7 @@ namespace Calendar
             this.labelHourLunnar.AutoSize = true;
             this.labelHourLunnar.BackColor = System.Drawing.Color.Transparent;
             this.labelHourLunnar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHourLunnar.ForeColor = System.Drawing.Color.Yellow;
+            this.labelHourLunnar.ForeColor = System.Drawing.Color.DarkGreen;
             this.labelHourLunnar.Location = new System.Drawing.Point(21, 3);
             this.labelHourLunnar.Name = "labelHourLunnar";
             this.labelHourLunnar.Size = new System.Drawing.Size(76, 24);
@@ -308,7 +305,7 @@ namespace Calendar
             this.PanelLunnarDay.Controls.Add(this.guna2VSeparator1);
             this.PanelLunnarDay.Controls.Add(this.PictureZodiac);
             this.PanelLunnarDay.Controls.Add(this.labelLunnarDay);
-            this.PanelLunnarDay.FillColor = System.Drawing.Color.Cyan;
+            this.PanelLunnarDay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.PanelLunnarDay.Location = new System.Drawing.Point(212, 40);
             this.PanelLunnarDay.Name = "PanelLunnarDay";
             this.PanelLunnarDay.ShadowDecoration.Parent = this.PanelLunnarDay;
@@ -348,9 +345,10 @@ namespace Calendar
             // 
             // PictureZodiac
             // 
-            this.PictureZodiac.BackColor = System.Drawing.Color.Cyan;
+            this.PictureZodiac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PictureZodiac.ForeColor = System.Drawing.Color.Black;
             this.PictureZodiac.IconChar = FontAwesome.Sharp.IconChar.YinYang;
-            this.PictureZodiac.IconColor = System.Drawing.Color.White;
+            this.PictureZodiac.IconColor = System.Drawing.Color.Black;
             this.PictureZodiac.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.PictureZodiac.IconSize = 31;
             this.PictureZodiac.Location = new System.Drawing.Point(279, 6);
@@ -365,7 +363,7 @@ namespace Calendar
             this.labelLunnarDay.AutoSize = true;
             this.labelLunnarDay.BackColor = System.Drawing.Color.Transparent;
             this.labelLunnarDay.Font = new System.Drawing.Font("Segoe UI", 52F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLunnarDay.ForeColor = System.Drawing.Color.Red;
+            this.labelLunnarDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelLunnarDay.Location = new System.Drawing.Point(238, 32);
             this.labelLunnarDay.Name = "labelLunnarDay";
             this.labelLunnarDay.Size = new System.Drawing.Size(120, 93);
@@ -378,23 +376,23 @@ namespace Calendar
             this.PanelLunnarDate.Controls.Add(this.PanelLunnarMonth);
             this.PanelLunnarDate.Controls.Add(this.PanelHourLunnar);
             this.PanelLunnarDate.Controls.Add(this.PanelName);
-            this.PanelLunnarDate.Location = new System.Drawing.Point(0, 450);
+            this.PanelLunnarDate.Location = new System.Drawing.Point(0, 451);
             this.PanelLunnarDate.Name = "PanelLunnarDate";
             this.PanelLunnarDate.ShadowDecoration.Parent = this.PanelLunnarDate;
-            this.PanelLunnarDate.Size = new System.Drawing.Size(1009, 170);
+            this.PanelLunnarDate.Size = new System.Drawing.Size(1009, 169);
             this.PanelLunnarDate.TabIndex = 1;
             // 
             // ButtonToday
             // 
-            this.ButtonToday.BackColor = System.Drawing.Color.Cyan;
-            this.ButtonToday.BorderColor = System.Drawing.Color.White;
+            this.ButtonToday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ButtonToday.BorderColor = System.Drawing.Color.DimGray;
             this.ButtonToday.BorderThickness = 4;
             this.ButtonToday.CheckedState.Parent = this.ButtonToday;
             this.ButtonToday.CustomImages.Parent = this.ButtonToday;
             this.ButtonToday.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ButtonToday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ButtonToday.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ButtonToday.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.ButtonToday.ForeColor = System.Drawing.Color.White;
+            this.ButtonToday.ForeColor = System.Drawing.Color.DarkGreen;
             this.ButtonToday.HoverState.Parent = this.ButtonToday;
             this.ButtonToday.Location = new System.Drawing.Point(935, 0);
             this.ButtonToday.Name = "ButtonToday";
@@ -411,7 +409,7 @@ namespace Calendar
             this.ButtonPre.FlatAppearance.BorderSize = 0;
             this.ButtonPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonPre.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
-            this.ButtonPre.IconColor = System.Drawing.Color.PaleTurquoise;
+            this.ButtonPre.IconColor = System.Drawing.Color.DarkSlateGray;
             this.ButtonPre.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonPre.IconSize = 72;
             this.ButtonPre.Location = new System.Drawing.Point(305, 4);
@@ -427,7 +425,7 @@ namespace Calendar
             this.ButtonNext.FlatAppearance.BorderSize = 0;
             this.ButtonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonNext.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
-            this.ButtonNext.IconColor = System.Drawing.Color.PaleTurquoise;
+            this.ButtonNext.IconColor = System.Drawing.Color.DarkSlateGray;
             this.ButtonNext.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonNext.IconSize = 72;
             this.ButtonNext.Location = new System.Drawing.Point(653, 1);
@@ -456,14 +454,13 @@ namespace Calendar
             // ButtonMonth
             // 
             this.ButtonMonth.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonMonth.BorderColor = System.Drawing.Color.White;
             this.ButtonMonth.BorderRadius = 15;
             this.ButtonMonth.BorderThickness = 4;
             this.ButtonMonth.CheckedState.Parent = this.ButtonMonth;
             this.ButtonMonth.CustomImages.Parent = this.ButtonMonth;
-            this.ButtonMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ButtonMonth.FillColor = System.Drawing.Color.LightSeaGreen;
             this.ButtonMonth.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.ButtonMonth.ForeColor = System.Drawing.Color.White;
+            this.ButtonMonth.ForeColor = System.Drawing.Color.Black;
             this.ButtonMonth.HoverState.Parent = this.ButtonMonth;
             this.ButtonMonth.Location = new System.Drawing.Point(372, 4);
             this.ButtonMonth.Name = "ButtonMonth";
@@ -481,7 +478,7 @@ namespace Calendar
             this.PanelMonth.Controls.Add(this.ButtonNext);
             this.PanelMonth.Controls.Add(this.ButtonPre);
             this.PanelMonth.Controls.Add(this.ButtonToday);
-            this.PanelMonth.FillColor = System.Drawing.Color.Cyan;
+            this.PanelMonth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelMonth.Location = new System.Drawing.Point(0, 0);
             this.PanelMonth.Margin = new System.Windows.Forms.Padding(0);
             this.PanelMonth.Name = "PanelMonth";
@@ -495,7 +492,7 @@ namespace Calendar
             this.iconSetting.FlatAppearance.BorderSize = 0;
             this.iconSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconSetting.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.iconSetting.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.iconSetting.IconColor = System.Drawing.Color.Gray;
             this.iconSetting.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconSetting.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.iconSetting.Location = new System.Drawing.Point(3, 1);
@@ -509,7 +506,7 @@ namespace Calendar
             // 
             this.PanelDay.Controls.Add(this.labelDOW);
             this.PanelDay.Controls.Add(this.labelDay);
-            this.PanelDay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PanelDay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelDay.ForeColor = System.Drawing.Color.Red;
             this.PanelDay.Location = new System.Drawing.Point(398, 6);
             this.PanelDay.Name = "PanelDay";
@@ -520,10 +517,10 @@ namespace Calendar
             // labelDOW
             // 
             this.labelDOW.AutoSize = true;
-            this.labelDOW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelDOW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.labelDOW.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDOW.ForeColor = System.Drawing.Color.Red;
-            this.labelDOW.Location = new System.Drawing.Point(10, 150);
+            this.labelDOW.Location = new System.Drawing.Point(8, 131);
             this.labelDOW.Name = "labelDOW";
             this.labelDOW.Size = new System.Drawing.Size(196, 46);
             this.labelDOW.TabIndex = 1;
@@ -536,7 +533,7 @@ namespace Calendar
             this.labelDay.BackColor = System.Drawing.Color.Transparent;
             this.labelDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 92F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDay.ForeColor = System.Drawing.Color.Red;
-            this.labelDay.Location = new System.Drawing.Point(8, 9);
+            this.labelDay.Location = new System.Drawing.Point(12, 9);
             this.labelDay.Name = "labelDay";
             this.labelDay.Size = new System.Drawing.Size(198, 141);
             this.labelDay.TabIndex = 0;
@@ -549,7 +546,7 @@ namespace Calendar
             this.ButtonNote.FlatAppearance.BorderSize = 0;
             this.ButtonNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonNote.IconChar = FontAwesome.Sharp.IconChar.StickyNote;
-            this.ButtonNote.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ButtonNote.IconColor = System.Drawing.Color.DimGray;
             this.ButtonNote.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ButtonNote.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ButtonNote.Location = new System.Drawing.Point(941, 6);
@@ -561,7 +558,7 @@ namespace Calendar
             // 
             // PanelQuote
             // 
-            this.PanelQuote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PanelQuote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelQuote.Controls.Add(this.TextboxAuthor);
             this.PanelQuote.Controls.Add(this.TextboxQuote);
             this.PanelQuote.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -583,11 +580,11 @@ namespace Calendar
             this.TextboxAuthor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextboxAuthor.DisabledState.Parent = this.TextboxAuthor;
             this.TextboxAuthor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextboxAuthor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.TextboxAuthor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TextboxAuthor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxAuthor.FocusedState.Parent = this.TextboxAuthor;
             this.TextboxAuthor.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.TextboxAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.TextboxAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.TextboxAuthor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxAuthor.HoverState.Parent = this.TextboxAuthor;
             this.TextboxAuthor.Location = new System.Drawing.Point(0, 86);
@@ -605,6 +602,7 @@ namespace Calendar
             // TextboxQuote
             // 
             this.TextboxQuote.BackColor = System.Drawing.Color.Transparent;
+            this.TextboxQuote.BorderColor = System.Drawing.Color.Black;
             this.TextboxQuote.BorderThickness = 0;
             this.TextboxQuote.Cursor = System.Windows.Forms.Cursors.Default;
             this.TextboxQuote.DefaultText = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
@@ -613,11 +611,11 @@ namespace Calendar
             this.TextboxQuote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextboxQuote.DisabledState.Parent = this.TextboxQuote;
             this.TextboxQuote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextboxQuote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.TextboxQuote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TextboxQuote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxQuote.FocusedState.Parent = this.TextboxQuote;
             this.TextboxQuote.Font = new System.Drawing.Font("Consolas", 11.25F);
-            this.TextboxQuote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.TextboxQuote.ForeColor = System.Drawing.Color.Black;
             this.TextboxQuote.HideSelection = false;
             this.TextboxQuote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxQuote.HoverState.Parent = this.TextboxQuote;
@@ -626,6 +624,7 @@ namespace Calendar
             this.TextboxQuote.Multiline = true;
             this.TextboxQuote.Name = "TextboxQuote";
             this.TextboxQuote.PasswordChar = '\0';
+            this.TextboxQuote.PlaceholderForeColor = System.Drawing.Color.White;
             this.TextboxQuote.PlaceholderText = "";
             this.TextboxQuote.ReadOnly = true;
             this.TextboxQuote.SelectedText = "";
@@ -648,6 +647,7 @@ namespace Calendar
             // TextboxEvent
             // 
             this.TextboxEvent.AcceptsReturn = true;
+            this.TextboxEvent.BorderColor = System.Drawing.Color.Transparent;
             this.TextboxEvent.BorderThickness = 0;
             this.TextboxEvent.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextboxEvent.DefaultText = "";
@@ -657,7 +657,7 @@ namespace Calendar
             this.TextboxEvent.DisabledState.Parent = this.TextboxEvent;
             this.TextboxEvent.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TextboxEvent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextboxEvent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.TextboxEvent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TextboxEvent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextboxEvent.FocusedState.Parent = this.TextboxEvent;
             this.TextboxEvent.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
@@ -683,12 +683,12 @@ namespace Calendar
             this.PanelImage.Controls.Add(this.PanelQuote);
             this.PanelImage.Controls.Add(this.ButtonNote);
             this.PanelImage.Controls.Add(this.PanelDay);
-            this.PanelImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PanelImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelImage.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.PanelImage.Location = new System.Drawing.Point(0, 66);
+            this.PanelImage.Location = new System.Drawing.Point(0, 65);
             this.PanelImage.Name = "PanelImage";
             this.PanelImage.ShadowDecoration.Parent = this.PanelImage;
-            this.PanelImage.Size = new System.Drawing.Size(1009, 384);
+            this.PanelImage.Size = new System.Drawing.Size(1009, 387);
             this.PanelImage.TabIndex = 8;
             // 
             // DisplayDate

@@ -120,7 +120,7 @@ namespace Calendar
             this.ButtonFind1.CheckedState.Parent = this.ButtonFind1;
             this.ButtonFind1.CustomImages.Parent = this.ButtonFind1;
             this.ButtonFind1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.ButtonFind1.ForeColor = System.Drawing.Color.White;
+            this.ButtonFind1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ButtonFind1.HoverState.Parent = this.ButtonFind1;
             this.ButtonFind1.Location = new System.Drawing.Point(849, 54);
             this.ButtonFind1.Name = "ButtonFind1";
@@ -200,8 +200,9 @@ namespace Calendar
             this.ButtonName.CheckedState.Parent = this.ButtonName;
             this.ButtonName.CustomImages.Parent = this.ButtonName;
             this.ButtonName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtonName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonName.ForeColor = System.Drawing.Color.White;
+            this.ButtonName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ButtonName.Font = new System.Drawing.Font("Segoe UI Semibold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonName.ForeColor = System.Drawing.Color.SeaGreen;
             this.ButtonName.HoverState.Parent = this.ButtonName;
             this.ButtonName.Location = new System.Drawing.Point(0, 0);
             this.ButtonName.Name = "ButtonName";
@@ -295,8 +296,8 @@ namespace Calendar
             // 
             this.ButtonVN.CheckedState.Parent = this.ButtonVN;
             this.ButtonVN.CustomImages.Parent = this.ButtonVN;
-            this.ButtonVN.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonVN.ForeColor = System.Drawing.Color.White;
+            this.ButtonVN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonVN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ButtonVN.HoverState.Parent = this.ButtonVN;
             this.ButtonVN.Location = new System.Drawing.Point(0, 0);
             this.ButtonVN.Name = "ButtonVN";
@@ -382,8 +383,8 @@ namespace Calendar
             // 
             this.ButtonWorld.CheckedState.Parent = this.ButtonWorld;
             this.ButtonWorld.CustomImages.Parent = this.ButtonWorld;
-            this.ButtonWorld.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonWorld.ForeColor = System.Drawing.Color.White;
+            this.ButtonWorld.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonWorld.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ButtonWorld.HoverState.Parent = this.ButtonWorld;
             this.ButtonWorld.Location = new System.Drawing.Point(0, 0);
             this.ButtonWorld.Name = "ButtonWorld";

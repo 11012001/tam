@@ -62,14 +62,14 @@
             this.PanelDisplay.Location = new System.Drawing.Point(210, 0);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(1006, 620);
+            this.PanelDisplay.Size = new System.Drawing.Size(1009, 620);
             this.PanelDisplay.TabIndex = 8;
             // 
             // PanelIcon
             // 
             this.PanelIcon.BorderColor = System.Drawing.Color.White;
             this.PanelIcon.Controls.Add(this.ClockLB);
-            this.PanelIcon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PanelIcon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.PanelIcon.Location = new System.Drawing.Point(0, 0);
             this.PanelIcon.Name = "PanelIcon";
             this.PanelIcon.ShadowDecoration.Parent = this.PanelIcon;
@@ -79,15 +79,16 @@
             // ClockLB
             // 
             this.ClockLB.BackColor = System.Drawing.Color.Transparent;
-            this.ClockLB.Font = new System.Drawing.Font("DS-Digital", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockLB.Font = new System.Drawing.Font("DS-Digital", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClockLB.Location = new System.Drawing.Point(12, 12);
             this.ClockLB.Name = "ClockLB";
-            this.ClockLB.Size = new System.Drawing.Size(155, 47);
+            this.ClockLB.Size = new System.Drawing.Size(133, 38);
             this.ClockLB.TabIndex = 2;
             this.ClockLB.Text = "00:00:00";
             // 
             // dtpk
             // 
+            this.dtpk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.dtpk.CheckedState.Parent = this.dtpk;
             this.dtpk.CustomFormat = "dd/MM/yyyy";
             this.dtpk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -121,7 +122,7 @@
             this.PanelSetting.Controls.Add(this.ButtonWeatherForecast);
             this.PanelSetting.Controls.Add(this.PanelIcon);
             this.PanelSetting.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelSetting.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PanelSetting.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelSetting.Location = new System.Drawing.Point(0, 0);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
@@ -291,7 +292,7 @@
             // 
             // iconButtonClose
             // 
-            this.iconButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.iconButtonClose.BackColor = System.Drawing.Color.DarkKhaki;
             this.iconButtonClose.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.iconButtonClose.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.iconButtonClose.FlatAppearance.BorderSize = 10;
@@ -321,7 +322,7 @@
             this.ButtonDate.Location = new System.Drawing.Point(0, 109);
             this.ButtonDate.Margin = new System.Windows.Forms.Padding(0);
             this.ButtonDate.Name = "ButtonDate";
-            this.ButtonDate.PressedColor = System.Drawing.Color.Gray;
+            this.ButtonDate.PressedColor = System.Drawing.SystemColors.GrayText;
             this.ButtonDate.ShadowDecoration.Parent = this.ButtonDate;
             this.ButtonDate.Size = new System.Drawing.Size(210, 45);
             this.ButtonDate.TabIndex = 6;
