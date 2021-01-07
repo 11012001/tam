@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SQLite.3.13.0\build\net45\SQLite.props" Condition="Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619ACBA7-D124-4DE0-8BAE-F1E730183F19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Calendar</RootNamespace>
+    <AssemblyName>Calendar</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Augustine.VietnameseCalendar.Core">
+      <HintPath>..\..\..\Calendar\Project\bin\Debug\Augustine.VietnameseCalendar.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Calendar\Project\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="XanderUI">
+      <HintPath>C:\Users\Admin\Downloads\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="12ConGiap.cs" />
+    <Compile Include="Cons.cs" />
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomButton.Designer.cs">
+      <DependentUpon>CustomButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineClass.cs" />
+    <Compile Include="DeadLineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeadLineControl.Designer.cs">
+      <DependentUpon>DeadLineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadLineNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadLineNote.Designer.cs">
+      <DependentUpon>DeadLineNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayDetailDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayDetailDate.Designer.cs">
+      <DependentUpon>DisplayDetailDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayLunnar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayLunnar.Designer.cs">
+      <DependentUpon>DisplayLunnar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayChangeDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayChangeDate.Designer.cs">
+      <DependentUpon>DisplayChangeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayCountDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayCountDay.Designer.cs">
+      <DependentUpon>DisplayCountDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayDetailEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayDetailEvent.Designer.cs">
+      <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayTutorial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayTutorial.Designer.cs">
+      <DependentUpon>DisplayTutorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayTuVi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayTuVi.Designer.cs">
+      <DependentUpon>DisplayTuVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayVanKhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayVanKhan.Designer.cs">
+      <DependentUpon>DisplayVanKhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayWF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayWF.Designer.cs">
+      <DependentUpon>DisplayWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralNoteForm.Designer.cs">
+      <DependentUpon>GeneralNoteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LunnarCalendar.cs" />
+    <Compile Include="NoteData.cs" />
+    <Compile Include="Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayDate.Designer.cs">
+      <DependentUpon>DisplayDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicDate.cs" />
+    <Compile Include="SpeechClass.cs" />
+    <Compile Include="SpeechJSon.cs" />
+    <Compile Include="StringText.cs" />
+    <Compile Include="ToDoClass.cs" />
+    <Compile Include="ToDoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToDoControl.Designer.cs">
+      <DependentUpon>ToDoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToDoNote.Designer.cs">
+      <DependentUpon>ToDoNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TuViClass.cs" />
+    <Compile Include="VanKhanString.cs" />
+    <Compile Include="WeatherInfo.cs" />
+    <EmbeddedResource Include="DeadLineControl.resx">
+      <DependentUpon>DeadLineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadLineNote.resx">
+      <DependentUpon>DeadLineNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayDetailDate.resx">
+      <DependentUpon>DisplayDetailDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayLunnar.resx">
+      <DependentUpon>DisplayLunnar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayChangeDate.resx">
+      <DependentUpon>DisplayChangeDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayCountDay.resx">
+      <DependentUpon>DisplayCountDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayDetailEvent.resx">
+      <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayTutorial.resx">
+      <DependentUpon>DisplayTutorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayTuVi.resx">
+      <DependentUpon>DisplayTuVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayVanKhan.resx">
+      <DependentUpon>DisplayVanKhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayWF.resx">
+      <DependentUpon>DisplayWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralNoteForm.resx">
+      <DependentUpon>GeneralNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayDate.resx">
+      <DependentUpon>DisplayDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToDoControl.resx">
+      <DependentUpon>ToDoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToDoNote.resx">
+      <DependentUpon>ToDoNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="12ConGiap\Dan.png" />
+    <Content Include="12ConGiap\Dau.png" />
+    <Content Include="12ConGiap\Hoi.png" />
+    <Content Include="12ConGiap\Mao.png" />
+    <Content Include="12ConGiap\Mui.png" />
+    <Content Include="12ConGiap\Ngo.png" />
+    <Content Include="12ConGiap\Suu.png" />
+    <Content Include="12ConGiap\Than.png" />
+    <Content Include="12ConGiap\Thin.png" />
+    <Content Include="12ConGiap\Ti.png" />
+    <Content Include="12ConGiap\Tuat.png" />
+    <Content Include="12ConGiap\Ty.png" />
+    <Content Include="FileText\ChamNgon.txt" />
+    <Content Include="FileText\DescriptionWeather.txt" />
+    <Content Include="FileText\HDSD.txt" />
+    <Content Include="FileText\IDCity.txt" />
+    <Content Include="FileText\MainWeather.txt" />
+    <Content Include="Images\HacDao.png" />
+    <Content Include="Images\HoangDao.png" />
+    <Content Include="NhiThapBatTu\0.txt" />
+    <Content Include="NhiThapBatTu\1.txt" />
+    <Content Include="NhiThapBatTu\10.txt" />
+    <Content Include="NhiThapBatTu\11.txt" />
+    <Content Include="NhiThapBatTu\12.txt" />
+    <Content Include="NhiThapBatTu\13.txt" />
+    <Content Include="NhiThapBatTu\14.txt" />
+    <Content Include="NhiThapBatTu\15.txt" />
+    <Content Include="NhiThapBatTu\16.txt" />
+    <Content Include="NhiThapBatTu\17.txt" />
+    <Content Include="NhiThapBatTu\18.txt" />
+    <Content Include="NhiThapBatTu\19.txt" />
+    <Content Include="NhiThapBatTu\2.txt" />
+    <Content Include="NhiThapBatTu\20.txt" />
+    <Content Include="NhiThapBatTu\21.txt" />
+    <Content Include="NhiThapBatTu\22.txt" />
+    <Content Include="NhiThapBatTu\23.txt" />
+    <Content Include="NhiThapBatTu\24.txt" />
+    <Content Include="NhiThapBatTu\25.txt" />
+    <Content Include="NhiThapBatTu\26.txt" />
+    <Content Include="NhiThapBatTu\27.txt" />
+    <Content Include="NhiThapBatTu\3.txt" />
+    <Content Include="NhiThapBatTu\4.txt" />
+    <Content Include="NhiThapBatTu\5.txt" />
+    <Content Include="NhiThapBatTu\6.txt" />
+    <Content Include="NhiThapBatTu\7.txt" />
+    <Content Include="NhiThapBatTu\8.txt" />
+    <Content Include="NhiThapBatTu\9.txt" />
+    <Content Include="TuVi\Nam\AtDauNam.txt" />
+    <Content Include="TuVi\Nam\AtHoiNam.txt" />
+    <Content Include="TuVi\Nam\AtMaoNam.txt" />
+    <Content Include="TuVi\Nam\AtMuiNam.txt" />
+    <Content Include="TuVi\Nam\AtSuuNam.txt" />
+    <Content Include="TuVi\Nam\AtTyNam.txt" />
+    <Content Include="TuVi\Nam\BinhDanNam.txt" />
+    <Content Include="TuVi\Nam\BinhNgoNam.txt" />
+    <Content Include="TuVi\Nam\BinhThanNam.txt" />
+    <Content Include="TuVi\Nam\BinhThinNam.txt" />
+    <Content Include="TuVi\Nam\BinhTuatNam.txt" />
+    <Content Include="TuVi\Nam\BinhTyNam.txt" />
+    <Content Include="TuVi\Nam\CanhDanNam.txt" />
+    <Content Include="TuVi\Nam\CanhNgoNam.txt" />
+    <Content Include="TuVi\Nam\CanhThanNam.txt" />
+    <Content Include="TuVi\Nam\CanhThinNam.txt" />
+    <Content Include="TuVi\Nam\CanhTuatNam.txt" />
+    <Content Include="TuVi\Nam\CanhTyNam.txt" />
+    <Content Include="TuVi\Nam\DinhDauNam.txt" />
+    <Content Include="TuVi\Nam\DinhHoiNam.txt" />
+    <Content Include="TuVi\Nam\DinhMaoNam.txt" />
+    <Content Include="TuVi\Nam\DinhMuiNam.txt" />
+    <Content Include="TuVi\Nam\DinhSuuNam.txt" />
+    <Content Include="TuVi\Nam\DinhTyNam.txt" />
+    <Content Include="TuVi\Nam\GiapDanNam.txt" />
+    <Content Include="TuVi\Nam\GiapNgoNam.txt" />
+    <Content Include="TuVi\Nam\GiapThanNam.txt" />
+    <Content Include="TuVi\Nam\GiapThinNam.txt" />
+    <Content Include="TuVi\Nam\GiapTuatNam.txt" />
+    <Content Include="TuVi\Nam\GiapTyNam.txt" />
+    <Content Include="TuVi\Nam\KyDauNam.txt" />
+    <Content Include="TuVi\Nam\KyHoiNam.txt" />
+    <Content Include="TuVi\Nam\KyMaoNam.txt" />
+    <Content Include="TuVi\Nam\KyMuiNam.txt" />
+    <Content Include="TuVi\Nam\KySuuNam.txt" />
+    <Content Include="TuVi\Nam\KyTyNam.txt" />
+    <Content Include="TuVi\Nam\MauDanNam.txt" />
+    <Content Include="TuVi\Nam\MauNgoNam.txt" />
+    <Content Include="TuVi\Nam\MauThanNam.txt" />
+    <Content Include="TuVi\Nam\MauThinNam.txt" />
+    <Content Include="TuVi\Nam\MauTuatNam.txt" />
+    <Content Include="TuVi\Nam\MauTyNam.txt" />
+    <Content Include="TuVi\Nam\NhamDanNam.txt" />
+    <Content Include="TuVi\Nam\NhamNgoNam.txt" />
+    <Content Include="TuVi\Nam\NhamThanNam.txt" />
+    <Content Include="TuVi\Nam\NhamThinNam.txt" />
+    <Content Include="TuVi\Nam\NhamTuatNam.txt" />
+    <Content Include="TuVi\Nam\NhamTyNam.txt" />
+    <Content Include="TuVi\Nam\QuyDauNam.txt" />
+    <Content Include="TuVi\Nam\QuyHoiNam.txt" />
+    <Content Include="TuVi\Nam\QuyMaoNam.txt" />
+    <Content Include="TuVi\Nam\QuyMuiNam.txt" />
+    <Content Include="TuVi\Nam\QuySuuNam.txt" />
+    <Content Include="TuVi\Nam\QuyTyNam.txt" />
+    <Content Include="TuVi\Nam\TanDauNam.txt" />
+    <Content Include="TuVi\Nam\TanHoiNam.txt" />
+    <Content Include="TuVi\Nam\TanMaoNam.txt" />
+    <Content Include="TuVi\Nam\TanMuiNam.txt" />
+    <Content Include="TuVi\Nam\TanSuuNam.txt" />
+    <Content Include="TuVi\Nam\TanTyNam.txt" />
+    <Content Include="TuVi\Nu\AtDauNu.txt" />
+    <Content Include="TuVi\Nu\AtHoiNu.txt" />
+    <Content Include="TuVi\Nu\AtMaoNu.txt" />
+    <Content Include="TuVi\Nu\AtMuiNu.txt" />
+    <Content Include="TuVi\Nu\AtSuuNu.txt" />
+    <Content Include="TuVi\Nu\AtTyNu.txt" />
+    <Content Include="TuVi\Nu\BinhDanNu.txt" />
+    <Content Include="TuVi\Nu\BinhNgoNu.txt" />
+    <Content Include="TuVi\Nu\BinhThanNu.txt" />
+    <Content Include="TuVi\Nu\BinhThinNu.txt" />
+    <Content Include="TuVi\Nu\BinhTuatNu.txt" />
+    <Content Include="TuVi\Nu\BinhTyNu.txt" />
+    <Content Include="TuVi\Nu\CanhDanNu.txt" />
+    <Content Include="TuVi\Nu\CanhNgoNu.txt" />
+    <Content Include="TuVi\Nu\CanhThanNu.txt" />
+    <Content Include="TuVi\Nu\CanhThinNu.txt" />
+    <Content Include="TuVi\Nu\CanhTuatNu.txt" />
+    <Content Include="TuVi\Nu\CanhTyNu.txt" />
+    <Content Include="TuVi\Nu\DinhDauNu.txt" />
+    <Content Include="TuVi\Nu\DinhHoiNu.txt" />
+    <Content Include="TuVi\Nu\DinhMaoNu.txt" />
+    <Content Include="TuVi\Nu\DinhMuiNu.txt" />
+    <Content Include="TuVi\Nu\DinhSuuNu.txt" />
+    <Content Include="TuVi\Nu\DinhTyNu.txt" />
+    <Content Include="TuVi\Nu\GiapDanNu.txt" />
+    <Content Include="TuVi\Nu\GiapNgoNu.txt" />
+    <Content Include="TuVi\Nu\GiapThanNu.txt" />
+    <Content Include="TuVi\Nu\GiapThinNu.txt" />
+    <Content Include="TuVi\Nu\GiapTuatNu.txt" />
+    <Content Include="TuVi\Nu\GiapTyNu.txt" />
+    <Content Include="TuVi\Nu\KyDauNu.txt" />
+    <Content Include="TuVi\Nu\KyHoiNu.txt" />
+    <Content Include="TuVi\Nu\KyMaoNu.txt" />
+    <Content Include="TuVi\Nu\KyMuiNu.txt" />
+    <Content Include="TuVi\Nu\KySuuNu.txt" />
+    <Content Include="TuVi\Nu\KyTyNu.txt" />
+    <Content Include="TuVi\Nu\MauDanNu.txt" />
+    <Content Include="TuVi\Nu\MauNgoNu.txt" />
+    <Content Include="TuVi\Nu\MauThanNu.txt" />
+    <Content Include="TuVi\Nu\MauThinNu.txt" />
+    <Content Include="TuVi\Nu\MauTuatNu.txt" />
+    <Content Include="TuVi\Nu\MauTyNu.txt" />
+    <Content Include="TuVi\Nu\NhamDanNu.txt" />
+    <Content Include="TuVi\Nu\NhamNgoNu.txt" />
+    <Content Include="TuVi\Nu\NhamThanNu.txt" />
+    <Content Include="TuVi\Nu\NhamThinNu.txt" />
+    <Content Include="TuVi\Nu\NhamTuatNu.txt" />
+    <Content Include="TuVi\Nu\NhamTyNu.txt" />
+    <Content Include="TuVi\Nu\QuyDauNu.txt" />
+    <Content Include="TuVi\Nu\QuyHoiNu.txt" />
+    <Content Include="TuVi\Nu\QuyMaoNu.txt" />
+    <Content Include="TuVi\Nu\QuyMuiNu.txt" />
+    <Content Include="TuVi\Nu\QuySuuNu.txt" />
+    <Content Include="TuVi\Nu\QuyTyNu.txt" />
+    <Content Include="TuVi\Nu\TanDauNu.txt" />
+    <Content Include="TuVi\Nu\TanHoiNu.txt" />
+    <Content Include="TuVi\Nu\TanMaoNu.txt" />
+    <Content Include="TuVi\Nu\TanMuiNu.txt" />
+    <Content Include="TuVi\Nu\TanSuuNu.txt" />
+    <Content Include="TuVi\Nu\TanTyNu.txt" />
+    <Content Include="VanKhan\Chua\VKBCK.txt" />
+    <Content Include="VanKhan\Chua\VKBTQA.txt" />
+    <Content Include="VanKhan\Chua\VKDO.txt" />
+    <Content Include="VanKhan\Chua\VKDTH.txt" />
+    <Content Include="VanKhan\Chua\VKDTT.txt" />
+    <Content Include="VanKhan\Chua\VKLP.txt" />
+    <Content Include="VanKhan\Chua\VKMTN.txt" />
+    <Content Include="VanKhan\Chua\VKTH.txt" />
+    <Content Include="VanKhan\Chua\VKTMLH.txt" />
+    <Content Include="VanKhan\Cuoi\VKCH.txt" />
+    <Content Include="VanKhan\Cuoi\VKCM.txt" />
+    <Content Include="VanKhan\Khac\VKLKT.txt" />
+    <Content Include="VanKhan\Khac\VKLMT.txt" />
+    <Content Include="VanKhan\Nha\VKCNSN.txt" />
+    <Content Include="VanKhan\Nha\VKLNT.txt" />
+    <Content Include="VanKhan\Nha\VKLTG.txt" />
+    <Content Include="VanKhan\Ram\VKLTM.txt" />
+    <Content Include="VanKhan\Ram\VKM1VS15.txt" />
+    <Content Include="VanKhan\Ram\VKRT7.txt" />
+    <Content Include="VanKhan\Ram\VKRTG.txt" />
+    <Content Include="VanKhan\Ram\VKTDN.txt" />
+    <Content Include="VanKhan\Ram\VKTDTT.txt" />
+    <Content Include="VanKhan\Ram\VKTHT.txt" />
+    <Content Include="VanKhan\Ram\VKTTT.txt" />
+    <Content Include="VanKhan\Tang\VKKDTM.txt" />
+    <Content Include="VanKhan\Tang\VKLCT.txt" />
+    <Content Include="VanKhan\Tang\VKLCT49.txt" />
+    <Content Include="VanKhan\Tang\VKLDT.txt" />
+    <Content Include="VanKhan\Tang\VKNCG.txt" />
+    <Content Include="VanKhan\Tang\VKNGD.txt" />
+    <Content Include="VanKhan\Tang\VKNGH.txt" />
+    <Content Include="VanKhan\Tang\VKNGT.txt" />
+    <Content Include="VanKhan\Tet\VKLGT.txt" />
+    <Content Include="VanKhan\Tet\VKLOT.txt" />
+    <Content Include="VanKhan\Tet\VKLTM.txt" />
+    <Content Include="VanKhan\Tet\VKLTNM.txt" />
+    <Content Include="VanKhan\Tet\VKTLM1.txt" />
+    <Content Include="VanKhan\Tet\VKTN.txt" />
+    <Content Include="VanKhan\Tet\VKTTM1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLite.3.13.0\build\net45\SQLite.props'))" />
+  </Target>
+</Project>
