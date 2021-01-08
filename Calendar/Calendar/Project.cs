@@ -406,6 +406,20 @@ namespace Calendar
 
         private void hiệnLịchNgàyToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            PanelDisplay.Controls.Clear();
+            dtpk.Value = DateTime.Now;
+            var displayDate = new DisplayDate(dtpk.Value)
+            {
+                Size = new Size(1009, 620),
+                Location = new Point(0, 0),
+                Dock = DockStyle.Fill,
+            };
+            displayDate.MonthBtn += DateDisplay_MonthBtn;
+            displayDate.Nextbtn += DateDisplay_NextBtn;
+            displayDate.Prebtn += DateDisplay_PreBtn;
+            displayDate.TDbtn += DateDisplay_TDBtn;
+            ActivateButton(ButtonDate, RGBColors.color1);
+            PanelDisplay.Controls.Add(displayDate);
             this.Show();
             NotifyIcon1.ShowBalloonTip(100, "Số việc trong ngày", "Hôm nay có " + CountSchedule + " công việc và còn " + CountDeadline + " Deadline", ToolTipIcon.Info);
         }

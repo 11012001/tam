@@ -30,6 +30,7 @@ namespace Calendar
         private void InitializeComponent()
         {
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnOK = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnLS = new System.Windows.Forms.RadioButton();
             this.rbtnLN = new System.Windows.Forms.RadioButton();
             this.rbtnMA = new System.Windows.Forms.RadioButton();
@@ -38,14 +39,13 @@ namespace Calendar
             this.rbtnBM = new System.Windows.Forms.RadioButton();
             this.rbtnLM = new System.Windows.Forms.RadioButton();
             this.labelName = new System.Windows.Forms.Label();
-            this.btnOK = new Guna.UI2.WinForms.Guna2Button();
             this.PanelSetting.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelSetting
             // 
+            this.PanelSetting.BackColor = System.Drawing.Color.White;
             this.PanelSetting.BorderColor = System.Drawing.Color.Black;
-            this.PanelSetting.BorderRadius = 15;
             this.PanelSetting.BorderThickness = 2;
             this.PanelSetting.Controls.Add(this.btnOK);
             this.PanelSetting.Controls.Add(this.rbtnLS);
@@ -56,12 +56,28 @@ namespace Calendar
             this.PanelSetting.Controls.Add(this.rbtnBM);
             this.PanelSetting.Controls.Add(this.rbtnLM);
             this.PanelSetting.Controls.Add(this.labelName);
+            this.PanelSetting.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.PanelSetting.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelSetting.Location = new System.Drawing.Point(0, 0);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
             this.PanelSetting.Size = new System.Drawing.Size(320, 320);
             this.PanelSetting.TabIndex = 0;
+            // 
+            // btnOK
+            // 
+            this.btnOK.CheckedState.Parent = this.btnOK;
+            this.btnOK.CustomImages.Parent = this.btnOK;
+            this.btnOK.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.White;
+            this.btnOK.HoverState.Parent = this.btnOK;
+            this.btnOK.Location = new System.Drawing.Point(208, 272);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.ShadowDecoration.Parent = this.btnOK;
+            this.btnOK.Size = new System.Drawing.Size(100, 36);
+            this.btnOK.TabIndex = 29;
+            this.btnOK.Text = "Xác Nhận";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // rbtnLS
             // 
@@ -158,30 +174,16 @@ namespace Calendar
             this.labelName.TabIndex = 21;
             this.labelName.Text = "Chọn giọng đọc";
             // 
-            // btnOK
-            // 
-            this.btnOK.CheckedState.Parent = this.btnOK;
-            this.btnOK.CustomImages.Parent = this.btnOK;
-            this.btnOK.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.HoverState.Parent = this.btnOK;
-            this.btnOK.Location = new System.Drawing.Point(208, 272);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.ShadowDecoration.Parent = this.btnOK;
-            this.btnOK.Size = new System.Drawing.Size(100, 36);
-            this.btnOK.TabIndex = 29;
-            this.btnOK.Text = "Xác Nhận";
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
             // FormSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(320, 320);
             this.Controls.Add(this.PanelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSetting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormSetting";
             this.PanelSetting.ResumeLayout(false);
             this.PanelSetting.PerformLayout();

@@ -286,3 +286,40 @@ D:\Study\New folder\New folder\Calendar\Calendar\obj\Debug\Calendar.csproj.CoreC
 D:\Study\New folder\New folder\Calendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
 D:\Study\New folder\New folder\Calendar\Calendar\obj\Debug\Calendar.exe
 D:\Study\New folder\New folder\Calendar\Calendar\obj\Debug\Calendar.pdb
+D:\GIT\Calendar\Calendar\bin\Debug\x86\sqlite3.dll
+D:\GIT\Calendar\Calendar\bin\Debug\x64\sqlite3.dll
+D:\GIT\Calendar\Calendar\bin\Debug\Calendar.exe.config
+D:\GIT\Calendar\Calendar\bin\Debug\Calendar.exe
+D:\GIT\Calendar\Calendar\bin\Debug\Calendar.pdb
+D:\GIT\Calendar\Calendar\bin\Debug\FontAwesome.Sharp.dll
+D:\GIT\Calendar\Calendar\bin\Debug\Guna.UI2.dll
+D:\GIT\Calendar\Calendar\bin\Debug\Newtonsoft.Json.dll
+D:\GIT\Calendar\Calendar\bin\Debug\XanderUI.dll
+D:\GIT\Calendar\Calendar\bin\Debug\Augustine.VietnameseCalendar.Core.pdb
+D:\GIT\Calendar\Calendar\bin\Debug\Augustine.VietnameseCalendar.Core.dll.config
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache
+D:\GIT\Calendar\Calendar\obj\Debug\Interop.WMPLib.dll
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.ResolveComReference.cache
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DeadLineControl.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DeadLineNote.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayDetailDate.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayLunnar.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayChangeDate.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayCountDay.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayDetailEvent.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayTutorial.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayTuVi.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayVanKhan.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayWF.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.FormSetting.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.GeneralNoteForm.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.CalendarProject.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.DisplayDate.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.Properties.Resources.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.ToDoControl.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.ToDoNote.resources
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.CoreCompileInputs.cache
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.exe
+D:\GIT\Calendar\Calendar\obj\Debug\Calendar.pdb
