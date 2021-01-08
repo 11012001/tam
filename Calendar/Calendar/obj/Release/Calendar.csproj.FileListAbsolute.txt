@@ -33,3 +33,4 @@ D:\B Pro Coder\Project\Calendar\bin\Release\XanderUI.dll
 D:\B Pro Coder\Project\Calendar\obj\Release\Calendar.csproj.CopyComplete
 D:\B Pro Coder\Project\Calendar\obj\Release\Calendar.exe
 D:\B Pro Coder\Project\Calendar\obj\Release\Calendar.pdb
+D:\B Pro Coder\Project\Calendar\obj\Release\Calendar.csprojAssemblyReference.cache
