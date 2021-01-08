@@ -186,9 +186,6 @@ D:\B Pro Coder\Project\Calendar\bin\Debug\FontAwesome.Sharp.dll
 D:\B Pro Coder\Project\Calendar\bin\Debug\Guna.UI2.dll
 D:\B Pro Coder\Project\Calendar\bin\Debug\Newtonsoft.Json.dll
 D:\B Pro Coder\Project\Calendar\bin\Debug\XanderUI.dll
-D:\B Pro Coder\Project\Calendar\bin\Debug\Augustine.VietnameseCalendar.Core.pdb
-D:\B Pro Coder\Project\Calendar\bin\Debug\Augustine.VietnameseCalendar.Core.dll.config
-D:\B Pro Coder\Project\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache
 D:\B Pro Coder\Project\Calendar\obj\Debug\Interop.WMPLib.dll
 D:\B Pro Coder\Project\Calendar\obj\Debug\Calendar.csproj.ResolveComReference.cache
 D:\B Pro Coder\Project\Calendar\obj\Debug\Calendar.DeadLineControl.resources
@@ -323,3 +320,4 @@ D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.CoreCompileInputs.cache
 D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
 D:\GIT\Calendar\Calendar\obj\Debug\Calendar.exe
 D:\GIT\Calendar\Calendar\obj\Debug\Calendar.pdb
+D:\B Pro Coder\Project\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache

@@ -37,8 +37,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Augustine.VietnameseCalendar.Core">
-      <HintPath>..\..\..\Calendar\Project\bin\Debug\Augustine.VietnameseCalendar.Core.dll</HintPath>
+    <Reference Include="Augustine.VietnameseCalendar.Core, Version=1.0.7310.23034, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Augustine.VietnameseCalendar.Core.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net48\FontAwesome.Sharp.dll</HintPath>
@@ -297,6 +298,7 @@
     <Content Include="12ConGiap\Ti.png" />
     <Content Include="12ConGiap\Tuat.png" />
     <Content Include="12ConGiap\Ty.png" />
+    <Content Include="2021.ico" />
     <Content Include="FileText\ChamNgon.txt" />
     <Content Include="FileText\DescriptionWeather.txt" />
     <Content Include="FileText\HDSD.txt" />
