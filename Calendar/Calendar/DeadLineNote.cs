@@ -137,11 +137,13 @@ namespace Calendar
 
                         }
                     }
+                    MessageBox.Show("Lưu thành công!");
                 }
                 catch
                 {
                     MessageBox.Show("Error");
                 }
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
         }

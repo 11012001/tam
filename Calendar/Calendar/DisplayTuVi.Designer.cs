@@ -73,10 +73,10 @@
             this.PanelDisplay.Controls.Add(this.iconbtnPlus);
             this.PanelDisplay.Controls.Add(this.rtbRead);
             this.PanelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelDisplay.Location = new System.Drawing.Point(0, 170);
+            this.PanelDisplay.Location = new System.Drawing.Point(0, 165);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.ShadowDecoration.Parent = this.PanelDisplay;
-            this.PanelDisplay.Size = new System.Drawing.Size(1009, 450);
+            this.PanelDisplay.Size = new System.Drawing.Size(1009, 455);
             this.PanelDisplay.TabIndex = 2;
             // 
             // tbLuuY1
@@ -96,7 +96,7 @@
             this.tbLuuY1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLuuY1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbLuuY1.HoverState.Parent = this.tbLuuY1;
-            this.tbLuuY1.Location = new System.Drawing.Point(75, 400);
+            this.tbLuuY1.Location = new System.Drawing.Point(75, 405);
             this.tbLuuY1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbLuuY1.Name = "tbLuuY1";
             this.tbLuuY1.PasswordChar = '\0';
@@ -119,7 +119,7 @@
             this.iconbtnMinus.IconSize = 50;
             this.iconbtnMinus.Location = new System.Drawing.Point(934, 395);
             this.iconbtnMinus.Name = "iconbtnMinus";
-            this.iconbtnMinus.Size = new System.Drawing.Size(75, 55);
+            this.iconbtnMinus.Size = new System.Drawing.Size(75, 60);
             this.iconbtnMinus.TabIndex = 2;
             this.iconbtnMinus.UseVisualStyleBackColor = true;
             this.iconbtnMinus.Click += new System.EventHandler(this.iconbtnMinus_Click);
@@ -135,7 +135,7 @@
             this.iconbtnPlus.IconSize = 50;
             this.iconbtnPlus.Location = new System.Drawing.Point(0, 395);
             this.iconbtnPlus.Name = "iconbtnPlus";
-            this.iconbtnPlus.Size = new System.Drawing.Size(75, 55);
+            this.iconbtnPlus.Size = new System.Drawing.Size(75, 60);
             this.iconbtnPlus.TabIndex = 1;
             this.iconbtnPlus.UseVisualStyleBackColor = true;
             this.iconbtnPlus.Click += new System.EventHandler(this.iconbtnPlus_Click);
@@ -160,7 +160,7 @@
             this.PanelSetting.Controls.Add(this.ComboBoxSolarMonth);
             this.PanelSetting.Controls.Add(this.ComboBoxSolarDay);
             this.PanelSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSetting.Location = new System.Drawing.Point(0, 70);
+            this.PanelSetting.Location = new System.Drawing.Point(0, 65);
             this.PanelSetting.Name = "PanelSetting";
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
             this.PanelSetting.Size = new System.Drawing.Size(1009, 100);
@@ -303,17 +303,17 @@
             this.PanelName.Location = new System.Drawing.Point(0, 0);
             this.PanelName.Name = "PanelName";
             this.PanelName.ShadowDecoration.Parent = this.PanelName;
-            this.PanelName.Size = new System.Drawing.Size(1009, 70);
+            this.PanelName.Size = new System.Drawing.Size(1009, 65);
             this.PanelName.TabIndex = 0;
             // 
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.Black;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.YinYang;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.iconPictureBox1.IconColor = System.Drawing.Color.Black;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 60;
+            this.iconPictureBox1.IconSize = 52;
             this.iconPictureBox1.Location = new System.Drawing.Point(616, 0);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(52, 67);
@@ -324,11 +324,11 @@
             // PictureZodiac
             // 
             this.PictureZodiac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.PictureZodiac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PictureZodiac.ForeColor = System.Drawing.Color.Black;
             this.PictureZodiac.IconChar = FontAwesome.Sharp.IconChar.YinYang;
-            this.PictureZodiac.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PictureZodiac.IconColor = System.Drawing.Color.Black;
             this.PictureZodiac.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.PictureZodiac.IconSize = 60;
+            this.PictureZodiac.IconSize = 53;
             this.PictureZodiac.Location = new System.Drawing.Point(345, 0);
             this.PictureZodiac.Name = "PictureZodiac";
             this.PictureZodiac.Size = new System.Drawing.Size(53, 67);
@@ -343,12 +343,12 @@
             this.buttonName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.buttonName.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.buttonName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonName.HoverState.Parent = this.buttonName;
             this.buttonName.Location = new System.Drawing.Point(0, 0);
             this.buttonName.Name = "buttonName";
             this.buttonName.ShadowDecoration.Parent = this.buttonName;
-            this.buttonName.Size = new System.Drawing.Size(1009, 70);
+            this.buttonName.Size = new System.Drawing.Size(1009, 65);
             this.buttonName.TabIndex = 0;
             this.buttonName.Text = "TỬ VI";
             // 

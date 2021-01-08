@@ -36,6 +36,7 @@
             this.ClockLB = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtpk = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
+            this.HideBtn = new FontAwesome.Sharp.IconButton();
             this.ButtonCountDay = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonHDSD = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonTuVi = new Guna.UI2.WinForms.Guna2Button();
@@ -48,8 +49,16 @@
             this.ButtonCalendar = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonWeatherForecast = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.thêmCôngViệcTrongNgàyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmDeadlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hiệnGhiChúToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hiệnLịchNgàyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NotifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.PanelIcon.SuspendLayout();
             this.PanelSetting.SuspendLayout();
+            this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowForm1
@@ -79,10 +88,10 @@
             // ClockLB
             // 
             this.ClockLB.BackColor = System.Drawing.Color.Transparent;
-            this.ClockLB.Font = new System.Drawing.Font("DS-Digital", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClockLB.Font = new System.Drawing.Font("DS-Digital", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClockLB.Location = new System.Drawing.Point(12, 12);
             this.ClockLB.Name = "ClockLB";
-            this.ClockLB.Size = new System.Drawing.Size(133, 38);
+            this.ClockLB.Size = new System.Drawing.Size(141, 42);
             this.ClockLB.TabIndex = 2;
             this.ClockLB.Text = "00:00:00";
             // 
@@ -108,6 +117,7 @@
             // 
             // PanelSetting
             // 
+            this.PanelSetting.Controls.Add(this.HideBtn);
             this.PanelSetting.Controls.Add(this.ButtonCountDay);
             this.PanelSetting.Controls.Add(this.dtpk);
             this.PanelSetting.Controls.Add(this.ButtonHDSD);
@@ -128,6 +138,22 @@
             this.PanelSetting.ShadowDecoration.Parent = this.PanelSetting;
             this.PanelSetting.Size = new System.Drawing.Size(210, 621);
             this.PanelSetting.TabIndex = 1;
+            // 
+            // HideBtn
+            // 
+            this.HideBtn.BackColor = System.Drawing.Color.DarkKhaki;
+            this.HideBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.HideBtn.FlatAppearance.BorderSize = 10;
+            this.HideBtn.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
+            this.HideBtn.IconColor = System.Drawing.Color.Black;
+            this.HideBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.HideBtn.IconSize = 40;
+            this.HideBtn.Location = new System.Drawing.Point(105, 572);
+            this.HideBtn.Name = "HideBtn";
+            this.HideBtn.Size = new System.Drawing.Size(105, 49);
+            this.HideBtn.TabIndex = 16;
+            this.HideBtn.UseVisualStyleBackColor = false;
+            this.HideBtn.Click += new System.EventHandler(this.HideBtn_Click);
             // 
             // ButtonCountDay
             // 
@@ -293,7 +319,6 @@
             // iconButtonClose
             // 
             this.iconButtonClose.BackColor = System.Drawing.Color.DarkKhaki;
-            this.iconButtonClose.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.iconButtonClose.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.iconButtonClose.FlatAppearance.BorderSize = 10;
             this.iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
@@ -302,7 +327,7 @@
             this.iconButtonClose.IconSize = 40;
             this.iconButtonClose.Location = new System.Drawing.Point(0, 572);
             this.iconButtonClose.Name = "iconButtonClose";
-            this.iconButtonClose.Size = new System.Drawing.Size(210, 49);
+            this.iconButtonClose.Size = new System.Drawing.Size(105, 49);
             this.iconButtonClose.TabIndex = 7;
             this.iconButtonClose.UseVisualStyleBackColor = false;
             this.iconButtonClose.Click += new System.EventHandler(this.iconButtonClose_Click);
@@ -349,7 +374,7 @@
             this.ButtonCalendar.ShadowDecoration.Parent = this.ButtonCalendar;
             this.ButtonCalendar.Size = new System.Drawing.Size(210, 45);
             this.ButtonCalendar.TabIndex = 5;
-            this.ButtonCalendar.Text = "LỊCH ÂM";
+            this.ButtonCalendar.Text = "LỊCH TỔNG QUÁT";
             this.ButtonCalendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonCalendar.Click += new System.EventHandler(this.ButtonCalendar_Click);
             // 
@@ -380,6 +405,69 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmCôngViệcTrongNgàyToolStripMenuItem,
+            this.thêmDeadlineToolStripMenuItem,
+            this.hiệnGhiChúToolStripMenuItem,
+            this.hiệnLịchNgàyToolStripMenuItem,
+            this.thoátToolStripMenuItem});
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(220, 114);
+            // 
+            // thêmCôngViệcTrongNgàyToolStripMenuItem
+            // 
+            this.thêmCôngViệcTrongNgàyToolStripMenuItem.Name = "thêmCôngViệcTrongNgàyToolStripMenuItem";
+            this.thêmCôngViệcTrongNgàyToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.thêmCôngViệcTrongNgàyToolStripMenuItem.Text = "Thêm công việc trong ngày";
+            this.thêmCôngViệcTrongNgàyToolStripMenuItem.Click += new System.EventHandler(this.thêmCôngViệcTrongNgàyToolStripMenuItem_Click_1);
+            // 
+            // thêmDeadlineToolStripMenuItem
+            // 
+            this.thêmDeadlineToolStripMenuItem.Name = "thêmDeadlineToolStripMenuItem";
+            this.thêmDeadlineToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.thêmDeadlineToolStripMenuItem.Text = "Thêm deadline";
+            this.thêmDeadlineToolStripMenuItem.Click += new System.EventHandler(this.thêmDeadlineToolStripMenuItem_Click_1);
+            // 
+            // hiệnGhiChúToolStripMenuItem
+            // 
+            this.hiệnGhiChúToolStripMenuItem.Name = "hiệnGhiChúToolStripMenuItem";
+            this.hiệnGhiChúToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.hiệnGhiChúToolStripMenuItem.Text = "Hiện ghi chú";
+            this.hiệnGhiChúToolStripMenuItem.Click += new System.EventHandler(this.hiệnGhiChúToolStripMenuItem_Click);
+            // 
+            // hiệnLịchNgàyToolStripMenuItem
+            // 
+            this.hiệnLịchNgàyToolStripMenuItem.Name = "hiệnLịchNgàyToolStripMenuItem";
+            this.hiệnLịchNgàyToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.hiệnLịchNgàyToolStripMenuItem.Text = "Hiện lịch ngày";
+            this.hiệnLịchNgàyToolStripMenuItem.Click += new System.EventHandler(this.hiệnLịchNgàyToolStripMenuItem_Click);
+            // 
+            // thoátToolStripMenuItem
+            // 
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
+            // 
+            // NotifyIcon1
+            // 
+            this.NotifyIcon1.ContextMenuStrip = this.guna2ContextMenuStrip1;
+            this.NotifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("NotifyIcon1.Icon")));
+            this.NotifyIcon1.Text = "Calendar";
+            this.NotifyIcon1.Visible = true;
+            this.NotifyIcon1.DoubleClick += new System.EventHandler(this.NotifyIcon1_DoubleClick);
+            // 
             // CalendarProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,6 +477,7 @@
             this.Controls.Add(this.PanelDisplay);
             this.Controls.Add(this.PanelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalendarProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
@@ -396,6 +485,7 @@
             this.PanelIcon.ResumeLayout(false);
             this.PanelIcon.PerformLayout();
             this.PanelSetting.ResumeLayout(false);
+            this.guna2ContextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -420,5 +510,13 @@
         private Guna.UI2.WinForms.Guna2Button ButtonCountDay;
         private Guna.UI2.WinForms.Guna2HtmlLabel ClockLB;
         private System.Windows.Forms.Timer timer1;
+        private FontAwesome.Sharp.IconButton HideBtn;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem thêmCôngViệcTrongNgàyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thêmDeadlineToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hiệnGhiChúToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hiệnLịchNgàyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon NotifyIcon1;
     }
 }

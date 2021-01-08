@@ -39,15 +39,6 @@ namespace Calendar
             Date = date;
             InitializeComponent();
         }
-        public static DisplayDate DateDisplay
-        {
-            get
-            {
-                if (dateDisplay == null)
-                    dateDisplay = new DisplayDate();
-                return dateDisplay;
-            }
-        }
 
         #region Lấy thông tin giờ, giờ âm
         private void timer_Tick(object sender, EventArgs e)
@@ -406,8 +397,6 @@ namespace Calendar
             FormSetting setting = new FormSetting();
             setting.ShowDialog();
         }
-
-
         private void display_picture()
         {
             LunnarCalendar lunnar = new LunnarCalendar();

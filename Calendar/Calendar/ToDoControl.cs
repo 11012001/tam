@@ -30,7 +30,16 @@ namespace Calendar
                 THours.ForeColor = Color.Red;
                 TMinutes.ForeColor = Color.Red;
                 Notes.ForeColor = Color.Red;
+                Conlon1.ForeColor = Color.Red;
             }
+            Notes.Location = new Point(guna2VSeparator1.Location.X + guna2VSeparator1.Size.Width + 6, 2);
+            FHours.Location = new Point(guna2VSeparator1.Location.X + guna2VSeparator1.Size.Width + 6, 45);
+            Conlon1.Location = new Point(FHours.Location.X + FHours.Size.Width + 6, 45);
+            FMinutes.Location = new Point(Conlon1.Location.X + Conlon1.Size.Width + 6, 45);
+            Separator.Location = new Point(FMinutes.Location.X + FMinutes.Size.Width + 6, 45);
+            THours.Location = new Point(Separator.Location.X + Separator.Size.Width + 6, 45);
+            Conlon2.Location = new Point(THours.Location.X + THours.Size.Width + 6, 45);
+            TMinutes.Location = new Point(Conlon2.Location.X + Conlon2.Size.Width + 6, 45);
         }
         private event EventHandler edited;
         public event EventHandler Edited

@@ -113,7 +113,7 @@ namespace Calendar
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.LemonChiffon;
+            this.guna2Button1.ForeColor = System.Drawing.Color.DarkGreen;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
             this.guna2Button1.Name = "guna2Button1";
@@ -259,6 +259,7 @@ namespace Calendar
             this.buttonEventCount.Size = new System.Drawing.Size(505, 40);
             this.buttonEventCount.TabIndex = 0;
             this.buttonEventCount.Text = "ĐẾM NGƯỢC SỰ KIỆN";
+            this.buttonEventCount.Click += new System.EventHandler(this.buttonEventCount_Click);
             // 
             // PanelDetailEvent
             // 

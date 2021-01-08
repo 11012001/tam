@@ -13,8 +13,10 @@ namespace Calendar
 {
     public partial class DisplayLunnar : UserControl
     {
-        private static DisplayLunnar calendardisplay;
 
+        #region Thông tin sơ lược
+        //Thông tin sơ lược
+        private static DisplayLunnar calendardisplay;
         public DateTime Date = DateTime.Now;
         public DisplayLunnar()
         {
@@ -41,6 +43,10 @@ namespace Calendar
         private List<List<CustomButton>> Matrix;
         private List<List<Color>> MatrixColor;
         private List<string> DateOfWeek = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+        #endregion
+
+
+        #region Tạo button ma trận và đưa số vào ma trận
         void CreateMatrix()
         {
             Matrix = new List<List<CustomButton>>();
@@ -129,7 +135,7 @@ namespace Calendar
                 if (IsEqualDate(useDate, DateTime.Now))
                     btn.TextColor = Color.Aqua;
                 if ((IsEqualDate(useDate, dtpk.Value)) && (btn.BackColor != Color.Aqua))
-                    btn.TextColor = Color.Yellow;
+                    btn.TextColor = Color.SandyBrown;
 
                 //Những ngày lễ
                 int k = IsPublicDay(useDate);
@@ -172,6 +178,38 @@ namespace Calendar
                     if (column >= 6)
                         line++;
                     useDate = useDate.AddDays(1);
+                }
+            }
+        }
+        private int IsPublicDay(DateTime date)
+        {
+            int[] arrint = PublicDate.IsPublic(date);
+            if (arrint[0] == -1)
+            {
+                if (date.DayOfWeek == DayOfWeek.Sunday)
+                {
+                    return -1;
+                }
+                else
+                {
+                    return -2;
+                }
+            }
+            else
+            {
+                int k = 0;
+                for (int i = 0; i < arrint.Length; i++)
+                {
+                    if (k < arrint[i])
+                        k = arrint[i];
+                }
+                if (k == 1)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
                 }
             }
         }
@@ -220,6 +258,10 @@ namespace Calendar
         {
             dtpk.Value = DateTime.Now;
         }
+        #endregion
+
+
+        #region Các nút chức năng
         private void NextBttn_Click(object sender, EventArgs e)
         {
             dtpk.Value = dtpk.Value.AddMonths(1);
@@ -269,40 +311,10 @@ namespace Calendar
             NoteForm.Dtpk.Value = Date;
             NoteForm.ShowDialog();
         }
-        private int IsPublicDay(DateTime date)
-        {
-            int[] arrint = PublicDate.IsPublic(date);
-            if (arrint[0] == -1)
-            {
-                if (date.DayOfWeek == DayOfWeek.Sunday)
-                {
-                    return -1;
-                }
-                else
-                {
-                    return -2;
-                }
-            }
-            else
-            {
-                int k = 0;
-                for (int i = 0; i < arrint.Length; i++)
-                {
-                    if (k < arrint[i])
-                        k = arrint[i];
-                }
-                if (k == 1)
-                {
-                    return 1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-        }
+        #endregion
 
 
+        #region Datagridview sự kiện
         //Xử lí datagridview sự kiện
         private void ShowEvent(int month,int year)
         {
@@ -420,6 +432,6 @@ namespace Calendar
                 }
             }
         }
-
+        #endregion
     }
 }

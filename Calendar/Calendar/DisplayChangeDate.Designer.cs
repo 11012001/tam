@@ -541,7 +541,7 @@ namespace Calendar
             this.ButtonChangeLuSo.CheckedState.Parent = this.ButtonChangeLuSo;
             this.ButtonChangeLuSo.CustomImages.Parent = this.ButtonChangeLuSo;
             this.ButtonChangeLuSo.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonChangeLuSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ButtonChangeLuSo.ForeColor = System.Drawing.Color.Black;
             this.ButtonChangeLuSo.HoverState.Parent = this.ButtonChangeLuSo;
             this.ButtonChangeLuSo.Location = new System.Drawing.Point(0, 0);
             this.ButtonChangeLuSo.Name = "ButtonChangeLuSo";

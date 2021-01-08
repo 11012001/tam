@@ -12,6 +12,7 @@ namespace Calendar
 {
     public partial class GeneralNoteForm : Form
     {
+        #region Tạo các usercontrol vào ControlPanel
         public int Button = 1;
         public ToDoClass c = new ToDoClass();
         public DeadlineClass d = new DeadlineClass();
@@ -20,10 +21,14 @@ namespace Calendar
             InitializeComponent();
             AddNoteToDay();
         }
+        //Thêm Note hoặc Deadline
         public void AddNoteToDay()
         {
             int y = 0;
             int i = 0;
+
+            //Thêm lập lịch
+
             if (Button == 1)
             {
                 ControlPanel.Controls.Clear();
@@ -32,16 +37,17 @@ namespace Calendar
                 Dtpk.Visible = true;
                 NextBtn.Visible = true;
                 PreviousBtn.Visible = true;
-
+                
                 DateTime datefirst = new DateTime(Dtpk.Value.Year,Dtpk.Value.Month,Dtpk.Value.Day,0,0,0);
                 DateTime dateafter = datefirst.AddDays(1).AddSeconds(-1);
+
                 string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}# order by FromH asc, FromM asc";
                 DataTable dt = NoteData.QueryAsDatatable(sql);
 
                 foreach (DataRow row in dt.Rows)
                 {
                     ToDoControl Td = new ToDoControl();
-                    Td.BackColor = System.Drawing.Color.WhiteSmoke;
+                    Td.BackColor = System.Drawing.Color.Transparent;
                     Td.Location = new System.Drawing.Point(1, -1 + y);
                     Td.Size = new System.Drawing.Size(787, 86);
                     Td.TabIndex = i++;
@@ -67,6 +73,9 @@ namespace Calendar
                     y += Td.Height;
                 }
             }
+
+            //Thêm Deadline
+
             if (Button == 2)
             {
                 AddJobBtn.Text = "Thêm Deadline";
@@ -80,37 +89,47 @@ namespace Calendar
                 DataTable dt = NoteData.QueryAsDatatable(sql);
                 foreach (DataRow row in dt.Rows)
                 {
-                    if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
+                    if (Convert.ToInt32(row["Priority"]) != 5)
                     {
-                        sql = $"update Deadline set Priority = '{1}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
-                        NoteData.UpdateInsertDelete(sql);
-                    }
-                    else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
-                    {
-                        sql = $"update Deadline set Priority = '{2}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]); ;
-                        NoteData.UpdateInsertDelete(sql);
-                    }
-                    else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
-                    {
-                        sql = $"update Deadline set Priority = '{3}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]); ;
-                        NoteData.UpdateInsertDelete(sql);
-                    }
-                    else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
-                    {
-                        sql = $"update Deadline set Priority = '{4}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]); ;
-                        NoteData.UpdateInsertDelete(sql);
+                        if (DateTime.Now > Convert.ToDateTime(row["DateEnd"]))
+                        {
+                            sql = $"update Deadline set Priority ='{6}' where IdDeadline =" + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
+                        {
+                            sql = $"update Deadline set Priority = '{1}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
+                        {
+                            sql = $"update Deadline set Priority = '{2}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
+                        {
+                            sql = $"update Deadline set Priority = '{3}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
+                        {
+                            sql = $"update Deadline set Priority = '{4}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
                     }
                 }
-                sql = $"select * from Deadline order by Priority asc";
+                sql = $"select * from Deadline order by Priority asc, DateEnd asc";
                 dt = NoteData.QueryAsDatatable(sql);
                 foreach (DataRow row in dt.Rows)
                 {
                     DeadLineControl DL = new DeadLineControl();
-                    DL.BackColor = System.Drawing.Color.WhiteSmoke;
+                    DL.BackColor = System.Drawing.Color.Transparent;
                     DL.Location = new System.Drawing.Point(1, -1 + y);
-                    DL.Size = new System.Drawing.Size(787, 106);
+                    DL.Size = new System.Drawing.Size(787, 94);
                     DL.TabIndex = i++;
                     DL.Tag = Convert.ToInt32(row["IdDeadline"]);
+                    if (Convert.ToInt32(row["Priority"]) == 5) 
+                        DL.DoneCB.Checked = true;
                     if (Convert.ToInt32(row["Importance"]) == 1)
                     {
                         d.CheckImportant = true;
@@ -132,10 +151,17 @@ namespace Calendar
                     DL.Edited += DL_Edited;
                     DL.AddDetails(d);
                     DL.Details += DL_Details;
+                    DL.Done += DL_Done;
                     y += DL.Height;
                 }
             }
         }
+        #endregion
+
+
+        #region Tạo chức năng xóa, sửa, xem chi tiết cho các nút trong các usercontrol
+
+        //Thêm chức năng nút xóa cho lập lịch
         void Td_Deleted(object sender, EventArgs e)
         {
             ToDoControl Td = sender as ToDoControl;
@@ -145,6 +171,7 @@ namespace Calendar
             ControlPanel.Controls.Clear();
             AddNoteToDay();
         }
+        //Thêm chức năng nút edit cho lập lịch
         void Td_Edited(object sender, EventArgs e)
         {
             ToDoControl TDC = sender as ToDoControl;
@@ -162,6 +189,7 @@ namespace Calendar
                 Td.DescriptionTB.Text = row["Description"].ToString();
                 Td.FromDtpk.Value = Convert.ToDateTime(row["AppDate"]);
                 Td.TitleLabel.Text = "Cập nhật ghi chú";
+                Td.DescriptionTB.ForeColor = Color.Black;
                 if (Convert.ToInt32(row["Important"]) == 1)
                 {
                     Td.ImportantCheck.Checked = true;
@@ -172,10 +200,14 @@ namespace Calendar
                 }
 
             }
-            Td.ShowDialog();
-            ControlPanel.Controls.Clear();
-            AddNoteToDay();
+            Td.MainNote.ForeColor = Color.Black;
+            if (Td.ShowDialog() == DialogResult.OK)
+            {
+                ControlPanel.Controls.Clear();
+                AddNoteToDay();
+            }
         }
+        //Thêm chức năng nút chi tiết cho lập lịch
         void Td_Details(object sender, EventArgs e)
         {
             ToDoControl TDC = sender as ToDoControl;
@@ -214,6 +246,9 @@ namespace Calendar
             ControlPanel.Controls.Clear();
             AddNoteToDay();
         }
+
+        //Thêm chức năng nút xóa cho deadline
+
         void DL_Deleted(object sender, EventArgs e)
         {
             DeadLineControl DL = sender as DeadLineControl;
@@ -223,10 +258,15 @@ namespace Calendar
             ControlPanel.Controls.Clear();
             AddNoteToDay();
         }
+
+        //Thêm chức năng nút edit cho lập lịch
+
         void DL_Edited(object sender, EventArgs e)
         {
             DeadLineControl DLC = sender as DeadLineControl;
             var DL = new DeadLineNote();
+            DL.MainNote.ForeColor = Color.Black;
+            DL.DescriptionTB.ForeColor = Color.Black;
             string sql = $"select * from Deadline where IdDeadline = {DLC.Tag}";
             DL.IDDeadLine = Convert.ToInt32(DLC.Tag);
             DataTable dt = NoteData.QueryAsDatatable(sql);
@@ -240,7 +280,8 @@ namespace Calendar
                     DL.UrgentCB.SelectedIndex = 2;
                 else
                     DL.UrgentCB.SelectedIndex = 3;
-                
+                DL.MainNote.ForeColor = Color.Black;
+                DL.DescriptionTB.ForeColor = Color.Black;
                 DL.HoursCB.SelectedIndex = Convert.ToInt32(row["TimeHEnd"]);
                 DL.MinutesCB.SelectedIndex = Convert.ToInt32(row["TimeMEnd"]);
                 DL.Dtpk.Value = Convert.ToDateTime(row["DateEnd"]);
@@ -255,11 +296,15 @@ namespace Calendar
                     DL.ImportantCheck.Checked = false;
                 }
             }
-                
-            DL.ShowDialog();
-            ControlPanel.Controls.Clear();
-            AddNoteToDay();
+            if (DL.ShowDialog() == DialogResult.OK)
+            {
+                ControlPanel.Controls.Clear();
+                AddNoteToDay();
+            }
         }
+
+        //Thêm chức năng nút chi tiết cho deadline
+
         void DL_Details(object sender, EventArgs e)
         {
             DeadLineControl DLC = sender as DeadLineControl;
@@ -300,32 +345,30 @@ namespace Calendar
             DL.SaveBtn.Visible = false;
             DL.ShowDialog();
         }
-        public int MaxDayOfMonth(int month)
+
+        //Thay đổi trạng thái done
+
+        private void DL_Done(object sender, EventArgs e)
         {
-            switch (month)
+            string sql = "";
+            DeadLineControl DLC = sender as DeadLineControl;
+            if (DLC.DoneCB.Checked == true)
             {
-                case 1:
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12:
-                    return 31;
-                case 2:
-                    {
-                        if (month % 4 == 0 || month % 100 != 0)
-                            return 29;
-                        return 28;
-                    }
+                sql = $"update Deadline set Priority = '{5}' where IdDeadline = { DLC.Tag}";
+                NoteData.UpdateInsertDelete(sql);
+                AddNoteToDay();
+            }   
+            else
+            {
+                sql = $"update Deadline set Priority = '{0}' where IdDeadline = { DLC.Tag}";
+                NoteData.UpdateInsertDelete(sql);
+                AddNoteToDay();
             }
-            return 30;
         }
-        public void AddDateTime(DateTime First, DateTime Last)
-        {
-            First = new DateTime(Dtpk.Value.Year, Dtpk.Value.Month, Dtpk.Value.Day);
-            Last = First.AddDays(1);
-        }
+        #endregion
+
+
+        #region Các nút chức năng trong Form chung
         private void AddJobBtn_Click_1(object sender, EventArgs e)
         {
             if (Button == 1)
@@ -365,17 +408,26 @@ namespace Calendar
             this.Close();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void DeadlineBtn_Click(object sender, EventArgs e)
         {
             Button = 2;
-            ControlPanel.Controls.Clear();
+            DeadlineBtn.FillColor = Color.Transparent;
+            TodoBtn.FillColor = Color.PaleTurquoise;
             AddNoteToDay();
         }
 
         private void ToDoBtn_Click(object sender, EventArgs e)
         {
             Button = 1;
+            TodoBtn.FillColor = Color.Transparent;
+            DeadlineBtn.FillColor = Color.PaleTurquoise;
             AddNoteToDay();
         }
+
+        private void GeneralNoteForm_Load(object sender, EventArgs e)
+        {
+            TodoBtn.FillColor = Color.Transparent;
+        }
+        #endregion
     }
 }

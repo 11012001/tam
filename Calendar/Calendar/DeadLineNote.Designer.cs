@@ -60,7 +60,7 @@
             "3 Ngày",
             "1 Tuần",
             "2 Tuần"});
-            this.UrgentCB.Location = new System.Drawing.Point(328, 291);
+            this.UrgentCB.Location = new System.Drawing.Point(395, 457);
             this.UrgentCB.Name = "UrgentCB";
             this.UrgentCB.Size = new System.Drawing.Size(121, 37);
             this.UrgentCB.TabIndex = 105;
@@ -74,7 +74,7 @@
             this.SaveBtn.Font = new System.Drawing.Font("Consolas", 12F);
             this.SaveBtn.ForeColor = System.Drawing.Color.Black;
             this.SaveBtn.HoverState.Parent = this.SaveBtn;
-            this.SaveBtn.Location = new System.Drawing.Point(321, 354);
+            this.SaveBtn.Location = new System.Drawing.Point(323, 538);
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(10);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.ShadowDecoration.Parent = this.SaveBtn;
@@ -87,7 +87,8 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(47, 291);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(88, 458);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(275, 36);
             this.guna2HtmlLabel1.TabIndex = 103;
@@ -100,11 +101,11 @@
             this.ImportantCheck.CheckedState.BorderRadius = 0;
             this.ImportantCheck.CheckedState.BorderThickness = 0;
             this.ImportantCheck.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ImportantCheck.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportantCheck.Location = new System.Drawing.Point(439, 256);
+            this.ImportantCheck.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportantCheck.Location = new System.Drawing.Point(446, 418);
             this.ImportantCheck.Margin = new System.Windows.Forms.Padding(6);
             this.ImportantCheck.Name = "ImportantCheck";
-            this.ImportantCheck.Size = new System.Drawing.Size(107, 22);
+            this.ImportantCheck.Size = new System.Drawing.Size(149, 28);
             this.ImportantCheck.TabIndex = 102;
             this.ImportantCheck.Text = "Quan trọng";
             this.ImportantCheck.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -121,7 +122,7 @@
             this.ExitBtn.Font = new System.Drawing.Font("Consolas", 12F);
             this.ExitBtn.ForeColor = System.Drawing.Color.Black;
             this.ExitBtn.HoverState.Parent = this.ExitBtn;
-            this.ExitBtn.Location = new System.Drawing.Point(439, 354);
+            this.ExitBtn.Location = new System.Drawing.Point(441, 538);
             this.ExitBtn.Margin = new System.Windows.Forms.Padding(10);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.ShadowDecoration.Parent = this.ExitBtn;
@@ -204,7 +205,7 @@
             "58",
             "59"});
             this.MinutesCB.ItemsAppearance.Parent = this.MinutesCB;
-            this.MinutesCB.Location = new System.Drawing.Point(354, 243);
+            this.MinutesCB.Location = new System.Drawing.Point(357, 410);
             this.MinutesCB.Margin = new System.Windows.Forms.Padding(6);
             this.MinutesCB.Name = "MinutesCB";
             this.MinutesCB.ShadowDecoration.Parent = this.MinutesCB;
@@ -250,7 +251,7 @@
             "22",
             "23"});
             this.HoursCB.ItemsAppearance.Parent = this.HoursCB;
-            this.HoursCB.Location = new System.Drawing.Point(228, 243);
+            this.HoursCB.Location = new System.Drawing.Point(231, 410);
             this.HoursCB.Margin = new System.Windows.Forms.Padding(6);
             this.HoursCB.Name = "HoursCB";
             this.HoursCB.ShadowDecoration.Parent = this.HoursCB;
@@ -265,7 +266,7 @@
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Clock;
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.Location = new System.Drawing.Point(187, 243);
+            this.iconPictureBox4.Location = new System.Drawing.Point(50, 362);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox4.TabIndex = 98;
@@ -275,7 +276,8 @@
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(63, 201);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(91, 362);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(6);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(115, 36);
             this.guna2HtmlLabel6.TabIndex = 97;
@@ -285,7 +287,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(323, 243);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(326, 410);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(6);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(19, 36);
@@ -302,7 +304,7 @@
             this.Dtpk.Font = new System.Drawing.Font("Consolas", 14.25F);
             this.Dtpk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.Dtpk.HoverState.Parent = this.Dtpk;
-            this.Dtpk.Location = new System.Drawing.Point(187, 201);
+            this.Dtpk.Location = new System.Drawing.Point(231, 362);
             this.Dtpk.Margin = new System.Windows.Forms.Padding(6);
             this.Dtpk.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Dtpk.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -316,7 +318,8 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(47, 243);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(88, 410);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(6);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(131, 36);
             this.guna2HtmlLabel2.TabIndex = 94;
@@ -341,7 +344,7 @@
             this.DescriptionTB.ForeColor = System.Drawing.Color.LightGray;
             this.DescriptionTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DescriptionTB.HoverState.Parent = this.DescriptionTB;
-            this.DescriptionTB.Location = new System.Drawing.Point(132, 93);
+            this.DescriptionTB.Location = new System.Drawing.Point(88, 133);
             this.DescriptionTB.Margin = new System.Windows.Forms.Padding(6);
             this.DescriptionTB.Multiline = true;
             this.DescriptionTB.Name = "DescriptionTB";
@@ -350,7 +353,7 @@
             this.DescriptionTB.SelectedText = "";
             this.DescriptionTB.SelectionStart = 5;
             this.DescriptionTB.ShadowDecoration.Parent = this.DescriptionTB;
-            this.DescriptionTB.Size = new System.Drawing.Size(384, 87);
+            this.DescriptionTB.Size = new System.Drawing.Size(507, 217);
             this.DescriptionTB.TabIndex = 93;
             this.DescriptionTB.Enter += new System.EventHandler(this.DescriptionTB_Enter);
             this.DescriptionTB.Leave += new System.EventHandler(this.DescriptionTB_Leave);
@@ -363,7 +366,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 29;
-            this.iconPictureBox2.Location = new System.Drawing.Point(91, 45);
+            this.iconPictureBox2.Location = new System.Drawing.Point(47, 91);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(32, 29);
             this.iconPictureBox2.TabIndex = 92;
@@ -388,7 +391,7 @@
             this.MainNote.ForeColor = System.Drawing.Color.LightGray;
             this.MainNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MainNote.HoverState.Parent = this.MainNote;
-            this.MainNote.Location = new System.Drawing.Point(132, 45);
+            this.MainNote.Location = new System.Drawing.Point(88, 91);
             this.MainNote.Margin = new System.Windows.Forms.Padding(6);
             this.MainNote.Name = "MainNote";
             this.MainNote.PasswordChar = '\0';
@@ -396,7 +399,7 @@
             this.MainNote.SelectedText = "";
             this.MainNote.SelectionStart = 7;
             this.MainNote.ShadowDecoration.Parent = this.MainNote;
-            this.MainNote.Size = new System.Drawing.Size(384, 36);
+            this.MainNote.Size = new System.Drawing.Size(507, 36);
             this.MainNote.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.MainNote.TabIndex = 91;
             this.MainNote.Enter += new System.EventHandler(this.MainNote_Enter);
@@ -409,7 +412,7 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.PenSquare;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(91, 93);
+            this.iconPictureBox1.Location = new System.Drawing.Point(47, 133);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 36);
             this.iconPictureBox1.TabIndex = 90;
@@ -419,8 +422,8 @@
             // 
             this.TitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.TitleLabel.Font = new System.Drawing.Font("Consolas", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.TitleLabel.Location = new System.Drawing.Point(47, 0);
+            this.TitleLabel.ForeColor = System.Drawing.Color.Black;
+            this.TitleLabel.Location = new System.Drawing.Point(88, 29);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(507, 39);
             this.TitleLabel.TabIndex = 89;
@@ -431,7 +434,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(601, 398);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(640, 596);
             this.Controls.Add(this.UrgentCB);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.guna2HtmlLabel1);

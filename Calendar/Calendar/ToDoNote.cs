@@ -37,18 +37,23 @@ namespace Calendar
             {
                 MessageBox.Show("Error!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            ToDtpk.Value = FromDtpk.Value;
         }
 
         private void SaveBtn_Click_1(object sender, EventArgs e)
         {
             if (MainNote.Text == "Nhập ghi chú")
             {
-                MessageBox.Show("Ghi chú không được rỗng","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Ghi chú không được rỗng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (DescriptionTB.Text == "Mô tả")
                 DescriptionTB.Text = null;
+            if ((Convert.ToInt32(FHoursCB.Text) > Convert.ToInt32(THoursCB.Text)) || ((Convert.ToInt32(FHoursCB.Text) == Convert.ToInt32(THoursCB.Text)) && (Convert.ToInt32(FMinutesCB.Text) > Convert.ToInt32(TMinutesCB.Text))) || FromDtpk.Value > ToDtpk.Value)
+            {
+                MessageBox.Show("Đặt thời gian không hợp lệ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (ImportantCheck.Checked == true) Check = 1;
             else Check = 0;
             string sql = "";
@@ -59,7 +64,7 @@ namespace Calendar
                 ToDtpk.Value = new DateTime(ToDtpk.Value.Year, ToDtpk.Value.Month, ToDtpk.Value.Day, 0, 0, 0);
                 if (IdNote == 0)
                 {
-                    
+
                     if (RepeatCB.SelectedIndex == 0)
                     {
                         FromDtpk.Value.AddSeconds(1);
@@ -113,7 +118,8 @@ namespace Calendar
                     sql = $"update NoteByDate set NoteText = '{MainNote.Text}', Description = '{DescriptionTB.Text}', AppDate = '{FromDtpk.Value}', FromH = '{FHoursCB.Text}', FromM = '{FMinutesCB.Text}', ToH = '{THoursCB.Text}', ToM = '{TMinutesCB.Text}', Important = '{Check}' where IdNote = {IdNote}";
                     NoteData.UpdateInsertDelete(sql);
                 }
-                MessageBox.Show("Lưu thành công","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Lưu thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
         }
@@ -173,6 +179,12 @@ namespace Calendar
             }
         }
 
-
+        private void FromDtpk_ValueChanged(object sender, EventArgs e)
+        {
+            if (RepeatCB.SelectedIndex == 0)
+            {
+                ToDtpk.Value = FromDtpk.Value;
+            }
+        }
     }
 }

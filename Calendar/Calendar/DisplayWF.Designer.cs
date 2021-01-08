@@ -103,10 +103,10 @@ namespace Calendar
             this.PanelWeather.Controls.Add(this.ComboBoxCity);
             this.PanelWeather.Controls.Add(this.labelNameCity);
             this.PanelWeather.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.PanelWeather.Location = new System.Drawing.Point(0, 92);
+            this.PanelWeather.Location = new System.Drawing.Point(0, 64);
             this.PanelWeather.Name = "PanelWeather";
             this.PanelWeather.ShadowDecoration.Parent = this.PanelWeather;
-            this.PanelWeather.Size = new System.Drawing.Size(1009, 528);
+            this.PanelWeather.Size = new System.Drawing.Size(1009, 556);
             this.PanelWeather.TabIndex = 1;
             // 
             // PanelDisplayWT
@@ -198,11 +198,11 @@ namespace Calendar
             // 
             this.labelNameVissible.AutoSize = true;
             this.labelNameVissible.BackColor = System.Drawing.Color.Transparent;
-            this.labelNameVissible.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameVissible.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameVissible.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelNameVissible.Location = new System.Drawing.Point(50, 408);
             this.labelNameVissible.Name = "labelNameVissible";
-            this.labelNameVissible.Size = new System.Drawing.Size(180, 32);
+            this.labelNameVissible.Size = new System.Drawing.Size(158, 30);
             this.labelNameVissible.TabIndex = 46;
             this.labelNameVissible.Text = "TẦM NHÌN XA";
             // 
@@ -240,7 +240,7 @@ namespace Calendar
             this.iconPictureBoxCLound.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBoxCLound.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBoxCLound.IconSize = 41;
-            this.iconPictureBoxCLound.Location = new System.Drawing.Point(681, 276);
+            this.iconPictureBoxCLound.Location = new System.Drawing.Point(681, 270);
             this.iconPictureBoxCLound.Name = "iconPictureBoxCLound";
             this.iconPictureBoxCLound.Size = new System.Drawing.Size(41, 41);
             this.iconPictureBoxCLound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +283,7 @@ namespace Calendar
             this.labelPressure.BackColor = System.Drawing.Color.Transparent;
             this.labelPressure.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPressure.ForeColor = System.Drawing.Color.Blue;
-            this.labelPressure.Location = new System.Drawing.Point(872, 408);
+            this.labelPressure.Location = new System.Drawing.Point(878, 402);
             this.labelPressure.Name = "labelPressure";
             this.labelPressure.Size = new System.Drawing.Size(91, 32);
             this.labelPressure.TabIndex = 38;
@@ -295,7 +295,7 @@ namespace Calendar
             this.labelWind.BackColor = System.Drawing.Color.Transparent;
             this.labelWind.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWind.ForeColor = System.Drawing.Color.Blue;
-            this.labelWind.Location = new System.Drawing.Point(889, 345);
+            this.labelWind.Location = new System.Drawing.Point(878, 336);
             this.labelWind.Name = "labelWind";
             this.labelWind.Size = new System.Drawing.Size(110, 32);
             this.labelWind.TabIndex = 37;
@@ -356,11 +356,11 @@ namespace Calendar
             // 
             this.labelNamePressure.AutoSize = true;
             this.labelNamePressure.BackColor = System.Drawing.Color.Transparent;
-            this.labelNamePressure.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNamePressure.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNamePressure.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelNamePressure.Location = new System.Drawing.Point(730, 408);
+            this.labelNamePressure.Location = new System.Drawing.Point(728, 402);
             this.labelNamePressure.Name = "labelNamePressure";
-            this.labelNamePressure.Size = new System.Drawing.Size(115, 32);
+            this.labelNamePressure.Size = new System.Drawing.Size(101, 30);
             this.labelNamePressure.TabIndex = 31;
             this.labelNamePressure.Text = "ÁP SUẤT";
             // 
@@ -368,11 +368,11 @@ namespace Calendar
             // 
             this.labelCloud.AutoSize = true;
             this.labelCloud.BackColor = System.Drawing.Color.Transparent;
-            this.labelCloud.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCloud.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCloud.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelCloud.Location = new System.Drawing.Point(748, 285);
+            this.labelCloud.Location = new System.Drawing.Point(728, 270);
             this.labelCloud.Name = "labelCloud";
-            this.labelCloud.Size = new System.Drawing.Size(68, 32);
+            this.labelCloud.Size = new System.Drawing.Size(59, 30);
             this.labelCloud.TabIndex = 30;
             this.labelCloud.Text = "MÂY";
             // 
@@ -380,11 +380,11 @@ namespace Calendar
             // 
             this.labelNameWind.AutoSize = true;
             this.labelNameWind.BackColor = System.Drawing.Color.Transparent;
-            this.labelNameWind.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameWind.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameWind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelNameWind.Location = new System.Drawing.Point(728, 345);
+            this.labelNameWind.Location = new System.Drawing.Point(728, 336);
             this.labelNameWind.Name = "labelNameWind";
-            this.labelNameWind.Size = new System.Drawing.Size(155, 32);
+            this.labelNameWind.Size = new System.Drawing.Size(135, 30);
             this.labelNameWind.TabIndex = 29;
             this.labelNameWind.Text = "TỐC ĐỘ GIÓ";
             // 
@@ -437,11 +437,11 @@ namespace Calendar
             // 
             this.labelNameHumidity.AutoSize = true;
             this.labelNameHumidity.BackColor = System.Drawing.Color.Transparent;
-            this.labelNameHumidity.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameHumidity.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameHumidity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelNameHumidity.Location = new System.Drawing.Point(50, 345);
             this.labelNameHumidity.Name = "labelNameHumidity";
-            this.labelNameHumidity.Size = new System.Drawing.Size(98, 32);
+            this.labelNameHumidity.Size = new System.Drawing.Size(85, 30);
             this.labelNameHumidity.TabIndex = 24;
             this.labelNameHumidity.Text = "ĐỘ ẨM";
             // 
@@ -461,11 +461,11 @@ namespace Calendar
             // 
             this.labelNameTemp.AutoSize = true;
             this.labelNameTemp.BackColor = System.Drawing.Color.Transparent;
-            this.labelNameTemp.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameTemp.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameTemp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelNameTemp.Location = new System.Drawing.Point(50, 285);
+            this.labelNameTemp.Location = new System.Drawing.Point(50, 281);
             this.labelNameTemp.Name = "labelNameTemp";
-            this.labelNameTemp.Size = new System.Drawing.Size(140, 32);
+            this.labelNameTemp.Size = new System.Drawing.Size(122, 30);
             this.labelNameTemp.TabIndex = 22;
             this.labelNameTemp.Text = "CAO/THẤP";
             // 
@@ -684,9 +684,10 @@ namespace Calendar
             this.PanelName.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.PanelName.Location = new System.Drawing.Point(0, 0);
+            this.PanelName.Margin = new System.Windows.Forms.Padding(0);
             this.PanelName.Name = "PanelName";
             this.PanelName.ShadowDecoration.Parent = this.PanelName;
-            this.PanelName.Size = new System.Drawing.Size(1009, 92);
+            this.PanelName.Size = new System.Drawing.Size(1009, 65);
             this.PanelName.TabIndex = 0;
             // 
             // labelName
@@ -695,7 +696,7 @@ namespace Calendar
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
             this.labelName.ForeColor = System.Drawing.Color.Green;
-            this.labelName.Location = new System.Drawing.Point(296, 18);
+            this.labelName.Location = new System.Drawing.Point(296, 10);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(419, 51);
             this.labelName.TabIndex = 0;

@@ -13,6 +13,8 @@ namespace Calendar
 {
     public partial class CalendarProject : Form
     {
+        
+        #region Các nút hiển thị usercontrol
         public CalendarProject()
         {
             InitializeComponent();
@@ -43,7 +45,7 @@ namespace Calendar
         private void ButtonCalendar_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            var Lunnar = new DisplayLunnar();
+            var Lunnar = new DisplayLunnar(dtpk.Value);
             Lunnar.Location = new Point(0, 0);
             Lunnar.Size = new Size(1009, 620);
             Lunnar.DTPK += Lunnar_DTPK;
@@ -143,13 +145,7 @@ namespace Calendar
                 DisplayDetailEvent.DetailEventDisplay.BringToFront();
         }
 
-        private void CalendarProject_Load(object sender, EventArgs e)
-        {
-            dtpk.Value = DateTime.Now;
-            ClockLB.Text = DateTime.Now.ToString("T");
-            ClockLB.Location = new Point(PanelIcon.Size.Width/2 - ClockLB.Size.Width/2,12);
-            timer1.Start();
-        }
+        
 
         private void AddDisplayDateCondition(DateTime date)
         {
@@ -343,5 +339,105 @@ namespace Calendar
                 currentBtn.ImageAlign = HorizontalAlignment.Left;
             }
         }
+        #endregion
+
+
+        #region Chạy ngầm
+        public int CountSchedule = 0;
+        public int CountDeadline = 0;
+        private void CalendarProject_Load(object sender, EventArgs e)
+        {
+            Count();
+            NotifyIcon1.ShowBalloonTip(100, "Số việc trong ngày", "Hôm nay có " + CountSchedule + " công việc và còn " + CountDeadline + " Deadline", ToolTipIcon.Info);
+            dtpk.Value = DateTime.Now;
+            ClockLB.Text = DateTime.Now.ToString("T");
+            ClockLB.Location = new Point(PanelIcon.Size.Width / 2 - ClockLB.Size.Width / 2, 12);
+            timer1.Start();
+        }
+
+        private void HideBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        //Đếm số lịch trong ngày và đếm deadline
+        private void Count()
+        {
+            DateTime datefirst = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            DateTime dateafter = datefirst.AddDays(1).AddSeconds(-1);
+
+            string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}#";
+            DataTable dt = NoteData.QueryAsDatatable(sql);
+            foreach (DataRow row in dt.Rows)
+            {
+                CountSchedule++;
+            }
+            sql = $"select * from Deadline where Priority <> {5} and Priority <> {6}";
+            dt = NoteData.QueryAsDatatable(sql);
+            foreach (DataRow row in dt.Rows)
+            {
+                CountDeadline++;
+            }
+        }
+        
+
+        private void thêmCôngViệcTrongNgàyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToDoNote ToDo = new ToDoNote();
+            ToDo.FromDtpk.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            ToDo.ToDtpk.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            ToDo.ShowDialog();
+        }
+
+        private void thêmDeadlineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeadLineNote Deadline = new DeadLineNote();
+            Deadline.Dtpk.Value = DateTime.Now;
+            Deadline.ShowDialog();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát ứng dụng không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void hiệnLịchNgàyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+            NotifyIcon1.ShowBalloonTip(100, "Số việc trong ngày", "Hôm nay có " + CountSchedule + " công việc và còn " + CountDeadline + " Deadline", ToolTipIcon.Info);
+        }
+
+        private void hiệnGhiChúToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NotifyIcon1.ShowBalloonTip(100, "Số việc trong ngày", "Hôm nay có " + CountSchedule + " công việc và còn " + CountDeadline + " Deadline", ToolTipIcon.Info);
+            GeneralNoteForm NoteForm = new GeneralNoteForm();
+            NoteForm.Dtpk.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            NoteForm.ShowDialog();
+        }
+
+        private void thêmDeadlineToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DeadLineNote Deadline = new DeadLineNote();
+            Deadline.Dtpk.Value = DateTime.Now;
+            Deadline.ShowDialog();
+        }
+
+        private void thêmCôngViệcTrongNgàyToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ToDoNote ToDo = new ToDoNote();
+            ToDo.FromDtpk.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            ToDo.ToDtpk.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            ToDo.ShowDialog();
+        }
+
+        private void NotifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            this.Show();
+            NotifyIcon1.ShowBalloonTip(100, "Số việc trong ngày", "Hôm nay có " + CountSchedule + " công việc và còn " + CountDeadline + " Deadline", ToolTipIcon.Info);
+        }
+        #endregion
     }
 }

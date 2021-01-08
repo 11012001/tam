@@ -203,7 +203,7 @@ namespace Calendar
             // 
             this.labelLVN.AutoSize = true;
             this.labelLVN.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLVN.ForeColor = System.Drawing.Color.Silver;
+            this.labelLVN.ForeColor = System.Drawing.Color.Black;
             this.labelLVN.Location = new System.Drawing.Point(332, 9);
             this.labelLVN.Name = "labelLVN";
             this.labelLVN.Size = new System.Drawing.Size(382, 65);
@@ -312,7 +312,7 @@ namespace Calendar
             this.tbSaoXau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoXau.FocusedState.Parent = this.tbSaoXau;
             this.tbSaoXau.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbSaoXau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbSaoXau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbSaoXau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoXau.HoverState.Parent = this.tbSaoXau;
             this.tbSaoXau.Location = new System.Drawing.Point(246, 117);
@@ -343,7 +343,7 @@ namespace Calendar
             this.tbSaoTot.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoTot.FocusedState.Parent = this.tbSaoTot;
             this.tbSaoTot.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbSaoTot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbSaoTot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbSaoTot.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSaoTot.HoverState.Parent = this.tbSaoTot;
             this.tbSaoTot.Location = new System.Drawing.Point(16, 117);
@@ -482,7 +482,7 @@ namespace Calendar
             this.tbTrucBonus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTrucBonus.FocusedState.Parent = this.tbTrucBonus;
             this.tbTrucBonus.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTrucBonus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbTrucBonus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbTrucBonus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTrucBonus.HoverState.Parent = this.tbTrucBonus;
             this.tbTrucBonus.Location = new System.Drawing.Point(18, 223);
@@ -513,7 +513,7 @@ namespace Calendar
             this.tbUnDoTruc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUnDoTruc.FocusedState.Parent = this.tbUnDoTruc;
             this.tbUnDoTruc.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbUnDoTruc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbUnDoTruc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbUnDoTruc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUnDoTruc.HoverState.Parent = this.tbUnDoTruc;
             this.tbUnDoTruc.Location = new System.Drawing.Point(246, 114);
@@ -543,7 +543,7 @@ namespace Calendar
             this.tbTrucDo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTrucDo.FocusedState.Parent = this.tbTrucDo;
             this.tbTrucDo.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbTrucDo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbTrucDo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbTrucDo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbTrucDo.HoverState.Parent = this.tbTrucDo;
             this.tbTrucDo.Location = new System.Drawing.Point(16, 114);
@@ -1027,7 +1027,7 @@ namespace Calendar
             this.tbGXHMean6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean6.FocusedState.Parent = this.tbGXHMean6;
             this.tbGXHMean6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHMean6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbGXHMean6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbGXHMean6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean6.HoverState.Parent = this.tbGXHMean6;
             this.tbGXHMean6.Location = new System.Drawing.Point(214, 1046);
@@ -1057,7 +1057,7 @@ namespace Calendar
             this.tbGXHName6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName6.FocusedState.Parent = this.tbGXHName6;
             this.tbGXHName6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHName6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXHName6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbGXHName6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName6.HoverState.Parent = this.tbGXHName6;
             this.tbGXHName6.Location = new System.Drawing.Point(106, 1046);
@@ -1088,7 +1088,7 @@ namespace Calendar
             this.tbHour6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour6.FocusedState.Parent = this.tbHour6;
             this.tbHour6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbHour6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbHour6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbHour6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour6.HoverState.Parent = this.tbHour6;
             this.tbHour6.Location = new System.Drawing.Point(8, 1046);
@@ -1120,7 +1120,7 @@ namespace Calendar
             this.tbGXHMean5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean5.FocusedState.Parent = this.tbGXHMean5;
             this.tbGXHMean5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHMean5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbGXHMean5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbGXHMean5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean5.HoverState.Parent = this.tbGXHMean5;
             this.tbGXHMean5.Location = new System.Drawing.Point(214, 846);
@@ -1150,7 +1150,7 @@ namespace Calendar
             this.tbGXHName5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName5.FocusedState.Parent = this.tbGXHName5;
             this.tbGXHName5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHName5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXHName5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbGXHName5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName5.HoverState.Parent = this.tbGXHName5;
             this.tbGXHName5.Location = new System.Drawing.Point(106, 846);
@@ -1181,7 +1181,7 @@ namespace Calendar
             this.tbHour5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour5.FocusedState.Parent = this.tbHour5;
             this.tbHour5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbHour5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbHour5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbHour5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour5.HoverState.Parent = this.tbHour5;
             this.tbHour5.Location = new System.Drawing.Point(8, 846);
@@ -1213,7 +1213,7 @@ namespace Calendar
             this.tbGXHMean4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean4.FocusedState.Parent = this.tbGXHMean4;
             this.tbGXHMean4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHMean4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbGXHMean4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbGXHMean4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean4.HoverState.Parent = this.tbGXHMean4;
             this.tbGXHMean4.Location = new System.Drawing.Point(214, 647);
@@ -1243,7 +1243,7 @@ namespace Calendar
             this.tbGXHName4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName4.FocusedState.Parent = this.tbGXHName4;
             this.tbGXHName4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHName4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXHName4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbGXHName4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName4.HoverState.Parent = this.tbGXHName4;
             this.tbGXHName4.Location = new System.Drawing.Point(106, 647);
@@ -1274,7 +1274,7 @@ namespace Calendar
             this.tbHour4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour4.FocusedState.Parent = this.tbHour4;
             this.tbHour4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbHour4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbHour4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbHour4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour4.HoverState.Parent = this.tbHour4;
             this.tbHour4.Location = new System.Drawing.Point(8, 647);
@@ -1306,7 +1306,7 @@ namespace Calendar
             this.tbGXHMean3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean3.FocusedState.Parent = this.tbGXHMean3;
             this.tbGXHMean3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHMean3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbGXHMean3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbGXHMean3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean3.HoverState.Parent = this.tbGXHMean3;
             this.tbGXHMean3.Location = new System.Drawing.Point(214, 452);
@@ -1336,7 +1336,7 @@ namespace Calendar
             this.tbGXHName3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName3.FocusedState.Parent = this.tbGXHName3;
             this.tbGXHName3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHName3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXHName3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbGXHName3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName3.HoverState.Parent = this.tbGXHName3;
             this.tbGXHName3.Location = new System.Drawing.Point(106, 452);
@@ -1367,7 +1367,7 @@ namespace Calendar
             this.tbHour3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour3.FocusedState.Parent = this.tbHour3;
             this.tbHour3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbHour3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbHour3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbHour3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour3.HoverState.Parent = this.tbHour3;
             this.tbHour3.Location = new System.Drawing.Point(8, 452);
@@ -1399,7 +1399,7 @@ namespace Calendar
             this.tbGXHMean2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean2.FocusedState.Parent = this.tbGXHMean2;
             this.tbGXHMean2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHMean2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbGXHMean2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbGXHMean2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean2.HoverState.Parent = this.tbGXHMean2;
             this.tbGXHMean2.Location = new System.Drawing.Point(213, 257);
@@ -1429,7 +1429,7 @@ namespace Calendar
             this.tbGXHName2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName2.FocusedState.Parent = this.tbGXHName2;
             this.tbGXHName2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHName2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXHName2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbGXHName2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName2.HoverState.Parent = this.tbGXHName2;
             this.tbGXHName2.Location = new System.Drawing.Point(105, 257);
@@ -1460,7 +1460,7 @@ namespace Calendar
             this.tbHour2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour2.FocusedState.Parent = this.tbHour2;
             this.tbHour2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbHour2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbHour2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbHour2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour2.HoverState.Parent = this.tbHour2;
             this.tbHour2.Location = new System.Drawing.Point(7, 257);
@@ -1492,10 +1492,10 @@ namespace Calendar
             this.tbGXHMean1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean1.FocusedState.Parent = this.tbGXHMean1;
             this.tbGXHMean1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHMean1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbGXHMean1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbGXHMean1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHMean1.HoverState.Parent = this.tbGXHMean1;
-            this.tbGXHMean1.Location = new System.Drawing.Point(214, 62);
+            this.tbGXHMean1.Location = new System.Drawing.Point(218, 62);
             this.tbGXHMean1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbGXHMean1.Multiline = true;
             this.tbGXHMean1.Name = "tbGXHMean1";
@@ -1522,7 +1522,7 @@ namespace Calendar
             this.tbGXHName1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName1.FocusedState.Parent = this.tbGXHName1;
             this.tbGXHName1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbGXHName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbGXHName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbGXHName1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbGXHName1.HoverState.Parent = this.tbGXHName1;
             this.tbGXHName1.Location = new System.Drawing.Point(106, 62);
@@ -1553,7 +1553,7 @@ namespace Calendar
             this.tbHour1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour1.FocusedState.Parent = this.tbHour1;
             this.tbHour1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tbHour1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tbHour1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tbHour1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbHour1.HoverState.Parent = this.tbHour1;
             this.tbHour1.Location = new System.Drawing.Point(8, 62);
@@ -1629,7 +1629,7 @@ namespace Calendar
             this.tbNXH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNXH.FocusedState.Parent = this.tbNXH;
             this.tbNXH.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNXH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tbNXH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tbNXH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNXH.HoverState.Parent = this.tbNXH;
             this.tbNXH.Location = new System.Drawing.Point(19, 59);
