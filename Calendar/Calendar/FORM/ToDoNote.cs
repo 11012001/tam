@@ -56,7 +56,7 @@ namespace Calendar
             }
             if (ImportantCheck.Checked == true) Check = 1;
             else Check = 0;
-            string sql = "";
+            string sql;
 
             if (NoteData.IsConfirm("Bạn có muốn lưu lại?"))
             {

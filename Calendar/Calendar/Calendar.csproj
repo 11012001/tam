@@ -84,105 +84,105 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="12ConGiap.cs" />
-    <Compile Include="Cons.cs" />
+    <Compile Include="CLASS\12ConGiap.cs" />
+    <Compile Include="CLASS\Cons.cs" />
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomButton.Designer.cs">
       <DependentUpon>CustomButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeadlineClass.cs" />
-    <Compile Include="DeadLineControl.cs">
+    <Compile Include="CLASS\DeadlineClass.cs" />
+    <Compile Include="USERCONTROL\DeadLineControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DeadLineControl.Designer.cs">
+    <Compile Include="USERCONTROL\DeadLineControl.Designer.cs">
       <DependentUpon>DeadLineControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeadLineNote.cs">
+    <Compile Include="FORM\DeadLineNote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeadLineNote.Designer.cs">
+    <Compile Include="FORM\DeadLineNote.Designer.cs">
       <DependentUpon>DeadLineNote.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayDetailDate.cs">
+    <Compile Include="USERCONTROL\DisplayDetailDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayDetailDate.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayDetailDate.Designer.cs">
       <DependentUpon>DisplayDetailDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayLunnar.cs">
+    <Compile Include="USERCONTROL\DisplayLunnar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayLunnar.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayLunnar.Designer.cs">
       <DependentUpon>DisplayLunnar.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayChangeDate.cs">
+    <Compile Include="USERCONTROL\DisplayChangeDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayChangeDate.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayChangeDate.Designer.cs">
       <DependentUpon>DisplayChangeDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayCountDay.cs">
+    <Compile Include="USERCONTROL\DisplayCountDay.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayCountDay.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayCountDay.Designer.cs">
       <DependentUpon>DisplayCountDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayDetailEvent.cs">
+    <Compile Include="USERCONTROL\DisplayDetailEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayDetailEvent.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayDetailEvent.Designer.cs">
       <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayTutorial.cs">
+    <Compile Include="USERCONTROL\DisplayTutorial.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayTutorial.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayTutorial.Designer.cs">
       <DependentUpon>DisplayTutorial.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayTuVi.cs">
+    <Compile Include="USERCONTROL\DisplayTuVi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayTuVi.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayTuVi.Designer.cs">
       <DependentUpon>DisplayTuVi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayVanKhan.cs">
+    <Compile Include="USERCONTROL\DisplayVanKhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayVanKhan.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayVanKhan.Designer.cs">
       <DependentUpon>DisplayVanKhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayWF.cs">
+    <Compile Include="USERCONTROL\DisplayWF.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayWF.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayWF.Designer.cs">
       <DependentUpon>DisplayWF.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSetting.cs">
+    <Compile Include="FORM\FormSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSetting.Designer.cs">
+    <Compile Include="FORM\FormSetting.Designer.cs">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="GeneralNoteForm.cs">
+    <Compile Include="FORM\GeneralNoteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GeneralNoteForm.Designer.cs">
+    <Compile Include="FORM\GeneralNoteForm.Designer.cs">
       <DependentUpon>GeneralNoteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LunnarCalendar.cs" />
-    <Compile Include="NoteData.cs" />
-    <Compile Include="Project.cs">
+    <Compile Include="CLASS\LunnarCalendar.cs" />
+    <Compile Include="CLASS\NoteData.cs" />
+    <Compile Include="FORM\Project.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Project.Designer.cs">
+    <Compile Include="FORM\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayDate.cs">
+    <Compile Include="USERCONTROL\DisplayDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DisplayDate.Designer.cs">
+    <Compile Include="USERCONTROL\DisplayDate.Designer.cs">
       <DependentUpon>DisplayDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -192,69 +192,69 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="PublicDate.cs" />
-    <Compile Include="SpeechClass.cs" />
-    <Compile Include="SpeechJSon.cs" />
-    <Compile Include="StringText.cs" />
-    <Compile Include="ToDoClass.cs" />
-    <Compile Include="ToDoControl.cs">
+    <Compile Include="CLASS\PublicDate.cs" />
+    <Compile Include="CLASS\SpeechClass.cs" />
+    <Compile Include="CLASS\SpeechJSon.cs" />
+    <Compile Include="CLASS\StringText.cs" />
+    <Compile Include="CLASS\ToDoClass.cs" />
+    <Compile Include="USERCONTROL\ToDoControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ToDoControl.Designer.cs">
+    <Compile Include="USERCONTROL\ToDoControl.Designer.cs">
       <DependentUpon>ToDoControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToDoNote.cs">
+    <Compile Include="FORM\ToDoNote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToDoNote.Designer.cs">
+    <Compile Include="FORM\ToDoNote.Designer.cs">
       <DependentUpon>ToDoNote.cs</DependentUpon>
     </Compile>
-    <Compile Include="TuViClass.cs" />
-    <Compile Include="VanKhanString.cs" />
-    <Compile Include="WeatherInfo.cs" />
-    <EmbeddedResource Include="DeadLineControl.resx">
+    <Compile Include="CLASS\TuViClass.cs" />
+    <Compile Include="CLASS\VanKhanString.cs" />
+    <Compile Include="CLASS\WeatherInfo.cs" />
+    <EmbeddedResource Include="USERCONTROL\DeadLineControl.resx">
       <DependentUpon>DeadLineControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeadLineNote.resx">
+    <EmbeddedResource Include="FORM\DeadLineNote.resx">
       <DependentUpon>DeadLineNote.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayDetailDate.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayDetailDate.resx">
       <DependentUpon>DisplayDetailDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayLunnar.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayLunnar.resx">
       <DependentUpon>DisplayLunnar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayChangeDate.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayChangeDate.resx">
       <DependentUpon>DisplayChangeDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayCountDay.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayCountDay.resx">
       <DependentUpon>DisplayCountDay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayDetailEvent.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayDetailEvent.resx">
       <DependentUpon>DisplayDetailEvent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayTutorial.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayTutorial.resx">
       <DependentUpon>DisplayTutorial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayTuVi.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayTuVi.resx">
       <DependentUpon>DisplayTuVi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayVanKhan.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayVanKhan.resx">
       <DependentUpon>DisplayVanKhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayWF.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayWF.resx">
       <DependentUpon>DisplayWF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSetting.resx">
+    <EmbeddedResource Include="FORM\FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GeneralNoteForm.resx">
+    <EmbeddedResource Include="FORM\GeneralNoteForm.resx">
       <DependentUpon>GeneralNoteForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Project.resx">
+    <EmbeddedResource Include="FORM\Project.resx">
       <DependentUpon>Project.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayDate.resx">
+    <EmbeddedResource Include="USERCONTROL\DisplayDate.resx">
       <DependentUpon>DisplayDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -262,10 +262,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToDoControl.resx">
+    <EmbeddedResource Include="USERCONTROL\ToDoControl.resx">
       <DependentUpon>ToDoControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToDoNote.resx">
+    <EmbeddedResource Include="FORM\ToDoNote.resx">
       <DependentUpon>ToDoNote.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -298,7 +298,7 @@
     <Content Include="12ConGiap\Ti.png" />
     <Content Include="12ConGiap\Tuat.png" />
     <Content Include="12ConGiap\Ty.png" />
-    <Content Include="2021.ico" />
+    <Content Include="Images\2021.ico" />
     <Content Include="FileText\ChamNgon.txt" />
     <Content Include="FileText\DescriptionWeather.txt" />
     <Content Include="FileText\HDSD.txt" />

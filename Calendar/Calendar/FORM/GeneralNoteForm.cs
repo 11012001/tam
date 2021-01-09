@@ -246,8 +246,6 @@ namespace Calendar
             Td.ImportantCheck.Enabled = false;
             Td.SaveBtn.Visible = false;
             Td.ShowDialog();
-            ControlPanel.Controls.Clear();
-            AddNoteToDay();
         }
 
         //Thêm chức năng nút xóa cho deadline
@@ -355,7 +353,7 @@ namespace Calendar
 
         private void DL_Done(object sender, EventArgs e)
         {
-            string sql = "";
+            string sql;
             DeadLineControl DLC = sender as DeadLineControl;
             if (DLC.DoneCB.Checked == true)
             {
