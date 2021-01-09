@@ -20,6 +20,7 @@ namespace Calendar
     public partial class DisplayDate : UserControl
     {
         
+        private static DisplayDate dateDisplay;
         public static Color ColorSolar { get; set; }
         public static Color ColorLunnar { get; set; }
         public Color ColorHourLunnar { get; set; }

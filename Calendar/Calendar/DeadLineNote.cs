@@ -69,7 +69,7 @@ namespace Calendar
         {
             if (MainNote.Text == "Ghi chú")
             {
-                MessageBox.Show("Ghi chú không được rỗng","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Ghi chú không được rỗng");
                 return;
             }
             if (DescriptionTB.Text == "Mô tả")
@@ -137,11 +137,11 @@ namespace Calendar
 
                         }
                     }
-                    MessageBox.Show("Lưu dữ liệu thành công!","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Lưu thành công!");
                 }
                 catch
                 {
-                    MessageBox.Show("Lưu dữ liệu không thành công!","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Error");
                 }
                 this.DialogResult = DialogResult.OK;
                 this.Close();

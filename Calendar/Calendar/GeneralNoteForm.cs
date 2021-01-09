@@ -28,138 +28,132 @@ namespace Calendar
             int i = 0;
 
             //Thêm lập lịch
-            try
+
+            if (Button == 1)
             {
-                if (Button == 1)
+                ControlPanel.Controls.Clear();
+                AddJobBtn.Text = "Thêm Công việc";
+                DeadlineLabel.Visible = false;
+                Dtpk.Visible = true;
+                NextBtn.Visible = true;
+                PreviousBtn.Visible = true;
+                
+                DateTime datefirst = new DateTime(Dtpk.Value.Year,Dtpk.Value.Month,Dtpk.Value.Day,0,0,0);
+                DateTime dateafter = datefirst.AddDays(1).AddSeconds(-1);
+
+                string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}# order by FromH asc, FromM asc";
+                DataTable dt = NoteData.QueryAsDatatable(sql);
+
+                foreach (DataRow row in dt.Rows)
                 {
-                    ControlPanel.Controls.Clear();
-                    AddJobBtn.Text = "Thêm Công việc";
-                    DeadlineLabel.Visible = false;
-                    Dtpk.Visible = true;
-                    NextBtn.Visible = true;
-                    PreviousBtn.Visible = true;
-
-                    DateTime datefirst = new DateTime(Dtpk.Value.Year, Dtpk.Value.Month, Dtpk.Value.Day, 0, 0, 0);
-                    DateTime dateafter = datefirst.AddDays(1).AddSeconds(-1);
-
-                    string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}# order by FromH asc, FromM asc";
-                    DataTable dt = NoteData.QueryAsDatatable(sql);
-
-                    foreach (DataRow row in dt.Rows)
+                    ToDoControl Td = new ToDoControl();
+                    Td.BackColor = System.Drawing.Color.Transparent;
+                    Td.Location = new System.Drawing.Point(1, -1 + y);
+                    Td.Size = new System.Drawing.Size(787, 86);
+                    Td.TabIndex = i++;
+                    c.Id = Convert.ToInt32(row["IdNote"]);
+                    if (Convert.ToInt32(row["Important"]) == 1)
                     {
-                        ToDoControl Td = new ToDoControl();
-                        Td.BackColor = System.Drawing.Color.Transparent;
-                        Td.Location = new System.Drawing.Point(1, -1 + y);
-                        Td.Size = new System.Drawing.Size(787, 86);
-                        Td.TabIndex = i++;
-                        c.Id = Convert.ToInt32(row["IdNote"]);
-                        if (Convert.ToInt32(row["Important"]) == 1)
-                        {
-                            c.CheckImportant = true;
-                        }
-                        else c.CheckImportant = false;
-                        Td.Tag = Convert.ToInt32(row["IdNote"]);
-                        c.Date = Convert.ToDateTime(row["AppDate"]);
-                        c.Description = row["Description"].ToString();
-                        c.FHours = Convert.ToInt32(row["FromH"]);
-                        c.FMinutes = Convert.ToInt32(row["FromM"]);
-                        c.THours = Convert.ToInt32(row["ToH"]);
-                        c.TMinutes = Convert.ToInt32(row["ToM"]);
-                        c.Notes = row["NoteText"].ToString();
-                        Td.AddDetails(c);
-                        Td.Deleted += Td_Deleted;
-                        Td.Edited += Td_Edited;
-                        Td.Details += Td_Details;
-                        ControlPanel.Controls.Add(Td);
-                        y += Td.Height;
+                        c.CheckImportant = true;
                     }
-                }
-
-                //Thêm Deadline
-
-                if (Button == 2)
-                {
-                    AddJobBtn.Text = "Thêm Deadline";
-                    ControlPanel.Controls.Clear();
-                    DeadlineLabel.Visible = true;
-                    Dtpk.Visible = false;
-                    NextBtn.Visible = false;
-                    PreviousBtn.Visible = false;
-
-                    string sql = $"select * from Deadline";
-                    DataTable dt = NoteData.QueryAsDatatable(sql);
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        if (Convert.ToInt32(row["Priority"]) != 5)
-                        {
-                            if (DateTime.Now > Convert.ToDateTime(row["DateEnd"]))
-                            {
-                                sql = $"update Deadline set Priority ='{6}' where IdDeadline =" + Convert.ToInt32(row["IdDeadLine"]);
-                                NoteData.UpdateInsertDelete(sql);
-                            }
-                            else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
-                            {
-                                sql = $"update Deadline set Priority = '{1}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
-                                NoteData.UpdateInsertDelete(sql);
-                            }
-                            else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
-                            {
-                                sql = $"update Deadline set Priority = '{2}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
-                                NoteData.UpdateInsertDelete(sql);
-                            }
-                            else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
-                            {
-                                sql = $"update Deadline set Priority = '{3}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
-                                NoteData.UpdateInsertDelete(sql);
-                            }
-                            else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
-                            {
-                                sql = $"update Deadline set Priority = '{4}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
-                                NoteData.UpdateInsertDelete(sql);
-                            }
-                        }
-                    }
-                    sql = $"select * from Deadline order by Priority asc, DateEnd asc";
-                    dt = NoteData.QueryAsDatatable(sql);
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        DeadLineControl DL = new DeadLineControl();
-                        DL.BackColor = System.Drawing.Color.Transparent;
-                        DL.Location = new System.Drawing.Point(1, -1 + y);
-                        DL.Size = new System.Drawing.Size(787, 94);
-                        DL.TabIndex = i++;
-                        DL.Tag = Convert.ToInt32(row["IdDeadline"]);
-                        if (Convert.ToInt32(row["Priority"]) == 5)
-                            DL.DoneCB.Checked = true;
-                        if (Convert.ToInt32(row["Importance"]) == 1)
-                        {
-                            d.CheckImportant = true;
-                        }
-                        else
-                        {
-                            d.CheckImportant = false;
-                        }
-                        d.Id = Convert.ToInt32(row["IdDeadline"]);
-                        d.Urgent = Convert.ToInt32(row["UrgentCount"]);
-                        d.Priorities = Convert.ToInt32(row["Priority"]);
-                        d.Date = Convert.ToDateTime(row["DateEnd"]);
-                        d.Description = row["DescriptionText"].ToString();
-                        d.Notes = row["DeadlineText"].ToString();
-                        d.HoursEnd = Convert.ToInt32(row["TimeHEnd"]);
-                        d.MinutesEnd = Convert.ToInt32(row["TimeMEnd"]);
-                        ControlPanel.Controls.Add(DL);
-                        DL.Deleted += DL_Deleted;
-                        DL.Edited += DL_Edited;
-                        DL.AddDetails(d);
-                        DL.Details += DL_Details;
-                        DL.Done += DL_Done;
-                        y += DL.Height;
-                    }
+                    else c.CheckImportant = false;
+                    Td.Tag = Convert.ToInt32(row["IdNote"]);
+                    c.Date = Convert.ToDateTime(row["AppDate"]);
+                    c.Description = row["Description"].ToString();
+                    c.FHours = Convert.ToInt32(row["FromH"]);
+                    c.FMinutes = Convert.ToInt32(row["FromM"]);
+                    c.THours = Convert.ToInt32(row["ToH"]);
+                    c.TMinutes = Convert.ToInt32(row["ToM"]);
+                    c.Notes = row["NoteText"].ToString();
+                    Td.AddDetails(c);
+                    Td.Deleted += Td_Deleted;
+                    Td.Edited += Td_Edited;
+                    Td.Details += Td_Details;
+                    ControlPanel.Controls.Add(Td);
+                    y += Td.Height;
                 }
             }
-            catch(System.Data.OleDb.OleDbException)
+
+            //Thêm Deadline
+
+            if (Button == 2)
             {
-                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                AddJobBtn.Text = "Thêm Deadline";
+                ControlPanel.Controls.Clear();
+                DeadlineLabel.Visible = true;
+                Dtpk.Visible = false;
+                NextBtn.Visible = false;
+                PreviousBtn.Visible = false;
+
+                string sql = $"select * from Deadline";
+                DataTable dt = NoteData.QueryAsDatatable(sql);
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (Convert.ToInt32(row["Priority"]) != 5)
+                    {
+                        if (DateTime.Now > Convert.ToDateTime(row["DateEnd"]))
+                        {
+                            sql = $"update Deadline set Priority ='{6}' where IdDeadline =" + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
+                        {
+                            sql = $"update Deadline set Priority = '{1}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 1)
+                        {
+                            sql = $"update Deadline set Priority = '{2}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) >= Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
+                        {
+                            sql = $"update Deadline set Priority = '{3}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (DateTime.Now.AddDays(Convert.ToInt32(row["UrgentCount"])) < Convert.ToDateTime(row["DateEnd"]) && Convert.ToInt32(row["Importance"]) == 0)
+                        {
+                            sql = $"update Deadline set Priority = '{4}' where IdDeadline = " + Convert.ToInt32(row["IdDeadLine"]);
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                    }
+                }
+                sql = $"select * from Deadline order by Priority asc, DateEnd asc";
+                dt = NoteData.QueryAsDatatable(sql);
+                foreach (DataRow row in dt.Rows)
+                {
+                    DeadLineControl DL = new DeadLineControl();
+                    DL.BackColor = System.Drawing.Color.Transparent;
+                    DL.Location = new System.Drawing.Point(1, -1 + y);
+                    DL.Size = new System.Drawing.Size(787, 94);
+                    DL.TabIndex = i++;
+                    DL.Tag = Convert.ToInt32(row["IdDeadline"]);
+                    if (Convert.ToInt32(row["Priority"]) == 5) 
+                        DL.DoneCB.Checked = true;
+                    if (Convert.ToInt32(row["Importance"]) == 1)
+                    {
+                        d.CheckImportant = true;
+                    }
+                    else
+                    {
+                        d.CheckImportant = false;
+                    }
+                    d.Id = Convert.ToInt32(row["IdDeadline"]);
+                    d.Urgent = Convert.ToInt32(row["UrgentCount"]);
+                    d.Priorities = Convert.ToInt32(row["Priority"]);
+                    d.Date = Convert.ToDateTime(row["DateEnd"]);
+                    d.Description = row["DescriptionText"].ToString();
+                    d.Notes = row["DeadlineText"].ToString();
+                    d.HoursEnd = Convert.ToInt32(row["TimeHEnd"]);
+                    d.MinutesEnd = Convert.ToInt32(row["TimeMEnd"]);
+                    ControlPanel.Controls.Add(DL);
+                    DL.Deleted += DL_Deleted;
+                    DL.Edited += DL_Edited;
+                    DL.AddDetails(d);
+                    DL.Details += DL_Details;
+                    DL.Done += DL_Done;
+                    y += DL.Height;
+                }
             }
         }
         #endregion
@@ -170,19 +164,12 @@ namespace Calendar
         //Thêm chức năng nút xóa cho lập lịch
         void Td_Deleted(object sender, EventArgs e)
         {
-            try
-            {
-                ToDoControl Td = sender as ToDoControl;
-                string sql = $"delete from NoteByDate where IdNote = {Td.Tag}";
-                NoteData.UpdateInsertDelete(sql);
-                ControlPanel.Controls.Remove(Td);
-                ControlPanel.Controls.Clear();
-                AddNoteToDay();
-            }
-            catch (System.Data.OleDb.OleDbException)
-            {
-                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            ToDoControl Td = sender as ToDoControl;
+            string sql = $"delete from NoteByDate where IdNote = {Td.Tag}";
+            NoteData.UpdateInsertDelete(sql);
+            ControlPanel.Controls.Remove(Td);
+            ControlPanel.Controls.Clear();
+            AddNoteToDay();
         }
         //Thêm chức năng nút edit cho lập lịch
         void Td_Edited(object sender, EventArgs e)
@@ -254,6 +241,9 @@ namespace Calendar
             Td.TMinutesCB.Enabled = false;
             Td.DescriptionTB.Enabled = false;
             Td.FromDtpk.Enabled = false;
+            Td.RepeatCB.Enabled = false;
+            Td.ToDtpk.Enabled = false;
+            Td.ImportantCheck.Enabled = false;
             Td.SaveBtn.Visible = false;
             Td.ShowDialog();
             ControlPanel.Controls.Clear();
@@ -355,6 +345,8 @@ namespace Calendar
             DL.Dtpk.Enabled = false;
             DL.DescriptionTB.Enabled = false;
             DL.MainNote.Enabled = false;
+            DL.UrgentCB.Enabled = false;
+            DL.ImportantCheck.Enabled = false;
             DL.SaveBtn.Visible = false;
             DL.ShowDialog();
         }

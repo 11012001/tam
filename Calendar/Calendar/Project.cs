@@ -63,7 +63,6 @@ namespace Calendar
 
         private void ButtonDate_Click(object sender, EventArgs e)
         {
-            condition = 0;
             ActivateButton(sender, RGBColors.color1);
             DisplayDate display = new DisplayDate(dtpk.Value);
             display.Size = new Size(1009, 620);
@@ -146,19 +145,10 @@ namespace Calendar
                 DisplayDetailEvent.DetailEventDisplay.BringToFront();
         }
 
-        private void AddDisplayLunnarCondition(DateTime date)
-        {
-            condition = 2;
-            PanelDisplay.Controls.Clear();
-            DisplayLunnar displayLunnar = new DisplayLunnar(date);
-            displayLunnar.Dock = DockStyle.Fill;
-            PanelDisplay.Controls.Add(displayLunnar);
-        }
+        
 
         private void AddDisplayDateCondition(DateTime date)
         {
-            condition = 0;
-            PanelDisplay.Controls.Clear();
             DisplayDate displayDate = new DisplayDate(date);
             displayDate.Size = new Size(1009, 620);
             displayDate.Location = new Point(0, 0);
@@ -171,7 +161,6 @@ namespace Calendar
         private void AddDisplayDetailDateCondition(DateTime date)
         {
             condition = 1;
-            PanelDisplay.Controls.Clear();
             var DetailDate = new DisplayDetailDate(dtpk.Value);
             DetailDate.Location = new Point(0, 0);
             DetailDate.Size = new Size(1009, 620);
@@ -195,16 +184,10 @@ namespace Calendar
                 ActivateButton(ButtonDate, RGBColors.color1);
                 AddDisplayDateCondition(date);
             }
-            else if (condition == 2)
-            {
-                ActivateButton(ButtonCalendar, RGBColors.color2);
-                AddDisplayLunnarCondition(date);
-            }    
         }
 
         private void buttonDetailDate_Click(object sender, EventArgs e)
         {
-            condition = 1;
             ActivateButton(sender, RGBColors.color3);
             var DetailDate = new DisplayDetailDate(dtpk.Value);
             DetailDate.Location = new Point(0, 0);
@@ -382,24 +365,17 @@ namespace Calendar
             DateTime datefirst = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
             DateTime dateafter = datefirst.AddDays(1).AddSeconds(-1);
 
-            try
+            string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}#";
+            DataTable dt = NoteData.QueryAsDatatable(sql);
+            foreach (DataRow row in dt.Rows)
             {
-                string sql = $"select * from NoteByDate where AppDate between #{datefirst.ToShortDateString()}# and #{dateafter.ToShortDateString()}#";
-                DataTable dt = NoteData.QueryAsDatatable(sql);
-                foreach (DataRow row in dt.Rows)
-                {
-                    CountSchedule++;
-                }
-                sql = $"select * from Deadline where Priority <> {5} and Priority <> {6}";
-                dt = NoteData.QueryAsDatatable(sql);
-                foreach (DataRow row in dt.Rows)
-                {
-                    CountDeadline++;
-                }
+                CountSchedule++;
             }
-            catch
+            sql = $"select * from Deadline where Priority <> {5} and Priority <> {6}";
+            dt = NoteData.QueryAsDatatable(sql);
+            foreach (DataRow row in dt.Rows)
             {
-                MessageBox.Show("Thông báo lỗi!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CountDeadline++;
             }
         }
         

@@ -250,6 +250,5 @@ namespace Calendar
         {
             dtpk.Value = Date;
         }
-
     }
 }
