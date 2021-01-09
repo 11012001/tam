@@ -35,9 +35,9 @@ namespace Calendar
                 SpeechClass.voice = "thuminh";
                 Close();
             }
-            if (rbtnNL.Checked == true)
+            if (rbtnGH.Checked == true)
             {
-                SpeechClass.voice = "ngoclam";
+                SpeechClass.voice = "giahuy";
                 Close();
             }
             if (rbtnMA.Checked == true)

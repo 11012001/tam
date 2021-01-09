@@ -29,17 +29,19 @@ namespace Calendar
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSetting));
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
             this.btnOK = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnLS = new System.Windows.Forms.RadioButton();
             this.rbtnLN = new System.Windows.Forms.RadioButton();
             this.rbtnMA = new System.Windows.Forms.RadioButton();
-            this.rbtnNL = new System.Windows.Forms.RadioButton();
+            this.rbtnGH = new System.Windows.Forms.RadioButton();
             this.rbtnTM = new System.Windows.Forms.RadioButton();
             this.rbtnBM = new System.Windows.Forms.RadioButton();
             this.rbtnLM = new System.Windows.Forms.RadioButton();
             this.labelName = new System.Windows.Forms.Label();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PanelSetting.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@ namespace Calendar
             this.PanelSetting.Controls.Add(this.rbtnLS);
             this.PanelSetting.Controls.Add(this.rbtnLN);
             this.PanelSetting.Controls.Add(this.rbtnMA);
-            this.PanelSetting.Controls.Add(this.rbtnNL);
+            this.PanelSetting.Controls.Add(this.rbtnGH);
             this.PanelSetting.Controls.Add(this.rbtnTM);
             this.PanelSetting.Controls.Add(this.rbtnBM);
             this.PanelSetting.Controls.Add(this.rbtnLM);
@@ -116,17 +118,17 @@ namespace Calendar
             this.rbtnMA.Text = "Mỹ An (Nữ miền Trung)";
             this.rbtnMA.UseVisualStyleBackColor = true;
             // 
-            // rbtnNL
+            // rbtnGH
             // 
-            this.rbtnNL.AutoSize = true;
-            this.rbtnNL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnNL.Location = new System.Drawing.Point(34, 149);
-            this.rbtnNL.Name = "rbtnNL";
-            this.rbtnNL.Size = new System.Drawing.Size(236, 25);
-            this.rbtnNL.TabIndex = 25;
-            this.rbtnNL.TabStop = true;
-            this.rbtnNL.Text = "Ngọc Lam (Nữ miền Trung)";
-            this.rbtnNL.UseVisualStyleBackColor = true;
+            this.rbtnGH.AutoSize = true;
+            this.rbtnGH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnGH.Location = new System.Drawing.Point(34, 149);
+            this.rbtnGH.Name = "rbtnGH";
+            this.rbtnGH.Size = new System.Drawing.Size(232, 25);
+            this.rbtnGH.TabIndex = 25;
+            this.rbtnGH.TabStop = true;
+            this.rbtnGH.Text = "Gia Huy (Nam miền Trung)";
+            this.rbtnGH.UseVisualStyleBackColor = true;
             // 
             // rbtnTM
             // 
@@ -175,6 +177,11 @@ namespace Calendar
             this.labelName.TabIndex = 21;
             this.labelName.Text = "Chọn giọng đọc";
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this.PanelSetting;
+            // 
             // FormSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,10 +207,11 @@ namespace Calendar
         private System.Windows.Forms.RadioButton rbtnLS;
         private System.Windows.Forms.RadioButton rbtnLN;
         private System.Windows.Forms.RadioButton rbtnMA;
-        private System.Windows.Forms.RadioButton rbtnNL;
+        private System.Windows.Forms.RadioButton rbtnGH;
         private System.Windows.Forms.RadioButton rbtnTM;
         private System.Windows.Forms.RadioButton rbtnBM;
         private System.Windows.Forms.RadioButton rbtnLM;
         private System.Windows.Forms.Label labelName;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

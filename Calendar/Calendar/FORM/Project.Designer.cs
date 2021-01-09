@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarProject));
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.PanelDisplay = new Guna.UI2.WinForms.Guna2Panel();
             this.PanelIcon = new Guna.UI2.WinForms.Guna2Panel();
             this.ClockLB = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -56,15 +55,11 @@
             this.hiệnLịchNgàyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NotifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PanelIcon.SuspendLayout();
             this.PanelSetting.SuspendLayout();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2ShadowForm1.TargetForm = this;
             // 
             // PanelDisplay
             // 
@@ -468,6 +463,11 @@
             this.NotifyIcon1.Visible = true;
             this.NotifyIcon1.DoubleClick += new System.EventHandler(this.NotifyIcon1_DoubleClick);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this.ClockLB;
+            // 
             // CalendarProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,8 +491,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2Panel PanelDisplay;
         private Guna.UI2.WinForms.Guna2Panel PanelSetting;
         private Guna.UI2.WinForms.Guna2Button ButtonHistory;
@@ -518,5 +516,6 @@
         private System.Windows.Forms.ToolStripMenuItem hiệnLịchNgàyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon NotifyIcon1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

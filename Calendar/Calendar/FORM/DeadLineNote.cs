@@ -32,6 +32,7 @@ namespace Calendar
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.DialogResult = DialogResult.Cancel;
         }
 
         private void MainNote_Leave(object sender, EventArgs e)
@@ -83,7 +84,7 @@ namespace Calendar
             else
                 ImportanceCheck = 0;
             Dtpk.Value = new DateTime(Dtpk.Value.Year, Dtpk.Value.Month, Dtpk.Value.Day, Int32.Parse(HoursCB.Text), Int32.Parse(MinutesCB.Text), 0);
-            string sql = "";
+            string sql;
             if (NoteData.IsConfirm("Bạn có muốn lưu lại?"))
             {
                 try
