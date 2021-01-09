@@ -59,67 +59,73 @@ namespace Calendar
             string sql = "";
 
             if (NoteData.IsConfirm("Bạn có muốn lưu lại?"))
-            {
-                FromDtpk.Value = new DateTime(FromDtpk.Value.Year, FromDtpk.Value.Month, FromDtpk.Value.Day, 0, 0, 0);
-                ToDtpk.Value = new DateTime(ToDtpk.Value.Year, ToDtpk.Value.Month, ToDtpk.Value.Day, 0, 0, 0);
-                if (IdNote == 0)
+            { try
                 {
-
-                    if (RepeatCB.SelectedIndex == 0)
+                    FromDtpk.Value = new DateTime(FromDtpk.Value.Year, FromDtpk.Value.Month, FromDtpk.Value.Day, 0, 0, 0);
+                    ToDtpk.Value = new DateTime(ToDtpk.Value.Year, ToDtpk.Value.Month, ToDtpk.Value.Day, 0, 0, 0);
+                    if (IdNote == 0)
                     {
-                        FromDtpk.Value.AddSeconds(1);
-                        sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
-                           $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
+
+                        if (RepeatCB.SelectedIndex == 0)
+                        {
+                            FromDtpk.Value.AddSeconds(1);
+                            sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
+                               $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
+                            NoteData.UpdateInsertDelete(sql);
+                        }
+                        else if (RepeatCB.SelectedIndex == 1)
+                        {
+                            while (FromDtpk.Value <= ToDtpk.Value)
+                            {
+                                sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
+                               $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
+                                NoteData.UpdateInsertDelete(sql);
+                                FromDtpk.Value = FromDtpk.Value.AddDays(1);
+                            }
+                        }
+                        else if (RepeatCB.SelectedIndex == 2)
+                        {
+                            while (FromDtpk.Value <= ToDtpk.Value)
+                            {
+                                sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important)" +
+                               $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
+                                NoteData.UpdateInsertDelete(sql);
+                                FromDtpk.Value = FromDtpk.Value.AddDays(7);
+                            }
+                        }
+                        else if (RepeatCB.SelectedIndex == 3)
+                        {
+                            while (FromDtpk.Value <= ToDtpk.Value)
+                            {
+                                sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
+                               $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
+                                NoteData.UpdateInsertDelete(sql);
+                                FromDtpk.Value = FromDtpk.Value.AddMonths(1);
+                            }
+                        }
+                        else if (RepeatCB.SelectedIndex == 4)
+                        {
+                            while (FromDtpk.Value <= ToDtpk.Value)
+                            {
+                                sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
+                               $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
+                                NoteData.UpdateInsertDelete(sql);
+                                FromDtpk.Value = FromDtpk.Value.AddYears(1);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        sql = $"update NoteByDate set NoteText = '{MainNote.Text}', Description = '{DescriptionTB.Text}', AppDate = '{FromDtpk.Value}', FromH = '{FHoursCB.Text}', FromM = '{FMinutesCB.Text}', ToH = '{THoursCB.Text}', ToM = '{TMinutesCB.Text}', Important = '{Check}' where IdNote = {IdNote}";
                         NoteData.UpdateInsertDelete(sql);
                     }
-                    else if (RepeatCB.SelectedIndex == 1)
-                    {
-                        while (FromDtpk.Value <= ToDtpk.Value)
-                        {
-                            sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
-                           $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
-                            NoteData.UpdateInsertDelete(sql);
-                            FromDtpk.Value = FromDtpk.Value.AddDays(1);
-                        }
-                    }
-                    else if (RepeatCB.SelectedIndex == 2)
-                    {
-                        while (FromDtpk.Value <= ToDtpk.Value)
-                        {
-                            sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important)" +
-                           $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
-                            NoteData.UpdateInsertDelete(sql);
-                            FromDtpk.Value = FromDtpk.Value.AddDays(7);
-                        }
-                    }
-                    else if (RepeatCB.SelectedIndex == 3)
-                    {
-                        while (FromDtpk.Value <= ToDtpk.Value)
-                        {
-                            sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
-                           $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
-                            NoteData.UpdateInsertDelete(sql);
-                            FromDtpk.Value = FromDtpk.Value.AddMonths(1);
-                        }
-                    }
-                    else if (RepeatCB.SelectedIndex == 4)
-                    {
-                        while (FromDtpk.Value <= ToDtpk.Value)
-                        {
-                            sql = $"insert into NoteByDate(NoteText,Description,AppDate,FromH,FromM,ToH,ToM,Important) " +
-                           $"values('{MainNote.Text}','{DescriptionTB.Text}','{FromDtpk.Value}','{FHoursCB.Text}','{FMinutesCB.Text}','{THoursCB.Text}','{TMinutesCB.Text}','{Check}')";
-                            NoteData.UpdateInsertDelete(sql);
-                            FromDtpk.Value = FromDtpk.Value.AddYears(1);
-                        }
-                    }
+                    MessageBox.Show("Lưu dữ liệu thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.DialogResult = DialogResult.OK;
                 }
-                else
+                catch
                 {
-                    sql = $"update NoteByDate set NoteText = '{MainNote.Text}', Description = '{DescriptionTB.Text}', AppDate = '{FromDtpk.Value}', FromH = '{FHoursCB.Text}', FromM = '{FMinutesCB.Text}', ToH = '{THoursCB.Text}', ToM = '{TMinutesCB.Text}', Important = '{Check}' where IdNote = {IdNote}";
-                    NoteData.UpdateInsertDelete(sql);
+                    MessageBox.Show("Lưu dữ liệu không thành công", "Thông Báo" , MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                MessageBox.Show("Lưu thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
         }

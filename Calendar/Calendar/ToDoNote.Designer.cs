@@ -526,6 +526,7 @@
             this.FromDtpk.Size = new System.Drawing.Size(288, 36);
             this.FromDtpk.TabIndex = 32;
             this.FromDtpk.Value = new System.DateTime(2020, 12, 17, 18, 21, 14, 261);
+            this.FromDtpk.ValueChanged += new System.EventHandler(this.FromDtpk_ValueChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -671,6 +672,7 @@
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.TitleLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ToDoNote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ToDoNote";

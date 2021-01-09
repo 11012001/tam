@@ -29,6 +29,7 @@ namespace Calendar
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSetting));
             this.PanelSetting = new Guna.UI2.WinForms.Guna2Panel();
             this.btnOK = new Guna.UI2.WinForms.Guna2Button();
             this.rbtnLS = new System.Windows.Forms.RadioButton();
@@ -182,6 +183,7 @@ namespace Calendar
             this.ClientSize = new System.Drawing.Size(320, 320);
             this.Controls.Add(this.PanelSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormSetting";

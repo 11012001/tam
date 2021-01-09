@@ -177,8 +177,6 @@ D:\B Pro Coder\ProjectCalendar(main)\ProjectCalendar(main)\Calendar\obj\Debug\Ca
 D:\B Pro Coder\ProjectCalendar(main)\ProjectCalendar(main)\Calendar\obj\Debug\Calendar.csproj.CopyComplete
 D:\B Pro Coder\ProjectCalendar(main)\ProjectCalendar(main)\Calendar\obj\Debug\Calendar.exe
 D:\B Pro Coder\ProjectCalendar(main)\ProjectCalendar(main)\Calendar\obj\Debug\Calendar.pdb
-D:\B Pro Coder\Project\Calendar\bin\Debug\x86\sqlite3.dll
-D:\B Pro Coder\Project\Calendar\bin\Debug\x64\sqlite3.dll
 D:\B Pro Coder\Project\Calendar\bin\Debug\Calendar.exe.config
 D:\B Pro Coder\Project\Calendar\bin\Debug\Calendar.exe
 D:\B Pro Coder\Project\Calendar\bin\Debug\Calendar.pdb
@@ -321,3 +319,5 @@ D:\GIT\Calendar\Calendar\obj\Debug\Calendar.csproj.CopyComplete
 D:\GIT\Calendar\Calendar\obj\Debug\Calendar.exe
 D:\GIT\Calendar\Calendar\obj\Debug\Calendar.pdb
 D:\B Pro Coder\Project\Calendar\obj\Debug\Calendar.csprojAssemblyReference.cache
+D:\B Pro Coder\Project\Calendar\bin\Debug\System.Data.OleDb.dll
+D:\B Pro Coder\Project\Calendar\bin\Debug\System.Data.OleDb.xml

@@ -454,6 +454,7 @@
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.TitleLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeadLineNote";
             this.Text = "DeadLineNote";
             this.Load += new System.EventHandler(this.DeadLineNote_Load);

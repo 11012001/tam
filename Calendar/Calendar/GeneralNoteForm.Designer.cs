@@ -209,6 +209,7 @@
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.Dtpk);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GeneralNoteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GeneralNoteForm";
