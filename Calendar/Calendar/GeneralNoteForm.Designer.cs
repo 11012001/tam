@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeneralNoteForm));
             this.PreviousBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -39,6 +40,8 @@
             this.DeadlineLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ControlPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.AddJobBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,6 +195,16 @@
             this.AddJobBtn.Text = "Thêm công việc";
             this.AddJobBtn.Click += new System.EventHandler(this.AddJobBtn_Click_1);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this.ControlPanel;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.ContainerControl = this;
+            this.guna2DragControl2.TargetControl = this;
+            // 
             // GeneralNoteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,5 +245,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel DeadlineLabel;
         private System.Windows.Forms.FlowLayoutPanel ControlPanel;
         private Guna.UI2.WinForms.Guna2Button AddJobBtn;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }

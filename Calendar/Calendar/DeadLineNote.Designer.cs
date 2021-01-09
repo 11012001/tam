@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeadLineNote));
             this.UrgentCB = new System.Windows.Forms.ComboBox();
             this.SaveBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -46,6 +47,7 @@
             this.MainNote = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.TitleLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -429,6 +431,11 @@
             this.TitleLabel.TabIndex = 89;
             this.TitleLabel.Text = "Dealine Hoàn Thành công việc";
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this;
+            // 
             // DeadLineNote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,5 +491,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         public Guna.UI2.WinForms.Guna2HtmlLabel TitleLabel;
         public System.Windows.Forms.ComboBox UrgentCB;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
