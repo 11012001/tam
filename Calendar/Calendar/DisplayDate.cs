@@ -20,7 +20,6 @@ namespace Calendar
     public partial class DisplayDate : UserControl
     {
         
-        private static DisplayDate dateDisplay;
         public static Color ColorSolar { get; set; }
         public static Color ColorLunnar { get; set; }
         public Color ColorHourLunnar { get; set; }
@@ -352,7 +351,7 @@ namespace Calendar
                 }
                 catch (System.Net.Http.HttpRequestException)
                 {
-                    MessageBox.Show("Vui lòng kết nối mạng trước khi sử dụng tính năng  này.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Vui lòng kết nối mạng trước khi sử dụng tính năng  này.", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 var request = WebRequest.Create(url);
                 using (var response = request.GetResponse())
@@ -365,7 +364,7 @@ namespace Calendar
             }
             catch (WebException ex) when ((ex.Response as HttpWebResponse)?.StatusCode == HttpStatusCode.NotFound)
             {
-                MessageBox.Show("Trang web xử lí âm thanh đang gặp trục trặc. Vui lòng thử lại sau.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Trang web xử lí âm thanh đang gặp trục trặc. Vui lòng thử lại sau.", "Báo Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

@@ -92,7 +92,7 @@ namespace Calendar
                 catch (System.Net.WebException)
                 {
                     PanelDisplayWT.Visible = false;
-                    MessageBox.Show("Vui lòng kết nối mạng trước khi sử dụng tính năng  này.","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Vui lòng kết nối mạng trước khi sử dụng tính năng  này.","Cảnh Báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
         }
@@ -104,7 +104,7 @@ namespace Calendar
             if (ComboBoxCity.Text == "")
             {
                 PanelDisplayWT.Visible = false;
-                MessageBox.Show("Vui lòng chọn tỉnh mà bạn muốn xem dự báo thời tiết.","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng chọn tỉnh mà bạn muốn xem dự báo thời tiết.","Cảnh Báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
             else

@@ -216,7 +216,7 @@ namespace Calendar
                 GT = 1;
             else
             {
-                MessageBox.Show("Vui lòng chọn giới tính của bạn.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng chọn giới tính của bạn.", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }    
             PanelDisplay.Visible = true;

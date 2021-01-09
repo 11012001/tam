@@ -35,7 +35,7 @@ namespace Calendar
             }
             catch
             {
-                MessageBox.Show("Error!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi hiển thị. Vui lòng thử lại sau.", "Báo Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             ToDtpk.Value = FromDtpk.Value;
         }
@@ -44,14 +44,14 @@ namespace Calendar
         {
             if (MainNote.Text == "Nhập ghi chú")
             {
-                MessageBox.Show("Ghi chú không được rỗng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ghi chú không được rỗng!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (DescriptionTB.Text == "Mô tả")
                 DescriptionTB.Text = null;
             if ((Convert.ToInt32(FHoursCB.Text) > Convert.ToInt32(THoursCB.Text)) || ((Convert.ToInt32(FHoursCB.Text) == Convert.ToInt32(THoursCB.Text)) && (Convert.ToInt32(FMinutesCB.Text) > Convert.ToInt32(TMinutesCB.Text))) || FromDtpk.Value > ToDtpk.Value)
             {
-                MessageBox.Show("Đặt thời gian không hợp lệ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Đặt thời gian không hợp lệ!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (ImportantCheck.Checked == true) Check = 1;
@@ -118,7 +118,7 @@ namespace Calendar
                     sql = $"update NoteByDate set NoteText = '{MainNote.Text}', Description = '{DescriptionTB.Text}', AppDate = '{FromDtpk.Value}', FromH = '{FHoursCB.Text}', FromM = '{FMinutesCB.Text}', ToH = '{THoursCB.Text}', ToM = '{TMinutesCB.Text}', Important = '{Check}' where IdNote = {IdNote}";
                     NoteData.UpdateInsertDelete(sql);
                 }
-                MessageBox.Show("Lưu thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Lưu dữ liệu thành công.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }

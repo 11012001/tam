@@ -37,12 +37,12 @@ namespace Calendar
             long count = datetocount - datefromcount;
             if (count == 0)
             {
-                MessageBox.Show("Bạn chưa chọn ngày kết thúc!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa chọn ngày kết thúc!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else if (count < 0)
             {
-                MessageBox.Show("Bạn chọn ngày kết thúc nhỏ hơn ngày bắt đầu!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chọn ngày kết thúc nhỏ hơn ngày bắt đầu!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -141,9 +141,9 @@ namespace Calendar
             catch
             {
                 if (TextBoxFromChange.Text == "")
-                    MessageBox.Show("Mời bạn nhập dữ liêu!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Bạn chưa nhâpk dữ liệu! Mời bạn nhập dữ liêu!", "Cảnh Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
-                    MessageBox.Show("Bạn đã nhập sai dữ liệu! Mời bạn nhập lại!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Bạn đã nhập sai dữ liệu! Mời bạn nhập lại!", "Báo Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return count;
         }

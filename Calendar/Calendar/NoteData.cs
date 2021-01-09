@@ -28,7 +28,7 @@ namespace Calendar
         }
         public static bool IsConfirm(string message)
         {
-            return MessageBox.Show(message, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+            return MessageBox.Show(message, "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
         }
         public static DataTable QueryAsDatatable(string sql)
         {
